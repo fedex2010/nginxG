@@ -64,7 +64,7 @@ RUN ./configure --prefix=${NGINX_ROOT} --with-ld-opt="-Wl,-rpath,${LUAJIT_LIB}" 
 			    --with-http_dav_module \
 			    --with-http_flv_module \
 			    --with-http_mp4_module \
-			    --with-http_gunzip_module \
+			    --with-http_gunzip_module
 RUN make -j2
 RUN make install
 RUN ln -s ${NGINX_ROOT}/sbin/nginx /usr/local/sbin/nginx
