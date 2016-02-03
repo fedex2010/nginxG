@@ -1,5 +1,5 @@
 deployment:
-  ci:
+  staging:
     branch: master
     commands:
       - zip -r app.zip *
