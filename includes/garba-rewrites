@@ -1,0 +1,1 @@
+rewrite ^(/emails/)(.*)$ http://ventas.garbarino.com/emails/$2 permanent;

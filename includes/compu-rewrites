@@ -1,0 +1,6 @@
+rewrite ^(/extras/mailing/)(.*)$ http://img-mails.compumundo.com.ar/extras/mailing/$2 permanent;
+rewrite ^(/truco/)(.*)$ http://img-mails.compumundo.com.ar/truco/$2 permanent;
+rewrite ^(/trucos/)(.*)$ http://img-mails.compumundo.com.ar/trucos/$2 permanent;
+rewrite ^(/images/)(.*)$ http://img-mails.compumundo.com.ar/images/$2 permanent;
+rewrite ^(/imagenes/)(.*)$ http://img-mails.compumundo.com.ar/imagenes/$2 permanent;
+rewrite ^(/mails/)(.*)$ http://img-mails.compumundo.com.ar/mails/$2 permanent;

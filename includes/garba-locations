@@ -1,0 +1,19 @@
+location ~ ^(/listas-de-regalos)(.*) {
+        return 301 http://listas.garbarino.com$2;
+        break;
+}
+
+location ~ ^(/listas)(.*) {
+        return 301 http://listas.garbarino.com$2;
+        break;
+}
+
+location ~ ^(/catalogo/2015/listas)(.*) {
+        return 301 http://catalogos.garbarino.com/2015/listas$2;
+        break;
+}
+
+location ~ ^(/mejoresofertas)(.*) {
+        return 301 http://mejoresofertas.garbarino.com$2;
+        break;
+}

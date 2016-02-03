@@ -1,0 +1,32 @@
+location ~ ^/sg/(concat|login|logout) {
+            allow all;
+            proxy_pass $EPI_UI_DNS;
+            break;
+}
+
+location ~ ^/(admin|sg|api) {
+            allow 200.85.108.10;
+            allow 172.19.14.48;
+            allow 200.43.6.32/28;
+            allow 190.3.11.128/28;
+            allow 186.153.135.128/28;
+            allow 190.221.160.0/28;
+            allow 190.221.18.24/29;
+            allow 190.226.48.72/29;
+            allow 181.30.55.184/29;
+            allow 181.168.202.107;
+            allow 181.111.191.24/29;
+            allow 181.168.205.109/32;
+
+            deny all;
+            proxy_pass $EPI_UI_DNS;
+}
+
+location ~* \.(eot|otf|ttf|woff)$ {
+    add_header Access-Control-Allow-Origin *;
+    proxy_pass $EPI_UI_DNS;
+}
+
+location ~ ^/carrito/compra/(pagada|rechazada) {
+	proxy_pass $EPI_UI_DNS;
+}

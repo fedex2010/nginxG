@@ -1,0 +1,9 @@
+ if ($http_user_agent !~ 'Amazon CloudFront') {
+      set $secure true;
+ }
+if ($http_x_forwarded_proto = 'https') {
+      set $secure false;
+}
+if ($secure = true) {
+      rewrite ^ https://$host$request_uri? permanent;
+}
