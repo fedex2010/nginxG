@@ -1,12 +1,12 @@
 location ~ ^/sg/(concat|login|logout) {
-            include env/env.conf;
+            include /etc/nginx/env.conf;
             allow all;
             proxy_pass $EPI_UI_DNS;
             break;
 }
 
 location ~ ^/(admin|sg|api) {
-            include env/env.conf;
+            include /etc/nginx/env.conf;
             allow 200.85.108.10;
             allow 172.19.14.48;
             allow 200.43.6.32/28;
@@ -25,12 +25,12 @@ location ~ ^/(admin|sg|api) {
 }
 
 location ~* \.(eot|otf|ttf|woff)$ {
-    include env/env.conf;
+    include /etc/nginx/env.conf;
     add_header Access-Control-Allow-Origin *;
     proxy_pass $EPI_UI_DNS;
 }
 
 location ~ ^/carrito/compra/(pagada|rechazada) {
-    include env/env.conf;
+    include /etc/nginx/env.conf;
 	proxy_pass $EPI_UI_DNS;
 }
