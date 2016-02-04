@@ -7,7 +7,7 @@ dependencies:
     - pip install awscli
 deployment:
   develop:
-    branch: master
+    branch: develop
     commands:
       - zip -r app.zip Dockerfile nginx.conf conf.d includes env.conf env_gen.sh
       - aws s3 cp app.zip s3://garbarino-deploys/nginx/builds/$CIRCLE_SHA1-$CIRCLE_BUILD_NUM.zip
