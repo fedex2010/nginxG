@@ -1,5 +1,4 @@
 location ~ ^/sg/(concat|login|logout) {
-            include /etc/nginx/env.conf;
             allow all;
             proxy_pass $EPI_UI_DNS;
             break;
