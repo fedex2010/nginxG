@@ -7,4 +7,8 @@ COPY conf.d /etc/nginx/conf.d
 COPY includes /etc/nginx/includes
 COPY env.conf /etc/nginx/env/env.conf
 COPY env_gen.sh /etc/nginx/env_gen.sh
-CMD /etc/nginx/env_gen.sh; nginx -g 'daemon off;'
+
+RUN apt-get update; apt-get install nginx-nr-agent
+COPY nginx-nr-agent.ini /etc/nginx-nr-agent/nginx-nr-agent.ini
+
+CMD /etc/nginx/env_gen.sh; nginx -g 'daemon off;'; service nginx-nr-agent start
