@@ -6,17 +6,31 @@ location ~ ^/sg/(concat|login|logout) {
 
 location ~ ^/(admin|sg|api) {
             include /etc/nginx/env.conf;
-            allow 181.30.55.184/29;
-            allow 181.111.191.24/29;
-            allow 181.168.202.107/32;
-            allow 181.168.205.109/32;
-            allow 181.30.55.184/29;
-            allow 181.111.191.24/29;
-            allow 181.168.202.107/32;
-            allow 181.168.205.109/32;
-            allow 200.85.108.10;
-            
-            deny all;
+            set $allow false; 
+            if ($http_x_forwarded_for ~ " ?181\.30\.55\.184?$") { 
+                set $allow true; 
+            } 
+            if ($http_x_forwarded_for ~ " ?181\.111\.191\.24?$") { 
+                set $allow true; 
+            }
+            if ($http_x_forwarded_for ~ " ?181\.168\.202\.107?$") { 
+                set $allow true; 
+            }
+            if ($http_x_forwarded_for ~ " ?181\.168\.205\.109?$") { 
+                set $allow true; 
+            }
+            if ($http_x_forwarded_for ~ " ?181\.30\.55\.184?$") { 
+                set $allow true; 
+            }
+            if ($http_x_forwarded_for ~ " ?181\.111\.191\.24?$") { 
+                set $allow true; 
+            }
+            if ($http_x_forwarded_for ~ " ?200\.85\.108\.10?$") { 
+                set $allow true; 
+            }
+            if ($allow = false) { 
+                return 403; 
+            }
             
             proxy_pass $EPI_UI_DNS;
 }
