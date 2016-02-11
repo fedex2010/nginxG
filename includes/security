@@ -19,7 +19,7 @@ location ~ ^/(admin|sg|api) {
             
             deny all;
             
-            proxy_pass $EPI_UI_DNS;
+            proxy_pass $EPI_API_DNS;
 }
 
 location ~* \.(eot|otf|ttf|woff)$ {
