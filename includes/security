@@ -1,25 +1,19 @@
 location ~ ^/sg/(concat|login|logout) {
-            allow all;
-            proxy_pass $EPI_UI_DNS;
-            break;
+    allow all;
+    proxy_pass $EPI_UI_DNS;
+    break;
 }
 
 location ~ ^/(admin|sg|api) {
-            include /etc/nginx/env.conf;
+    include /etc/nginx/env.conf;
 
-            allow 181.30.55.184/29;
-            allow 181.111.191.24/29;
-            allow 181.168.202.107/32;
-            allow 181.168.205.109/32;
-            allow 181.30.55.184/29;
-            allow 181.111.191.24/29;
-            allow 181.168.202.107/32;
-            allow 181.168.205.109/32;
-            allow 200.85.108.10;
-            
-            deny all;
-            
-            proxy_pass $EPI_API_DNS;
+    include /etc/nginx/security/ugarte-ips.conf;
+    include /etc/nginx/security/tek-ips.conf;
+    include /etc/nginx/security/amazon-ips.conf;
+
+    deny all;
+    
+    proxy_pass $EPI_API_DNS;
 }
 
 location ~* \.(eot|otf|ttf|woff)$ {
