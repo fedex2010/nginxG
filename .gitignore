@@ -1,1 +1,3 @@
 nginx.zip
+/node_modules/
+*.log
