@@ -12,8 +12,8 @@ location ~ ^/(admin|sg|api) {
     include /etc/nginx/security/amazon-ips.conf;
 
     deny all;
-    
-    proxy_pass $EPI_API_DNS;
+
+    return 301 $EPI_API_DNS$request_uri;
 }
 
 location ~* \.(eot|otf|ttf|woff)$ {
