@@ -7,4 +7,5 @@ echo 'set $ADMIN_IPOINT_DNS' $ADMIN_IPOINT_DNS ';' >> /etc/nginx/env.conf
 echo 'set $ADMIN_GARBA_DNS' $ADMIN_GARBA_DNS ';' >> /etc/nginx/env.conf
 echo 'set $ADMIN_COMPU_DNS' $ADMIN_COMPU_DNS ';' >> /etc/nginx/env.conf
 echo 'set $HOME_CORE_DNS' $HOME_CORE_DNS ';' >> /etc/nginx/env.conf
+echo 'set $SEARCH_DNS' $SEARCH_DNS ';' >> /etc/nginx/env.conf
 echo resolver $(awk 'BEGIN{ORS=" "} $1=="nameserver" {print $2}' /etc/resolv.conf) ";" > /etc/nginx/resolvers.conf
