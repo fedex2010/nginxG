@@ -10,7 +10,7 @@ COPY env.conf /etc/nginx/env.conf
 COPY env.conf.ci /etc/nginx/env.conf.ci
 COPY env.conf.staging /etc/nginx/env.conf.staging
 COPY env.conf.prod /etc/nginx/env.conf.prod
-COPY env_gen.sh /etc/nginx/scripts/env_gen.sh
+COPY scripts/env_gen.sh /etc/nginx/scripts/env_gen.sh
 COPY resolvers.conf /etc/nginx/resolvers.conf
 
 
