@@ -7,6 +7,9 @@ COPY includes /etc/nginx/includes
 COPY security /etc/nginx/security
 COPY api /etc/nginx/api
 COPY env.conf /etc/nginx/env/env.conf
+COPY env.conf.ci /etc/nginx/env.conf.ci
+COPY env.conf.staging /etc/nginx/env.conf.staging
+COPY env.conf.prod /etc/nginx/env.conf.prod
 COPY scripts/env_gen.sh /etc/nginx/scripts/env_gen.sh
 
 

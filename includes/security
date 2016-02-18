@@ -4,17 +4,6 @@ location ~ ^/sg/(concat|login|logout) {
     break;
 }
 
-location ~ ^/(admin|sg|api) {
-    include /etc/nginx/env.conf;
-
-    include /etc/nginx/security/ugarte-ips.conf;
-    include /etc/nginx/security/tek-ips.conf;
-    include /etc/nginx/security/amazon-ips.conf;
-
-    deny all;
-    
-    proxy_pass $EPI_API_DNS;
-}
 
 location ~* \.(eot|otf|ttf|woff)$ {
     include /etc/nginx/env.conf;
