@@ -7,7 +7,8 @@
     "build": "docker build -t garba-nginx .",
     "start": "scripts/start_docker.sh", 
     "stop": "docker stop garba-nginx",
-    "test": "echo 'Projecto sin tests. Es un peligro'"
+    "check_syntax": "docker run garba-nginx /usr/sbin/nginx -t -c /etc/nginx/nginx.conf",
+    "test": "npm run build && npm run check_syntax"
   },
   "repository": {
     "type": "git",
