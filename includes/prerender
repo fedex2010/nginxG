@@ -28,7 +28,7 @@ resolver 8.8.8.8;
 if ($prerender = 1) {
 
     #setting prerender as a variable forces DNS resolution since nginx caches IPs and doesnt play well with load balancing
-    set $prerender "service.prerender.io";
+    set $prerender "prerender.tekgenesis.net";
     rewrite .* /https://$host$request_uri? break;
     proxy_pass http://$prerender;
 }
