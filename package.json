@@ -4,7 +4,7 @@
   "description": "Manejo de todo el trafico entrante de Garba",
   "main": "index.js",
   "scripts": {
-    "build": "npm stop && docker build -t garba-nginx .",
+    "build": "docker build -t garba-nginx .",
     "start": "scripts/start_docker.sh", 
     "stop": "docker stop garba-nginx",
     "check_syntax": "docker run garba-nginx /usr/sbin/nginx -t -c /etc/nginx/nginx.conf",
