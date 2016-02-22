@@ -1,8 +1,8 @@
-container=$(docker ps -a | grep garba-nginx | sed s/.*garba-nginx/exists/)
+container=$(docker ps -a | grep garba-nginx | awk '{print $1}')
 if [[ "$container" == "" ]]; then
-	echo "no existe -> se crea"
-	docker run -d -e EPI_UI_DNS=staging.garbarino.com -e EPI_API_DNS=staging.garbarino.com -e MAPI_DNS=mapi-staging.garbarino.com -e API_CORE_DNS=api-core-staging.garbarino.com  --name garba-nginx garba-nginx
+	echo "no existe"
 else
-	echo "existe -> lo arranca"
-	docker start garba-nginx
+	echo "existe -> lo borra"
+	docker rm $container
 fi
+docker run -d -e APP_ENV=ci -p 80:80 -p 81:81 --name garba-nginx garba-nginx
