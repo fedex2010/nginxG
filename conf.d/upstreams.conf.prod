@@ -11,5 +11,5 @@ upstream mapi_core_us { server mapi-core-prod.elasticbeanstalk.com; }
 upstream mapi_notifications_us { server mapi-prd.elasticbeanstalk.com; } 
 upstream search_us { server search-prod.elasticbeanstalk.com; } 
 upstream product_core_us { server product-core-prod.elasticbeanstalk.com; } 
-upstream microapps_us { server microapps-prod.elasticbeanstalk.com; } 
+# upstream microapps_us { server microapps-prod.elasticbeanstalk.com; } 
 upstream product_fe_us { server product-prod.elasticbeanstalk.com; } 
