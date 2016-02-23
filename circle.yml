@@ -9,7 +9,7 @@ dependencies:
     - pip install awscli
 deployment:
   feature:
-    tag: feature-test-*
+    tag: feature-test-.*
     commands:
       - zip -r app.zip Dockerfile nginx.conf conf.d includes env.conf env.conf.ci env.conf.staging env.conf.prod scripts/env_gen.sh security api resolvers.conf fe
       - aws s3 cp app.zip s3://garbarino-deploys/nginx/builds/$CIRCLE_SHA1-$CIRCLE_BUILD_NUM.zip
