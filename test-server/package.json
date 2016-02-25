@@ -3,7 +3,10 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "sudo node ./bin/www"
+    "docker-build": "docker build -t test-nginx .", 
+    "clean_dockers": "docker ps -a | grep test-nginx | awk '{print $1}' | xargs docker rm -f ",
+    "docker-start": "docker run -d -p 3000:80 --name test-nginx test-nginx",
+    "start": "node ./bin/www"
   },
   "dependencies": {
     "body-parser": "~1.13.2",
