@@ -18,10 +18,6 @@ if ($uri ~ ^(/epi/resource|/img|/js|/css|/services|/sha)) {
     set $prerender 0;
 }
 
-if ($args != ''){
-   set $prerender 0;
-}
-
 if ($prerender = 1) {
 
     #setting prerender as a variable forces DNS resolution since nginx caches IPs and doesnt play well with load balancing
