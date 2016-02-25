@@ -4,7 +4,9 @@
   "private": true,
   "scripts": {
     "docker-build": "docker build -t test-nginx .", 
-    "clean_dockers": "docker ps -a | grep test-nginx | awk '{print $1}' | xargs docker rm -f ",
+    "clean-dockers-linux": "docker ps -a | grep test-nginx | awk '{print $1}' | xargs -r docker rm -f ",
+    "clean-dockers-mac": "docker ps -a | grep test-nginx | awk '{print $1}' | xargs docker rm -f ",
+    "clean_dockers": "if [[ \"$OSTYPE\" == 'linux-gnu' ]]; then npm run clean-dockers-linux; else npm run clean-dockers-mac; fi",
     "docker-start": "docker run -d -p 3000:80 --name test-nginx test-nginx",
     "start": "node ./test-server.js"
   },
