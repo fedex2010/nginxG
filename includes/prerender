@@ -1,4 +1,4 @@
- set $prerender 0;
+set $prerender 0;
 
 if ($http_user_agent ~* "baiduspider|twitterbot|facebookexternalhit|rogerbot|linkedinbot|embedly|quora link preview|showyoubot|outbrain|pinterest|slackbot|vkShare|W3C_Validator|Googlebot") {
     set $prerender 1;
@@ -22,5 +22,5 @@ if ($prerender = 1) {
 
     #setting prerender as a variable forces DNS resolution since nginx caches IPs and doesnt play well with load balancing
     rewrite .* /https://$host$request_uri? break;
-    proxy_pass http://$PRERENDER_DNS;
+    proxy_pass http://prerender_us;
 }

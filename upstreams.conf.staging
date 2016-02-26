@@ -4,6 +4,8 @@ upstream admin_ipoint_us { server ipointtest.admin.tekgenesis.net; }
 upstream epi_api_us { server garbatest.tekgenesis.net:445; } 
 upstream epi_ui_us { server epi-ui-staging.elasticbeanstalk.com; } 
 upstream epi_ui_clone_us { server epi-ui-clone.us-east-1.elasticbeanstalk.com; } 
+upstream seo_proxy_us { server seo-proxy-staging.us-east-1.elasticbeanstalk.com; }
+upstream prerender_us { server ip-10-211-15-224.ec2.internal:3000; }
 
 upstream api_core_us { server api-core-staging.elasticbeanstalk.com; } 
 upstream home_core_us { server home-core-staging.elasticbeanstalk.com; } 
