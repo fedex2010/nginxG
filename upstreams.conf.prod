@@ -10,7 +10,7 @@ upstream prerender_us { server prerender-prod.us-east-1.elasticbeanstalk.com; }
 upstream api_core_us { server api-core-prod.elasticbeanstalk.com; } 
 upstream home_core_us { server home-core-prod.elasticbeanstalk.com; } 
 upstream mapi_core_us { server mapi-core-prod.elasticbeanstalk.com; } 
-upstream mapi_notifications_us { server mapi-prd.elasticbeanstalk.com; } 
+upstream mapi_notifications_us { server mapi-notifications-prod.us-east-1.elasticbeanstalk.com; } 
 upstream search_us { server search-prod.elasticbeanstalk.com; } 
 upstream product_core_us { server product-core-prod.elasticbeanstalk.com; } 
 # upstream microapps_us { server microapps-prod.elasticbeanstalk.com; } 
