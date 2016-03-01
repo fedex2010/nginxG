@@ -1,0 +1,6 @@
+server {
+ listen 80;
+  location /static_content {
+    proxy_pass $STATIC_CONTENT_DNS;
+  }
+}
