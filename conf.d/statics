@@ -1,5 +1,8 @@
 server {
+ include /etc/nginx/env.conf;
+
  listen 80;
+ server_name ci.garbarino.com staging.garbarino.com garbarino.com;
   location /static_content {
     proxy_pass $STATIC_CONTENT_DNS;
   }
