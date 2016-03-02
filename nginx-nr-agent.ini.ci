@@ -1,7 +1,7 @@
 # global settings
 
 [global]
-newrelic_license_key=PLACE_HOLDER
+newrelic_license_key=0036516f2db2869789fcc89f37954b31b73222cc
 poll_interval=60
 app_name: nginx
 
@@ -39,7 +39,7 @@ datefmt=
 # data sources settings
 
 #[source1]
-name=nginx
+name=nginx-$HOSTNAME
 url=http://localhost:81/nginx_stub_status
 #
 #[source2]
