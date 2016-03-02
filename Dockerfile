@@ -21,4 +21,4 @@ COPY nginx-nr-agent.ini.staging /etc/nginx-nr-agent/nginx-nr-agent.ini.staging
 COPY nginx-nr-agent.ini.prod /etc/nginx-nr-agent/nginx-nr-agent.ini.prod
 
 
-CMD /etc/nginx/scripts/startup.sh;
+CMD /etc/nginx/scripts/env_gen.sh; nginx -g 'daemon off;'; service nginx-nr-agent start;
