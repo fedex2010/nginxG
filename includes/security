@@ -4,7 +4,6 @@ location ~ ^/sg/(concat|login|logout) {
     break;
 }
 
-
 location ~* \.(eot|otf|ttf|woff)$ {
     include /etc/nginx/env.conf;
     add_header Access-Control-Allow-Origin *;
