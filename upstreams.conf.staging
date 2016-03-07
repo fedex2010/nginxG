@@ -15,3 +15,4 @@ upstream search_us { server search-staging.elasticbeanstalk.com; }
 upstream product_core_us { server product-core-staging.elasticbeanstalk.com; } 
 upstream microapps_us { server microapps-staging.elasticbeanstalk.com; } 
 upstream product_fe_us { server product-staging.elasticbeanstalk.com; } 
+upstream home_fe_us { server home-ui-staging.us-east-1.elasticbeanstalk.com; } 
