@@ -1,0 +1,18 @@
+upstream admin_compu_us { server compudesa.admin.tekgenesis.net; } 
+upstream admin_garba_us { server garbadesa.admin.tekgenesis.net; } 
+upstream admin_ipoint_us { server ipointdesa.admin.tekgenesis.net; } 
+upstream epi_api_us { server garbatest.tekgenesis.net:445; } 
+upstream epi_ui_us { server epi-ui-ci.elasticbeanstalk.com; } 
+upstream epi_ui_clone_us { server epi-ui-clone.us-east-1.elasticbeanstalk.com; } 
+upstream seo_proxy_us { server seo-proxy-ci.us-east-1.elasticbeanstalk.com; }
+upstream prerender_us { server ip-10-211-15-224.ec2.internal:3000; }
+
+upstream api_core_us { server api-core-ci.elasticbeanstalk.com; } 
+upstream home_core_us { server home-core-ci.elasticbeanstalk.com; } 
+upstream mapi_core_us { server mapi-core-ci.elasticbeanstalk.com; } 
+upstream mapi_notifications_us { server mapi-notifications-ci.us-east-1.elasticbeanstalk.com; } 
+upstream search_us { server search-ci.elasticbeanstalk.com; } 
+upstream product_core_us { server product-core-ci.elasticbeanstalk.com; } 
+# upstream microapps_us { server microapps-ci.elasticbeanstalk.com; } 
+upstream product_fe_us { server product-ci.elasticbeanstalk.com; } 
+upstream home_fe_us { server home-ui-ci.us-east-1.elasticbeanstalk.com; } 

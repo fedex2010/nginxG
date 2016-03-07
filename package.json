@@ -4,11 +4,16 @@
   "description": "Manejo de todo el trafico entrante de Garba",
   "main": "index.js",
   "scripts": {
+    "start": "npm run clean_dockers && docker run -d -e APP_ENV=test -p 80:80 -p 81:81 --name garba-nginx --link test-nginx:test-server garba-nginx", 
     "build": "docker build -t garba-nginx .",
-    "start": "scripts/start_docker.sh", 
+    "restart": "npm stop && npm test && npm start",
+    "clean-dockers-linux": "docker ps -a | grep garba-nginx | awk '{print $1}' | xargs -r docker rm -f",
+    "clean-dockers-mac": "docker ps -a | grep garba-nginx | awk '{print $1}' | xargs docker rm -f",
+    "clean_dockers": "./clean_dockers.sh",
     "stop": "docker stop garba-nginx",
-    "check_syntax": "docker run garba-nginx /usr/sbin/nginx -t -c /etc/nginx/nginx.conf",
-    "test": "npm run build && npm run check_syntax"
+    "start-test-server": "cd test-server && npm run docker-build && npm run clean_dockers && npm run docker-start",
+    "check_syntax": "docker run --link test-nginx:test-server garba-nginx /usr/sbin/nginx -t -c /etc/nginx/nginx.conf",
+    "test": "npm run build && npm run start-test-server && npm run check_syntax"
   },
   "repository": {
     "type": "git",
