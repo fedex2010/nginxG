@@ -1,0 +1,20 @@
+upstream admin_garba_us { server garbarino.admin.tekgenesis.net; }
+upstream admin_compu_us { server compumundo.admin.tekgenesis.net; }
+upstream admin_ipoint_us { server ipoint.admin.tekgenesis.net; }
+upstream epi_api_us { server epiphania.tekgenesis.net:445; }
+upstream epi_ui_us { server epi-ui-prod.elasticbeanstalk.com; }
+upstream epi_ui_clone_us { server epi-ui-clone.us-east-1.elasticbeanstalk.com; }
+upstream seo_proxy_us { server seo-proxy-prod.us-east-1.elasticbeanstalk.com; }
+upstream prerender_us { server prerender-prod.us-east-1.elasticbeanstalk.com; }
+
+upstream api_core_us { server api-core-prod.elasticbeanstalk.com; }
+upstream home_core_us { server home-core-prod.elasticbeanstalk.com; }
+upstream mapi_core_us { server mapi-core-prod.elasticbeanstalk.com; }
+upstream mapi_notifications_us { server mapi-notifications-prod.us-east-1.elasticbeanstalk.com; }
+upstream search_us { server search-prod.elasticbeanstalk.com; }
+upstream product_core_us { server product-core-prod.elasticbeanstalk.com; }
+# upstream microapps_us { server microapps-prod.elasticbeanstalk.com; }
+upstream product_fe_us { server product-prod.elasticbeanstalk.com; }
+upstream home_fe_us { server home-ui-prod.us-east-1.elasticbeanstalk.com; }
+upstream landings_fe_us { server landings-prod.us-east-1.elasticbeanstalk.com; }
+upstream operations_us { server  operations-recovers-ci.us-east-1.elasticbeanstalk.com; }
