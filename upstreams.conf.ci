@@ -16,3 +16,5 @@ upstream product_core_us { server product-core-ci.elasticbeanstalk.com; }
 # upstream microapps_us { server microapps-ci.elasticbeanstalk.com; } 
 upstream product_fe_us { server product-ci.elasticbeanstalk.com; } 
 upstream home_fe_us { server home-ui-ci.us-east-1.elasticbeanstalk.com; } 
+upstream landings_fe_us { server landings-ci.us-east-1.elasticbeanstalk.com; }
+upstream static_content_us { server s3-us-west-2.amazonaws.com/legal-terms/terminos.html; }
