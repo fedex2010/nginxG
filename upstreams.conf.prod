@@ -17,3 +17,4 @@ upstream product_core_us { server product-core-prod.elasticbeanstalk.com; }
 upstream product_fe_us { server product-prod.elasticbeanstalk.com; }
 upstream home_fe_us { server home-ui-prod.us-east-1.elasticbeanstalk.com; }
 upstream landings_fe_us { server landings-prod.us-east-1.elasticbeanstalk.com; }
+upstream operations_us { server  operations-recovers-ci.us-east-1.elasticbeanstalk.com; }
