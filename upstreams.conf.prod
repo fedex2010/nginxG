@@ -9,12 +9,12 @@ upstream prerender_us { server prerender-prod.us-east-1.elasticbeanstalk.com max
 
 upstream api_core_us { server api-core-prod.elasticbeanstalk.com max_fails=3; }
 upstream home_core_us { server localhost max_fails=3; }
-upstream mapi_core_us { server mapi-core-prod.elasticbeanstalk.com max_fails=3; }
+upstream mapi_core_us { server mapi-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream mapi_notifications_us { server mapi-notifications-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream search_us { server search-prod.elasticbeanstalk.com max_fails=3; }
+upstream search_us { server search-prd.elasticbeanstalk.com max_fails=3; }
 upstream product_core_us { server product-core-prod.elasticbeanstalk.com max_fails=3; }
 # upstream microapps_us { server microapps-prod.elasticbeanstalk.com max_fails=3; }
-upstream product_fe_us { server product-prod.elasticbeanstalk.com max_fails=3; }
-upstream home_fe_us { server home-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream product_fe_us { server product-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream home_fe_us { server localhost max_fails=3; }
 upstream landings_fe_us { server landings-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream operations_us { server  operations-recovers-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream operations_us { server  localhost max_fails=3; }
