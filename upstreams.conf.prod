@@ -18,3 +18,4 @@ upstream product_fe_us { server product-prod.us-east-1.elasticbeanstalk.com max_
 upstream home_fe_us { server localhost max_fails=3; }
 upstream landings_fe_us { server landings-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream operations_us { server  localhost max_fails=3; }
+upstream operations_kibana_us { server  localhost max_fails=3; }

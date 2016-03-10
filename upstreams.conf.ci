@@ -18,3 +18,4 @@ upstream product_fe_us { server product-ci.elasticbeanstalk.com max_fails=3; }
 upstream home_fe_us { server home-ui-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream landings_fe_us { server landings-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream operations_us { server  operations-recovers-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream operations_kibana_us { server  10.211.15.107 max_fails=3; }
