@@ -1,0 +1,21 @@
+## API
+
+test.upstream.sh GET api-dev.garbarino.com /homes/current homes_core_us
+test.upstream.sh GET api-dev.garbarino.com /home_offers homes_core_us
+
+test.upstream.sh GET api-dev.garbarino.com /categories api_core_us
+test.upstream.sh GET api-dev.garbarino.com /cities api_core_us
+test.upstream.sh GET api-dev.garbarino.com /productLists api_core_us
+test.upstream.sh GET api-dev.garbarino.com /autocompleteNew api_core_us
+test.upstream.sh GET api-dev.garbarino.com /subscription api_core_us
+test.upstream.sh GET api-dev.garbarino.com /stores api_core_us
+test.upstream.sh GET api-dev.garbarino.com /cart api_core_us
+test.upstream.sh GET api-dev.garbarino.com /account api_core_us
+test.upstream.sh GET api-dev.garbarino.com /landings api_core_us
+
+test.upstream.sh GET api-dev.garbarino.com /products product_core_us
+
+test.upstream.sh GET api-dev.garbarino.com /autocomplete search_us
+test.upstream.sh GET api-dev.garbarino.com /search search_us
+test.upstream.sh GET api-dev.garbarino.com /suggestions search_us
+test.upstream.sh GET api-dev.garbarino.com /synonyms search_us
