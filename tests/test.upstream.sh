@@ -5,14 +5,16 @@ domain=$2
 uri=$3
 dest=$4
 
-capture_domain.sh $domain
+seed=$RANDOM
+
+./capture_domain.sh $domain $seed
 
 actual_upstream=$(curl -v -X $method "$domain$uri" 2>&1 | grep "X-Proxy-Host: $dest" )
 
-cp ./tmp/hosts.capture.bak /etc/hosts
+sed -i.bak "/##CleanIT($seed)/d" /etc/hosts
 chmod 444 /etc/hosts
 
-if [[ -z "$actual_upstream" ]]; then
+if [[ -n "$actual_upstream" ]]; then
 	echo -n ·
 else
 	echo

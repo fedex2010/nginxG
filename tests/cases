@@ -1,7 +1,7 @@
 ## API
 
-test.upstream.sh GET api-dev.garbarino.com /homes/current homes_core_us
-test.upstream.sh GET api-dev.garbarino.com /home_offers homes_core_us
+test.upstream.sh GET api-dev.garbarino.com /homes/current home_core_us
+test.upstream.sh GET api-dev.garbarino.com /home_offers home_core_us
 
 test.upstream.sh GET api-dev.garbarino.com /categories api_core_us
 test.upstream.sh GET api-dev.garbarino.com /cities api_core_us
