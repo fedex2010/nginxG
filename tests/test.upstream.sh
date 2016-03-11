@@ -5,14 +5,7 @@ domain=$2
 uri=$3
 dest=$4
 
-seed=$RANDOM
-
-./capture_domain.sh $domain $seed
-
-actual_upstream=$(curl -v -X $method "$domain$uri" 2>&1 | grep "X-Proxy-Host: $dest" )
-
-sed -i.bak "/##CleanIT($seed)/d" /etc/hosts
-chmod 444 /etc/hosts
+actual_upstream=$(docker run --link garba-nginx:$domain test-nginx curl -v -X $method "$domain$uri" 2>&1 | grep "X-Proxy-Host: $dest" )
 
 if [[ -n "$actual_upstream" ]]; then
 	echo -n ·
