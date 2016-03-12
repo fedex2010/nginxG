@@ -19,3 +19,10 @@ test.upstream.sh GET api-dev.garbarino.com /autocomplete search_us
 test.upstream.sh GET api-dev.garbarino.com /search search_us
 test.upstream.sh GET api-dev.garbarino.com /suggestions search_us
 test.upstream.sh GET api-dev.garbarino.com /synonyms search_us
+
+
+## FE
+
+test.upstream.sh ssl GET www.garbarino.com / epi_ui_us
+test.upstream.sh ssl GET epi-admin.garbarino.com / epi_api_us
+test.upstream.sh ssl GET www.garbarino.com /services/test epi_api_us
