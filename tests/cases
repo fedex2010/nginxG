@@ -26,3 +26,11 @@ test.upstream.sh GET api-dev.garbarino.com /synonyms search_us
 test.upstream.sh ssl GET www.garbarino.com / epi_ui_us
 test.upstream.sh ssl GET epi-admin.garbarino.com / epi_api_us
 test.upstream.sh ssl GET www.garbarino.com /services/test epi_api_us
+
+test.upstream.sh ssl GET www.compumundo.com.ar / epi_ui_us
+test.upstream.sh ssl GET epi-admin.compumundo.com.ar / epi_api_us
+test.upstream.sh ssl GET www.compumundo.com.ar /services/test epi_api_us
+
+test.upstream.sh ssl GET www.ipoint.com.ar / epi_ui_us
+test.upstream.sh ssl GET epi-admin.ipoint.com.ar / epi_api_us
+test.upstream.sh ssl GET www.ipoint.com.ar /services/test epi_api_us
