@@ -1,7 +1,7 @@
 #!/bin/bash
-if [[ "$OSTYPE"  == "linux-gnu" ]] 
+if [[ "$CIRCLECI" == "true" ]] 
 then
-	npm run clean-dockers-linux
+	npm run clean-dockers-circleci
 else
 	npm run clean-dockers-mac
 fi
