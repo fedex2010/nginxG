@@ -1,0 +1,36 @@
+## API
+
+test.upstream.sh GET api-dev.garbarino.com /homes/current home_core_us
+test.upstream.sh GET api-dev.garbarino.com /home_offers home_core_us
+
+test.upstream.sh GET api-dev.garbarino.com /categories api_core_us
+test.upstream.sh GET api-dev.garbarino.com /cities api_core_us
+test.upstream.sh GET api-dev.garbarino.com /productLists api_core_us
+test.upstream.sh GET api-dev.garbarino.com /autocompleteNew api_core_us
+test.upstream.sh GET api-dev.garbarino.com /subscription api_core_us
+test.upstream.sh GET api-dev.garbarino.com /stores api_core_us
+test.upstream.sh GET api-dev.garbarino.com /cart api_core_us
+test.upstream.sh GET api-dev.garbarino.com /account api_core_us
+test.upstream.sh GET api-dev.garbarino.com /landings api_core_us
+
+test.upstream.sh GET api-dev.garbarino.com /products product_core_us
+
+test.upstream.sh GET api-dev.garbarino.com /autocomplete search_us
+test.upstream.sh GET api-dev.garbarino.com /search search_us
+test.upstream.sh GET api-dev.garbarino.com /suggestions search_us
+test.upstream.sh GET api-dev.garbarino.com /synonyms search_us
+
+
+## FE
+
+test.upstream.sh ssl GET www.garbarino.com / epi_ui_us
+test.upstream.sh ssl GET epi-admin.garbarino.com / epi_api_us
+test.upstream.sh ssl GET www.garbarino.com /services/test epi_api_us
+
+test.upstream.sh ssl GET www.compumundo.com.ar / epi_ui_us
+test.upstream.sh ssl GET epi-admin.compumundo.com.ar / epi_api_us
+test.upstream.sh ssl GET www.compumundo.com.ar /services/test epi_api_us
+
+test.upstream.sh ssl GET www.ipoint.com.ar / epi_ui_us
+test.upstream.sh ssl GET epi-admin.ipoint.com.ar / epi_api_us
+test.upstream.sh ssl GET www.ipoint.com.ar /services/test epi_api_us
