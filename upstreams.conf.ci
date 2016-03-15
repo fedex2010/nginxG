@@ -9,7 +9,7 @@ upstream prerender_us { server ip-10-211-15-224.ec2.internal:3000 max_fails=3; }
 
 upstream api_core_us { server api-core-ci.elasticbeanstalk.com max_fails=3; }
 upstream home_core_us { server home-core-ci.elasticbeanstalk.com max_fails=3; }
-upstream mapi_core_us { server mapi-core-ci.elasticbeanstalk.com max_fails=3; }
+upstream mapi_core_us { server localhost max_fails=3; }
 upstream mapi_notifications_us { server mapi-notifications-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream search_us { server search-ci.elasticbeanstalk.com max_fails=3; }
 upstream product_core_us { server product-core-ci.elasticbeanstalk.com max_fails=3; }
