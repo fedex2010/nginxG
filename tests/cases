@@ -34,3 +34,14 @@ test.upstream.sh ssl GET www.compumundo.com.ar /services/test epi_api_us
 test.upstream.sh ssl GET www.ipoint.com.ar / epi_ui_us
 test.upstream.sh ssl GET epi-admin.ipoint.com.ar / epi_api_us
 test.upstream.sh ssl GET www.ipoint.com.ar /services/test epi_api_us
+
+## MAPI
+
+test.upstream.sh GET mapi.garbarino.com /homes/xxyy mapi_core_us
+test.upstream.sh GET mapi.garbarino.com /products/xxyy mapi_core_us
+test.upstream.sh GET mapi.garbarino.com /tags mapi_core_us
+
+test.upstream.sh GET mapi.garbarino.com /notifications mapi_notifications_us
+test.upstream.sh GET mapi.garbarino.com /installations mapi_notifications_us
+
+test.upstream.sh GET mapi.garbarino.com /admin mapi_admin_us
