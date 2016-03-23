@@ -21,3 +21,4 @@ upstream landings_fe_us { server landings-staging.us-east-1.elasticbeanstalk.com
 upstream operations_us { server  operations-recovers-stg.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream operations_kibana_us { server  10.211.15.107:5601 max_fails=3; }
 upstream gifts_core_us { server gifts-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream gifts_frontend_us { server gifts-frontend-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
