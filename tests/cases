@@ -40,6 +40,10 @@ test.upstream.sh ssl GET www.ipoint.com.ar /services/test epi_api_us
 test.upstream.sh GET gifts-frontend-ci.garbarino.com / gifts_frontend_us
 test.upstream.sh GET gifts-frontend-staging.garbarino.com / gifts_frontend_us
 
+test.upstream.sh ssl GET ci.garbarino.com /compra gcheckout_us
+test.upstream.sh ssl GET ci.garbarino.com /compra/compra.php gcheckout_us
+
+
 ## MAPI
 
 test.upstream.sh GET mapi.garbarino.com /homes/xxyy mapi_core_us
