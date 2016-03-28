@@ -21,3 +21,6 @@ upstream landings_fe_us { server landings-prod.us-east-1.elasticbeanstalk.com ma
 upstream operations_us { server  localhost max_fails=3; }
 upstream operations_kibana_us { server  localhost max_fails=3; }
 upstream gifts_core_us { server  localhost max_fails=3; }
+# upstream gifts_core_us { server  gifts-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
+# upstream gifts_frontend_us { server  gifts-frontend-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream gifts_frontend_us { server  localhost max_fails=3; }
