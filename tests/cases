@@ -43,7 +43,8 @@ test.upstream.sh GET gifts-frontend-staging.garbarino.com / gifts_frontend_us
 test.upstream.sh ssl GET ci.garbarino.com /compra gcheckout_us
 test.upstream.sh ssl GET ci.garbarino.com /compra/compra.php gcheckout_us
 
-test.upstream.sh ssl GET ci.garbarino.com /rse landings_fe_us
+test.upstream.sh ssl GET ci.garbarino.com /rse/contacto landings_fe_us
+test.upstream.sh ssl GET ci.garbarino.com /rse epi_ui_us
 
 ## MAPI
 
