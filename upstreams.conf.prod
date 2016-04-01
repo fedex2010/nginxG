@@ -20,9 +20,8 @@ upstream home_fe_us { server localhost max_fails=3; }
 upstream landings_fe_us { server landings-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream operations_us { server operations-recovers-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream operations_kibana_us { server  10.212.15.158:5601 max_fails=3; }
-upstream gifts_core_us { server  localhost max_fails=3; }
-# upstream gifts_core_us { server  gifts-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-# upstream gifts_frontend_us { server  gifts-frontend-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream gifts_frontend_us { server  localhost max_fails=3; }
+upstream gifts_core_us { server  gifts-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream gifts_frontend_us { server  gifts-frontend-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream gifts_legacy_us { server 200.43.192.230:80 max_fails=3; }
 
 upstream gcheckout_us { server localhost max_fails=3; }
