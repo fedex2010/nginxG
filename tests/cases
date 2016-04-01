@@ -51,6 +51,11 @@ test.upstream.sh ssl GET ci.garbarino.com /marcas/Samsung seo_proxy_us
 test.upstream.sh ssl GET ci.garbarino.com /listado/samsung-products seo_proxy_us
 test.upstream.sh ssl GET ci.garbarino.com "/productos?q=algo" seo_proxy_us
 
+test.upstream.sh ssl GET clone.garbarino.com /productos/tv-led-y-video/4272 seo_proxy_us
+test.upstream.sh ssl GET clone.garbarino.com /marcas/Samsung seo_proxy_us
+test.upstream.sh ssl GET clone.garbarino.com /listado/samsung-products seo_proxy_us
+test.upstream.sh ssl GET clone.garbarino.com "/productos?q=algo" seo_proxy_us
+
 
 ## MAPI
 
