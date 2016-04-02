@@ -6,6 +6,7 @@ upstream epi_ui_us { server epi-ui-staging.elasticbeanstalk.com max_fails=3; }
 upstream epi_ui_clone_us { server epi-ui-clone.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream seo_proxy_us { server seo-proxy-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream prerender_us { server ip-10-211-15-224.ec2.internal:3000 max_fails=3; }
+upstream normandia_us { server normandia-ci.us-east-1.elasticbeanstalk.com=3; }
 
 upstream api_core_us { server api-core-staging.elasticbeanstalk.com max_fails=3; }
 upstream home_core_us { server home-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
