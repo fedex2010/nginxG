@@ -60,8 +60,9 @@ test.upstream.sh GET gifts-frontend-ci.garbarino.com / gifts_frontend_us
 test.upstream.sh GET gifts-frontend-staging.garbarino.com / gifts_frontend_us
 test.upstream.sh GET gifts-frontend-prod.garbarino.com / gifts_frontend_us
 
-## Login with new UI
+## Login with new UI, old logout
 test.upstream.sh GET listas.garbarino.com /ingresar.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /logout.php gifts_legacy_us
 
 ################## Logged and guest user, must go to old site ##################
 ## Casamiento
