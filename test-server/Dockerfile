@@ -4,6 +4,9 @@ FROM node:argon
 RUN mkdir -p /usr/src/app
 WORKDIR /usr/src/app
 
+# Install JQ
+RUN apt-get -y update && apt-get -y install jq
+
 # Install app dependencies
 COPY package.json /usr/src/app/
 RUN npm install
