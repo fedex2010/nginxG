@@ -42,7 +42,7 @@ test.upstream.sh ssl GET ci.garbarino.com /compra/compra.php gcheckout_us
 
 test.upstream.sh ssl GET ci.garbarino.com /rse/contacto landings_fe_us
 test.upstream.sh ssl GET ci.garbarino.com /rse epi_ui_us
-test.uri.rewrite.sh ssl GET www.garbarino.com /rse/contacto /rse
+## test.uri.rewrite.sh ssl GET www.garbarino.com /rse/contacto /rse
 
 test.upstream.sh ssl GET ci.garbarino.com /productos/tv-led-y-video/4272 seo_proxy_us
 test.upstream.sh ssl GET ci.garbarino.com /marcas/Samsung seo_proxy_us
@@ -58,6 +58,11 @@ test.upstream.sh ssl GET www.ipoint.com.ar /productos/tv-led-y-video/4272 seo_pr
 test.upstream.sh ssl GET www.ipoint.com.ar /marcas/Samsung seo_proxy_us
 test.upstream.sh ssl GET www.ipoint.com.ar /listado/samsung-products seo_proxy_us
 test.upstream.sh ssl GET www.ipoint.com.ar "/productos?q=algo" seo_proxy_us
+
+test.upstream.sh ssl GET www.compumundo.com.ar /productos/tv-led-y-video/4272 seo_proxy_us
+test.upstream.sh ssl GET www.compumundo.com.ar /marcas/Samsung seo_proxy_us
+test.upstream.sh ssl GET www.compumundo.com.ar /listado/samsung-products seo_proxy_us
+test.upstream.sh ssl GET www.compumundo.com.ar "/productos?q=algo" seo_proxy_us
 
 
 ## Gifts
@@ -94,7 +99,6 @@ test.upstream.sh GET listas.garbarino.com /viajes/listado-de-regalos.php gifts_l
 
 ## AdWords links and SEO, must go to new Home
 ## Casamiento
-## TODO Change to gifts_frontend_us
 ## test.upstream.sh GET listas.garbarino.com /casamiento/index.php gifts_frontend_us
 ## test.upstream.sh GET listas.garbarino.com /casamiento/ gifts_frontend_us
 ## test.upstream.sh GET listas.garbarino.com /casamiento gifts_frontend_us
