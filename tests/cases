@@ -37,10 +37,6 @@ test.upstream.sh ssl GET www.ipoint.com.ar / epi_ui_us
 test.upstream.sh ssl GET epi-admin.ipoint.com.ar / epi_api_us
 test.upstream.sh ssl GET www.ipoint.com.ar /services/test epi_api_us
 
-test.upstream.sh GET gifts-frontend-ci.garbarino.com / gifts_frontend_us
-test.upstream.sh GET gifts-frontend-staging.garbarino.com / gifts_frontend_us
-test.upstream.sh GET gifts-frontend-prod.garbarino.com / gifts_frontend_us
-
 test.upstream.sh ssl GET ci.garbarino.com /compra gcheckout_us
 test.upstream.sh ssl GET ci.garbarino.com /compra/compra.php gcheckout_us
 
@@ -57,6 +53,63 @@ test.upstream.sh ssl GET clone.garbarino.com /marcas/Samsung seo_proxy_us
 test.upstream.sh ssl GET clone.garbarino.com /listado/samsung-products seo_proxy_us
 test.upstream.sh ssl GET clone.garbarino.com "/productos?q=algo" seo_proxy_us
 
+
+## Gifts
+## Enviroments root
+test.upstream.sh GET gifts-frontend-ci.garbarino.com / gifts_frontend_us
+test.upstream.sh GET gifts-frontend-staging.garbarino.com / gifts_frontend_us
+test.upstream.sh GET gifts-frontend-prod.garbarino.com / gifts_frontend_us
+
+## Sign up, create list and contact routes
+test.upstream.sh GET listas.garbarino.com /ingresar.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /logout.php gifts_legacy_us gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /contacto_listas_new.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /crea_tu_lista.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /lista_creada_ok.php gifts_legacy_us
+
+################## Logged and guest user, must go to old site ##################
+## Casamiento
+test.upstream.sh GET listas.garbarino.com /casamiento/nuestros-regalos.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /casamiento/enviar-aviso.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /casamiento/hace-tu-regalo.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /casamiento/listado-de-regalos.php gifts_legacy_us
+
+## Teens
+test.upstream.sh GET listas.garbarino.com /teens/nuestros-regalos.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /teens/enviar-aviso.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /teens/hace-tu-regalo.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /teens/listado-de-regalos.php gifts_legacy_us
+
+## Viajes
+test.upstream.sh GET listas.garbarino.com /viajes/nuestros-regalos.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /viajes/enviar-aviso.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /viajes/hace-tu-regalo.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /viajes/listado-de-regalos.php gifts_legacy_us
+
+## AdWords links and SEO, must go to new Home
+## Casamiento
+## TODO Change to gifts_frontend_us
+test.upstream.sh GET listas.garbarino.com /casamiento/index.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /casamiento/ gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /casamiento gifts_legacy_us
+
+## Teens
+test.upstream.sh GET listas.garbarino.com /teens/index.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /teens/ gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /teens gifts_legacy_us
+
+## Viajes
+test.upstream.sh GET listas.garbarino.com /viajes/index.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /viajes/ gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /viajes gifts_legacy_us
+
+## Primer Hogar
+test.upstream.sh GET listas.garbarino.com /primer-hogar/index.php gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /primer-hogar/ gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /primer-hogar gifts_legacy_us
+
+## Assets and AJAX routes
+test.upstream.sh GET listas.garbarino.com /estilos-landing.css gifts_legacy_us
 
 ## MAPI
 
