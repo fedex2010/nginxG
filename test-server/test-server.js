@@ -3,6 +3,7 @@ var http = require('http');
 
 // Configure our HTTP server to respond with Hello World to all requests.
 var server = http.createServer(function (req, response) {
+ console.log(req.method, " ", req.url);
  response.writeHead(200, {"Content-Type": "application/json"});
  response.end(JSON.stringify({ 
   	"headers": req.headers, 
