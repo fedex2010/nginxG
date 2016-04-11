@@ -26,3 +26,5 @@ upstream gifts_frontend_us { server gifts-frontend-ci.us-east-1.elasticbeanstalk
 upstream gifts_legacy_us { server 200.43.192.230:80 max_fails=3; }
 
 upstream gcheckout_us { server gcheckout-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
+
+upstream aws_sss_us { server s3.amazonaws.com max_fails=3; }
