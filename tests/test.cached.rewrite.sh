@@ -1,4 +1,6 @@
 #!/bin/bash
+#Hay que incluir un parámetro extra en la key para asegurar que los caches no interfieren con otros tests (HACK)
+
 if [[ "$1" == "ssl" ]]
 then
 	method=$2

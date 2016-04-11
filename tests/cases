@@ -78,7 +78,7 @@ test.upstream.sh ssl GET www.garbarino.com /robots.txt aws_sss_us
 test.uri.rewrite.sh ssl GET www.garbarino.com "/robots.txt?nocache=1" "/seo-garbarino/robots.txt?nocache=1"
 test.host.rewrite.sh ssl GET www.garbarino.com /robots.txt s3.amazonaws.com
 # Can cache results
-test.cached.rewrite.sh ssl GET www.garbarino.com "/robots.txt?nocache=2" /robots.txt "/seo-garbarino/robots.txt?nocache=2" 
+test.cached.rewrite.sh ssl GET www.garbarino.com "/robots.txt?nocache=2&test=1" "/robots.txt?test=1" "/seo-garbarino/robots.txt?nocache=2&test=1" 
 
 test.upstream.sh ssl GET ci.garbarino.com /robots.txt aws_sss_us
 test.uri.rewrite.sh ssl GET ci.garbarino.com /robots.txt /seo-garbarino/robots.txt
@@ -92,7 +92,7 @@ test.upstream.sh ssl GET www.garbarino.com /sitemap.xml aws_sss_us
 test.uri.rewrite.sh ssl GET www.garbarino.com "/sitemap.xml?nocache=1" "/seo-garbarino/sitemap.xml?nocache=1"
 test.host.rewrite.sh ssl GET www.garbarino.com /sitemap.xml s3.amazonaws.com
 # Can cache results
-test.cached.rewrite.sh ssl GET www.garbarino.com "/sitemap.xml?nocache=2" /sitemap.xml "/seo-garbarino/sitemap.xml?nocache=2" 
+test.cached.rewrite.sh ssl GET www.garbarino.com "/sitemap.xml?nocache=2&test=1" "/sitemap.xml?test=1" "/seo-garbarino/sitemap.xml?nocache=2&test=1" 
 
 test.upstream.sh ssl GET ci.garbarino.com /sitemap.xml aws_sss_us
 test.uri.rewrite.sh ssl GET ci.garbarino.com /sitemap.xml /seo-garbarino/sitemap.xml
