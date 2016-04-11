@@ -29,6 +29,9 @@ test.upstream.sh ssl GET www.garbarino.com / epi_ui_us
 test.upstream.sh ssl GET epi-admin.garbarino.com / epi_api_us
 test.upstream.sh ssl GET www.garbarino.com /services/test epi_api_us
 
+test.upstream.sh ssl GET ci.garbarino.com / epi_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /?home_name=home_1 home_fe_us
+
 test.upstream.sh ssl GET www.compumundo.com.ar / epi_ui_us
 test.upstream.sh ssl GET epi-admin.compumundo.com.ar / epi_api_us
 test.upstream.sh ssl GET www.compumundo.com.ar /services/test epi_api_us
