@@ -159,8 +159,8 @@ test.upstream.sh GET listas.garbarino.com /viajes/listado-de-regalos.php gifts_l
 test.upstream.sh GET listas.garbarino.com /estilos-landing.css gifts_legacy_us
 
 ## Api Gifts List
-## test.upstream.sh GET listas.garbarino.com /api gifts_legacy_us
-
+test.upstream.sh GET listas.garbarino.com /api gifts_legacy_us
+test.uri.rewrite.sh ssl GET listas.garbarino.com /api/login.php /listas-de-regalos/api/login.php
 ## MAPI
 
 test.upstream.sh GET mapi.garbarino.com /homes/xxyy mapi_core_us
