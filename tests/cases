@@ -49,7 +49,6 @@ test.uri.rewrite.sh ssl GET www.garbarino.com /rse/contacto /rse
 
 test.upstream.sh ssl GET ci.garbarino.com /productos/tv-led-y-video/4272 listing_us
 test.upstream.sh ssl GET ci.garbarino.com /marcas/Samsung listing_us
-test.upstream.sh ssl GET ci.garbarino.com /listado/samsung-products listing_us
 test.upstream.sh ssl GET ci.garbarino.com "/productos?q=algo" listing_us
 
 test.upstream.sh ssl GET clone.garbarino.com /productos/tv-led-y-video/4272 seo_proxy_us
