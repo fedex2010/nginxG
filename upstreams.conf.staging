@@ -7,6 +7,7 @@ upstream epi_ui_clone_us { server epi-ui-clone.us-east-1.elasticbeanstalk.com ma
 upstream seo_proxy_us { server seo-proxy-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream prerender_us { server ip-10-211-15-224.ec2.internal:3000 max_fails=3; }
 upstream normandia_us { server normandia-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream listing_us { server listing-ui-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream api_core_us { server api-core-staging.elasticbeanstalk.com max_fails=3; }
 upstream home_core_us { server home-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
@@ -23,6 +24,7 @@ upstream operations_us { server  operations-recovers-stg.us-east-1.elasticbeanst
 upstream operations_kibana_us { server  10.211.15.107:5601 max_fails=3; }
 upstream gifts_core_us { server gifts-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream gifts_frontend_us { server gifts-frontend-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream gifts_dashboard_us { server gifts-dashboard-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream gifts_legacy_us { server 200.43.192.230:80 max_fails=3; }
 
 upstream gcheckout_us { server localhost max_fails=3; }
