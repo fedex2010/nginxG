@@ -102,10 +102,12 @@ test.uri.rewrite.sh ssl GET staging.garbarino.com /sitemap.xml /seo-garbarino/si
 test.host.rewrite.sh ssl GET staging.garbarino.com /sitemap.xml s3.amazonaws.com
 
 ## Gifts
-## Enviroments root
-test.upstream.sh GET gifts-frontend-ci.garbarino.com / gifts_frontend_us
-test.upstream.sh GET gifts-frontend-staging.garbarino.com / gifts_frontend_us
-test.upstream.sh GET gifts-frontend-prod.garbarino.com / gifts_frontend_us
+# Frontend development environments
+test.upstream.sh GET gifts-frontend-ci.garbarino.com / gifts_frontend_us # TODO Remove
+test.upstream.sh GET gifts-frontend-staging.garbarino.com / gifts_frontend_us # TODO Remove
+test.upstream.sh GET gifts-frontend-prod.garbarino.com / gifts_frontend_us # TODO Remove
+test.upstream.sh GET gifts-ci.garbarino.com / gifts_frontend_us
+test.upstream.sh GET gifts-staging.garbarino.com / gifts_frontend_us
 
 ## Sign up, create list and contact routes
 test.upstream.sh GET listas.garbarino.com /ingresar.php gifts_legacy_us
@@ -135,6 +137,7 @@ test.upstream.sh GET listas.garbarino.com /viajes/listado-de-regalos.php gifts_l
 
 ## AdWords links and SEO, must go to new Home
 ## Casamiento
+## test.uri.rewrite.sh GET listas.garbarino.com /casamiento/index.php /
 ## test.upstream.sh GET listas.garbarino.com /casamiento/index.php gifts_frontend_us
 ## test.upstream.sh GET listas.garbarino.com /casamiento/ gifts_frontend_us
 ## test.upstream.sh GET listas.garbarino.com /casamiento gifts_frontend_us
@@ -157,9 +160,12 @@ test.upstream.sh GET listas.garbarino.com /viajes/listado-de-regalos.php gifts_l
 ## Assets and AJAX routes
 test.upstream.sh GET listas.garbarino.com /estilos-landing.css gifts_legacy_us
 
+test.upstream.sh GET listas.garbarino.com /panel gifts_dashboard_us
+
 ## Api Gifts List
 ## test.upstream.sh GET listas.garbarino.com /api gifts_legacy_us
 ## test.uri.rewrite.sh ssl GET listas.garbarino.com /api/login.php /listas-de-regalos/api/login.php
+
 ## MAPI
 
 test.upstream.sh GET mapi.garbarino.com /homes/xxyy mapi_core_us
