@@ -71,6 +71,10 @@ test.upstream.sh ssl GET www.garbarino.com /marcas/Samsung seo_proxy_us
 test.upstream.sh ssl GET www.garbarino.com /listado/samsung-products seo_proxy_us
 test.upstream.sh ssl GET www.garbarino.com "/productos?q=algo" seo_proxy_us
 
+## BACKOFFICE
+test.upstream.sh ssl GET backoffice.garbarino.com "/" backoffice_ui_us
+test.upstream.sh ssl GET backoffice.garbarino.com "/services" backoffice_ui_us
+
 ## SEO
 
 test.upstream.sh ssl GET www.garbarino.com /robots.txt aws_sss_us
