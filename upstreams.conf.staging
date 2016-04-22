@@ -28,6 +28,6 @@ upstream gifts_dashboard_us { server gifts-dashboard-staging.us-east-1.elasticbe
 upstream gifts_legacy_us { server 200.43.192.230:80 max_fails=3; }
 upstream backoffice_ui_us { server backoffice-ui-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 
-upstream gcheckout_us { server localhost max_fails=3; }
+upstream gcheckout_us { server gcheckout-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream aws_sss_us { server s3.amazonaws.com max_fails=3; }
