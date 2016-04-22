@@ -1,0 +1,5 @@
+## BACKOFFICE
+test.upstream.sh ssl GET backoffice.garbarino.com "/" backoffice_ui_us
+test.upstream.sh ssl GET backoffice.garbarino.com "/services" backoffice_ui_us
+test.upstream.sh ssl GET backoffice-ci.garbarino.com "/" backoffice_ui_us
+test.upstream.sh ssl GET backoffice-staging.garbarino.com "/" backoffice_ui_us

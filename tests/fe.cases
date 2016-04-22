@@ -1,0 +1,53 @@
+## FE
+
+test.upstream.sh ssl GET www.garbarino.com / epi_ui_us
+test.upstream.sh ssl GET epi-admin.garbarino.com / epi_api_us
+test.upstream.sh ssl GET www.garbarino.com /services/test epi_api_us
+
+test.upstream.sh ssl GET ci.garbarino.com / epi_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /?home_name=home_1 home_fe_us
+
+test.upstream.sh ssl GET www.compumundo.com.ar / epi_ui_us
+test.upstream.sh ssl GET epi-admin.compumundo.com.ar / epi_api_us
+test.upstream.sh ssl GET www.compumundo.com.ar /services/test epi_api_us
+
+test.upstream.sh ssl GET www.ipoint.com.ar / epi_ui_us
+test.upstream.sh ssl GET epi-admin.ipoint.com.ar / epi_api_us
+test.upstream.sh ssl GET www.ipoint.com.ar /services/test epi_api_us
+
+test.upstream.sh ssl GET ci.garbarino.com /compra gcheckout_us
+test.upstream.sh ssl GET ci.garbarino.com /compra/compra.php gcheckout_us
+
+test.upstream.sh ssl GET staging.garbarino.com /compra gcheckout_us
+test.upstream.sh ssl GET staging.garbarino.com /compra/compra.php gcheckout_us
+
+test.upstream.sh ssl GET www.garbarino.com /compra gcheckout_us
+test.upstream.sh ssl GET www.garbarino.com /compra/compra.php gcheckout_us
+
+test.upstream.sh ssl GET ci.garbarino.com /rse/contacto landings_fe_us
+test.upstream.sh ssl GET ci.garbarino.com /rse epi_ui_us
+test.uri.rewrite.sh ssl GET www.garbarino.com /rse/contacto /rse
+
+test.upstream.sh ssl GET ci.garbarino.com /productos/tv-led-y-video/4272 listing_us
+test.upstream.sh ssl GET ci.garbarino.com /marcas/Samsung listing_us
+test.upstream.sh ssl GET ci.garbarino.com "/productos?q=algo" listing_us
+
+test.upstream.sh ssl GET clone.garbarino.com /productos/tv-led-y-video/4272 seo_proxy_us
+test.upstream.sh ssl GET clone.garbarino.com /marcas/Samsung seo_proxy_us
+test.upstream.sh ssl GET clone.garbarino.com /listado/samsung-products seo_proxy_us
+test.upstream.sh ssl GET clone.garbarino.com "/productos?q=algo" seo_proxy_us
+
+test.upstream.sh ssl GET www.ipoint.com.ar /productos/tv-led-y-video/4272 seo_proxy_us
+test.upstream.sh ssl GET www.ipoint.com.ar /marcas/Samsung seo_proxy_us
+test.upstream.sh ssl GET www.ipoint.com.ar /listado/samsung-products seo_proxy_us
+test.upstream.sh ssl GET www.ipoint.com.ar "/productos?q=algo" seo_proxy_us
+
+test.upstream.sh ssl GET www.compumundo.com.ar /productos/tv-led-y-video/4272 seo_proxy_us
+test.upstream.sh ssl GET www.compumundo.com.ar /marcas/Samsung seo_proxy_us
+test.upstream.sh ssl GET www.compumundo.com.ar /listado/samsung-products seo_proxy_us
+test.upstream.sh ssl GET www.compumundo.com.ar "/productos?q=algo" seo_proxy_us
+
+test.upstream.sh ssl GET www.garbarino.com /productos/tv-led-y-video/4272 seo_proxy_us
+test.upstream.sh ssl GET www.garbarino.com /marcas/Samsung seo_proxy_us
+test.upstream.sh ssl GET www.garbarino.com /listado/samsung-products seo_proxy_us
+test.upstream.sh ssl GET www.garbarino.com "/productos?q=algo" seo_proxy_us
