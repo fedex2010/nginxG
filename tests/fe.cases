@@ -42,3 +42,13 @@ test.upstream.sh ssl GET www.garbarino.com /productos/tv-led-y-video/4272 seo_pr
 test.upstream.sh ssl GET www.garbarino.com /marcas/Samsung seo_proxy_us
 test.upstream.sh ssl GET www.garbarino.com /listado/samsung-products seo_proxy_us
 test.upstream.sh ssl GET www.garbarino.com "/productos?q=algo" seo_proxy_us
+
+## WebMobile 
+test.upstream.sh ssl GET m.garbarino.com / epi_ui_us
+test.upstream.sh ssl GET m.garbarino.com /productos/xxxx/1234 seo_proxy_us
+
+test.upstream.sh ssl GET m-ci.garbarino.com / epi_ui_us
+test.upstream.sh ssl GET m-ci.garbarino.com /productos/xxxx/1234 seo_proxy_us
+
+test.upstream.sh ssl GET m-staging.garbarino.com / epi_ui_us
+test.upstream.sh ssl GET m-staging.garbarino.com /productos/xxxx/1234 seo_proxy_us
