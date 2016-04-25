@@ -1,0 +1,10 @@
+## MAPI
+
+test.upstream.sh GET mapi.garbarino.com /homes/xxyy mapi_core_us
+test.upstream.sh GET mapi.garbarino.com /products/xxyy mapi_core_us
+test.upstream.sh GET mapi.garbarino.com /tags mapi_core_us
+
+test.upstream.sh GET mapi.garbarino.com /notifications mapi_notifications_us
+test.upstream.sh GET mapi.garbarino.com /installations mapi_notifications_us
+
+test.upstream.sh GET mapi.garbarino.com /admin mapi_admin_us
