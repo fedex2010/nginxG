@@ -1,4 +1,8 @@
 ## Gifts
+
+test.status.response.sh GET www.garbarino.com /listas 301
+test.header.response.sh GET www.garbarino.com /listas Location http://listas.garbarino.com
+
 # Frontend development environments
 test.upstream.sh GET gifts-frontend-ci.garbarino.com / gifts_frontend_us # TODO Remove
 test.upstream.sh GET gifts-frontend-staging.garbarino.com / gifts_frontend_us # TODO Remove
