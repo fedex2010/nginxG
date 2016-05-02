@@ -21,3 +21,6 @@ test.upstream.sh GET api-dev.garbarino.com /suggestions search_us
 test.upstream.sh GET api-dev.garbarino.com /synonyms search_us
 
 test.upstream.sh GET api-dev.garbarino.com /gift-lists gifts_core_us
+
+
+test.upstream.sh GET api-dev.garbarino.com /events-definition tracker_us
