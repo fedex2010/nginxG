@@ -33,3 +33,5 @@ upstream gcheckout_us { server gcheckout-ci.us-east-1.elasticbeanstalk.com max_f
 upstream aws_sss_us { server s3.amazonaws.com max_fails=3; }
 
 upstream tracker_us { server tracker-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
+
+upstream checkout_core_us { server checkout-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
