@@ -9,7 +9,16 @@ test.upstream.sh GET api-dev.garbarino.com /productLists api_core_us
 test.upstream.sh GET api-dev.garbarino.com /autocompleteNew api_core_us
 test.upstream.sh GET api-dev.garbarino.com /subscription api_core_us
 test.upstream.sh GET api-dev.garbarino.com /stores api_core_us
-test.upstream.sh GET api-dev.garbarino.com /cart api_core_us
+test.upstream.sh GET api-dev.garbarino.com /cart/addItem/xid1234/uid12345 api_core_us
+test.upstream.sh GET api-dev.garbarino.com /cart/totalItems/uid12345 api_core_us
+
+test.upstream.sh GET 	api-ci.garbarino.com /carts/cart12345 checkout_core_us
+test.upstream.sh POST 	api-ci.garbarino.com /carts checkout_core_us
+test.upstream.sh PUT 	api-ci.garbarino.com /carts/cart12345 checkout_core_us
+test.upstream.sh POST 	api-ci.garbarino.com /carts/cart12345/products/xid12345 checkout_core_us
+test.upstream.sh PUT 	api-ci.garbarino.com /carts/cart12345/products/xid12345 checkout_core_us
+test.upstream.sh DELETE api-ci.garbarino.com /carts/cart12345/products/xid12345 checkout_core_us
+
 test.upstream.sh GET api-dev.garbarino.com /account api_core_us
 test.upstream.sh GET api-dev.garbarino.com /landings api_core_us
 
