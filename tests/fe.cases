@@ -21,6 +21,10 @@ test.upstream.sh ssl GET ci.garbarino.com /rse/contacto landings_fe_us
 test.upstream.sh ssl GET ci.garbarino.com /rse epi_ui_us
 test.uri.rewrite.sh ssl GET www.garbarino.com /rse/contacto /rse
 
+test.upstream.sh ssl GET ci.garbarino.com /hotsale landings_fe_us
+test.upstream.sh ssl GET staging.garbarino.com /hotsale landings_fe_us
+test.upstream.sh ssl GET www.garbarino.com /hotsale landings_fe_us
+
 test.upstream.sh ssl GET ci.garbarino.com /productos/tv-led-y-video/4272 listing_us
 test.upstream.sh ssl GET ci.garbarino.com /marcas/Samsung listing_us
 test.upstream.sh ssl GET ci.garbarino.com "/productos?q=algo" listing_us
