@@ -38,3 +38,4 @@ upstream tracker_us { server tracker-prod.us-east-1.elasticbeanstalk.com  max_fa
 upstream checkout_core_us { server localhost max_fails=3; }
 
 upstream graylog_us { server localhost max_fails=3; }
+upstream graylog_api_us { server localhost max_fails=3; }
