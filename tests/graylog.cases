@@ -1,0 +1,9 @@
+## GRAYLOG
+
+test.upstream.sh GET graylog-dev.garba.ninja /gettingstarted graylog_us
+test.upstream.sh POST graylog-dev.garba.ninja /system/metrics/multiple graylog_api_us
+test.upstream.sh POST graylog-dev.garba.ninja /rest/sometest graylog_api_us
+
+
+#test.uri.rewrite.sh POST graylog-dev.garba.ninja /system/metrics/multiple /rest/system/metrics/multiple
+#test.uri.rewrite.sh POST graylog-dev.garba.ninja /rest/sometest graylog-dev.garba.ninja/rest/sometest
