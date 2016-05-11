@@ -34,7 +34,7 @@ upstream aws_sss_us { server s3.amazonaws.com max_fails=3; }
 
 upstream tracker_us { server tracker-staging.us-east-1.elasticbeanstalk.com  max_fails=3; }
 
-upstream checkout_core_us { server checkout-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream checkout_core_us { server localhost max_fails=3; }
 
 upstream graylog_us { server 10.211.25.95:9000 max_fails=3; }
 upstream graylog_api_us { server 10.211.25.95:12900 max_fails=3; }
