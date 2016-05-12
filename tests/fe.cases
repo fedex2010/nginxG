@@ -69,6 +69,14 @@ test.upstream.sh ssl GET www.garbarino.com /marcas/Samsung seo_proxy_us
 test.upstream.sh ssl GET www.garbarino.com /listado/samsung-products seo_proxy_us
 test.upstream.sh ssl GET www.garbarino.com "/productos?q=algo" seo_proxy_us
 
+test.status.response.sh GET www.garbarino.com /sumate-a-garbarino 301
+#test.header.response.sh GET www.garbarino.com /sumate-a-garbarino Location http://www.garbarino.com/sumate-a-garbarino/index.html
+test.upstream.sh ssl GET www.garbarino.com /sumate-a-garbarino/index.html aws_sss_us
+test.uri.rewrite.sh ssl GET www.garbarino.com /sumate-a-garbarino/index.html /sumate_a_garbarino/indexV01.html
+test.uri.rewrite.sh ssl GET www.garbarino.com /sumate_a_garbarino/img/an_image.jpg /sumate_a_garbarino/img/an_image.jpg
+test.uri.rewrite.sh ssl GET www.garbarino.com /sumate-a-garbarino/img/an_image.jpg /sumate_a_garbarino/img/an_image.jpg
+test.host.rewrite.sh ssl GET www.garbarino.com /sumate-a-garbarino/algo statics.garbarino.com
+
 ## WebMobile 
 test.upstream.sh ssl GET m.garbarino.com / home_fe_us
 test.upstream.sh ssl GET m.garbarino.com /productos/xxxx/1234 seo_proxy_us
