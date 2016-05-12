@@ -66,3 +66,4 @@ test.upstream.sh GET listas.garbarino.com /panel gifts_dashboard_us
 ## Api Gifts List
 ## test.upstream.sh GET listas.garbarino.com /api gifts_legacy_us
 ## test.uri.rewrite.sh ssl GET listas.garbarino.com /api/login.php /listas-de-regalos/api/login.php
+
