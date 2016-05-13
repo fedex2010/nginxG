@@ -18,11 +18,16 @@ test.upstream.sh ssl GET www.garbarino.com /hotsale/pagina landings_fe_us
 # test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-electrotecno 302
 # test.header.response.sh ssl GET www.garbarino.com /listado/hotsale-electrotecno Location https://www.garbarino.com/hotsale
 
-test.status.response.sh ssl GET ci.garbarino.com /hotsale 302
-test.header.response.sh ssl GET ci.garbarino.com /hotsale Location https://ci.garbarino.com
-
+test.status.response.sh ssl GET ci.garbarino.com /hotsale?a=b 302
+test.header.response.sh ssl GET ci.garbarino.com /hotsale?a=b Location https://ci.garbarino.com?a=b
 test.status.response.sh ssl GET staging.garbarino.com /hotsale 302
 test.header.response.sh ssl GET staging.garbarino.com /hotsale Location https://staging.garbarino.com
-
 test.status.response.sh ssl GET www.garbarino.com /hotsale 302
 test.header.response.sh ssl GET www.garbarino.com /hotsale Location https://www.garbarino.com
+
+test.status.response.sh ssl GET ci.compumundo.com.ar /hotsale?a=b 302
+test.header.response.sh ssl GET ci.compumundo.com.ar /hotsale?a=b Location https://ci.compumundo.com.ar?a=b
+test.status.response.sh ssl GET staging.compumundo.com.ar /hotsale 302
+test.header.response.sh ssl GET staging.compumundo.com.ar /hotsale Location https://staging.compumundo.com.ar
+test.status.response.sh ssl GET www.compumundo.com.ar /hotsale 302
+test.header.response.sh ssl GET www.compumundo.com.ar /hotsale Location https://www.compumundo.com.ar
