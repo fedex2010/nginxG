@@ -1,0 +1,19 @@
+## Hotsale
+
+test.upstream.sh ssl GET ci.garbarino.com /hotsale landings_fe_us
+test.upstream.sh ssl GET staging.garbarino.com /hotsale landings_fe_us
+test.upstream.sh ssl GET www.garbarino.com /hotsale landings_fe_us
+
+test.upstream.sh ssl GET ci.garbarino.com /hotsale-1 epi_ui_us
+test.upstream.sh ssl GET staging.garbarino.com /hotsale-1 epi_ui_us
+test.upstream.sh ssl GET www.garbarino.com /hotsale-1 epi_ui_us
+
+test.upstream.sh ssl GET ci.garbarino.com /hotsale/pagina landings_fe_us
+test.upstream.sh ssl GET staging.garbarino.com /hotsale/pagina landings_fe_us
+test.upstream.sh ssl GET www.garbarino.com /hotsale/pagina landings_fe_us
+
+test.status.response.sh ssl GET staging.garbarino.com /listado/hotsale-electrotecno 302
+test.header.response.sh ssl GET staging.garbarino.com /listado/hotsale-electrotecno Location https://staging.garbarino.com/hotsale
+
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-electrotecno 302
+test.header.response.sh ssl GET www.garbarino.com /listado/hotsale-electrotecno Location https://www.garbarino.com/hotsale
