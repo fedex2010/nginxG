@@ -63,6 +63,11 @@ test.upstream.sh GET listas.garbarino.com /estilos-landing.css gifts_legacy_us
 
 test.upstream.sh GET listas.garbarino.com /panel gifts_dashboard_us
 
+## Pedidos de Jerry
+test.upstream.sh GET listas.garbarino.com /styles2016/test.css gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /styles/test.css gifts_legacy_us
+test.upstream.sh GET listas.garbarino.com /listado.php gifts_legacy_us
+
 ## Api Gifts List
 ## test.upstream.sh GET listas.garbarino.com /api gifts_legacy_us
 ## test.uri.rewrite.sh ssl GET listas.garbarino.com /api/login.php /listas-de-regalos/api/login.php
