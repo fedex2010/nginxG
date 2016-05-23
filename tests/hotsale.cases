@@ -19,3 +19,43 @@ test.upstream.sh ssl GET www.garbarino.com /hotsale/pagina landings_fe_us
 test.upstream.sh ssl GET ci.garbarino.com /hotsale landings_fe_us
 test.upstream.sh ssl GET staging.garbarino.com /hotsale landings_fe_us
 test.upstream.sh ssl GET www.garbarino.com /hotsale landings_fe_us
+
+#Listados
+test.status.response.sh ssl GET www.garbarino.com /ofertas-hotsale 302
+test.header.response.sh ssl GET www.garbarino.com /ofertas-hotsale Location https://www.garbarino.com/hotsale
+test.status.response.sh ssl GET www.garbarino.com /listado/hotweek 302
+test.header.response.sh ssl GET www.garbarino.com /listado/hotweek Location https://www.garbarino.com/hotsale
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-12-cuotas 302
+test.header.response.sh ssl GET www.garbarino.com /listado/hotsale-12-cuotas Location https://www.garbarino.com/hotsale
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-18-cuotas 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-accesorios 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-aires-calefaccion 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-all 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-bazar 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-bebes-ninos 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-celulares-lg 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-celulares-tablets 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-colchones 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-cuidado-personal 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-deporte-fitness 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-desde-20 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-desde-30 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-desde-40 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-desde-50 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-electrodomesticos 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-electrohogar 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-electrotecno 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-gaming 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-heladeras 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-imagen-audio 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-infantil 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-lavado 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-los-mas-vendidos 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-muebles 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-muebles2 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-notebooks 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-ola-polar 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-reviente 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-tecnologia 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-televisores 302
+test.status.response.sh ssl GET www.garbarino.com /listado/hotsale-varios 302
