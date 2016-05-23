@@ -1,8 +1,16 @@
 ## Hotsale
 
-test.upstream.sh ssl GET ci.garbarino.com /hotsale-1 epi_ui_us
-test.upstream.sh ssl GET staging.garbarino.com /hotsale-1 epi_ui_us
-test.upstream.sh ssl GET www.garbarino.com /hotsale-1 epi_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /styles/hotsale-thanks/styles.css landings_fe_us
+test.upstream.sh ssl GET staging.garbarino.com /styles/hotsale-thanks/styles.css landings_fe_us
+test.upstream.sh ssl GET www.garbarino.com /styles/hotsale-thanks/styles.css landings_fe_us
+
+test.upstream.sh ssl GET ci.garbarino.com /js/hotsale-thanks/styles.css landings_fe_us
+test.upstream.sh ssl GET staging.garbarino.com /js/hotsale-thanks/styles.css landings_fe_us
+test.upstream.sh ssl GET www.garbarino.com /js/hotsale-thanks/styles.css landings_fe_us
+
+test.upstream.sh ssl GET ci.garbarino.com /images/hotsale-thanks/styles.css landings_fe_us
+test.upstream.sh ssl GET staging.garbarino.com /images/hotsale-thanks/styles.css landings_fe_us
+test.upstream.sh ssl GET www.garbarino.com /images/hotsale-thanks/styles.css landings_fe_us
 
 test.upstream.sh ssl GET ci.garbarino.com /hotsale/pagina landings_fe_us
 test.upstream.sh ssl GET staging.garbarino.com /hotsale/pagina landings_fe_us
