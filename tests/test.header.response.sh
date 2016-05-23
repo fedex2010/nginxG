@@ -15,7 +15,7 @@ else
 	header=$4
 	value=$5
 
-	actual_value=$(curl -I -X $method $domain$uri 2>/dev/null | grep "$header" | awk '{print $2}' | tr -d '\r') 
+	actual_value=$(curl -I -X $method -H 'X-Forwarded-Proto: http' $domain$uri 2>/dev/null | grep "$header" | awk '{print $2}' | tr -d '\r') 
 fi
 
 if [[ "$value" == "$actual_value" ]]; then

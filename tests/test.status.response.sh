@@ -13,7 +13,7 @@ else
 	uri=$3
 	dest=$4
 	
-	actual_status=$(curl -I -X $method $domain$uri 2>/dev/null | grep "HTTP/1.1" | awk '{print $2}') 
+	actual_status=$(curl -I -X $method -H 'X-Forwarded-Proto: http' $domain$uri 2>/dev/null | grep "HTTP/1.1" | awk '{print $2}') 
 fi
 
 if [[ "$dest" == "$actual_status" ]]; then
