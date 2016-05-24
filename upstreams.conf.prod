@@ -14,6 +14,7 @@ upstream home_core_us { server home-core-prod.us-east-1.elasticbeanstalk.com max
 upstream mapi_core_us { server mapi-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream mapi_notifications_us { server mapi-notifications-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream mapi_admin_us { server mapi-admin-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream mapi_insurances_us { server localhost max_fails=3; }
 upstream search_us { server search-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream product_core_us { server product-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream microapps_us { server micro-apps-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
@@ -39,3 +40,4 @@ upstream checkout_core_us { server localhost max_fails=3; }
 
 upstream graylog_us { server ip-10-212-15-195.ec2.internal:9000 max_fails=3; }
 upstream graylog_api_us { server ip-10-212-15-195.ec2.internal:12900 max_fails=3; }
+
