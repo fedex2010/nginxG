@@ -36,5 +36,5 @@ upstream tracker_us { server tracker-ci.us-east-1.elasticbeanstalk.com max_fails
 
 upstream checkout_core_us { server  chk-core-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 
-upstream graylog_us { server 10.211.25.95:9000 max_fails=3; }
-upstream graylog_api_us { server 10.211.25.95:12900 max_fails=3; }
+upstream graylog_us { server ip-10-211-15-213.ec2.internal:9000 max_fails=3; }
+upstream graylog_api_us { server ip-10-211-15-213.ec2.internal:12900 max_fails=3; }
