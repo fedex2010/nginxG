@@ -1,7 +1,7 @@
 upstream admin_compu_us { server compudesa.admin.tekgenesis.net max_fails=3; }
 upstream admin_garba_us { server garbadesa.admin.tekgenesis.net max_fails=3; }
 upstream admin_ipoint_us { server ipointdesa.admin.tekgenesis.net max_fails=3; }
-upstream epi_api_us { server garbatest.tekgenesis.net:445 max_fails=3; }
+upstream epi_api_us { server apitest.tekgenesis.net:445 max_fails=3; }
 upstream epi_ui_us { server epi-ui-ci.elasticbeanstalk.com max_fails=3; }
 upstream epi_ui_clone_us { server epi-ui-clone.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream seo_proxy_us { server seo-proxy-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
