@@ -1,10 +1,1 @@
 ##Checkout
-
-test.upstream.sh ssl GET ci.garbarino.com /compra gcheckout_us
-test.upstream.sh ssl GET ci.garbarino.com /compra/compra.php gcheckout_us
-
-test.upstream.sh ssl GET staging.garbarino.com /compra gcheckout_us
-test.upstream.sh ssl GET staging.garbarino.com /compra/compra.php gcheckout_us
-
-test.upstream.sh ssl GET www.garbarino.com /compra gcheckout_us
-test.upstream.sh ssl GET www.garbarino.com /compra/compra.php gcheckout_us
