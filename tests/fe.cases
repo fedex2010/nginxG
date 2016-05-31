@@ -59,6 +59,8 @@ test.uri.rewrite.sh ssl GET www.garbarino.com /sumate_a_garbarino/img/an_image.j
 test.uri.rewrite.sh ssl GET www.garbarino.com /sumate-a-garbarino/img/an_image.jpg /sumate_a_garbarino/img/an_image.jpg
 test.host.rewrite.sh ssl GET www.garbarino.com /sumate-a-garbarino/algo statics.garbarino.com
 
+test.status.response.sh GET www.garbarino.com /productos.php 404
+
 ## WebMobile 
 test.upstream.sh ssl GET m.garbarino.com / home_fe_us
 test.upstream.sh ssl GET m.garbarino.com /productos/xxxx/1234 seo_proxy_us
