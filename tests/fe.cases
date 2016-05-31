@@ -63,6 +63,10 @@ test.status.response.sh GET ci.garbarino.com /productos.php 404
 test.status.response.sh GET staging.garbarino.com /productos.php 404
 test.status.response.sh GET www.garbarino.com /productos.php 404
 
+test.status.response.sh GET ci.garbarino.com /producto/error/sumate.garbarino.com 404
+test.status.response.sh GET staging.garbarino.com /producto/error/sumate.garbarino.com 404
+test.status.response.sh GET www.garbarino.com /producto/error/sumate.garbarino.com 404
+
 ## WebMobile 
 test.upstream.sh ssl GET m.garbarino.com / home_fe_us
 test.upstream.sh ssl GET m.garbarino.com /productos/xxxx/1234 seo_proxy_us
