@@ -5,12 +5,9 @@ location ~ ^/sg/(concat|login|logout) {
 }
 
 location ~* \.(eot|otf|ttf|woff)$ {
-    include /etc/nginx/env.conf;
-    add_header Access-Control-Allow-Origin *;
     proxy_pass http://epi_ui_us;
 }
 
 location ~ ^/carrito/compra/(pagada|rechazada) {
-    include /etc/nginx/env.conf;
 	proxy_pass http://epi_ui_us;
 }
