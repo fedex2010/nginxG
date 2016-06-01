@@ -41,3 +41,4 @@ upstream checkout_core_us { server localhost max_fails=3; }
 upstream graylog_us { server ip-10-212-15-195.ec2.internal:9000 max_fails=3; }
 upstream graylog_api_us { server ip-10-212-15-195.ec2.internal:12900 max_fails=3; }
 
+upstream notifications_us { server notifications-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
