@@ -41,3 +41,5 @@ upstream graylog_us { server ip-10-211-15-62.ec2.internal:9000 max_fails=3; }
 upstream graylog_api_us { server ip-10-211-15-62.ec2.internal:12900 max_fails=3; }
 
 upstream notifications_us { server notifications-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
+
+upstream meli_us { server ml-integration-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
