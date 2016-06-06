@@ -13,14 +13,23 @@ test.upstream.sh ssl GET ci.garbarino.com /?home_name=home_1 home_fe_us
 test.upstream.sh ssl GET ci.garbarino.com /home-ui/services/servicio1 home_fe_us
 
 test.upstream.sh ssl GET epi-admin.garbarino.com / epi_api_us
+test.upstream.sh ssl GET epi-admin-ci.garbarino.com / epi_api_us
+test.upstream.sh ssl GET epi-admin-staging.garbarino.com / epi_api_us
+test.upstream.sh ssl GET epi-admin-desa.garbarino.com / epi_api_us
 test.upstream.sh ssl GET www.garbarino.com /services/test epi_api_us
 
 test.upstream.sh ssl GET www.compumundo.com.ar / epi_ui_us
 test.upstream.sh ssl GET epi-admin.compumundo.com.ar / epi_api_us
+test.upstream.sh ssl GET epi-admin-ci.compumundo.com.ar / epi_api_us
+test.upstream.sh ssl GET epi-admin-staging.compumundo.com.ar / epi_api_us
+test.upstream.sh ssl GET epi-admin-desa.compumundo.com.ar / epi_api_us
 test.upstream.sh ssl GET www.compumundo.com.ar /services/test epi_api_us
 
 test.upstream.sh ssl GET www.ipoint.com.ar / epi_ui_us
 test.upstream.sh ssl GET epi-admin.ipoint.com.ar / epi_api_us
+test.upstream.sh ssl GET epi-admin-ci.ipoint.com.ar / epi_api_us
+test.upstream.sh ssl GET epi-admin-staging.ipoint.com.ar / epi_api_us
+test.upstream.sh ssl GET epi-admin-desa.ipoint.com.ar / epi_api_us
 test.upstream.sh ssl GET www.ipoint.com.ar /services/test epi_api_us
 
 test.upstream.sh ssl GET ci.garbarino.com /rse/contacto landings_fe_us
