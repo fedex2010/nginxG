@@ -1,1 +1,5 @@
 ##Checkout
+
+test.upstream.sh GET api-ci.garbarino.com /transporter/sync transporter_us
+test.upstream.sh POST api-ci.garbarino.com /transporter/sync/test12345 transporter_us
+test.upstream.sh POST api-ci.garbarino.com /transporter/save/test12345 transporter_us
