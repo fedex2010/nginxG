@@ -3,3 +3,21 @@
 test.upstream.sh GET api-ci.garbarino.com /transporter/sync transporter_us
 test.upstream.sh POST api-ci.garbarino.com /transporter/sync/test12345 transporter_us
 test.upstream.sh POST api-ci.garbarino.com /transporter/save/test12345 transporter_us
+
+test.upstream.sh ssl GET ci.garbarino.com /nuevo_carrito/c_cartid checkout_ui_us
+test.uri.rewrite.sh ssl GET ci.garbarino.com /nuevo_carrito/c_cartid /carrito/c_cartid
+test.upstream.sh ssl GET ci.garbarino.com /nuevo_carrito/deleteProductFromCart checkout_ui_us
+test.uri.rewrite.sh ssl GET ci.garbarino.com /nuevo_carrito/deleteProductFromCart /carrito/deleteProductFromCart
+test.upstream.sh ssl GET ci.garbarino.com /carrito epi_ui_us
+
+test.upstream.sh ssl GET fe-staging.garbarino.com /nuevo_carrito/c_cartid checkout_ui_us
+test.uri.rewrite.sh ssl GET fe-staging.garbarino.com /nuevo_carrito/c_cartid /carrito/c_cartid
+test.upstream.sh ssl GET fe-staging.garbarino.com /nuevo_carrito/deleteProductFromCart checkout_ui_us
+test.uri.rewrite.sh ssl GET fe-staging.garbarino.com /nuevo_carrito/deleteProductFromCart /carrito/deleteProductFromCart
+test.upstream.sh ssl GET fe-staging.garbarino.com /carrito epi_ui_us
+
+test.upstream.sh ssl GET clone.garbarino.com /nuevo_carrito/c_cartid checkout_ui_us
+test.uri.rewrite.sh ssl GET clone.garbarino.com /nuevo_carrito/c_cartid /carrito/c_cartid
+test.upstream.sh ssl GET clone.garbarino.com /nuevo_carrito/deleteProductFromCart checkout_ui_us
+test.uri.rewrite.sh ssl GET clone.garbarino.com /nuevo_carrito/deleteProductFromCart /carrito/deleteProductFromCart
+test.upstream.sh ssl GET clone.garbarino.com /carrito epi_ui_clone_us
