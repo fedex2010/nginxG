@@ -18,6 +18,14 @@ test.upstream.sh PUT 	api-ci.garbarino.com /carts/cart12345 checkout_core_us
 test.upstream.sh POST 	api-ci.garbarino.com /carts/cart12345/products/xid12345 checkout_core_us
 test.upstream.sh PUT 	api-ci.garbarino.com /carts/cart12345/products/xid12345 checkout_core_us
 test.upstream.sh DELETE api-ci.garbarino.com /carts/cart12345/products/xid12345 checkout_core_us
+test.upstream.sh GET 	api-ci.garbarino.com /my_account my_account_core_us
+
+test.upstream.sh GET 	api-staging.garbarino.com /carts/cart12345 checkout_core_us
+test.upstream.sh POST 	api-staging.garbarino.com /carts checkout_core_us
+test.upstream.sh PUT 	api-staging.garbarino.com /carts/cart12345 checkout_core_us
+test.upstream.sh POST 	api-staging.garbarino.com /carts/cart12345/products/xid12345 checkout_core_us
+test.upstream.sh PUT 	api-staging.garbarino.com /carts/cart12345/products/xid12345 checkout_core_us
+test.upstream.sh DELETE api-staging.garbarino.com /carts/cart12345/products/xid12345 checkout_core_us
 
 test.upstream.sh GET api-dev.garbarino.com /account api_core_us
 test.upstream.sh GET api-dev.garbarino.com /landings api_core_us

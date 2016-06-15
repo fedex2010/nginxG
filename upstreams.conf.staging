@@ -8,6 +8,7 @@ upstream seo_proxy_us { server seo-proxy-staging.us-east-1.elasticbeanstalk.com 
 upstream prerender_us { server ip-10-211-15-224.ec2.internal:3000 max_fails=3; }
 upstream normandia_us { server normandia-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream listing_us { server listing-ui-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream my_account_core_us { server my-account-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream api_core_us { server api-core-staging.elasticbeanstalk.com max_fails=3; }
 upstream home_core_us { server home-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
@@ -33,7 +34,7 @@ upstream aws_sss_us { server s3.amazonaws.com max_fails=3; }
 
 upstream tracker_us { server tracker-staging.us-east-1.elasticbeanstalk.com  max_fails=3; }
 
-upstream checkout_core_us { server localhost max_fails=3; }
+upstream checkout_core_us { server chk-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream checkout_ui_us { server chk-ui-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream transporter_us {server localhost max_fails=3; }

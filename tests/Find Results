@@ -1,0 +1,50 @@
+Searching 92 files for "API_CORE_DNS"
+
+/Users/iguardines/git/nginx/env.conf:
+    8  set $PRERENDER_DNS ip-10-211-15-224.ec2.internal:3000;
+    9  
+   10: set $API_CORE_DNS http://api-core-ci.elasticbeanstalk.com;
+   11  set $HOME_CORE_DNS http://home-core-ci.elasticbeanstalk.com;
+   12: set $MAPI_CORE_DNS http://mapi-core-ci.elasticbeanstalk.com;
+   13  set $MAPI_NOTIFICATIONS_DNS http://mapi-ci.elasticbeanstalk.com;
+   14  set $SEARCH_DNS http://search-ci.elasticbeanstalk.com;
+
+/Users/iguardines/git/nginx/env.conf.ci:
+    8  set $PRERENDER_DNS ip-10-211-15-224.ec2.internal:3000;
+    9  
+   10: set $API_CORE_DNS http://api-core-ci.elasticbeanstalk.com;
+   11  set $HOME_CORE_DNS http://home-core-ci.elasticbeanstalk.com;
+   12  
+   13: set $MAPI_CORE_DNS http://mapi-core-ci.elasticbeanstalk.com;
+   14  set $MAPI_NOTIFICATIONS_DNS http://mapi-notifications-ci.us-east-1.elasticbeanstalk.com;
+   15  set $MAPI_ADMIN_DNS http://mapi-admin-ci.us-east-1.elasticbeanstalk.com;
+
+/Users/iguardines/git/nginx/env.conf.prod:
+    8  set $PRERENDER_DNS prerender-prod.us-east-1.elasticbeanstalk.com;
+    9  
+   10: set $API_CORE_DNS http://api-core-prod.elasticbeanstalk.com;
+   11  set $HOME_CORE_DNS http://home-core-prod.elasticbeanstalk.com;
+   12: set $MAPI_CORE_DNS http://mapi-core-prod.us-east-1.elasticbeanstalk.com;
+   13  set $MAPI_NOTIFICATIONS_DNS http://mapi-notifications-prod.us-east-1.elasticbeanstalk.com;
+   14  set $SEARCH_DNS http://search-prod.us-east-1.elasticbeanstalk.com;
+
+/Users/iguardines/git/nginx/env.conf.staging:
+    8  set $PRERENDER_DNS ip-10-211-15-224.ec2.internal:3000;
+    9  
+   10: set $API_CORE_DNS http://api-core-staging.elasticbeanstalk.com;
+   11  set $HOME_CORE_DNS http://home-core-staging.us-east-1.elasticbeanstalk.com;
+   12: set $MAPI_CORE_DNS http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
+   13  set $MAPI_NOTIFICATIONS_DNS http://mapi-notifications-stag.us-east-1.elasticbeanstalk.com;
+   14  set $SEARCH_DNS http://search-stg.elasticbeanstalk.com;
+
+8 matches across 4 files
+
+
+Searching 93 files for "Your a great Engineer"
+
+/Users/iguardines/git/nginx/tests/run.cases.sh:
+    5  cd /tests
+    6  echo "Running cases [$chosen_cases]"
+    7: cat ${chosen_cases}.cases | grep -v "^#" | xargs -L 1 -P 15 bash && (echo && echo All tests successfully passed. Congratulations!! Your are a great Engineer) || (echo "Something went wrong, check your changes" && exit -1)
+
+1 match in 1 file
