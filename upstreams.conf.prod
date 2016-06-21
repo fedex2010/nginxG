@@ -8,7 +8,7 @@ upstream seo_proxy_us { server seo-proxy-prod.us-east-1.elasticbeanstalk.com max
 upstream prerender_us { server prerender-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream normandia_us { server normandia-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream listing_us { server listing-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream my_account_core_us { server my-account-core-prod.us-east-1.elasticbeanstalk.com/ max_fails=3; }
+upstream my_account_core_us { server my-account-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream api_core_us { server api-core-prod.elasticbeanstalk.com max_fails=3; }
 upstream home_core_us { server home-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
