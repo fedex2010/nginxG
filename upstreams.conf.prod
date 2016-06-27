@@ -8,7 +8,7 @@ upstream seo_proxy_us { server seo-proxy-prod.us-east-1.elasticbeanstalk.com max
 upstream prerender_us { server prerender-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream normandia_us { server normandia-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream listing_us { server listing-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream my_account_core_us { server my-account-core-prod.us-east-1.elasticbeanstalk.com/ max_fails=3; }
+upstream my_account_core_us { server my-account-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream api_core_us { server api-core-prod.elasticbeanstalk.com max_fails=3; }
 upstream home_core_us { server home-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
@@ -34,10 +34,10 @@ upstream aws_sss_us { server s3.amazonaws.com max_fails=3; }
 
 upstream tracker_us { server tracker-prod.us-east-1.elasticbeanstalk.com  max_fails=3; }
 
-upstream checkout_core_us { server localhost max_fails=3; }
+upstream checkout_core_us { server chk-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream checkout_ui_us { server localhost max_fails=3; }
 
-upstream transporter_us {server localhost max_fails=3; }
+upstream transporter_us {server transporter-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream graylog_us { server ip-10-212-15-195.ec2.internal:9000 max_fails=3; }
 upstream graylog_api_us { server ip-10-212-15-195.ec2.internal:12900 max_fails=3; }
@@ -45,3 +45,5 @@ upstream graylog_api_us { server ip-10-212-15-195.ec2.internal:12900 max_fails=3
 upstream notifications_us { server notifications-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream meli_us { server ml-integration-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
+
+upstream my_account_ui_us { server my-account-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
