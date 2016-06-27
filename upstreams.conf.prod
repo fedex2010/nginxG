@@ -35,7 +35,7 @@ upstream aws_sss_us { server s3.amazonaws.com max_fails=3; }
 upstream tracker_us { server tracker-prod.us-east-1.elasticbeanstalk.com  max_fails=3; }
 
 upstream checkout_core_us { server chk-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream checkout_ui_us { server localhost max_fails=3; }
+upstream checkout_ui_us { server chk-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream transporter_us {server transporter-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 
