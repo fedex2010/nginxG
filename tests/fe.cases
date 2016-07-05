@@ -98,6 +98,8 @@ test.upstream.sh ssl GET m-staging.garbarino.com /productos/xxxx/1234 seo_proxy_
 test.upstream.sh ssl GET ci.garbarino.com /me/login my_account_ui_us
 
 test.upstream.sh ssl GET ci.garbarino.com /venta-telefonica landings_fe_us
+test.upstream.sh ssl GET ci.garbarino.com /styles/venta-telefonica landings_fe_us
+test.upstream.sh ssl GET ci.garbarino.com /otros/venta-telefonica epi_ui_us   ## Para probar que no se lleve más tráfico del mínimo necesario 
 # test.upstream.sh ssl GET staging.garbarino.com /venta-telefonica landings_fe_us
 # test.upstream.sh ssl GET wwww.garbarino.com /venta-telefonica landings_fe_us
 
