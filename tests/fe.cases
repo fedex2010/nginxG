@@ -96,3 +96,8 @@ test.upstream.sh ssl GET m-staging.garbarino.com / home_fe_us
 test.upstream.sh ssl GET m-staging.garbarino.com /productos/xxxx/1234 seo_proxy_us
 
 test.upstream.sh ssl GET ci.garbarino.com /me/login my_account_ui_us
+
+test.upstream.sh ssl GET ci.garbarino.com /venta-telefonica landings_fe_us
+# test.upstream.sh ssl GET staging.garbarino.com /venta-telefonica landings_fe_us
+# test.upstream.sh ssl GET wwww.garbarino.com /venta-telefonica landings_fe_us
+
