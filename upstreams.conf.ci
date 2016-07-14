@@ -47,3 +47,5 @@ upstream notifications_us { server notifications-ci.us-east-1.elasticbeanstalk.c
 upstream meli_us { server ml-integration-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream my_account_ui_us { server my-account-ui-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
+
+upstream dia_del_nino_us { server www.garbarinodiadelnino.com max_fails=3; }
