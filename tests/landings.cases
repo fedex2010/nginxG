@@ -2,3 +2,4 @@
 
 test.upstream.sh ssl GET www.garbarino.com /rse/concursodiadelnino dia_del_nino_us
 test.uri.rewrite.sh ssl GET www.garbarino.com /rse/concursodiadelnino /
+test.host.rewrite.sh ssl GET www.garbarino.com /rse/concursodiadelnino www.garbarinodiadelnino.com
