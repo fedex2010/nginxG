@@ -8,9 +8,10 @@ upstream seo_proxy_us { server seo-proxy-ci.us-east-1.elasticbeanstalk.com max_f
 upstream prerender_us { server ip-10-211-15-224.ec2.internal:3000 max_fails=3; }
 upstream normandia_us { server normandia-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream listing_us { server listing-ui-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream my_account_core_us { server my-account-core-ci.us-east-1.elasticbeanstalk.com max_fails=3; } 
+upstream my_account_core_us { server my-account-core-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream api_core_us { server api-core-ci.elasticbeanstalk.com max_fails=3; }
+upstream insurance_core_us { server insurance-core-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream home_core_us { server home-core-ci.elasticbeanstalk.com max_fails=3; }
 upstream mapi_core_us { server mapi-core-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream mapi_notifications_us { server mapi-notifications-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
