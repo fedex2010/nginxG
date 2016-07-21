@@ -13,3 +13,5 @@ test.header.response.sh GET www.garbarino.com.ar /rse/concursodiadelnino Locatio
 test.upstream.sh GET www.garbarino.com /rse/concursodiadelnino dia_del_nino_us
 test.uri.rewrite.sh GET www.garbarino.com /rse/concursodiadelnino /
 test.host.rewrite.sh GET www.garbarino.com /rse/concursodiadelnino 209.188.82.163
+test.upstream.sh GET www.garbarino.com /rse/concursodiadelnino/descargas/file dia_del_nino_us
+test.uri.rewrite.sh GET www.garbarino.com /rse/concursodiadelnino/descargas/file /descargas/file
