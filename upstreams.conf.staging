@@ -8,20 +8,23 @@ upstream seo_proxy_us { server seo-proxy-staging.us-east-1.elasticbeanstalk.com 
 upstream prerender_us { server ip-10-211-15-224.ec2.internal:3000 max_fails=3; }
 upstream normandia_us { server normandia-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream listing_us { server listing-ui-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream my_account_core_us { server my-account-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream api_core_us { server api-core-staging.elasticbeanstalk.com max_fails=3; }
+upstream insurance_core_us { server localhost max_fails=3; }
 upstream home_core_us { server home-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream mapi_core_us { server mapi-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream mapi_notifications_us { server mapi-notifications-stg.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream mapi_admin_us { server mapi-admin-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream mapi_insurances_us { server localhost max_fails=3; }
+upstream mapi_admin_us { server mapi-admin-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
+
 upstream search_us { server search-stg.elasticbeanstalk.com max_fails=3; }
 upstream product_core_us { server product-core-staging.elasticbeanstalk.com max_fails=3; }
 upstream microapps_us { server micro-apps-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream product_fe_us { server product-staging.elasticbeanstalk.com max_fails=3; }
 upstream home_fe_us { server home-ui-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream landings_fe_us { server landings-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream my_account_core_us { server my-account-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
+
 upstream operations_us { server  operations-recovers-stg.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream operations_kibana_us { server  10.211.15.107:5601 max_fails=3; }
 upstream gifts_core_us { server gifts-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
@@ -36,14 +39,12 @@ upstream tracker_us { server tracker-staging.us-east-1.elasticbeanstalk.com  max
 
 upstream checkout_core_us { server chk-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream checkout_ui_us { server chk-ui-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
-
 upstream transporter_us {server transporter-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream graylog_us { server ip-10-211-15-62.ec2.internal:9000 max_fails=3; }
 upstream graylog_api_us { server ip-10-211-15-62.ec2.internal:12900 max_fails=3; }
 
 upstream notifications_us { server notifications-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
-
 upstream meli_us { server ml-integration-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream my_account_ui_us { server my-account-ui-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
