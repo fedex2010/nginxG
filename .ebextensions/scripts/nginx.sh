@@ -37,4 +37,4 @@ then
 fi
 
 #Borro directorio temporal
-rm -rf $DIR_TMP
+#rm -rf $DIR_TMP
