@@ -42,11 +42,6 @@ test.upstream.sh ssl GET ci.garbarino.com /productos/tv-led-y-video/4272 listing
 test.upstream.sh ssl GET ci.garbarino.com /marcas/Samsung listing_us
 test.upstream.sh ssl GET ci.garbarino.com "/productos?q=algo" listing_us
 
-test.upstream.sh ssl GET clone.garbarino.com /productos/tv-led-y-video/4272 seo_proxy_us
-test.upstream.sh ssl GET clone.garbarino.com /marcas/Samsung seo_proxy_us
-test.upstream.sh ssl GET clone.garbarino.com /listado/samsung-products seo_proxy_us
-test.upstream.sh ssl GET clone.garbarino.com "/productos?q=algo" seo_proxy_us
-
 test.upstream.sh ssl GET www.ipoint.com.ar /productos/tv-led-y-video/4272 seo_proxy_us
 test.upstream.sh ssl GET www.ipoint.com.ar /marcas/Samsung seo_proxy_us
 test.upstream.sh ssl GET www.ipoint.com.ar /listado/samsung-products seo_proxy_us
@@ -56,11 +51,6 @@ test.upstream.sh ssl GET www.compumundo.com.ar /productos/tv-led-y-video/4272 se
 test.upstream.sh ssl GET www.compumundo.com.ar /marcas/Samsung seo_proxy_us
 test.upstream.sh ssl GET www.compumundo.com.ar /listado/samsung-products seo_proxy_us
 test.upstream.sh ssl GET www.compumundo.com.ar "/productos?q=algo" seo_proxy_us
-
-test.upstream.sh ssl GET www.garbarino.com /productos/tv-led-y-video/4272 seo_proxy_us
-test.upstream.sh ssl GET www.garbarino.com /marcas/Samsung seo_proxy_us
-test.upstream.sh ssl GET www.garbarino.com /listado/samsung-products seo_proxy_us
-test.upstream.sh ssl GET www.garbarino.com "/productos?q=algo" seo_proxy_us
 
 test.status.response.sh ssl GET www.garbarino.com /sumate-a-garbarino 301
 test.header.response.sh ssl GET www.garbarino.com /sumate-a-garbarino Location https://www.garbarino.com/sumate-a-garbarino/index.html
@@ -85,21 +75,21 @@ test.status.response.sh GET ci.garbarino.com /producto/error/sumate.garbarino.co
 test.status.response.sh GET staging.garbarino.com /producto/error/sumate.garbarino.com 404
 test.status.response.sh GET www.garbarino.com /producto/error/sumate.garbarino.com 404
 
-## WebMobile 
+## WebMobile
 test.upstream.sh ssl GET m.garbarino.com / home_fe_us
-test.upstream.sh ssl GET m.garbarino.com /productos/xxxx/1234 seo_proxy_us
+
 
 test.upstream.sh ssl GET m-ci.garbarino.com / home_fe_us
-test.upstream.sh ssl GET m-ci.garbarino.com /productos/xxxx/1234 seo_proxy_us
+
 
 test.upstream.sh ssl GET m-staging.garbarino.com / home_fe_us
-test.upstream.sh ssl GET m-staging.garbarino.com /productos/xxxx/1234 seo_proxy_us
+
 
 test.upstream.sh ssl GET ci.garbarino.com /me/login my_account_ui_us
 
 test.upstream.sh ssl GET ci.garbarino.com /venta-telefonica landings_fe_us
 test.upstream.sh ssl GET ci.garbarino.com /styles/venta-telefonica landings_fe_us
-test.upstream.sh ssl GET ci.garbarino.com /otros/venta-telefonica epi_ui_us   ## Para probar que no se lleve más tráfico del mínimo necesario 
+test.upstream.sh ssl GET ci.garbarino.com /otros/venta-telefonica epi_ui_us   ## Para probar que no se lleve más tráfico del mínimo necesario
 test.upstream.sh ssl GET staging.garbarino.com /venta-telefonica landings_fe_us
 test.upstream.sh ssl GET wwww.garbarino.com /venta-telefonica landings_fe_us
 
