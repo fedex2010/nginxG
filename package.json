@@ -13,8 +13,9 @@
     "stop": "docker stop garba-nginx",
     "start-test-server": "cd test-server && npm run docker-build && npm run clean_dockers && npm run docker-start",
     "check_syntax": "docker run --link test-nginx:test-server garba-nginx /usr/sbin/nginx -t -c /etc/nginx/nginx.conf",
+    "check_upstreams": "docker run --link test-nginx:test-server garba-nginx /etc/nginx/tests/test.upstreams.sh",
     "check_cases": "npm start && cd tests && docker run $(./linked.domains.sh) -v $(pwd):/tests test-nginx /tests/run.cases.sh",
-    "test": "npm run build && npm run start-test-server && npm run check_syntax && npm run check_cases"
+    "test": "npm run build && npm run start-test-server && npm run check_syntax && npm run check_upstreams && npm run check_cases"
   },
   "repository": {
     "type": "git",

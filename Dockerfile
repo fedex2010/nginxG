@@ -17,6 +17,7 @@ COPY upstreams.conf /etc/nginx/
 COPY upstreams.conf.ci /etc/nginx/
 COPY upstreams.conf.staging /etc/nginx/
 COPY upstreams.conf.prod /etc/nginx/
+COPY test.upstreams.sh /etc/nginx/tests/
 
 COPY scripts/env_gen.sh /etc/nginx/scripts/env_gen.sh
 COPY scripts/startup.sh /etc/nginx/scripts/startup.sh
