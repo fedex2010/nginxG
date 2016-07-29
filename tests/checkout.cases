@@ -17,8 +17,18 @@ test.uri.rewrite.sh ssl GET ci.garbarino.com /nuevo_carrito/c_cartid /carrito/c_
 test.upstream.sh ssl GET ci.garbarino.com /nuevo_carrito/deleteProductFromCart checkout_ui_us
 test.uri.rewrite.sh ssl GET ci.garbarino.com /nuevo_carrito/deleteProductFromCart /carrito/deleteProductFromCart
 test.uri.rewrite.sh ssl GET ci.garbarino.com /carrito/deleteProductFromCart /carrito/deleteProductFromCart
-# test.upstream.sh ssl GET ci.garbarino.com /carrito checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /carrito epi_ui_us
+
+test.upstream.sh ssl GET ci.garbarino.com /compra/entrega checkout_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /compra/financiacion checkout_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /compra/facturacion checkout_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /compra/pago checkout_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /compra/gracias checkout_ui_us
+
+test.status.response.sh ssl GET ci.garbarino.com /carrito 301
+test.header.response.sh ssl GET ci.garbarino.com /carrito Location https://ci.garbarino.com/carrito/
+test.upstream.sh ssl GET ci.garbarino.com /carrito/ checkout_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /viejo_carrito epi_ui_us
+test.uri.rewrite.sh ssl GET ci.garbarino.com /viejo_carrito /carrito
 test.upstream.sh ssl GET ci.garbarino.com /carrito/compra epi_ui_us
 
 test.upstream.sh ssl GET fe-staging.garbarino.com /carrito/c_cartid checkout_ui_us
