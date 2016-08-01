@@ -1,5 +1,5 @@
 #!/bin/bash
-upstreams=$(find /etc/nginx/ -type f -iname upstreams.conf*)
+upstreams=$(find /etc/nginx/ -type f -iname upstreams.conf* | tr "\n" " ")
 echo "Upstreams to verify: $upstreams"
 echo "Verifying all locations have their corresponding upstreams"
 for location in $(find /etc/nginx/ -type f -iname locations.conf* -exec grep "proxy_pass" {} \; | grep -v "#" | tr -s [:space:] | awk 'BEGIN {$2=="http*"} {print $2}' | grep -v "\\$" | sort | uniq | tr -s "/" | cut -d "/" -f2 | tr -d ";"); do
@@ -18,7 +18,7 @@ echo "Verifying all upstreams have their definition on every environment"
 declare -a OUTPUT
 for u in $upstreams
 do
-    item=$(echo "$u-$(grep '\bupstream\s*.*\s*{.*\}' $u | cut -d '{' -f1 | sed 's/upstream//'| sed 's/[[:space:]]*//g' | sort | md5)" )
+    item=$(echo "$u-$(grep '\bupstream\s*.*\s*{.*\}' $u | cut -d '{' -f1 | sed 's/upstream//'| sed 's/[[:space:]]*//g' | sort | md5sum  | cut -d " " -f1)" )
     OUTPUT=("${OUTPUT[@]}" "$item")
 done
 
