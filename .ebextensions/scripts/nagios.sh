@@ -16,13 +16,13 @@ env=$(ec2-describe-tags --filter "resource-type=instance" --filter "resource-id=
 
 if [ $env == "nginx-prod" ] #Solo cargo en nagios servers de prod
 then
-	EXISTE=$($DIR_EBEXTEN/bin/nrcq http://IP_NAGIOS/rest show/hosts | grep name | grep nginx-$HOSTNAME | wc -l)
+	EXISTE=$($DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest show/hosts | grep name | grep nginx-$HOSTNAME | wc -l)
 
 	if [ $EXISTE -eq 0 ] #No esta dado de alta el host en nagios
 	then
-		$DIR_EBEXTEN/bin/nrcq http:/IP_NAGIOS//rest add/hosts -d name:nginx-$HOSTNAME -d alias:nginx -d ipaddress:$IP_HOST -d template:hsttmpl-local -d servicesets:example-lin -d hostgroup:mgmt > /dev/null
-		$DIR_EBEXTEN/bin/nrcq http://IP_NAGIOS/rest apply/nagiosconfig > /dev/null
-		$DIR_EBEXTEN/bin/nrcq http://IP_NAGIOS/rest restart/nagios > /dev/null
+		$DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest add/hosts -d name:nginx-$HOSTNAME -d alias:nginx -d ipaddress:$IP_HOST -d template:hsttmpl-local -d servicesets:example-lin -d hostgroup:mgmt > /dev/null
+		$DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest apply/nagiosconfig > /dev/null
+		$DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest restart/nagios > /dev/null
 
 		cp $DIR_EBEXTEN/conf/nrpe.cfg /etc/nagios
 		/etc/init.d/nrpe start
