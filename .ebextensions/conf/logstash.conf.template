@@ -1,0 +1,43 @@
+input {
+    file {
+        path => "/var/log/nginx-access.log"
+	    start_position => beginning
+        ignore_older => 0
+    }
+}
+filter {
+	grok {
+		match => {
+			"message"=>"%{IPV4:client_ip}%{SPACE}\[%{HTTPDATE:req_date}\]%{SPACE}\"%{DATA:uow}\"%{SPACE}\"%{DATA:user_agent}\"%{SPACE}\"%{WORD:method}%{SPACE}%{URIPATHPARAM:resource}%{SPACE}%{GREEDYDATA:http_ver}\"%{SPACE}%{NUMBER:req_size}%{SPACE}%{NUMBER:res_size}%{SPACE}%{NUMBER:http_response}%{SPACE}%{WORD}%{SPACE}%{NUMBER:upstream_time}%{SPACE}%{WORD}%{SPACE}%{NUMBER:request_time}%{SPACE}\[%{URIHOST:site}\]%{SPACE}%{WORD}%{SPACE}\[%{DATA:upstream}\]%{SPACE}\(ip:%{URIHOST:upstream_ip}\)"
+		}
+	}
+	date {
+		timezone => "UTC"
+		match => ["req_date", "dd/MMM/YYYY:HH:mm:ss Z"]
+		target => "@timestamp"
+	}
+	mutate  {
+		convert => {
+			"http_response" => "integer"
+			"upstream_time" => "float"
+			"request_time" => "float"
+			"res_size" => "integer"
+			"req_size" => "integer"
+		}
+		add_field => {
+			"source_app" => "nginx"
+			"severity" => "INFO"
+			"short_message" => "%{method} %{resource} %{http_response}"
+		}
+		remove_field => ["port", "message", "req_date"]
+	}
+
+}
+output {
+    #stdout { codec => rubydebug }
+    udp {
+        host => "OUTPUT_UDP_HOST"
+        port => OUTPUT_UDP_PORT
+        codec => json_lines
+    }
+}
