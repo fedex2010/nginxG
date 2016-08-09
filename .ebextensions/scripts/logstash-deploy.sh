@@ -21,7 +21,7 @@ fi
 NGINGX_LOGSTASH_CONFIG="/etc/logstash/conf.d/logstash-ngingx.conf"
 APP_ENV=$(docker inspect $(docker ps | grep ngin | awk '{print $1}') | grep APP_ENV | sed 's/APP_ENV=//' | tr -d [:punct:][:space:])
 case  $APP_ENV  in
-	"prod")chi
+	"prod")
 		LOGSTASH_HOST=ip-10-212-15-195.ec2.internal
 		LOGSTASH_PORT=19000
 	;;
