@@ -19,7 +19,20 @@ else
 	echo "Logstash found. Nothing to be done here"
 fi
 NGINGX_LOGSTASH_CONFIG="/etc/logstash/conf.d/logstash-ngingx.conf"
-APP_ENV=$(docker inspect $(docker ps | grep ngin | awk '{print $1}') | grep APP_ENV | sed 's/APP_ENV=//' | tr -d [:punct:][:space:])
+
+#APP_ENV=$(docker inspect $(docker ps | grep ngin | awk '{print $1}') | grep APP_ENV | sed 's/APP_ENV=//' | tr -d [:punct:][:space:])
+
+INSTANCE_ID=$(curl -s http://169.254.169.254/latest/meta-data/instance-id)
+AV_ZONE=$(curl -s http://169.254.169.254/latest/meta-data/placement/availability-zone)
+if [[ $AV_ZONE == us-east-1* ]] ;
+then
+	ZONE="us-east-1"
+else
+	ZONE=$AV_ZONE
+fi
+INSTANCE_NAME=$(aws ec2 describe-tags --filters Name=resource-id,Values=$INSTANCE_ID Name=key,Values=Name --query Tags[].Value --output text --region $ZONE)
+APP_ENV=$(echo $INSTANCE_NAME | sed 's/nginx-//')
+
 case  $APP_ENV  in
 	"prod")
 		LOGSTASH_HOST=ip-10-212-15-195.ec2.internal
