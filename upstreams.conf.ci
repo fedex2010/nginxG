@@ -49,4 +49,6 @@ upstream meli_us { server ml-integration-ci.us-east-1.elasticbeanstalk.com max_f
 
 upstream my_account_ui_us { server my-account-ui-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 
+upstream mutx_us { server 10.211.15.104:8080 max_fails=3; }
+
 upstream dia_del_nino_us { server 209.188.82.163 max_fails=3; }
