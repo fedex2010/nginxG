@@ -10,3 +10,9 @@ test.upstream.sh ssl GET staging.compumundo.com.ar /producto/el-mejor-producto/1
 test.upstream.sh ssl GET staging.compumundo.com.ar /producto/descripcion/xidInexistente product_fe_us
 test.status.response.sh ssl GET staging.compumundo.com /producto/un-producto/12345678 301
 test.header.response.sh ssl GET staging.compumundo.com /producto/un-producto/12345678 Location https://staging.compumundo.com.ar/producto/un-producto/12345678
+
+test.upstream.sh ssl GET www.compumundo.com.ar /normandia normandia_us
+test.upstream.sh ssl GET www.compumundo.com.ar /producto/el-mejor-producto/12345678 product_fe_us
+test.upstream.sh ssl GET www.compumundo.com.ar /producto/descripcion/xidInexistente product_fe_us
+test.status.response.sh ssl GET www.compumundo.com /producto/un-producto/12345678 301
+test.header.response.sh ssl GET www.compumundo.com /producto/un-producto/12345678 Location https://www.compumundo.com.ar/producto/un-producto/12345678
