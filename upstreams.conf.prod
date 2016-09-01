@@ -30,7 +30,7 @@ upstream operations_kibana_us { server  10.212.15.158:5601 max_fails=3; }
 upstream gifts_core_us { server  gifts-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream gifts_frontend_us { server  gifts-frontend-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream gifts_dashboard_us { server  gifts-dashboard-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-# upstream oauth2_server_us { server oauth2-server-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream oauth2_server_us { server oauth2-server-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream gifts_legacy_us { server 200.43.192.230:80 max_fails=3; }
 upstream backoffice_ui_us { server backoffice-ui-prod.us-east-1.elasticbeanstalk.com  max_fails=3; }
 

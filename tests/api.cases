@@ -22,7 +22,7 @@ test.upstream.sh GET 	api-ci.garbarino.com /my_account my_account_core_us
 test.upstream.sh GET 	api-ci.garbarino.com /me my_account_core_us
 test.upstream.sh GET 	api-ci.garbarino.com /users my_account_core_us
 test.upstream.sh GET 	api-ci.garbarino.com /sessions my_account_core_us
-# test.upstream.sh GET	api-ci.garbarino.com /gifts gifts_core_us
+test.upstream.sh GET	api-ci.garbarino.com /gifts gifts_core_us
 # test.upstream.sh GET	api-ci.garbarino.com /oauth oauth2_server_us
 
 test.upstream.sh GET 	api-staging.garbarino.com /carts/cart12345 checkout_core_us
@@ -35,7 +35,7 @@ test.upstream.sh GET 	api-staging.garbarino.com /my_account my_account_core_us
 test.upstream.sh GET 	api-staging.garbarino.com /me my_account_core_us
 test.upstream.sh GET 	api-staging.garbarino.com /users my_account_core_us
 test.upstream.sh GET 	api-staging.garbarino.com /sessions my_account_core_us
-# test.upstream.sh GET	api-staging.garbarino.com /gifts gifts_core_us
+test.upstream.sh GET	api-staging.garbarino.com /gifts gifts_core_us
 # test.upstream.sh GET	api-staging.garbarino.com /oauth oauth2_server_us
 
 test.upstream.sh GET 	api-prod.garbarino.com /carts/cart12345 checkout_core_us
@@ -48,7 +48,7 @@ test.upstream.sh GET 	api-prod.garbarino.com /my_account my_account_core_us
 test.upstream.sh GET 	api-prod.garbarino.com /me my_account_core_us
 test.upstream.sh GET 	api-prod.garbarino.com /users my_account_core_us
 test.upstream.sh GET 	api-prod.garbarino.com /sessions my_account_core_us
-# test.upstream.sh GET	api-prod.garbarino.com /gifts gifts_core_us
+test.upstream.sh GET	api-prod.garbarino.com /gifts gifts_core_us
 # test.upstream.sh GET	api-prod.garbarino.com /oauth oauth2_server_us
 
 
