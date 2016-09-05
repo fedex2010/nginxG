@@ -8,6 +8,7 @@ upstream seo_proxy_us { server seo-proxy-ci.us-east-1.elasticbeanstalk.com max_f
 upstream prerender_us { server ip-10-211-15-224.ec2.internal:3000 max_fails=3; }
 upstream normandia_us { server normandia-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream listing_us { server listing-ui-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream autocomplete_us { server autocomplete-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream api_core_us { server api-core-ci.elasticbeanstalk.com max_fails=3; }
 upstream insurance_core_us { server insurance-core-ci.us-east-1.elasticbeanstalk.com max_fails=3; }

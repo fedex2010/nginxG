@@ -8,6 +8,8 @@ upstream seo_proxy_us { server seo-proxy-staging.us-east-1.elasticbeanstalk.com 
 upstream prerender_us { server ip-10-211-15-224.ec2.internal:3000 max_fails=3; }
 upstream normandia_us { server normandia-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream listing_us { server listing-ui-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream autocomplete_us { server autocomplete-staging.us-east-1.elasticbeanstalk.com max_fails=3; }
+
 
 upstream api_core_us { server api-core-staging.elasticbeanstalk.com max_fails=3; }
 upstream insurance_core_us { server localhost max_fails=3; }
