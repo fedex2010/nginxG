@@ -8,6 +8,7 @@ upstream seo_proxy_us { server seo-proxy-ci.us-east-1.elasticbeanstalk.com max_f
 upstream prerender_us { server ip-10-211-15-224.ec2.internal:3000 max_fails=3; }
 upstream normandia_us { server normandia-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream listing_us { server listing-ui-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream autocomplete_us { server autocomplete-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 
 upstream api_core_us { server api-core-ci.elasticbeanstalk.com max_fails=3; }
 upstream insurance_core_us { server insurance-core-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
@@ -30,6 +31,7 @@ upstream operations_kibana_us { server  10.211.15.107:5601 max_fails=3; }
 upstream gifts_core_us { server gifts-core-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream gifts_frontend_us { server gifts-frontend-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream gifts_dashboard_us { server gifts-dashboard-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream oauth2_server_us { server oauth2-server-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 upstream gifts_legacy_us { server 200.43.192.230:80 max_fails=3; }
 upstream backoffice_ui_us { server backoffice-ui-ci.us-east-1.elasticbeanstalk.com max_fails=3; }
 
@@ -52,3 +54,7 @@ upstream my_account_ui_us { server my-account-ui-ci.us-east-1.elasticbeanstalk.c
 upstream mutx_us { server 10.211.15.104:8080 max_fails=3; }
 
 upstream dia_del_nino_us { server 209.188.82.163 max_fails=3; }
+
+upstream nagiostest_us { server 10.211.15.9 max_fails=3; }
+
+upstream nagiosprod_us { server 10.212.15.51 max_fails=3; }
