@@ -55,4 +55,4 @@ upstream mutx_us { server 10.211.15.104 max_fails=3; }
 
 upstream dia_del_nino_us { server 209.188.82.163 max_fails=3; }
 
-upstream nagiosprod { server 10.212.15.51 max_fails=3; }
+upstream nagiosprod_us { server 10.212.15.51 max_fails=3; }
