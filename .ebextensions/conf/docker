@@ -1,6 +1,6 @@
 /var/lib/docker/containers/*/*.log {
         rotate 7
-        daily
+        size=10M 
         compress
         delaycompress
         copytruncate
