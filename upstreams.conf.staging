@@ -59,3 +59,5 @@ upstream dia_del_nino_us { server 209.188.82.163 max_fails=3; }
 upstream nagiostest_us { server 10.211.15.9 max_fails=3; }
 
 upstream nagiosprod_us { server 10.212.15.51 max_fails=3; }
+
+upstream static_sites_us { server static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com max_fails=3; }
