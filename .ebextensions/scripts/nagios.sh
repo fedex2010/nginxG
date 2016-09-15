@@ -18,7 +18,7 @@ DNS_NAGIOS_TEST=nagiostest.garba.ninja
 tag_env=$(ec2-describe-tags --filter "resource-type=instance" --filter "resource-id=$(ec2-metadata -i | /usr/bin/cut -d ' ' -f2)" --filter "key=Name" | /usr/bin/cut -f5)
 
 #Se cambia el grep porque las instancias de mapi-notifications terminan en prd2 en lugar de prod
-env=$(echo $tag_env | grep -E "\-prod|\-prd2" | wc -l)
+env=$(echo $tag_env | grep "\-prod" | wc -l)
 
 if [ $env -eq 1 ]
 then
