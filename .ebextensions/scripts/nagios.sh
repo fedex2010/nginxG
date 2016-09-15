@@ -10,23 +10,32 @@ export CLASSPATH=$EC2_HOME/lib
 
 HOSTNAME=$(hostname)
 IP_HOST=$(hostname -i)
-IP_NAGIOS=10.212.15.51
+IP_NAGIOS_PROD=10.212.15.51
+IP_NAGIOS_TEST=10.211.15.9
+DNS_NAGIOS=nagios.garba.ninja
 
-env=$(ec2-describe-tags --filter "resource-type=instance" --filter "resource-id=$(ec2-metadata -i | /usr/bin/cut -d ' ' -f2)" --filter "key=Name" | /usr/bin/cut -f5)
+tag_env=$(ec2-describe-tags --filter "resource-type=instance" --filter "resource-id=$(ec2-metadata -i | /usr/bin/cut -d ' ' -f2)" --filter "key=Name" | /usr/bin/cut -f5)
 
-if [ $env == "nginx-prod" ] #Solo cargo en nagios servers de prod
+env=$(echo $tag_env | grep "\-prod" | wc -l)
+
+if [ $env -eq 1 ] #Solo se cargan en nagios servers de prod
 then
-	EXISTE=$($DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest show/hosts | grep name | grep nginx-$HOSTNAME | wc -l)
+	IP_NAGIOS=$IP_NAGIOS_PROD
+else
+	IP_NAGIOS=$IP_NAGIOS_TEST
+fi
+
+	EXISTE=$($DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest show/hosts | grep name | grep $HOSTNAME | wc -l)
 
 	if [ $EXISTE -eq 0 ] #No esta dado de alta el host en nagios
 	then
-		$DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest add/hosts -d name:$env-$HOSTNAME -d alias:nginx -d ipaddress:$IP_HOST -d template:hsttmpl-local -d servicesets:example-lin -d hostgroup:mgmt > /dev/null
+		$DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest add/hosts -d name:$tag_env-$HOSTNAME -d alias:$HOSTNAME -d ipaddress:$IP_HOST -d template:hsttmpl-local -d servicesets:example-lin -d hostgroup:mgmt > /dev/null
 		$DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest apply/nagiosconfig > /dev/null
 		$DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest restart/nagios > /dev/null
 
 		cp $DIR_EBEXTEN/conf/nrpe.cfg /etc/nagios
+		chkconfig nrpe on
 		/etc/init.d/nrpe start
 	fi
-fi
 
 #rm -rf $DIR_TMP
