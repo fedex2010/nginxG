@@ -1,6 +1,6 @@
 #!/bin/bash
 
-DIR_TMP=/tmp/nrpe
+DIR_TMP=/tmp/nginx
 DIR_EBEXTEN=$DIR_TMP/.ebextensions
 export EC2_HOME=/opt/aws/apitools/ec2
 export JAVA_HOME=/usr/lib/jvm/jre-1.7.0-openjdk.x86_64
