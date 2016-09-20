@@ -29,7 +29,7 @@ fi
 
 	if [ $EXISTE -eq 0 ] #No esta dado de alta el host en nagios
 	then
-		$DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest add/hosts -d name:$tag_env-$HOSTNAME -d alias:$HOSTNAME -d ipaddress:$IP_HOST -d template:hsttmpl-local -d servicesets:example-lin -d hostgroup:mgmt -d contactgroups:infra > /dev/null
+		$DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest add/hosts -d name:$tag_env-$HOSTNAME -d alias:$HOSTNAME -d ipaddress:$IP_HOST -d template:hsttmpl-local -d servicesets:nginx -d hostgroup:mgmt  > /dev/null
 		$DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest apply/nagiosconfig > /dev/null
 		$DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest restart/nagios > /dev/null
 
