@@ -71,10 +71,10 @@ test.upstream.sh GET listas.garbarino.com /styles/test.css gifts_legacy_us
 ## test.uri.rewrite.sh ssl GET listas.garbarino.com /api/login.php /listas-de-regalos/api/login.php
 
 ################## Gifts Public API ##################
-test.upstream.sh GET ssl public-api-ci.garbarino.com /gifts gifts_core_us
-test.upstream.sh GET ssl public-api-staging.garbarino.com /gifts gifts_core_us
-test.upstream.sh GET ssl public-api.garbarino.com /gifts gifts_core_us
+# test.upstream.sh GET ssl public-api-ci.garbarino.com /gifts gifts_core_us
+# test.upstream.sh GET ssl public-api-staging.garbarino.com /gifts gifts_core_us
+# test.upstream.sh GET ssl public-api.garbarino.com /gifts gifts_core_us
 
-test.upstream.sh GET ssl public-api-ci.garbarino.com /oauth oauth_server_us
-test.upstream.sh GET ssl public-api-staging.garbarino.com /oauth oauth_server_us
-test.upstream.sh GET ssl public-api.garbarino.com /oauth oauth_server_us
+# test.upstream.sh GET ssl public-api-ci.garbarino.com /oauth oauth_server_us
+# test.upstream.sh GET ssl public-api-staging.garbarino.com /oauth oauth_server_us
+# test.upstream.sh GET ssl public-api.garbarino.com /oauth oauth_server_us
