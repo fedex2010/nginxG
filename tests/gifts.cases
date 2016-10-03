@@ -4,9 +4,6 @@ test.status.response.sh GET www.garbarino.com /listas 301
 test.header.response.sh GET www.garbarino.com /listas Location http://listas.garbarino.com
 
 # Frontend development environments
-test.upstream.sh GET gifts-frontend-ci.garbarino.com / gifts_frontend_us # TODO Remove
-test.upstream.sh GET gifts-frontend-staging.garbarino.com / gifts_frontend_us # TODO Remove
-test.upstream.sh GET gifts-frontend-prod.garbarino.com / gifts_frontend_us # TODO Remove
 test.upstream.sh GET gifts-ci.garbarino.com / gifts_frontend_us
 test.upstream.sh GET gifts-staging.garbarino.com / gifts_frontend_us
 
@@ -73,3 +70,11 @@ test.upstream.sh GET listas.garbarino.com /styles/test.css gifts_legacy_us
 ## test.upstream.sh GET listas.garbarino.com /api gifts_legacy_us
 ## test.uri.rewrite.sh ssl GET listas.garbarino.com /api/login.php /listas-de-regalos/api/login.php
 
+################## Gifts Public API ##################
+# test.upstream.sh GET ssl public-api-ci.garbarino.com /gifts gifts_core_us
+# test.upstream.sh GET ssl public-api-staging.garbarino.com /gifts gifts_core_us
+# test.upstream.sh GET ssl public-api.garbarino.com /gifts gifts_core_us
+
+# test.upstream.sh GET ssl public-api-ci.garbarino.com /oauth oauth_server_us
+# test.upstream.sh GET ssl public-api-staging.garbarino.com /oauth oauth_server_us
+# test.upstream.sh GET ssl public-api.garbarino.com /oauth oauth_server_us
