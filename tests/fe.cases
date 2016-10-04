@@ -18,7 +18,6 @@ test.upstream.sh ssl GET epi-admin-staging.garbarino.com / epi_api_us
 test.upstream.sh ssl GET epi-admin-desa.garbarino.com / apidesatekgenesisnet
 test.upstream.sh ssl GET www.garbarino.com /services/test epi_api_us
 
-test.upstream.sh ssl GET www.compumundo.com.ar / epi_ui_us
 test.upstream.sh ssl GET epi-admin.compumundo.com.ar / epi_api_us
 test.upstream.sh ssl GET epi-admin-ci.compumundo.com.ar / epi_api_us
 test.upstream.sh ssl GET epi-admin-staging.compumundo.com.ar / epi_api_us
@@ -45,10 +44,10 @@ test.upstream.sh ssl GET www.ipoint.com.ar /marcas/Samsung seo_proxy_us
 test.upstream.sh ssl GET www.ipoint.com.ar /listado/samsung-products seo_proxy_us
 test.upstream.sh ssl GET www.ipoint.com.ar "/productos?q=algo" seo_proxy_us
 
-test.upstream.sh ssl GET www.compumundo.com.ar /productos/tv-led-y-video/4272 seo_proxy_us
-test.upstream.sh ssl GET www.compumundo.com.ar /marcas/Samsung seo_proxy_us
-test.upstream.sh ssl GET www.compumundo.com.ar /listado/samsung-products seo_proxy_us
-test.upstream.sh ssl GET www.compumundo.com.ar "/productos?q=algo" seo_proxy_us
+test.upstream.sh ssl GET www.compumundo.com.ar /productos/tv-led-y-video/4272 epi_ui_us
+test.upstream.sh ssl GET www.compumundo.com.ar /marcas/Samsung epi_ui_us
+test.upstream.sh ssl GET www.compumundo.com.ar /listado/samsung-products epi_ui_us
+test.upstream.sh ssl GET www.compumundo.com.ar "/productos?q=algo" epi_ui_us
 
 test.status.response.sh ssl GET www.garbarino.com /sumate-a-garbarino 301
 test.header.response.sh ssl GET www.garbarino.com /sumate-a-garbarino Location https://www.garbarino.com/sumate-a-garbarino/index.html
