@@ -78,15 +78,15 @@ test.status.response.sh ssl GET ci.garbarino.com /nuevo_carrito/nuevo_carrito 30
 test.header.response.sh ssl GET ci.garbarino.com /nuevo_carrito/nuevo_carrito Location https://ci.garbarino.com/nuevo_carrito/
 
 
-test.upstream.sh ssl GET ci.garbarino.com /pagos/todopago checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /pagos/todopago/response/ok checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /pagos/todopago/response/error checkout_ui_us
-test.upstream.sh ssl GET staging.garbarino.com /pagos/todopago checkout_ui_us
-test.upstream.sh ssl GET www.garbarino.com /pagos/todopago checkout_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /pagos/todopago checkout_ui_payments_us
+test.upstream.sh ssl GET ci.garbarino.com /pagos/todopago/response/ok checkout_ui_payments_us
+test.upstream.sh ssl GET ci.garbarino.com /pagos/todopago/response/error checkout_ui_payments_us
+test.upstream.sh ssl GET staging.garbarino.com /pagos/todopago checkout_ui_payments_us
+test.upstream.sh ssl GET www.garbarino.com /pagos/todopago checkout_ui_payments_us
 
-test.upstream.sh ssl GET ci.garbarino.com /pagos/decidir checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /pagos/decidir/response checkout_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /pagos/decidir checkout_ui_payments_us
+test.upstream.sh ssl GET ci.garbarino.com /pagos/decidir/response checkout_ui_payments_us
 
-test.upstream.sh ssl GET ci.garbarino.com /pagos checkout_ui_us
-test.upstream.sh ssl GET staging.garbarino.com /pagos checkout_ui_us
-test.upstream.sh ssl GET www.garbarino.com /pagos checkout_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /pagos checkout_ui_payments_us
+test.upstream.sh ssl GET staging.garbarino.com /pagos checkout_ui_payments_us
+test.upstream.sh ssl GET www.garbarino.com /pagos checkout_ui_payments_us
