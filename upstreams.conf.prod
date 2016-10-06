@@ -1,65 +1,65 @@
-upstream admin_garba_us { server garbarino.admin.tekgenesis.net max_fails=3; }
-upstream admin_compu_us { server compumundo.admin.tekgenesis.net max_fails=3; }
-upstream admin_ipoint_us { server ipoint.admin.tekgenesis.net max_fails=3; }
-upstream epi_api_us { server epiphania.tekgenesis.net:445 max_fails=3; }
-upstream epi_ui_us { server epi-ui-prod.elasticbeanstalk.com max_fails=3; }
-upstream epi_ui_clone_us { server epi-ui-clone.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream seo_proxy_us { server seo-proxy-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream prerender_us { server prerender-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream normandia_us { server normandia-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream listing_us { server listing-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream autocomplete_us { server autocomplete-prod.us-east-1.elasticbeanstalk.com  max_fails=3; }
+upstream admin_garba_us { server garbarino.admin.tekgenesis.net max_fails=3; keepalive 5;}
+upstream admin_compu_us { server compumundo.admin.tekgenesis.net max_fails=3; keepalive 5;}
+upstream admin_ipoint_us { server ipoint.admin.tekgenesis.net max_fails=3; keepalive 5;}
+upstream epi_api_us { server epiphania.tekgenesis.net:445 max_fails=3; keepalive 5;}
+upstream epi_ui_us { server epi-ui-prod.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream epi_ui_clone_us { server epi-ui-clone.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream seo_proxy_us { server seo-proxy-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream prerender_us { server prerender-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream normandia_us { server normandia-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream listing_us { server listing-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream autocomplete_us { server autocomplete-prod.us-east-1.elasticbeanstalk.com  max_fails=3; keepalive 5;}
 
-upstream api_core_us { server api-core-prod.elasticbeanstalk.com max_fails=3; }
-upstream insurance_core_us { server localhost max_fails=3; }
-upstream home_core_us { server home-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream mapi_core_us { server mapi-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream mapi_notifications_us { server mapi-notifications-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream mapi_insurances_us { server localhost max_fails=3; }
-upstream mapi_admin_us { server mapi-admin-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream api_core_us { server api-core-prod.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream insurance_core_us { server localhost max_fails=3; keepalive 5;}
+upstream home_core_us { server home-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream mapi_core_us { server mapi-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream mapi_notifications_us { server mapi-notifications-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream mapi_insurances_us { server localhost max_fails=3; keepalive 5;}
+upstream mapi_admin_us { server mapi-admin-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 
-upstream search_us { server search-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream product_core_us { server product-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream microapps_us { server micro-apps-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream product_fe_us { server product-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream home_fe_us { server home-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream landings_fe_us { server landings-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream my_account_core_us { server my-account-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream search_us { server search-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream product_core_us { server product-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream microapps_us { server micro-apps-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream product_fe_us { server product-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream home_fe_us { server home-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream landings_fe_us { server landings-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream my_account_core_us { server my-account-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 
-upstream operations_us { server operations-recovers-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream operations_kibana_us { server  10.212.15.158:5601 max_fails=3; }
-upstream gifts_core_us { server  gifts-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream gifts_frontend_us { server  gifts-frontend-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream gifts_dashboard_us { server  gifts-dashboard-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream oauth2_server_us { server oauth2-server-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream gifts_legacy_us { server 200.43.192.230:80 max_fails=3; }
-upstream backoffice_ui_us { server backoffice-ui-prod.us-east-1.elasticbeanstalk.com  max_fails=3; }
+upstream operations_us { server operations-recovers-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream operations_kibana_us { server  10.212.15.158:5601 max_fails=3; keepalive 5;}
+upstream gifts_core_us { server  gifts-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream gifts_frontend_us { server  gifts-frontend-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream gifts_dashboard_us { server  gifts-dashboard-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream oauth2_server_us { server oauth2-server-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream gifts_legacy_us { server 200.43.192.230:80 max_fails=3; keepalive 5;}
+upstream backoffice_ui_us { server backoffice-ui-prod.us-east-1.elasticbeanstalk.com  max_fails=3; keepalive 5;}
 
-upstream aws_sss_us { server s3.amazonaws.com max_fails=3; }
+upstream aws_sss_us { server s3.amazonaws.com max_fails=3; keepalive 5;}
 
-upstream tracker_us { server tracker-prod.us-east-1.elasticbeanstalk.com  max_fails=3; }
+upstream tracker_us { server tracker-prod.us-east-1.elasticbeanstalk.com  max_fails=3; keepalive 5;}
 
-upstream checkout_core_us { server chk-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream checkout_ui_us { server chk-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream checkout_ui_payments_us { server chk-ui-prod-payments.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream transporter_us {server transporter-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream checkout_core_us { server chk-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream checkout_ui_us { server chk-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream checkout_ui_payments_us { server chk-ui-prod-payments.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream transporter_us {server transporter-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 
-upstream graylog_us { server ip-10-212-15-195.ec2.internal:9000 max_fails=3; }
-upstream graylog_api_us { server ip-10-212-15-195.ec2.internal:12900 max_fails=3; }
+upstream graylog_us { server ip-10-212-15-195.ec2.internal:9000 max_fails=3; keepalive 5;}
+upstream graylog_api_us { server ip-10-212-15-195.ec2.internal:12900 max_fails=3; keepalive 5;}
 
-upstream notifications_us { server notifications-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
-upstream meli_us { server ml-integration-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream notifications_us { server notifications-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream meli_us { server ml-integration-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 
-upstream my_account_ui_us { server my-account-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; }
+upstream my_account_ui_us { server my-account-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 
-upstream mutx_us { server 10.211.15.104 max_fails=3; }
+upstream mutx_us { server 10.211.15.104 max_fails=3; keepalive 5;}
 
-upstream dia_del_nino_us { server 209.188.82.163 max_fails=3; }
+upstream dia_del_nino_us { server 209.188.82.163 max_fails=3; keepalive 5;}
 
-upstream nagiostest_us { server 10.211.15.9 max_fails=3; }
+upstream nagiostest_us { server 10.211.15.9 max_fails=3; keepalive 5;}
 
-upstream nagiosprod_us { server 10.212.15.51 max_fails=3; }
+upstream nagiosprod_us { server 10.212.15.51 max_fails=3; keepalive 5;}
 
-upstream static_sites_us { server static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com max_fails=3; }
+upstream static_sites_us { server static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com max_fails=3; keepalive 5;}
 
-upstream repo_us { server nexus.garba.ninja:9200  max_fails=3; }
+upstream repo_us { server nexus.garba.ninja:9200  max_fails=3; keepalive 5;}
