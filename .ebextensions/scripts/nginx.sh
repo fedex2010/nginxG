@@ -26,14 +26,6 @@ then
 	echo "nginx hard nofile 50000" >> /etc/security/limits.conf
 fi
 
-#grep -q "net.ipv4.tcp_fin_timeout" /etc/sysctl.conf
-#if [ $? == 1 ]
-#then
-#	echo "net.ipv4.tcp_fin_timeout = 30" >> /etc/sysctl.conf
-#fi
-
-#/sbin/sysctl -p
-
 /sbin/sysctl -n net.ipv4.tcp_fin_timeout=30
 
 #Borro directorio temporal
