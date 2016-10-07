@@ -27,10 +27,9 @@ then
 fi
 
 /sbin/sysctl -n net.ipv4.tcp_fin_timeout=30
-/sbin/sysctl -n net.ipv4.tcp_max_syn_backlog = 3240000 
-/sbin/sysctl -n net.ipv4.ip_local_port_range 1024 65000
-/sbin/sysctl -n net.core.somaxconn = 65536
-/sbin/sysctl -n net.ipv4.tcp_max_tw_buckets = 1440000
+/sbin/sysctl -n net.ipv4.tcp_max_syn_backlog=3240000 
+/sbin/sysctl -n net.core.somaxconn=65536
+/sbin/sysctl -n net.ipv4.tcp_max_tw_buckets=1440000
 
 #Borro directorio temporal
 #rm -rf $DIR_TMP
