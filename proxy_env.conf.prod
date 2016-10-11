@@ -1,0 +1,65 @@
+set $admin_garba_us http://garbarino.admin.tekgenesis.net;
+set $admin_compu_us http://compumundo.admin.tekgenesis.net;
+set $admin_ipoint_us http://ipoint.admin.tekgenesis.net;
+set $epi_api_us https://epiphania.tekgenesis.net:445;
+set $epi_ui_us http://epi-ui-prod.elasticbeanstalk.com;
+set $epi_ui_clone_us http://epi-ui-clone.us-east-1.elasticbeanstalk.com;
+set $seo_proxy_us http://seo-proxy-prod.us-east-1.elasticbeanstalk.com;
+set $prerender_us http://prerender-prod.us-east-1.elasticbeanstalk.com;
+set $normandia_us http://normandia-prod.us-east-1.elasticbeanstalk.com;
+set $listing_us http://listing-ui-prod.us-east-1.elasticbeanstalk.com;
+set $autocomplete_us http://autocomplete-prod.us-east-1.elasticbeanstalk.com ;
+
+set $api_core_us http://api-core-prod.elasticbeanstalk.com;
+set $insurance_core_us http://localhost;
+set $home_core_us http://home-core-prod.us-east-1.elasticbeanstalk.com;
+set $mapi_core_us http://mapi-core-prod.us-east-1.elasticbeanstalk.com;
+set $mapi_notifications_us http://mapi-notifications-prod.us-east-1.elasticbeanstalk.com;
+set $mapi_insurances_us http://localhost;
+set $mapi_admin_us http://mapi-admin-prod.us-east-1.elasticbeanstalk.com;
+
+set $search_us http://search-prod.us-east-1.elasticbeanstalk.com;
+set $product_core_us http://product-core-prod.us-east-1.elasticbeanstalk.com;
+set $microapps_us http://micro-apps-prod.us-east-1.elasticbeanstalk.com;
+set $product_fe_us http://product-prod.us-east-1.elasticbeanstalk.com;
+set $home_fe_us http://home-ui-prod.us-east-1.elasticbeanstalk.com;
+set $landings_fe_us http://landings-prod.us-east-1.elasticbeanstalk.com;
+set $my_account_core_us http://my-account-core-prod.us-east-1.elasticbeanstalk.com;
+
+set $operations_us http://operations-recovers-prod.us-east-1.elasticbeanstalk.com;
+set $operations_kibana_us http://10.212.15.158:5601;
+set $gifts_core_us http://gifts-core-prod.us-east-1.elasticbeanstalk.com;
+set $gifts_frontend_us http://gifts-frontend-prod.us-east-1.elasticbeanstalk.com;
+set $gifts_dashboard_us http://gifts-dashboard-prod.us-east-1.elasticbeanstalk.com;
+set $oauth2_server_us http://oauth2-server-prod.us-east-1.elasticbeanstalk.com;
+set $gifts_legacy_us http://200.43.192.230:80;
+set $backoffice_ui_us http://backoffice-ui-prod.us-east-1.elasticbeanstalk.com ;
+
+set $aws_sss_us http://s3.amazonaws.com;
+
+set $tracker_us http://tracker-prod.us-east-1.elasticbeanstalk.com ;
+
+set $checkout_core_us http://chk-core-prod.us-east-1.elasticbeanstalk.com;
+set $checkout_ui_us http://chk-ui-prod.us-east-1.elasticbeanstalk.com;
+set $checkout_ui_payments_us http://chk-ui-prod-payments.us-east-1.elasticbeanstalk.com;
+set $transporter_us http://transporter-prod.us-east-1.elasticbeanstalk.com;
+
+set $graylog_us http://ip-10-212-15-195.ec2.internal:9000;
+set $graylog_api_us http://ip-10-212-15-195.ec2.internal:12900;
+
+set $notifications_us http://notifications-prod.us-east-1.elasticbeanstalk.com;
+set $meli_us http://ml-integration-prod.us-east-1.elasticbeanstalk.com;
+
+set $my_account_ui_us http://my-account-ui-prod.us-east-1.elasticbeanstalk.com;
+
+set $mutx_us http://10.211.15.104;
+
+set $dia_del_nino_us http://209.188.82.163;
+
+set $nagiostest_us http://10.211.15.9;
+
+set $nagiosprod_us http://10.212.15.51;
+
+set $static_sites_us http://static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com;
+
+set $repo_us http://nexus.garba.ninja:9200;

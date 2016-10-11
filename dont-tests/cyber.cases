@@ -1,0 +1,24 @@
+## Cyber
+
+# test.upstream.sh ssl GET ci.garbarino.com /styles/cybermonday-thanks/styles.css landings_fe_us
+# test.upstream.sh ssl GET staging.garbarino.com /styles/cybermonday-thanks/styles.css landings_fe_us
+# test.upstream.sh ssl GET www.garbarino.com /styles/cybermonday-thanks/styles.css landings_fe_us
+
+# test.upstream.sh ssl GET ci.garbarino.com /js/cybermonday-thanks/styles.css landings_fe_us
+# test.upstream.sh ssl GET staging.garbarino.com /js/cybermonday-thanks/styles.css landings_fe_us
+# test.upstream.sh ssl GET www.garbarino.com /js/cybermonday-thanks/styles.css landings_fe_us
+
+# test.upstream.sh ssl GET ci.garbarino.com /images/cybermonday-thanks/styles.css landings_fe_us
+# test.upstream.sh ssl GET staging.garbarino.com /images/cybermonday-thanks/styles.css landings_fe_us
+# test.upstream.sh ssl GET www.garbarino.com /images/cybermonday-thanks/styles.css landings_fe_us
+
+test.upstream.sh ssl GET ci.garbarino.com /cybermonday/pagina landings_fe_us
+test.upstream.sh ssl GET ci.garbarino.com /cybermonday landings_fe_us
+test.upstream.sh ssl GET ci.garbarino.com /cybermondaySuscriptionService landings_fe_us
+
+# test.upstream.sh ssl GET staging.garbarino.com /cybermonday/pagina landings_fe_us
+# test.upstream.sh ssl GET staging.garbarino.com /cybermonday landings_fe_us
+
+# test.upstream.sh ssl GET www.garbarino.com /cybermonday/pagina landings_fe_us
+# test.upstream.sh ssl GET www.garbarino.com /cybermonday landings_fe_us
+

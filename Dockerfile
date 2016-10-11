@@ -13,6 +13,11 @@ COPY env.conf.ci /etc/nginx/env.conf.ci
 COPY env.conf.staging /etc/nginx/env.conf.staging
 COPY env.conf.prod /etc/nginx/env.conf.prod
 
+COPY proxy_env.conf /etc/nginx/proxy_env.conf
+COPY proxy_env.conf.ci /etc/nginx/proxy_env.conf.ci
+COPY proxy_env.conf.staging /etc/nginx/proxy_env.conf.staging
+COPY proxy_env.conf.prod /etc/nginx/proxy_env.conf.prod
+
 COPY upstreams.conf /etc/nginx/
 COPY upstreams.conf.ci /etc/nginx/
 COPY upstreams.conf.staging /etc/nginx/

@@ -1,0 +1,66 @@
+set $admin_compu_us http://computest.admin.tekgenesis.net;
+set $admin_garba_us http://garbatest.admin.tekgenesis.net;
+set $admin_ipoint_us http://ipointtest.admin.tekgenesis.net;
+set $epi_api_us https://apitest.tekgenesis.net:445;
+set $epi_ui_us http://epi-ui-staging.elasticbeanstalk.com;
+set $epi_ui_clone_us http://epi-ui-clone.us-east-1.elasticbeanstalk.com;
+set $seo_proxy_us http://seo-proxy-staging.us-east-1.elasticbeanstalk.com;
+set $prerender_us http://ip-10-211-15-224.ec2.internal:3000;
+set $normandia_us http://normandia-staging.us-east-1.elasticbeanstalk.com;
+set $listing_us http://listing-ui-staging.us-east-1.elasticbeanstalk.com;
+set $autocomplete_us http://autocomplete-staging.us-east-1.elasticbeanstalk.com;
+
+
+set $api_core_us http://api-core-staging.elasticbeanstalk.com;
+set $insurance_core_us http://localhost;
+set $home_core_us http://home-core-staging.us-east-1.elasticbeanstalk.com;
+set $mapi_core_us http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
+set $mapi_notifications_us http://mapi-notifications-stg.us-east-1.elasticbeanstalk.com;
+set $mapi_insurances_us http://localhost;
+set $mapi_admin_us http://mapi-admin-staging.us-east-1.elasticbeanstalk.com;
+
+set $search_us http://search-stg.elasticbeanstalk.com;
+set $product_core_us http://product-core-staging.elasticbeanstalk.com;
+set $microapps_us http://micro-apps-staging.us-east-1.elasticbeanstalk.com;
+set $product_fe_us http://product-staging.elasticbeanstalk.com;
+set $home_fe_us http://home-ui-staging.us-east-1.elasticbeanstalk.com;
+set $landings_fe_us http://landings-staging.us-east-1.elasticbeanstalk.com;
+set $my_account_core_us http://my-account-core-staging.us-east-1.elasticbeanstalk.com;
+
+set $operations_us http://operations-recovers-stg.us-east-1.elasticbeanstalk.com;
+set $operations_kibana_us http://10.211.15.107:5601;
+set $gifts_core_us http://gifts-core-staging.us-east-1.elasticbeanstalk.com;
+set $gifts_frontend_us http://gifts-frontend-staging.us-east-1.elasticbeanstalk.com;
+set $gifts_dashboard_us http://gifts-dashboard-staging.us-east-1.elasticbeanstalk.com;
+set $oauth2_server_us http://oauth2-server-staging.us-east-1.elasticbeanstalk.com;
+set $gifts_legacy_us http://200.43.192.230:80;
+set $backoffice_ui_us http://backoffice-ui-staging.us-east-1.elasticbeanstalk.com;
+
+set $aws_sss_us http://s3.amazonaws.com;
+
+set $tracker_us http://tracker-staging.us-east-1.elasticbeanstalk.com ;
+
+set $checkout_core_us http://chk-core-staging.us-east-1.elasticbeanstalk.com;
+set $checkout_ui_us http://chk-ui-staging.us-east-1.elasticbeanstalk.com;
+set $checkout_ui_payments_us http://chk-ui-staging.us-east-1.elasticbeanstalk.com;
+set $transporter_us http://transporter-staging.us-east-1.elasticbeanstalk.com;
+
+set $graylog_us http://ip-10-211-15-62.ec2.internal:9000;
+set $graylog_api_us http://ip-10-211-15-62.ec2.internal:12900;
+
+set $notifications_us http://notifications-staging.us-east-1.elasticbeanstalk.com;
+set $meli_us http://ml-integration-staging.us-east-1.elasticbeanstalk.com;
+
+set $my_account_ui_us http://my-account-ui-staging.us-east-1.elasticbeanstalk.com;
+
+set $mutx_us http://10.211.15.104;
+
+set $dia_del_nino_us http://209.188.82.163;
+
+set $nagiostest_us http://10.211.15.9;
+
+set $nagiosprod_us http://10.212.15.51;
+
+set $static_sites_us http://static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com;
+
+set $repo_us http://nexus.garba.ninja:9200;

@@ -6,6 +6,9 @@ echo "[$(date)] Environment variables: $(env)" >> /var/log/nginx/env_gen.log
 cp /etc/nginx/env.conf.$APP_ENV /etc/nginx/env.conf 2>> /var/log/nginx/env_gen.err
 echo "[$(date)] Using /etc/nginx/env.conf.$APP_ENV" >> /var/log/nginx/env_gen.log
 
+cp /etc/nginx/proxy_env.conf.$APP_ENV /etc/nginx/proxy_env.conf 2>> /var/log/nginx/env_gen.err
+echo "[$(date)] Using /etc/nginx/proxy_env.conf.$APP_ENV" >> /var/log/nginx/env_gen.log
+
 cp /etc/nginx/upstreams.conf.$APP_ENV /etc/nginx/upstreams.conf  2>> /var/log/nginx/env_gen.err
 echo "[$(date)] Using /etc/nginx/upstreams.conf.$APP_ENV" >> /var/log/nginx/env_gen.log
 
