@@ -26,7 +26,7 @@ set $home_fe_us http://home-ui-ci.us-east-1.elasticbeanstalk.com;
 set $landings_fe_us http://landings-ci.us-east-1.elasticbeanstalk.com;
 set $my_account_core_us http://my-account-core-ci.us-east-1.elasticbeanstalk.com;
 
-set $operations_us http:// operations-recovers-ci.us-east-1.elasticbeanstalk.com;
+set $operations_us http://operations-recovers-ci.us-east-1.elasticbeanstalk.com;
 set $operations_kibana_us http://10.211.15.107:5601;
 set $gifts_core_us http://gifts-core-ci.us-east-1.elasticbeanstalk.com;
 set $gifts_frontend_us http://gifts-frontend-ci.us-east-1.elasticbeanstalk.com;
@@ -39,9 +39,9 @@ set $aws_sss_us http://s3.amazonaws.com;
 
 set $tracker_us http://tracker-ci.us-east-1.elasticbeanstalk.com;
 
-set $checkout_core_us http:// chk-core-ci.us-east-1.elasticbeanstalk.com;
-set $checkout_ui_us http:// chk-ui-ci.us-east-1.elasticbeanstalk.com;
-set $checkout_ui_payments_us http:// chk-ui-ci.us-east-1.elasticbeanstalk.com;
+set $checkout_core_us http://chk-core-ci.us-east-1.elasticbeanstalk.com;
+set $checkout_ui_us http://chk-ui-ci.us-east-1.elasticbeanstalk.com;
+set $checkout_ui_payments_us http://chk-ui-ci.us-east-1.elasticbeanstalk.com;
 set $transporter_us http://transporter-ci.us-east-1.elasticbeanstalk.com;
 
 set $graylog_us http://ip-10-211-15-62.ec2.internal:9000;
