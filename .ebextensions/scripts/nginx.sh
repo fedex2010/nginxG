@@ -35,9 +35,3 @@ then
     printf "\n#custom-conf-end\n" >> /etc/sysctl.conf
     sysctl -p
 fi
-
-WORKER_PROCS=$(getconf _NPROCESSORS_ONLN)
-
-sed -i "s/WORKER_PROCS/$WORKER_PROCS/g" /etc/nginx/nginx.conf
-#Borro directorio temporal
-#rm -rf $DIR_TMP
