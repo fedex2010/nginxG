@@ -5,11 +5,11 @@ var http = require('http');
 var server = http.createServer(function (req, response) {
  console.log(req.method, " ", req.url);
  response.writeHead(200, {"Content-Type": "application/json"});
- response.end(JSON.stringify({ 
-  	"headers": req.headers, 
-  	"url": req.url, 
-  	"method": req.method, 
-  	"host": req.hostname, 
+ response.end(JSON.stringify({
+  	"headers": req.headers,
+  	"url": req.url,
+  	"method": req.method,
+  	"host": req.hostname,
   	"protocol": req.protocol
   }));
 });
