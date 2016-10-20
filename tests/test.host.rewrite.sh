@@ -5,11 +5,10 @@ then
 	domain=$3
 	uri=$4
 	dest=$5
-	
-	if [[ "$6" == "debug" ]]
-	then
-		curl -v -X $method -H 'X-Forwarded-Proto: https' $domain$uri
-	fi
+
+	if [[ "debug" == "${!#}" ]]; then
+	  	curl -v -X $method -H 'X-Forwarded-Proto: https' $domain$uri
+	fi	
 
 	actual_rewrite_uri=$(curl -v -X $method -H 'X-Forwarded-Proto: https' $domain$uri 2>/dev/null | jq -r '.headers.host' ) 
 else
@@ -18,10 +17,9 @@ else
 	uri=$3
 	dest=$4
 
-	if [[ "$5" == "debug" ]]
-	then
-		curl -v -X $method $domain$uri
-	fi
+	if [[ "debug" == "${!#}" ]]; then
+	  	curl -v -X $method $domain$uri
+	fi	
 	
 	actual_rewrite_uri=$(curl -v -X $method $domain$uri 2>/dev/null | jq -r '.headers.host') 
 fi

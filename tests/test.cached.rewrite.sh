@@ -9,6 +9,11 @@ then
 	uri2=$5
 	dest=$6
 	
+	if [[ "debug" == "${!#}" ]]; then
+		curl -v -X $method -H 'X-Forwarded-Proto: https' $domain$uri1
+		curl -v -X $method -H 'X-Forwarded-Proto: https' $domain$uri2
+	fi
+
 	actual_rewrite_uri1=$(curl -v -X $method -H 'X-Forwarded-Proto: https' $domain$uri1 2>/dev/null | jq -r '.url' ) 
 	actual_rewrite_uri2=$(curl -v -X $method -H 'X-Forwarded-Proto: https' $domain$uri2 2>/dev/null | jq -r '.url' ) 
 else
@@ -18,6 +23,11 @@ else
 	uri2=$4
 	dest=$5
 	
+	if [[ "debug" == "${!#}" ]]; then
+	  	curl -v -X $method $domain$uri1
+	  	curl -v -X $method $domain$uri2
+	fi	
+
 	actual_rewrite_uri1=$(curl -v -X $method $domain$uri1 2>/dev/null | jq -r '.url') 
 	actual_rewrite_uri2=$(curl -v -X $method $domain$uri2 2>/dev/null | jq -r '.url') 
 fi

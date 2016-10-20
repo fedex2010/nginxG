@@ -5,13 +5,21 @@ then
 	domain=$3
 	uri=$4
 	dest=$5
-	
+
+	if [[ "debug" == "${!#}" ]]; then
+	  	curl -v -X $method -H 'X-Forwarded-Proto: https' $domain$uri
+	fi	
+
 	actual_rewrite_uri=$(curl -v -X $method -H 'X-Forwarded-Proto: https' $domain$uri 2>/dev/null | jq -r '.url' ) 
 else
 	method=$1
 	domain=$2
 	uri=$3
 	dest=$4
+
+	if [[ "debug" == "${!#}" ]]; then
+	  	curl -v -X $method $domain$uri
+	fi	
 	
 	actual_rewrite_uri=$(curl -v -X $method $domain$uri 2>/dev/null | jq -r '.url') 
 fi

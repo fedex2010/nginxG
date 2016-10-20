@@ -6,12 +6,20 @@ then
 	uri=$4
 	dest=$5
 
+	if [[ "debug" == "${!#}" ]]; then
+	  	curl -I -X $method -H 'X-Forwarded-Proto: https' $domain$uri
+	fi	
+
 	actual_status=$(curl -I -X $method -H 'X-Forwarded-Proto: https' $domain$uri 2>/dev/null | grep "HTTP/1.1" | awk '{print $2}') 
 else
 	method=$1
 	domain=$2
 	uri=$3
 	dest=$4
+
+	if [[ "debug" == "${!#}" ]]; then
+	  	curl -I -X $method $domain$uri
+	fi	
 	
 	actual_status=$(curl -I -X $method -H 'X-Forwarded-Proto: http' $domain$uri 2>/dev/null | grep "HTTP/1.1" | awk '{print $2}') 
 fi

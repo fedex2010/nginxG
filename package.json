@@ -4,7 +4,7 @@
   "description": "Manejo de todo el trafico entrante de Garba",
   "main": "index.js",
   "scripts": {
-    "start": "npm run clean_dockers && docker run -d -e APP_ENV=test -p 80:80 -p 81:81 --name garba-nginx --link test-nginx:test-server garba-nginx", 
+    "start": "linked_upstreams=$(cd tests; ./linked.upstreams.sh test-nginx); npm run clean_dockers && docker run -d -e APP_ENV=test -p 80:80 -p 81:81 --name garba-nginx --link test-nginx:test-server $(echo $linked_upstreams) garba-nginx", 
     "build": "docker build -t garba-nginx .",
     "restart": "npm stop && npm test && npm start",
     "clean-dockers-circleci": "docker ps -a | grep garba-nginx | awk '{print $1}' | xargs -r docker rm -f || true",
@@ -12,10 +12,11 @@
     "clean_dockers": "./clean_dockers.sh",
     "stop": "docker stop garba-nginx",
     "start-test-server": "cd test-server && npm run docker-build && npm run clean_dockers && npm run docker-start",
-    "check_syntax": "docker run --link test-nginx:test-server garba-nginx /usr/sbin/nginx -t -c /etc/nginx/nginx.conf",
+    "check_syntax": "linked_upstreams=$(cd tests; ./linked.upstreams.sh test-nginx); docker run $(echo $linked_upstreams) garba-nginx /usr/sbin/nginx -t -c /etc/nginx/nginx.conf",
     "check_upstreams": "docker run --link test-nginx:test-server garba-nginx /etc/nginx/tests/test.upstreams.sh",
     "check_cases": "npm start && cd tests && docker run $(./linked.domains.sh) -v $(pwd):/tests test-nginx /tests/run.cases.sh",
-    "test": "npm run build && npm run start-test-server && npm run check_syntax && npm run check_upstreams && npm run check_cases"
+    "test": "npm run build && npm run start-test-server && npm run check_syntax && npm run check_cases",
+    "test-bak": "npm run build && npm run start-test-server && npm run check_syntax && npm run check_upstreams && npm run check_cases"
   },
   "repository": {
     "type": "git",
