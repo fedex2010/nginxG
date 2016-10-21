@@ -18,18 +18,18 @@ tag_env=$(ec2-describe-tags --filter "resource-type=instance" --filter "resource
 
 env=$(echo $tag_env | grep "\-prod" | wc -l)
 
-if [ $env -eq 1 ] #Solo se cargan en nagios servers de prod
+if [ $env -eq 1 ] 
 then
 	IP_NAGIOS=$IP_NAGIOS_PROD
 else
 	IP_NAGIOS=$IP_NAGIOS_TEST
 fi
 
-	EXISTE=$($DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest show/hosts | grep name | grep $HOSTNAME | wc -l)
+	EXISTE=$($DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest show/hosts | grep address | grep -w $IP_HOST | wc -l)
 
 	if [ $EXISTE -eq 0 ] #No esta dado de alta el host en nagios
 	then
-		$DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest add/hosts -d name:$tag_env-$HOSTNAME -d alias:$HOSTNAME -d ipaddress:$IP_HOST -d template:hsttmpl-local -d servicesets:nginx -d hostgroup:mgmt  > /dev/null
+		$DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest add/hosts -d name:$tag_env-$HOSTNAME -d alias:tag_env-$HOSTNAME -d ipaddress:$IP_HOST -d template:hsttmpl-local -d servicesets:nginx -d hostgroup:mgmt  > /dev/null
 		$DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest apply/nagiosconfig > /dev/null
 		$DIR_EBEXTEN/bin/nrcq http://$IP_NAGIOS/rest restart/nagios > /dev/null
 
