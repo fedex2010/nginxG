@@ -7,6 +7,11 @@ then
 	header=$5
 	value=$6
 
+	if [[ "debug" == "${!#}" ]]
+	then
+	  	curl -I -X $method -H 'X-Forwarded-Proto: https' $domain$uri
+	fi	
+
 	actual_value=$(curl -I -X $method -H 'X-Forwarded-Proto: https' $domain$uri 2>/dev/null | grep "$header" | awk '{print $2}' | tr -d '\r') 
 else
 	method=$1
@@ -15,7 +20,12 @@ else
 	header=$4
 	value=$5
 
-	actual_value=$(curl -I -X $method -H 'X-Forwarded-Proto: http' $domain$uri 2>/dev/null | grep "$header" | awk '{print $2}' | tr -d '\r') 
+	if [[ "debug" == "${!#}" ]] 
+	then
+	  	curl -I -X $method $domain$uri
+	fi	
+
+	actual_value=$(curl -I -X $method $domain$uri 2>/dev/null | grep "$header" | awk '{print $2}' | tr -d '\r') 
 fi
 
 if [[ "$value" == "$actual_value" ]]; then
