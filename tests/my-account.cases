@@ -1,3 +1,5 @@
 ## My Account
 
 test.upstream.sh ssl GET www.garbarino.com /user/password/recover/7e273a5a-a5f7-46b5-86ab-ffef48ed26a5 epi_api_us
+test.upstream.sh ssl GET ci.garbarino.com /user/password/recover/7e273a5a-a5f7-46b5-86ab-ffef48ed26a5 epi_api_us
+test.upstream.sh ssl GET staging.garbarino.com /user/password/recover/7e273a5a-a5f7-46b5-86ab-ffef48ed26a5 epi_api_us
