@@ -17,7 +17,7 @@ then
 	if [ $? == 1 ]
 	then
 		rpm -Uvh https://yum.newrelic.com/pub/newrelic/el5/x86_64/newrelic-repo-5-3.noarch.rpm	
-		yum install newrelic-sysmond
+		yum install -y newrelic-sysmond
 		nrsysmond-config --set license_key=$LICENSE
 		/etc/init.d/newrelic-sysmond start
 	fi
