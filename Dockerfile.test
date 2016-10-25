@@ -1,6 +1,10 @@
 FROM garbarino/nginx-newrelic
 EXPOSE 80 81 82
 
+RUN apt-get update
+RUN apt-get -y install dnsmasq
+RUN echo user=root > /etc/dnsmasq.conf
+
 COPY nginx.conf /etc/nginx/nginx.conf
 COPY mime.types /etc/nginx/mime.types
 COPY conf.d /etc/nginx/conf.d
@@ -31,8 +35,5 @@ COPY nginx-nr-agent.ini /etc/nginx-nr-agent/nginx-nr-agent.ini
 COPY nginx-nr-agent.ini.ci /etc/nginx-nr-agent/nginx-nr-agent.ini.ci
 COPY nginx-nr-agent.ini.staging /etc/nginx-nr-agent/nginx-nr-agent.ini.staging
 COPY nginx-nr-agent.ini.prod /etc/nginx-nr-agent/nginx-nr-agent.ini.prod
-RUN apt-get update
-RUN apt-get -y install dnsmasq
-RUN echo user=root > /etc/dnsmasq.conf
 
 CMD  /etc/nginx/scripts/startup-test.sh;
