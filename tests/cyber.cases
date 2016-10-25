@@ -16,6 +16,18 @@ test.upstream.sh ssl GET ci.garbarino.com /cybermonday/pagina landings_fe_us
 test.upstream.sh ssl GET ci.garbarino.com /cybermonday landings_fe_us
 test.upstream.sh ssl GET ci.garbarino.com /cybermondaySuscriptionService landings_fe_us
 
+test.upstream.sh ssl GET www.garbarino.com /cybermonday/pagina landings_fe_us
+test.upstream.sh ssl GET www.garbarino.com /cybermonday landings_fe_us
+test.upstream.sh ssl GET www.garbarino.com /cybermondaySuscriptionService landings_fe_us
+
+test.upstream.sh ssl GET ci.compumundo.com.ar /cybermonday/pagina landings_fe_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /cybermonday landings_fe_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /cybermondaySuscriptionService landings_fe_us
+
+test.upstream.sh ssl GET www.compumundo.com.ar /cybermonday/pagina landings_fe_us
+test.upstream.sh ssl GET www.compumundo.com.ar /cybermonday landings_fe_us
+test.upstream.sh ssl GET www.compumundo.com.ar /cybermondaySuscriptionService landings_fe_us
+
 # test.upstream.sh ssl GET staging.garbarino.com /cybermonday/pagina landings_fe_us
 # test.upstream.sh ssl GET staging.garbarino.com /cybermonday landings_fe_us
 
