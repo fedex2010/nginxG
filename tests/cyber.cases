@@ -1,24 +1,31 @@
 ## Cyber
 
-# test.upstream.sh ssl GET ci.garbarino.com /styles/cybermonday-thanks/styles.css landings_fe_us
-# test.upstream.sh ssl GET staging.garbarino.com /styles/cybermonday-thanks/styles.css landings_fe_us
-# test.upstream.sh ssl GET www.garbarino.com /styles/cybermonday-thanks/styles.css landings_fe_us
-
-# test.upstream.sh ssl GET ci.garbarino.com /js/cybermonday-thanks/styles.css landings_fe_us
-# test.upstream.sh ssl GET staging.garbarino.com /js/cybermonday-thanks/styles.css landings_fe_us
-# test.upstream.sh ssl GET www.garbarino.com /js/cybermonday-thanks/styles.css landings_fe_us
-
-# test.upstream.sh ssl GET ci.garbarino.com /images/cybermonday-thanks/styles.css landings_fe_us
-# test.upstream.sh ssl GET staging.garbarino.com /images/cybermonday-thanks/styles.css landings_fe_us
-# test.upstream.sh ssl GET www.garbarino.com /images/cybermonday-thanks/styles.css landings_fe_us
-
 test.upstream.sh ssl GET ci.garbarino.com /cybermonday/pagina landings_fe_us
 test.upstream.sh ssl GET ci.garbarino.com /cybermonday landings_fe_us
 test.upstream.sh ssl GET ci.garbarino.com /cybermondaySuscriptionService landings_fe_us
 
-# test.upstream.sh ssl GET staging.garbarino.com /cybermonday/pagina landings_fe_us
-# test.upstream.sh ssl GET staging.garbarino.com /cybermonday landings_fe_us
+test.upstream.sh ssl GET www.garbarino.com /cybermonday/pagina landings_fe_us
+test.upstream.sh ssl GET www.garbarino.com /cybermonday landings_fe_us
+test.upstream.sh ssl GET www.garbarino.com /cybermondaySuscriptionService landings_fe_us
 
-# test.upstream.sh ssl GET www.garbarino.com /cybermonday/pagina landings_fe_us
-# test.upstream.sh ssl GET www.garbarino.com /cybermonday landings_fe_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /cybermonday/pagina landings_fe_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /cybermonday landings_fe_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /cybermondaySuscriptionService landings_fe_us
 
+test.upstream.sh ssl GET www.compumundo.com.ar /cybermonday/pagina landings_fe_us
+test.upstream.sh ssl GET www.compumundo.com.ar /cybermonday landings_fe_us
+test.upstream.sh ssl GET www.compumundo.com.ar /cybermondaySuscriptionService landings_fe_us
+
+test.status.response.sh ssl GET ci.compumundo.com.ar /listado/cybermonday-electronica-y-tecnologia 302
+test.header.response.sh ssl GET ci.compumundo.com.ar /listado/cybermonday-electronica-y-tecnologia Location https://ci.compumundo.com.ar/cybermonday
+test.status.response.sh ssl GET ci.compumundo.com.ar /listado/cybermonday-smart-y-led-tv 302
+test.header.response.sh ssl GET ci.compumundo.com.ar /listado/cybermonday-smart-y-led-tv Location https://ci.compumundo.com.ar/cybermonday
+test.status.response.sh ssl GET ci.compumundo.com.ar /listado/cybermonday-smartphones-libres 302
+test.header.response.sh ssl GET ci.compumundo.com.ar /listado/cybermonday-smartphones-libres Location https://ci.compumundo.com.ar/cybermonday
+
+test.status.response.sh ssl GET www.compumundo.com.ar /listado/cybermonday-electronica-y-tecnologia 302
+test.header.response.sh ssl GET www.compumundo.com.ar /listado/cybermonday-electronica-y-tecnologia Location https://www.compumundo.com.ar/cybermonday
+test.status.response.sh ssl GET www.compumundo.com.ar /listado/cybermonday-smart-y-led-tv 302
+test.header.response.sh ssl GET www.compumundo.com.ar /listado/cybermonday-smart-y-led-tv Location https://www.compumundo.com.ar/cybermonday
+test.status.response.sh ssl GET www.compumundo.com.ar /listado/cybermonday-smartphones-libres 302
+test.header.response.sh ssl GET www.compumundo.com.ar /listado/cybermonday-smartphones-libres Location https://www.compumundo.com.ar/cybermonday

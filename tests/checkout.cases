@@ -90,3 +90,7 @@ test.upstream.sh ssl GET ci.garbarino.com /pagos/decidir/response checkout_ui_pa
 test.upstream.sh ssl GET ci.garbarino.com /pagos checkout_ui_payments_us
 test.upstream.sh ssl GET staging.garbarino.com /pagos checkout_ui_payments_us
 test.upstream.sh ssl GET www.garbarino.com /pagos checkout_ui_payments_us
+
+
+test.upstream.sh ssl GET www.garbarino.com /carrito/vendedor checkout_ui_us
+test.upstream.sh ssl GET www.compumundo.com.ar /carrito/vendedor checkout_ui_us

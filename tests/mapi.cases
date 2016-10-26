@@ -8,3 +8,5 @@ test.upstream.sh GET mapi.garbarino.com /notifications mapi_notifications_us
 test.upstream.sh GET mapi.garbarino.com /installations mapi_notifications_us
 
 test.upstream.sh GET mapi.garbarino.com /admin mapi_admin_us
+
+test.status.response.sh GET mapi.garbarino.com /teapot 418
