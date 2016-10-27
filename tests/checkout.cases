@@ -21,11 +21,11 @@ test.upstream.sh ssl GET ci.garbarino.com /carrito/updateItemQuantity checkout_u
 test.upstream.sh ssl GET ci.garbarino.com /carrito/setWarranty checkout_ui_us
 test.upstream.sh ssl GET ci.garbarino.com /carrito/getCartStatus/CART_ID checkout_ui_us
 
-test.upstream.sh ssl GET ci.garbarino.com /compra/entrega checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /compra/financiacion checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /compra/facturacion checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /compra/pago checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /compra/gracias checkout_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /compra/entrega checkout_ui_compra_us
+test.upstream.sh ssl GET ci.garbarino.com /compra/financiacion checkout_ui_compra_us
+test.upstream.sh ssl GET ci.garbarino.com /compra/facturacion checkout_ui_compra_us
+test.upstream.sh ssl GET ci.garbarino.com /compra/pago checkout_ui_compra_us
+test.upstream.sh ssl GET ci.garbarino.com /compra/gracias checkout_ui_compra_us
 
 test.status.response.sh ssl GET ci.garbarino.com /carrito 301
 test.header.response.sh ssl GET ci.garbarino.com /carrito Location https://ci.garbarino.com/carrito/
