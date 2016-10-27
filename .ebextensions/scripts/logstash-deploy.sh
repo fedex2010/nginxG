@@ -35,7 +35,7 @@ APP_ENV=$(echo $INSTANCE_NAME | sed 's/nginx-//')
 
 case  $APP_ENV  in
 	"prod")
-		LOGSTASH_HOST=ip-10-212-15-195.ec2.internal
+		LOGSTASH_HOST=udplog-prod.garba
 		LOGSTASH_PORT=19000
 	;;
 	"staging")
