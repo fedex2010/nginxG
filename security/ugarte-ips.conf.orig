@@ -68,7 +68,7 @@ allow 181.28.183.103;
 allow 190.192.133.142;
 
 #Mumi
-allow 201.179.187.162;
+allow 201.179.157.102;
 
 #Federico Poli
 allow 181.169.237.10;
@@ -94,14 +94,10 @@ allow 201.235.200.3;
 #Negro
 allow 181.165.242.54;
 
-#Nallegrotti 
-allow 190.192.193.222;
-
+<<<<<<< HEAD
 #Mi Pana
 allow 186.19.72.193;
-
-#Julizilla
-allow 181.230.108.244;
-
-#Mcibelli
-allow 190.192.138.25;
+=======
+#Nallegrotti 
+allow 190.192.193.222;
+>>>>>>> develop
