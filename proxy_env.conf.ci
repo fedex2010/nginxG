@@ -66,3 +66,6 @@ set $repo_us http://nexus.garba.ninja:9200 ;
 
 set $admin_tek_us https://apidesa.tekgenesis.net:445;
 set $checkout_ui_compra_us http://chk-ui-ci.us-east-1.elasticbeanstalk.com;
+
+set $batches_us http://batches-ci.us-east-1.elasticbeanstalk.com;
+
