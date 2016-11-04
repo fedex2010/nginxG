@@ -1,0 +1,5 @@
+## Feisbuc API
+
+test.upstream.sh ssl GET ci.garbarino.com /facebook/api/status batches_us
+test.upstream.sh ssl GET staging.garbarino.com /facebook/api/status batches_us 
+test.upstream.sh ssl GET www.garbarino.com /facebook/api/status batches_us 
