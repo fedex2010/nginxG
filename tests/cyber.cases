@@ -10,11 +10,9 @@ test.upstream.sh ssl GET www.garbarino.com /cybermondaySuscriptionService landin
 
 test.upstream.sh ssl GET ci.compumundo.com.ar /cybermonday/pagina epi_ui_us
 test.upstream.sh ssl GET ci.compumundo.com.ar /cybermonday epi_ui_us
-test.upstream.sh ssl GET ci.compumundo.com.ar /cybermondaySuscriptionService landings_fe_us
 
 test.upstream.sh ssl GET www.compumundo.com.ar /cybermonday/pagina epi_ui_us
 test.upstream.sh ssl GET www.compumundo.com.ar /cybermonday epi_ui_us
-test.upstream.sh ssl GET www.compumundo.com.ar /cybermondaySuscriptionService landings_fe_us
 
 
 test.upstream.sh ssl GET ci.compumundo.com.ar /listado/cybermonday-electronica-y-tecnologia epi_ui_us
