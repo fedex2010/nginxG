@@ -15,7 +15,7 @@ set $insurance_core_us http://localhost;
 set $home_core_us http://home-core-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_notifications_us http://mapi-notifications-prod.us-east-1.elasticbeanstalk.com;
-set $mapi_insurances_us http://localhost;
+set $mapi_insurances_us http://mapi-insurances-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_admin_us http://mapi-admin-prod.us-east-1.elasticbeanstalk.com;
 
 set $search_us http://search-prod.us-east-1.elasticbeanstalk.com;
