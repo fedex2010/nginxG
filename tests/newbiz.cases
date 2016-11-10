@@ -1,1 +1,1 @@
-test.upstream.sh GET api.garbarino.com /credit_cards/last_summary new_biz_core_us
+test.upstream.sh GET api-prod.garbarino.com /credit_cards/last_summary new_biz_core_us
