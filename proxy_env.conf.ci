@@ -53,9 +53,9 @@ set $meli_us http://ml-integration-ci.us-east-1.elasticbeanstalk.com;
 
 set $my_account_ui_us http://my-account-ui-ci.us-east-1.elasticbeanstalk.com;
 
-set $mutx_us http://10.211.15.165:8080;
+set $mutx_us http://10.211.15.195:8080;
 
-set $dia_del_nino_us http://209.188.82.163;
+set $dia_del_nino_us http://200.43.192.61;
 
 set $nagiostest_us http://10.211.15.9;
 
