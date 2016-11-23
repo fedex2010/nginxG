@@ -70,3 +70,6 @@ set $admin_tek_us https://apidesa.tekgenesis.net:445;
 set $checkout_ui_compra_us http://chk-ui-prod-compra.us-east-1.elasticbeanstalk.com;
 
 set $batches_us http://batches-prod.us-east-1.elasticbeanstalk.com;
+
+
+set $clairvoyant_us http://clairvoyant-prod.us-east-1.elasticbeanstalk.com/;
