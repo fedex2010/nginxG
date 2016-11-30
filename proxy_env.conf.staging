@@ -13,10 +13,11 @@ set $autocomplete_us http://autocomplete-staging.us-east-1.elasticbeanstalk.com;
 
 set $api_core_us http://api-core-staging.elasticbeanstalk.com;
 set $insurance_core_us http://localhost;
+set $new_biz_core_us http://new-biz-core-staging.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_notifications_us http://mapi-notifications-stg.us-east-1.elasticbeanstalk.com;
-set $mapi_insurances_us http://localhost;
+set $mapi_insurances_us http://mapi-insurances-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_admin_us http://mapi-admin-staging.us-east-1.elasticbeanstalk.com;
 
 set $search_us http://search-stg.elasticbeanstalk.com;
@@ -55,7 +56,7 @@ set $my_account_ui_us http://my-account-ui-staging.us-east-1.elasticbeanstalk.co
 
 set $mutx_us http://10.211.15.104;
 
-set $dia_del_nino_us http://209.188.82.163;
+set $dia_del_nino_us http://200.43.192.61;
 
 set $nagiostest_us http://10.211.15.9;
 
@@ -67,3 +68,8 @@ set $repo_us http://nexus.garba.ninja:9200;
 
 set $admin_tek_us https://apidesa.tekgenesis.net:445;
 set $checkout_ui_compra_us http://chk-ui-staging.us-east-1.elasticbeanstalk.com;
+
+set $batches_us http://batches-staging.us-east-1.elasticbeanstalk.com;
+
+
+set $clairvoyant_us http://clairvoyant-staging.us-east-1.elasticbeanstalk.com;

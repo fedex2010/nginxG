@@ -12,6 +12,7 @@ set $autocomplete_us http://autocomplete-ci.us-east-1.elasticbeanstalk.com;
 
 set $api_core_us http://api-core-ci.elasticbeanstalk.com;
 set $insurance_core_us http://insurance-core-ci.us-east-1.elasticbeanstalk.com;
+set $new_biz_core_us http://new-biz-core-ci.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-ci.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-ci.us-east-1.elasticbeanstalk.com;
 set $mapi_notifications_us http://mapi-notifications-ci.us-east-1.elasticbeanstalk.com;
@@ -52,9 +53,9 @@ set $meli_us http://ml-integration-ci.us-east-1.elasticbeanstalk.com;
 
 set $my_account_ui_us http://my-account-ui-ci.us-east-1.elasticbeanstalk.com;
 
-set $mutx_us http://10.211.15.104:8080;
+set $mutx_us http://10.211.15.195:8080;
 
-set $dia_del_nino_us http://209.188.82.163;
+set $dia_del_nino_us http://200.43.192.61;
 
 set $nagiostest_us http://10.211.15.9;
 
@@ -66,3 +67,7 @@ set $repo_us http://nexus.garba.ninja:9200 ;
 
 set $admin_tek_us https://apidesa.tekgenesis.net:445;
 set $checkout_ui_compra_us http://chk-ui-ci.us-east-1.elasticbeanstalk.com;
+
+set $batches_us http://batches-ci.us-east-1.elasticbeanstalk.com;
+
+set $clairvoyant_us http://clairvoyant-ci.us-east-1.elasticbeanstalk.com;
