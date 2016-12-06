@@ -18,6 +18,10 @@ test.uri.rewrite.sh GET www.garbarino.com /rse/concursodiadelnino/descargas/file
 
 test.upstream.sh ssl GET ci.garbarino.com /seguros/autos landings_fe_us
 test.upstream.sh ssl GET ci.garbarino.com /seguros landings_fe_us
+test.upstream.sh ssl GET staging.garbarino.com /seguros/autos landings_fe_us
+test.upstream.sh ssl GET staging.garbarino.com /seguros landings_fe_us
+test.upstream.sh ssl GET www.garbarino.com /seguros/autos landings_fe_us
+test.upstream.sh ssl GET www.garbarino.com /seguros landings_fe_us
 
 test.upstream.sh GET micro-sitios-ci.garbarino.com /catalogos/julio2016 static_sites_us
 test.host.rewrite.sh GET micro-sitios-ci.garbarino.com /catalogos/julio2016 static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com
