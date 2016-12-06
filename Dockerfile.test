@@ -1,8 +1,7 @@
 FROM garbarino/nginx-newrelic
 EXPOSE 80 81 82
 
-RUN apt-get update
-RUN apt-get -y install dnsmasq
+RUN apt-get update && apt-get -y install dnsmasq
 RUN echo user=root > /etc/dnsmasq.conf
 
 COPY nginx.conf /etc/nginx/nginx.conf

@@ -71,3 +71,7 @@ test.upstream.sh GET api-dev.garbarino.com /synonyms search_us
 test.upstream.sh GET api-dev.garbarino.com /gifts gifts_core_us
 
 test.upstream.sh GET api-dev.garbarino.com /events-definition tracker_us
+
+
+test.upstream.sh GET api-dev.garbarino.com /clairvoyant/user/x1/timeline clairvoyant_us
+test.upstream.sh POST api-dev.garbarino.com /clairvoyant/events/x clairvoyant_us

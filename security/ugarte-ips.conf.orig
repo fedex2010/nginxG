@@ -48,9 +48,14 @@ allow 181.28.78.214;
 allow 181.46.72.69;
 allow 186.22.54.192;
 
-#Caro Olmo IP
+<<<<<<< HEAD
+#Caro Olmo IPs
 allow 186.138.208.94;
 allow 181.230.2.13;
+=======
+#Caro Olmo IP
+allow 181.164.106.15;
+>>>>>>> 1167d9c1fa0e8355b5cf2e40645ff3685c134546
 
 #Manu Kenar IP
 allow 181.45.122.129;
@@ -97,7 +102,7 @@ allow 201.235.200.3;
 #Negro
 allow 181.165.242.54;
 
-#Nallegrotti 
+#Nallegrotti
 allow 190.192.193.222;
 
 #Mi Pana
@@ -114,6 +119,9 @@ allow 181.166.59.61;
 
 #temporal
 allow 190.18.254.122;
+<<<<<<< HEAD
+=======
 
 #mcibelli
 allow 181.117.2.98;
+>>>>>>> 1167d9c1fa0e8355b5cf2e40645ff3685c134546

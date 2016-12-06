@@ -56,7 +56,7 @@ set $my_account_ui_us http://my-account-ui-staging.us-east-1.elasticbeanstalk.co
 
 set $mutx_us http://10.211.15.104;
 
-set $dia_del_nino_us http://209.188.82.163;
+set $dia_del_nino_us http://200.43.192.61;
 
 set $nagiostest_us http://10.211.15.9;
 
@@ -70,3 +70,6 @@ set $admin_tek_us https://apidesa.tekgenesis.net:445;
 set $checkout_ui_compra_us http://chk-ui-staging.us-east-1.elasticbeanstalk.com;
 
 set $batches_us http://batches-staging.us-east-1.elasticbeanstalk.com;
+
+
+set $clairvoyant_us http://clairvoyant-staging.us-east-1.elasticbeanstalk.com;
