@@ -1,5 +1,7 @@
 
 test.upstream.sh ssl GET ci.compumundo.com.ar /normandia normandia_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /producto/el-mejor-producto/12345678 product_fe_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /producto/descripcion/xidInexistente product_fe_us
 test.upstream.sh ssl GET ci.compumundo.com.ar / home_fe_us
 test.upstream.sh ssl GET ci.compumundo.com.ar /seguros landings_fe_us
 
