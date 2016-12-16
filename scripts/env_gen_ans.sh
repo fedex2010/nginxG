@@ -15,7 +15,7 @@ echo "[$(date)] Using /etc/nginx/upstreams.conf.$1" >> /var/log/nginx/env_gen.lo
 cp /etc/nginx/security/test-ips.conf.$1 /etc/nginx/security/test-ips.conf  2>> /var/log/nginx/env_gen.err
 echo "[$(date)] Using /etc/nginx/security/test-ips.conf.$1" >> /var/log/nginx/env_gen.log
 
-cp -rf /etc/nginx-nr-agent/nginx-nr-agent.ini.$1 /etc/nginx-nr-agent/nginx-nr-agent.ini  2>> /var/log/nginx/env_gen.err
+cp -f /etc/nginx/nginx-nr-agent.ini.$1 /etc/nginx-nr-agent/nginx-nr-agent.ini  2>> /var/log/nginx/env_gen.err
 echo "[$(date)] Using /etc/nginx-nr-agent/nginx-nr-agent.ini.$1" >> /var/log/nginx/env_gen.log
 
 echo "[$(date)] Replacing hostname on nr configuration file" >> /var/log/nginx/env_gen.log
