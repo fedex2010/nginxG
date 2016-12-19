@@ -3,8 +3,6 @@
 test.upstream.sh GET api-dev.garbarino.com /homes/current home_core_us
 test.upstream.sh GET api-dev.garbarino.com /home_offers home_core_us
 
-test.upstream.sh GET api-dev.garbarino.com /lists listing_core_us
-
 test.upstream.sh GET api-dev.garbarino.com /categories api_core_us
 test.upstream.sh GET api-dev.garbarino.com /cities api_core_us
 test.upstream.sh GET api-dev.garbarino.com /productLists api_core_us
