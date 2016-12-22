@@ -39,6 +39,9 @@ test.upstream.sh ssl GET ci.garbarino.com /productos/tv-led-y-video/4272 listing
 test.upstream.sh ssl GET ci.garbarino.com /marcas/Samsung listing_us
 test.upstream.sh ssl GET ci.garbarino.com "/productos?q=algo" listing_us
 
+test.upstream.sh ssl GET ci.garbarino.com /user/signup/confirmation/123 my_account_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /user/password/recover/123 my_account_ui_us
+
 test.upstream.sh ssl GET www.ipoint.com.ar /productos/tv-led-y-video/4272 seo_proxy_us
 test.upstream.sh ssl GET www.ipoint.com.ar /marcas/Samsung seo_proxy_us
 test.upstream.sh ssl GET www.ipoint.com.ar /listado/samsung-products seo_proxy_us
