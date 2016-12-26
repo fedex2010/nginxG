@@ -18,6 +18,10 @@ set $home_core_us http://home-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_notifications_us http://mapi-notifications-stg.us-east-1.elasticbeanstalk.com;
 set $mapi_newbiz_us http://mapi-newbiz-staging.us-east-1.elasticbeanstalk.com;
+<<<<<<< HEAD
+=======
+set $listing_core_us http://localhost;
+>>>>>>> develop
 set $mapi_admin_us http://mapi-admin-staging.us-east-1.elasticbeanstalk.com;
 
 set $search_us http://search-stg.elasticbeanstalk.com;

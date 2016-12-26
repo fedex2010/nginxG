@@ -1,7 +1,4 @@
 ## Cambio de password 
-test.upstream.sh ssl GET ci.garbarino.com /user/password/change epi_api_us
-test.upstream.sh ssl GET staging.garbarino.com /user/password/change epi_api_us
-test.upstream.sh ssl GET www.garbarino.com /user/password/change epi_api_us
 
 test.upstream.sh ssl GET ci.compumundo.com.ar /user/password/change epi_api_us
 test.upstream.sh ssl GET staging.compumundo.com.ar /user/password/change epi_api_us
