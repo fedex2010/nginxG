@@ -16,11 +16,12 @@ set $new_biz_core_us http://new-biz-core-ci.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-ci.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-ci.us-east-1.elasticbeanstalk.com;
 set $mapi_notifications_us http://mapi-notifications-ci.us-east-1.elasticbeanstalk.com;
-set $mapi_insurances_us http://mapi-insurances-ci.us-east-1.elasticbeanstalk.com;
+set $mapi_newbiz_us http://mapi-newbiz-ci.us-east-1.elasticbeanstalk.com;
 set $mapi_admin_us http://mapi-admin-ci.us-east-1.elasticbeanstalk.com;
 
 set $search_us http://search-ci.elasticbeanstalk.com;
 set $product_core_us http://product-core-ci.elasticbeanstalk.com;
+set $listing_core_us http://listing-core-ci.us-east-1.elasticbeanstalk.com;
 set $microapps_us http://localhost;
 set $product_fe_us http://product-ci.elasticbeanstalk.com;
 set $home_fe_us http://home-ui-ci.us-east-1.elasticbeanstalk.com;
