@@ -27,9 +27,9 @@ test.upstream.sh ssl GET staging.compumundo.com.ar /listado/cybermonday-electron
 test.upstream.sh ssl GET staging.compumundo.com.ar /listado/cybermonday-smart-y-led-tv listing_us
 test.upstream.sh ssl GET staging.compumundo.com.ar /listado/cybermonday-smartphones-libres listing_us
 
-test.upstream.sh ssl GET www.compumundo.com.ar /listado/cybermonday-electronica-y-tecnologia epi_ui_us
-test.upstream.sh ssl GET www.compumundo.com.ar /listado/cybermonday-smart-y-led-tv epi_ui_us
-test.upstream.sh ssl GET www.compumundo.com.ar /listado/cybermonday-smartphones-libres epi_ui_us
+test.upstream.sh ssl GET www.compumundo.com.ar /listado/cybermonday-electronica-y-tecnologia listing_us
+test.upstream.sh ssl GET www.compumundo.com.ar /listado/cybermonday-smart-y-led-tv listing_us
+test.upstream.sh ssl GET www.compumundo.com.ar /listado/cybermonday-smartphones-libres listing_us
 
 # test.status.response.sh ssl GET ci.compumundo.com.ar /listado/cybermonday-electronica-y-tecnologia 302
 # test.header.response.sh ssl GET ci.compumundo.com.ar /listado/cybermonday-electronica-y-tecnologia Location https://ci.compumundo.com.ar/cybermonday
