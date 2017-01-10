@@ -30,6 +30,7 @@ set $my_account_core_us http://my-account-core-ci.us-east-1.elasticbeanstalk.com
 
 set $operations_us http://operations-recovers-ci.us-east-1.elasticbeanstalk.com;
 set $operations_kibana_us http://10.211.15.107:5601;
+set $mktreports_us http://10.211.15.59:5601;
 set $gifts_core_us http://gifts-core-ci.us-east-1.elasticbeanstalk.com;
 set $gifts_frontend_us http://gifts-frontend-ci.us-east-1.elasticbeanstalk.com;
 set $gifts_dashboard_us http://gifts-dashboard-ci.us-east-1.elasticbeanstalk.com;
