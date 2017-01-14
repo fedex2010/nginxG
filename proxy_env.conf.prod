@@ -9,7 +9,7 @@ set $prerender_us http://prerender-prod.us-east-1.elasticbeanstalk.com;
 set $normandia_us http://normandia-prod.us-east-1.elasticbeanstalk.com;
 set $listing_us http://listing-ui-prod.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-prod.us-east-1.elasticbeanstalk.com ;
-
+set $emails_core_us http://api-core-prod.elasticbeanstalk.com;
 set $api_core_us http://api-core-prod.elasticbeanstalk.com;
 set $insurance_core_us http://localhost;
 set $new_biz_core_us http://new-biz-core-prod.us-east-1.elasticbeanstalk.com;

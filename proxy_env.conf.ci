@@ -9,7 +9,7 @@ set $prerender_us http://ip-10-211-15-224.ec2.internal:3000;
 set $normandia_us http://normandia-ci.us-east-1.elasticbeanstalk.com;
 set $listing_us http://listing-ui-ci.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-ci.us-east-1.elasticbeanstalk.com;
-
+set $emails_core_us http://emails-core-ci.us-east-1.elasticbeanstalk.com; 
 set $api_core_us http://api-core-ci.elasticbeanstalk.com;
 set $insurance_core_us http://insurance-core-ci.us-east-1.elasticbeanstalk.com;
 set $new_biz_core_us http://new-biz-core-ci.us-east-1.elasticbeanstalk.com;
