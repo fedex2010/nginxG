@@ -10,7 +10,7 @@ set $normandia_us http://normandia-staging.us-east-1.elasticbeanstalk.com;
 set $listing_us http://listing-ui-staging.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-staging.us-east-1.elasticbeanstalk.com;
 
-
+set $emails_core_us http://emails-core-staging.us-east-1.elasticbeanstalk.com;
 set $api_core_us http://api-core-staging.elasticbeanstalk.com;
 set $insurance_core_us http://localhost;
 set $new_biz_core_us http://new-biz-core-staging.us-east-1.elasticbeanstalk.com;
@@ -31,6 +31,7 @@ set $my_account_core_us http://my-account-core-staging.us-east-1.elasticbeanstal
 
 set $operations_us http://operations-recovers-stg.us-east-1.elasticbeanstalk.com;
 set $operations_kibana_us http://10.211.15.107:5601;
+set $mktreports_us http://10.211.15.59:5601;
 set $gifts_core_us http://gifts-core-staging.us-east-1.elasticbeanstalk.com;
 set $gifts_frontend_us http://gifts-frontend-staging.us-east-1.elasticbeanstalk.com;
 set $gifts_dashboard_us http://gifts-dashboard-staging.us-east-1.elasticbeanstalk.com;
