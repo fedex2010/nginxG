@@ -14,10 +14,11 @@ set $api_core_us http://api-core-ci.elasticbeanstalk.com;
 set $insurance_core_us http://insurance-core-ci.us-east-1.elasticbeanstalk.com;
 set $new_biz_core_us http://new-biz-core-ci.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-ci.elasticbeanstalk.com;
-set $mapi_core_us http://mapi-core-ci.us-east-1.elasticbeanstalk.com;
+set $mapi_core_us http://mapi-core-ans-ci.garba.ninja;
 set $mapi_notifications_us http://mapi-notifications-ci.us-east-1.elasticbeanstalk.com;
 set $mapi_newbiz_us http://mapi-newbiz-ci.us-east-1.elasticbeanstalk.com;
 set $mapi_admin_us http://mapi-admin-ci.us-east-1.elasticbeanstalk.com;
+set $marketplace_us http://marketplace-ci.us-east-1.elasticbeanstalk.com;
 
 set $search_us http://search-ci.elasticbeanstalk.com;
 set $croupier_us http://croupier-ci.elasticbeanstalk.com;
@@ -27,7 +28,7 @@ set $microapps_us http://localhost;
 set $product_fe_us http://product-ci.elasticbeanstalk.com;
 set $home_fe_us http://home-ui-ci.us-east-1.elasticbeanstalk.com;
 set $landings_fe_us http://landings-ci.us-east-1.elasticbeanstalk.com;
-set $my_account_core_us http://my-account-core-ci.us-east-1.elasticbeanstalk.com;
+set $my_account_core_us http://my-account-core-ans-ci.garba.ninja;
 
 set $operations_us http://operations-recovers-ci.us-east-1.elasticbeanstalk.com;
 set $operations_kibana_us http://10.211.15.107:5601;
