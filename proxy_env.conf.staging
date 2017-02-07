@@ -22,6 +22,7 @@ set $listing_core_us http://localhost;
 set $mapi_admin_us http://mapi-admin-staging.us-east-1.elasticbeanstalk.com;
 
 set $search_us http://search-stg.elasticbeanstalk.com;
+set $croupier_us http://croupier-staging.elasticbeanstalk.com;
 set $product_core_us http://product-core-staging.elasticbeanstalk.com;
 set $microapps_us http://micro-apps-staging.us-east-1.elasticbeanstalk.com;
 set $product_fe_us http://product-staging.elasticbeanstalk.com;
