@@ -78,4 +78,9 @@ set $batches_us http://batches-prod.us-east-1.elasticbeanstalk.com;
 
 set $clairvoyant_us http://clairvoyant-prod.us-east-1.elasticbeanstalk.com/;
 
+<<<<<<< HEAD
 set $blog_us http://blog.garba.ninja;
+=======
+set $gamification_core_us http://gamification-core-prod.us-east-1.elasticbeanstalk.com;
+
+>>>>>>> da0535e200fc4acaada6b961307ce88413ed7508
