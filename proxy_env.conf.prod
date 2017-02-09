@@ -77,3 +77,5 @@ set $batches_us http://batches-prod.us-east-1.elasticbeanstalk.com;
 
 
 set $clairvoyant_us http://clairvoyant-prod.us-east-1.elasticbeanstalk.com/;
+
+set $blog_us http://blog.garba.ninja;
