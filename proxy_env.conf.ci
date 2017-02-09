@@ -75,3 +75,5 @@ set $checkout_ui_compra_us http://chk-ui-ci.us-east-1.elasticbeanstalk.com;
 set $batches_us http://batches-ci.us-east-1.elasticbeanstalk.com;
 
 set $clairvoyant_us http://clairvoyant-ci.us-east-1.elasticbeanstalk.com;
+
+set $blog_us http://blog.garba.ninja;
