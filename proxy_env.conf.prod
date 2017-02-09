@@ -77,3 +77,6 @@ set $batches_us http://batches-prod.us-east-1.elasticbeanstalk.com;
 
 
 set $clairvoyant_us http://clairvoyant-prod.us-east-1.elasticbeanstalk.com/;
+
+set $gamification_core_us http://gamification-core-prod.us-east-1.elasticbeanstalk.com;
+

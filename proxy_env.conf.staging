@@ -76,3 +76,6 @@ set $checkout_ui_compra_us http://chk-ui-staging.us-east-1.elasticbeanstalk.com;
 set $batches_us http://batches-staging.us-east-1.elasticbeanstalk.com;
 
 set $clairvoyant_us http://clairvoyant-staging.us-east-1.elasticbeanstalk.com;
+
+set $gamification_core_us http://gamification-core-staging.us-east-1.elasticbeanstalk.com;
+
