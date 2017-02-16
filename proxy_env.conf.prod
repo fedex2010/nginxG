@@ -22,6 +22,7 @@ set $mapi_notifications_us http://mapi-notifications-prod.us-east-1.elasticbeans
 set $mapi_newbiz_us http://mapi-newbiz-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_admin_us http://mapi-admin-prod.us-east-1.elasticbeanstalk.com;
 set $marketplace_us http://marketplace-prd.us-east-1.elasticbeanstalk.com;
+set $cac_frontend_us http://localhost;
 
 set $search_us http://search-prod.us-east-1.elasticbeanstalk.com;
 set $croupier_us http://croupier-prod.us-east-1.elasticbeanstalk.com;
