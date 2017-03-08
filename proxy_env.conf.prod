@@ -22,6 +22,8 @@ set $mapi_notifications_us http://mapi-notifications-prod.us-east-1.elasticbeans
 set $mapi_newbiz_us http://mapi-newbiz-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_admin_us http://mapi-admin-prod.us-east-1.elasticbeanstalk.com;
 set $marketplace_us http://marketplace-prd.us-east-1.elasticbeanstalk.com;
+set $cac_frontend_us http://localhost;
+set $pwa_us http://localhost;
 
 set $search_us http://search-prod.us-east-1.elasticbeanstalk.com;
 set $croupier_us http://croupier-prod.us-east-1.elasticbeanstalk.com;
@@ -80,6 +82,6 @@ set $batches_us http://batches-prod.us-east-1.elasticbeanstalk.com;
 
 set $clairvoyant_us http://clairvoyant-prod.us-east-1.elasticbeanstalk.com/;
 
-set $blog_us http://blog.garba.ninja;
+set $blog_us http://10.211.15.136;
 
 set $gamification_core_us http://gamification-core-prod.us-east-1.elasticbeanstalk.com;
