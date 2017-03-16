@@ -24,7 +24,7 @@ set $pwa_us http://pwa-ui-ci.us-east-1.elasticbeanstalk.com;
 
 set $search_us http://search-ci.elasticbeanstalk.com;
 set $croupier_us http://croupier-ci.us-east-1.elasticbeanstalk.com;
-set $product_core_us http://product-core-ci.elasticbeanstalk.com;
+set $product_core_us http://product-core-core-ans-ci.garba.ninja;;
 set $listing_core_us http://listing-core-ci.us-east-1.elasticbeanstalk.com;
 set $microapps_us http://localhost;
 set $product_fe_us http://product-ci.elasticbeanstalk.com;
