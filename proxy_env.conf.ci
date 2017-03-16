@@ -38,6 +38,7 @@ set $mktreports_us http://10.211.15.59:5601;
 set $gifts_core_us http://gifts-core-ci.us-east-1.elasticbeanstalk.com;
 set $gifts_frontend_us http://gifts-frontend-ci.us-east-1.elasticbeanstalk.com;
 set $gifts_dashboard_us http://gifts-dashboard-ci.us-east-1.elasticbeanstalk.com;
+set $gifts_blog_us http://10.211.15.104:4000;
 set $oauth2_server_us http://oauth2-server-ci.us-east-1.elasticbeanstalk.com;
 set $gifts_legacy_us http://200.43.192.230:80;
 set $backoffice_ui_us http://backoffice-ui-ci.us-east-1.elasticbeanstalk.com;
@@ -81,3 +82,5 @@ set $clairvoyant_us http://clairvoyant-ci.us-east-1.elasticbeanstalk.com;
 set $blog_us http://10.211.15.136;
 
 set $gamification_core_us http://gamification-core-ci.us-east-1.elasticbeanstalk.com;
+
+set $sustentable_us http://67.227.215.228;
