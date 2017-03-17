@@ -24,6 +24,8 @@ set $mapi_admin_us http://mapi-admin-prod.us-east-1.elasticbeanstalk.com;
 set $marketplace_us http://marketplace-prd.us-east-1.elasticbeanstalk.com;
 set $cac_frontend_us http://localhost;
 set $pwa_us http://localhost;
+set $coupons_core_us http://coupons-core-prod.us-east-1.elasticbeanstalk.com;
+
 
 set $search_us http://search-prod.us-east-1.elasticbeanstalk.com;
 set $croupier_us http://croupier-prod.us-east-1.elasticbeanstalk.com;
