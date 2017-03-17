@@ -24,7 +24,7 @@ set $pwa_us http://pwa-ui-ci.us-east-1.elasticbeanstalk.com;
 
 set $search_us http://search-ci.elasticbeanstalk.com;
 set $croupier_us http://croupier-ci.us-east-1.elasticbeanstalk.com;
-set $product_core_us http://product-core-ci.elasticbeanstalk.com;
+set $product_core_us http://product-core-core-ans-ci.garba.ninja;
 set $listing_core_us http://listing-core-ci.us-east-1.elasticbeanstalk.com;
 set $microapps_us http://localhost;
 set $product_fe_us http://product-ci.elasticbeanstalk.com;
@@ -38,7 +38,7 @@ set $mktreports_us http://10.211.15.59:5601;
 set $gifts_core_us http://gifts-core-ci.us-east-1.elasticbeanstalk.com;
 set $gifts_frontend_us http://gifts-frontend-ci.us-east-1.elasticbeanstalk.com;
 set $gifts_dashboard_us http://gifts-dashboard-ci.us-east-1.elasticbeanstalk.com;
-set $gifts_blog_us http://10.211.15.104:4000;
+set $gifts_blog_us http://10.211.15.113:4000;
 set $oauth2_server_us http://oauth2-server-ci.us-east-1.elasticbeanstalk.com;
 set $gifts_legacy_us http://200.43.192.230:80;
 set $backoffice_ui_us http://backoffice-ui-ci.us-east-1.elasticbeanstalk.com;

@@ -23,7 +23,11 @@ server {
             client_max_body_size 10M;
         }
         ######################### gifts-blog #########################
-      	location /blog {
+        location /blog {
+<<<<<<< HEAD
+=======
+	    rewrite ^/blog/?(.*)  /$1 break;
+>>>>>>> 9d9fcea779f08cae8f525d0251a54d8f4d1e3591
             proxy_pass $gifts_blog_us;
             client_max_body_size 10M;
         }
@@ -140,9 +144,9 @@ server {
         include /etc/nginx/includes/https-only;
 
         ######################### gifts-core #########################
-        # Allowed resources        
+        # Allowed resources
         location /gifts {
-            client_max_body_size 10M;            
+            client_max_body_size 10M;
             proxy_pass $gifts_core_us;
         }
 
@@ -166,12 +170,12 @@ server {
         }
 
         # Swagger docs.
-        location ~ ^/gifts(/$|/docs|/swagger|/v2/api-docs|/webjars|/configuration/) {  
+        location ~ ^/gifts(/$|/docs|/swagger|/v2/api-docs|/webjars|/configuration/) {
             return 403;
-        } 
+        }
 
         ######################### oauth2-server #########################
-        # Allowed all resources.        
+        # Allowed all resources.
         location /oauth {
             proxy_pass $oauth2_server_us;
         }
