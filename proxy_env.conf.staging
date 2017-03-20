@@ -86,4 +86,3 @@ set $blog_us http://10.211.15.136;
 
 set $gamification_core_us http://gamification-core-staging.us-east-1.elasticbeanstalk.com;
 
-set $sustentable_us http://67.227.215.228;
