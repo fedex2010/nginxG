@@ -23,6 +23,7 @@ set $mapi_newbiz_us http://mapi-newbiz-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_admin_us http://mapi-admin-prod.us-east-1.elasticbeanstalk.com;
 set $marketplace_us http://marketplace-prd.us-east-1.elasticbeanstalk.com;
 set $cac_frontend_us http://localhost;
+set $cac_core_us http://localhost;
 set $pwa_us http://localhost;
 set $coupons_core_us http://coupons-core-prod.us-east-1.elasticbeanstalk.com;
 
