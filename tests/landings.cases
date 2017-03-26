@@ -1,20 +1,20 @@
 ## Landings
 
-test.status.response.sh ssl GET www.garbarino.com /rse/concursodiadelnino 301
-test.header.response.sh ssl GET www.garbarino.com /rse/concursodiadelnino Location http://www.garbarino.com/rse/concursodiadelnino
-test.status.response.sh GET garbarino.com /rse/concursodiadelnino 301
-test.header.response.sh GET garbarino.com /rse/concursodiadelnino Location http://www.garbarino.com/rse/concursodiadelnino
-test.status.response.sh GET garbarino.com /rse/concursodiadelnino 301
-test.header.response.sh GET garbarino.com /rse/concursodiadelnino Location http://www.garbarino.com/rse/concursodiadelnino
-test.status.response.sh GET www.garbarino.com.ar /rse/concursodiadelnino 301
-test.header.response.sh GET www.garbarino.com.ar /rse/concursodiadelnino Location http://www.garbarino.com/rse/concursodiadelnino
+#test.status.response.sh ssl GET www.garbarino.com /rse/concursodiadelnino 301
+#test.header.response.sh ssl GET www.garbarino.com /rse/concursodiadelnino Location http://www.garbarino.com/rse/concursodiadelnino
+#test.status.response.sh GET garbarino.com /rse/concursodiadelnino 301
+#test.header.response.sh GET garbarino.com /rse/concursodiadelnino Location http://www.garbarino.com/rse/concursodiadelnino
+#test.status.response.sh GET garbarino.com /rse/concursodiadelnino 301
+#test.header.response.sh GET garbarino.com /rse/concursodiadelnino Location http://www.garbarino.com/rse/concursodiadelnino
+#test.status.response.sh GET www.garbarino.com.ar /rse/concursodiadelnino 301
+#test.header.response.sh GET www.garbarino.com.ar /rse/concursodiadelnino Location http://www.garbarino.com/rse/concursodiadelnino
 
 
-test.upstream.sh GET www.garbarino.com /rse/concursodiadelnino dia_del_nino_us
-test.uri.rewrite.sh GET www.garbarino.com /rse/concursodiadelnino /concurso/
-test.host.rewrite.sh GET www.garbarino.com /rse/concursodiadelnino 200.43.192.61
-test.upstream.sh GET www.garbarino.com /rse/concursodiadelnino/descargas/file dia_del_nino_us
-test.uri.rewrite.sh GET www.garbarino.com /rse/concursodiadelnino/descargas/file /concurso/descargas/file
+#test.upstream.sh GET www.garbarino.com /rse/concursodiadelnino dia_del_nino_us
+#test.uri.rewrite.sh GET www.garbarino.com /rse/concursodiadelnino /concurso/
+#test.host.rewrite.sh GET www.garbarino.com /rse/concursodiadelnino 200.43.192.61
+#test.upstream.sh GET www.garbarino.com /rse/concursodiadelnino/descargas/file dia_del_nino_us
+#test.uri.rewrite.sh GET www.garbarino.com /rse/concursodiadelnino/descargas/file /concurso/descargas/file
 
 test.upstream.sh ssl GET ci.garbarino.com /seguros/autos landings_fe_us
 test.upstream.sh ssl GET ci.garbarino.com /seguros landings_fe_us

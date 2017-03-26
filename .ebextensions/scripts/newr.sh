@@ -16,9 +16,20 @@ then
 	rpm -qa | grep -q newrelic-sysmond #Chequeo si ya esta instalado el plugin
 	if [ $? == 1 ]
 	then
-		rpm -Uvh https://yum.newrelic.com/pub/newrelic/el5/x86_64/newrelic-repo-5-3.noarch.rpm	
-		yum install -y newrelic-sysmond
-		nrsysmond-config --set license_key=$LICENSE
-		/etc/init.d/newrelic-sysmond start
+		if [ -f /etc/debian_version ]
+		then
+			echo 'deb http://apt.newrelic.com/debian/ newrelic non-free' | sudo tee /etc/apt/sources.list.d/newrelic.lists
+			wget -O- https://download.newrelic.com/548C16BF.gpg | apt-key add -
+			apt-get update
+			apt-get install -y newrelic-sysmond
+			nrsysmond-config --set license_key=$LICENSE
+			systemctl start newrelic-sysmond
+			/etc/init.d/newrelic-sysmond start	
+		else
+			rpm -Uvh https://yum.newrelic.com/pub/newrelic/el5/x86_64/newrelic-repo-5-3.noarch.rpm	
+			yum install -y newrelic-sysmond
+			nrsysmond-config --set license_key=$LICENSE
+			/etc/init.d/newrelic-sysmond start
+		fi
 	fi
 fi
