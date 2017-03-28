@@ -30,6 +30,8 @@ upstream my_account_core_us { server my-account-core-staging.us-east-1.elasticbe
 upstream operations_us { server  operations-recovers-stg.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream operations_kibana_us { server  10.211.15.107:5601 max_fails=3; keepalive 5;}
 upstream mktreports_us { server 10.211.15.59:5601 max_fails=3; keepalive 5;}
+upstream mktreports_elastic_us { server 10.211.15.59:9200 max_fails=3; keepalive 5;}
+upstream mktreports_core_us { server mkt-reports-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream gifts_core_us { server gifts-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream gifts_frontend_us { server gifts-frontend-staging.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream gifts_dashboard_us { server gifts-dashboard-staging.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
