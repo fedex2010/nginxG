@@ -6,6 +6,7 @@ location ~ ^/sg/(concat|login|logout) {
 
 # CAC Fonts
 location ~ ^\/ayuda\/.*(eot|otf|ttf|woff)$ {
+    rewrite ^/ayuda/?(.*) /$1 break;
     proxy_pass $cac_frontend_us;
 }
 
