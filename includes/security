@@ -4,6 +4,11 @@ location ~ ^/sg/(concat|login|logout) {
     break;
 }
 
+# CAC Fonts
+location ~ ^\/ayuda\/.*(eot|otf|ttf|woff)$ {
+    proxy_pass $cac_frontend_us;
+}
+
 location ~* \.(eot|otf|ttf|woff)$ {
     proxy_pass $epi_ui_us;
 }
