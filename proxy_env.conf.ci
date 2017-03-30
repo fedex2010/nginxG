@@ -10,7 +10,7 @@ set $normandia_us http://normandia-ans-ci.garba.ninja;
 set $listing_us http://listing-ui-ci.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-ci.us-east-1.elasticbeanstalk.com;
 set $emails_core_us http://emails-core-ci.us-east-1.elasticbeanstalk.com;
-set $api_core_us http://api-core-ci.elasticbeanstalk.com;
+set $api_core_us http://api-core-ans-ci.garba.ninja;
 set $insurance_core_us http://insurance-core-ci.us-east-1.elasticbeanstalk.com;
 set $new_biz_core_us http://new-biz-core-ci.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-ci.elasticbeanstalk.com;
