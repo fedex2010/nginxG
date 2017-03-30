@@ -38,6 +38,8 @@ set $my_account_core_us http://my-account-core-staging.us-east-1.elasticbeanstal
 set $operations_us http://operations-recovers-stg.us-east-1.elasticbeanstalk.com;
 set $operations_kibana_us http://10.211.15.107:5601;
 set $mktreports_us http://10.211.15.59:5601;
+set $mktreports_elastic_us http://10.211.15.59:9200;
+set $mktreports_core_us http://mkt-reports-core-staging.us-east-1.elasticbeanstalk.com;
 set $gifts_core_us http://gifts-core-staging.us-east-1.elasticbeanstalk.com;
 set $gifts_frontend_us http://gifts-frontend-staging.us-east-1.elasticbeanstalk.com;
 set $gifts_dashboard_us http://gifts-dashboard-staging.us-east-1.elasticbeanstalk.com;
