@@ -10,7 +10,7 @@ set $normandia_us http://normandia-ans-ci.garba.ninja;
 set $listing_us http://listing-ui-ci.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-ci.us-east-1.elasticbeanstalk.com;
 set $emails_core_us http://emails-core-ci.us-east-1.elasticbeanstalk.com;
-set $api_core_us http://api-core-ci.elasticbeanstalk.com;
+set $api_core_us http://api-core-ans-ci.garba.ninja;
 set $insurance_core_us http://insurance-core-ci.us-east-1.elasticbeanstalk.com;
 set $new_biz_core_us http://new-biz-core-ci.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-ci.elasticbeanstalk.com;
@@ -36,6 +36,8 @@ set $my_account_core_us http://my-account-core-ans-ci.garba.ninja;
 set $operations_us http://operations-recovers-ci.us-east-1.elasticbeanstalk.com;
 set $operations_kibana_us http://10.211.15.107:5601;
 set $mktreports_us http://10.211.15.59:5601;
+set $mktreports_elastic_us http://10.211.15.59:9200;
+set $mktreports_core_us http://mkt-reports-core-ci.us-east-1.elasticbeanstalk.com;
 set $gifts_core_us http://gifts-core-ci.us-east-1.elasticbeanstalk.com;
 set $gifts_frontend_us http://gifts-frontend-ci.us-east-1.elasticbeanstalk.com;
 set $gifts_dashboard_us http://gifts-dashboard-ci.us-east-1.elasticbeanstalk.com;
@@ -80,7 +82,7 @@ set $batches_us http://batches-ci.us-east-1.elasticbeanstalk.com;
 
 set $clairvoyant_us http://clairvoyant-ci.us-east-1.elasticbeanstalk.com;
 
-set $blog_us http://10.211.15.136;
+set $blog_us http://10.211.15.61;
 
 set $gamification_core_us http://gamification-core-ci.us-east-1.elasticbeanstalk.com;
 

@@ -6,7 +6,7 @@ set $epi_ui_us http://epi-ui-staging.elasticbeanstalk.com;
 set $epi_ui_clone_us http://epi-ui-clone.us-east-1.elasticbeanstalk.com;
 set $seo_proxy_us http://seo-proxy-staging.us-east-1.elasticbeanstalk.com;
 set $prerender_us http://ip-10-211-15-224.ec2.internal:3000;
-set $normandia_us http://normandia-staging.us-east-1.elasticbeanstalk.com;
+set $normandia_us http://normandia-ans-staging.garba.ninja;
 set $listing_us http://listing-ui-staging.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-staging.us-east-1.elasticbeanstalk.com;
 
@@ -37,6 +37,8 @@ set $my_account_core_us http://my-account-core-staging.us-east-1.elasticbeanstal
 set $operations_us http://operations-recovers-stg.us-east-1.elasticbeanstalk.com;
 set $operations_kibana_us http://10.211.15.107:5601;
 set $mktreports_us http://10.211.15.59:5601;
+set $mktreports_elastic_us http://10.211.15.59:9200;
+set $mktreports_core_us http://mkt-reports-core-staging.us-east-1.elasticbeanstalk.com;
 set $gifts_core_us http://gifts-core-staging.us-east-1.elasticbeanstalk.com;
 set $gifts_frontend_us http://gifts-frontend-staging.us-east-1.elasticbeanstalk.com;
 set $gifts_dashboard_us http://gifts-dashboard-staging.us-east-1.elasticbeanstalk.com;
