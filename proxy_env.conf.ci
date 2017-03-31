@@ -20,7 +20,6 @@ set $mapi_newbiz_us http://mapi-newbiz-ci.us-east-1.elasticbeanstalk.com;
 set $mapi_admin_us http://mapi-admin-ci.us-east-1.elasticbeanstalk.com;
 set $marketplace_us http://marketplace-ans-ci.garba.ninja;
 set $cac_frontend_us http://cac-frontend-ans-ci.garba.ninja;
-set $cac_core_us http://cac-core-ans-ci.garba.ninja;
 set $pwa_us http://pwa-ui-ci.us-east-1.elasticbeanstalk.com;
 set $coupons_core_us http://coupons-core-ci.us-east-1.elasticbeanstalk.com;
 
@@ -84,6 +83,4 @@ set $clairvoyant_us http://clairvoyant-ci.us-east-1.elasticbeanstalk.com;
 set $blog_us http://10.211.15.136;
 
 set $gamification_core_us http://gamification-core-ci.us-east-1.elasticbeanstalk.com;
-
-set $techgo_us http://s3.amazonaws.com/compumundo-techgo/index.html;
 
