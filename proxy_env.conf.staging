@@ -11,7 +11,7 @@ set $listing_us http://listing-ui-staging.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-staging.us-east-1.elasticbeanstalk.com;
 
 set $emails_core_us http://emails-core-staging.us-east-1.elasticbeanstalk.com;
-set $api_core_us http://api-core-staging.elasticbeanstalk.com;
+set $api_core_us http://api-core-ans-staging.garba.ninja;
 set $insurance_core_us http://localhost;
 set $new_biz_core_us http://new-biz-core-staging.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-staging.us-east-1.elasticbeanstalk.com;
