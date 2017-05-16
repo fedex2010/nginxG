@@ -21,7 +21,7 @@ set $mapi_notifications_us http://mapi-notifications-prod.us-east-1.elasticbeans
 set $mapi_newbiz_us http://mapi-newbiz-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_notifications_us http://mapi-notifications-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_newbiz_us http://mapi-newbiz-prod.us-east-1.elasticbeanstalk.com;
-set $mapi_admin_us http://mapi-admin-prod.us-east-1.elasticbeanstalk.com;
+set $mapi_admin_us http://mapi-admin-ans-prod.garba.ninja;
 set $marketplace_us http://marketplace-prd.us-east-1.elasticbeanstalk.com;
 set $cac_frontend_us http://cac-frontend-ans-prod.garba.ninja;
 set $cac_core_us http://cac-core-ans-prod.garba.ninja;
