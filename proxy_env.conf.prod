@@ -91,5 +91,5 @@ set $clairvoyant_us http://clairvoyant-prod.us-east-1.elasticbeanstalk.com/;
 
 set $blog_us http://10.211.15.136;
 
-set $gamification_core_us http://gamification-core-prod.us-east-1.elasticbeanstalk.com;
+set $gamification_core_us http://gamification-core-ans-prod.garba.ninja;
 set $techgo_us http://compumundo-techgo.s3-website-us-east-1.amazonaws.com;
