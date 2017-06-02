@@ -3,3 +3,10 @@
 test.upstream.sh ssl GET ci.compumundo.com.ar /user/password/change epi_api_us
 test.upstream.sh ssl GET staging.compumundo.com.ar /user/password/change epi_api_us
 test.upstream.sh ssl GET www.compumundo.com.ar /user/password/change epi_api_us
+
+
+## Mata request maldito de iPoint
+
+test.status.response.sh GET www.ipoint.com.ar /services/cart/checkout/payment/gateway/decidir/0.9260412986896633927 404
+test.status.response.sh GET www.ipoint.com.ar /services/cart/checkout/payment/gateway/decidir/01234578 200
+
