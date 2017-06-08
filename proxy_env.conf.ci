@@ -12,7 +12,7 @@ set $autocomplete_us http://autocomplete-ci.us-east-1.elasticbeanstalk.com;
 set $emails_core_us http://emails-core-ci.us-east-1.elasticbeanstalk.com;
 set $api_core_us http://api-core-ans-ci.garba.ninja;
 set $insurance_core_us http://insurance-core-ci.us-east-1.elasticbeanstalk.com;
-set $new_biz_core_us http://new-biz-core-ci.us-east-1.elasticbeanstalk.com;
+set $new_biz_core_us http://newbiz-core-ans-ci.garba.ninja;
 set $home_core_us http://home-core-ci.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-ans-ci.garba.ninja;
 set $mapi_notifications_us http://mapi-notifications-ans-ci.garba.ninja;
