@@ -48,6 +48,10 @@ test.upstream.sh ssl GET www.compumundo.com.ar /productos/tv-led-y-video/4272 li
 test.upstream.sh ssl GET www.compumundo.com.ar /marcas/Samsung listing_us
 test.upstream.sh ssl GET www.compumundo.com.ar /listado/samsung-products listing_us
 test.upstream.sh ssl GET www.compumundo.com.ar "/productos?q=algo" listing_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /user/signup/confirmation/ my_account_ui_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /user/password/recover/ my_account_ui_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /me/ my_account_ui_us
+
 
 test.status.response.sh ssl GET www.garbarino.com /sumate-a-garbarino 301
 test.header.response.sh ssl GET www.garbarino.com /sumate-a-garbarino Location https://www.garbarino.com/sumate-a-garbarino/index.html
