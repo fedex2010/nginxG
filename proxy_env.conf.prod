@@ -13,6 +13,7 @@ set $autocomplete_us http://autocomplete-prod.us-east-1.elasticbeanstalk.com ;
 set $emails_core_us http://emails-core-prod.us-east-1.elasticbeanstalk.com;
 set $api_core_us http://api-core-ans-prod.garba.ninja;
 set $insurance_core_us http://localhost;
+set $insurances_ui_us http://landings-prod.us-east-1.elasticbeanstalk.com;
 set $new_biz_core_us http://newbiz-core-ans-prod.garba.ninja;
 set $listing_core_us http://listing-core-prod.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-prod.us-east-1.elasticbeanstalk.com;
