@@ -13,6 +13,8 @@ set $autocomplete_us http://autocomplete-staging.us-east-1.elasticbeanstalk.com;
 set $emails_core_us http://emails-core-staging.us-east-1.elasticbeanstalk.com;
 set $api_core_us http://api-core-ans-staging.garba.ninja;
 set $insurance_core_us http://localhost;
+set $insurances_ui_us http://landings-staging.us-east-1.elasticbeanstalk.com;;
+
 set $new_biz_core_us http://newbiz-core-ans-staging.garba.ninja;
 set $home_core_us http://home-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-ans-staging.garba.ninja;
@@ -89,3 +91,4 @@ set $blog_us http://10.211.15.136;
 set $gamification_core_us http://gamification-core-staging.garba.ninja;
 
 set $techgo_us http://compumundo-techgo.s3-website-us-east-1.amazonaws.com;
+set fiden_us http://fiden-web-prod.us-east-1.elasticbeanstalk.com
