@@ -91,4 +91,4 @@ set $blog_us http://10.211.15.136;
 set $gamification_core_us http://gamification-core-staging.garba.ninja;
 
 set $techgo_us http://compumundo-techgo.s3-website-us-east-1.amazonaws.com;
-set fiden_us http://fiden-web-staging.us-east-1.elasticbeanstalk.com;
+set $fiden_us http://fiden-web-staging.us-east-1.elasticbeanstalk.com;
