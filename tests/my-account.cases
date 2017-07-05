@@ -1,8 +1,56 @@
 ## My Account
+#Garbarino
 
+#ci
 test.upstream.sh ssl GET ci.garbarino.com /user/signup/confirmation/123 my_account_ui_us
 test.upstream.sh ssl GET ci.garbarino.com /user/password/recover/123 my_account_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /user/signup/confirmation/ my_account_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /user/password/recover/ my_account_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /me/ my_account_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /me/register my_account_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /me/login my_account_ui_us
+
+
+#Staging
 test.upstream.sh ssl GET staging.garbarino.com /user/signup/confirmation/123 my_account_ui_us
 test.upstream.sh ssl GET staging.garbarino.com /user/password/recover/123 my_account_ui_us
+test.upstream.sh ssl GET staging.garbarino.com /user/signup/confirmation/ my_account_ui_us
+test.upstream.sh ssl GET staging.garbarino.com /user/password/recover/ my_account_ui_us
+test.upstream.sh ssl GET staging.garbarino.com /me/ my_account_ui_us
+test.upstream.sh ssl GET staging.garbarino.com /me/register my_account_ui_us
+test.upstream.sh ssl GET staging.garbarino.com /me/login my_account_ui_us
+
+
+#Prod
 test.upstream.sh ssl GET www.garbarino.com /user/signup/confirmation/123 my_account_ui_us
 test.upstream.sh ssl GET www.garbarino.com /user/password/recover/123 my_account_ui_us
+test.upstream.sh ssl GET www.garbarino.com /user/signup/confirmation/ my_account_ui_us
+test.upstream.sh ssl GET www.garbarino.com /user/password/recover/ my_account_ui_us
+test.upstream.sh ssl GET www.garbarino.com /me/ my_account_ui_us
+test.upstream.sh ssl GET www.garbarino.com /me/register my_account_ui_us
+test.upstream.sh ssl GET www.garbarino.com /me/login my_account_ui_us
+
+
+##Compumundo
+#ci
+test.upstream.sh ssl GET ci.compumundo.com.ar /user/signup/confirmation/ my_account_ui_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /user/password/recover/ my_account_ui_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /me/ my_account_ui_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /me/register my_account_ui_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /me/login my_account_ui_us
+
+
+#Staging
+test.upstream.sh ssl GET staging.compumundo.com.ar /user/signup/confirmation/ my_account_ui_us
+test.upstream.sh ssl GET staging.compumundo.com.ar /user/password/recover/ my_account_ui_us
+test.upstream.sh ssl GET staging.compumundo.com.ar /me/ my_account_ui_us
+test.upstream.sh ssl GET staging.compumundo.com.ar /me/register my_account_ui_us
+test.upstream.sh ssl GET staging.compumundo.com.ar /me/login my_account_ui_us
+
+
+#Prod
+test.upstream.sh ssl GET www.compumundo.com.ar /user/signup/confirmation/ my_account_ui_us
+test.upstream.sh ssl GET www.compumundo.com.ar /user/password/recover/ my_account_ui_us
+test.upstream.sh ssl GET www.compumundo.com.ar /me/ my_account_ui_us
+test.upstream.sh ssl GET www.compumundo.com.ar /me/register my_account_ui_us
+test.upstream.sh ssl GET www.compumundo.com.ar /me/login my_account_ui_us
