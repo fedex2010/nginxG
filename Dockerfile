@@ -8,6 +8,7 @@ COPY includes /etc/nginx/includes
 COPY security /etc/nginx/security
 COPY api /etc/nginx/api
 COPY fe /etc/nginx/fe
+COPY compu-no-pwa /etc/nginx/compu-no-pwa
 COPY env.conf /etc/nginx/env.conf
 COPY env.conf.ci /etc/nginx/env.conf.ci
 COPY env.conf.staging /etc/nginx/env.conf.staging
