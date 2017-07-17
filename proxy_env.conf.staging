@@ -54,7 +54,7 @@ set $aws_sss_us http://s3.amazonaws.com;
 
 set $tracker_us http://tracker-staging.us-east-1.elasticbeanstalk.com ;
 
-set $checkout_core_us http://chk-core-ans-ci.garba.ninja;
+set $checkout_core_us http://chk-core-ans-staging.garba.ninja;
 set $checkout_ui_us http://chk-ui-staging.us-east-1.elasticbeanstalk.com;
 set $checkout_ui_payments_us http://chk-ui-staging.us-east-1.elasticbeanstalk.com;
 set $transporter_us http://transporter-staging.us-east-1.elasticbeanstalk.com;
