@@ -33,6 +33,7 @@ set $product_core_us http://product-core-ci.elasticbeanstalk.com;
 set $listing_core_us http://listing-core-ci.us-east-1.elasticbeanstalk.com;
 set $microapps_us http://localhost;
 set $product_fe_us http://product-ci.elasticbeanstalk.com;
+set $guides_fe_us http://guides-ui-ci.us-east-1.elasticbeanstalk.com;
 set $home_fe_us http://home-ui-ci.us-east-1.elasticbeanstalk.com;
 set $landings_fe_us http://landings-ci.us-east-1.elasticbeanstalk.com;
 set $my_account_core_us http://my-account-core-ans-ci.garba.ninja;

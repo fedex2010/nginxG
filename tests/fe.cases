@@ -12,6 +12,12 @@ test.upstream.sh ssl GET ci.garbarino.com / home_fe_us
 test.upstream.sh ssl GET ci.garbarino.com /?home_name=home_1 home_fe_us
 test.upstream.sh ssl GET ci.garbarino.com /home-ui/services/servicio1 home_fe_us
 
+test.upstream.sh ssl GET ci.garbarino.com /guias guides_fe_us
+test.upstream.sh ssl GET ci.garbarino.com /guias/televisores guides_fe_us
+
+test.upstream.sh ssl GET staging.garbarino.com /guias guides_fe_us
+test.upstream.sh ssl GET staging.garbarino.com /guias/televisores guides_fe_us
+
 test.upstream.sh ssl GET epi-admin.garbarino.com / epi_api_us
 test.upstream.sh ssl GET epi-admin-ci.garbarino.com / epi_api_us
 test.upstream.sh ssl GET epi-admin-staging.garbarino.com / epi_api_us

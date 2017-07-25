@@ -23,6 +23,7 @@ upstream search_us { server search-stg.elasticbeanstalk.com max_fails=3; keepali
 upstream product_core_us { server product-core-staging.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream microapps_us { server micro-apps-staging.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream product_fe_us { server product-staging.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream guides_fe_us { server guides-ui-staging.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream home_fe_us { server home-ui-staging.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream landings_fe_us { server landings-staging.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream my_account_core_us { server my-account-core-staging.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}

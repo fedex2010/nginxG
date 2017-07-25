@@ -22,6 +22,7 @@ upstream search_us { server search-prod.us-east-1.elasticbeanstalk.com max_fails
 upstream product_core_us { server product-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream microapps_us { server micro-apps-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream product_fe_us { server product-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream guides_fe_us { server guides-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream home_fe_us { server home-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream landings_fe_us { server landings-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream my_account_core_us { server my-account-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
