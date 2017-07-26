@@ -25,6 +25,7 @@ set $cac_frontend_us http://cac-frontend-ans-ci.garba.ninja;
 set $cac_core_us http://cac-core-ans-ci.garba.ninja;
 set $pwa_us http://pwa-ui-ci.us-east-1.elasticbeanstalk.com;
 set $coupons_core_us http://coupons-core-ci.us-east-1.elasticbeanstalk.com;
+set $snorlax_core_us http://snorlax-core-ci.rfs7i82gpp.us-east-1.elasticbeanstalk.com ;
 
 set $search_us http://search-ci.elasticbeanstalk.com;
 set $croupier_us http://croupier-ci.us-east-1.elasticbeanstalk.com;
@@ -32,6 +33,7 @@ set $product_core_us http://product-core-ci.elasticbeanstalk.com;
 set $listing_core_us http://listing-core-ci.us-east-1.elasticbeanstalk.com;
 set $microapps_us http://localhost;
 set $product_fe_us http://product-ci.elasticbeanstalk.com;
+set $guides_fe_us http://guides-ui-ci.us-east-1.elasticbeanstalk.com;
 set $home_fe_us http://home-ui-ci.us-east-1.elasticbeanstalk.com;
 set $landings_fe_us http://landings-ci.us-east-1.elasticbeanstalk.com;
 set $my_account_core_us http://my-account-core-ans-ci.garba.ninja;

@@ -27,12 +27,14 @@ set $cac_frontend_us http://cac-frontend-ans-staging.garba.ninja;
 set $cac_core_us http://cac-core-ans-staging.garba.ninja;
 set $pwa_us http://pwa-ui-staging.us-east-1.elasticbeanstalk.com;
 set $coupons_core_us http://coupons-core-staging.us-east-1.elasticbeanstalk.com;
+set $snorlax_core_us http://snorlax-core-staging.us-east-1.elasticbeanstalk.com;
 
 set $search_us http://search-stg.elasticbeanstalk.com;
 set $croupier_us http://croupier-staging.us-east-1.elasticbeanstalk.com;
 set $product_core_us http://product-core-staging.elasticbeanstalk.com;
 set $microapps_us http://micro-apps-staging.us-east-1.elasticbeanstalk.com;
 set $product_fe_us http://product-staging.elasticbeanstalk.com;
+set $guides_fe_us http://guides-ui-staging.us-east-1.elasticbeanstalk.com;
 set $home_fe_us http://home-ui-staging.us-east-1.elasticbeanstalk.com;
 set $landings_fe_us http://landings-staging.us-east-1.elasticbeanstalk.com;
 set $my_account_core_us http://my-account-core-staging.us-east-1.elasticbeanstalk.com;
