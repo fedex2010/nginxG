@@ -26,7 +26,7 @@ set $cac_frontend_us http://cac-frontend-ans-prod.garba.ninja;
 set $cac_core_us http://cac-core-ans-prod.garba.ninja;
 set $pwa_us http://pwa-ui-prod.us-east-1.elasticbeanstalk.com;
 set $coupons_core_us http://coupons-core-prod.us-east-1.elasticbeanstalk.com;
-set $snorlax_core_us http://snorlax-core-prod.us-east-1.elasticbeanstalk.com;
+set $snorlax_core_us http://snorlax-core-prod.rfs7i82gpp.us-east-1.elasticbeanstalk.com;
 
 set $search_us http://search-prod.us-east-1.elasticbeanstalk.com;
 set $croupier_us http://croupier-prod.us-east-1.elasticbeanstalk.com;
