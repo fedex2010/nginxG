@@ -94,3 +94,4 @@ set $gamification_core_us http://gamification-core-staging.garba.ninja;
 
 set $techgo_us http://compumundo-techgo.s3-website-us-east-1.amazonaws.com;
 set $fiden_us http://fiden-web-staging.us-east-1.elasticbeanstalk.com;
+set $listing_api_us http://listing-api-ans-staging.garba.ninja;
