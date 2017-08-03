@@ -1,5 +1,9 @@
 ## Landings
 
+test.upstream.sh ssl GET ci.garbarino.com /sucursales landings_fe_us
+test.upstream.sh ssl GET staging.garbarino.com /sucursales landings_fe_us
+test.upstream.sh ssl GET www.garbarino.com /sucursales landings_fe_us
+
 #test.status.response.sh ssl GET www.garbarino.com /rse/concursodiadelnino 301
 #test.header.response.sh ssl GET www.garbarino.com /rse/concursodiadelnino Location http://www.garbarino.com/rse/concursodiadelnino
 #test.status.response.sh GET garbarino.com /rse/concursodiadelnino 301
