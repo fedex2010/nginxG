@@ -1,10 +1,10 @@
 location ~ ^(/listas-de-regalos)(.*) {
-        return 301 http://listas.garbarino.com$2;
+        return 301 https://listas.garbarino.com$2;
         break;
 }
 
 location ~ ^(/listas)(.*) {
-        return 301 http://listas.garbarino.com$2;
+        return 301 https://listas.garbarino.com$2;
         break;
 }
 
