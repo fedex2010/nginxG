@@ -12,7 +12,7 @@ set $listing_us http://listing-ui-prod.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-prod.us-east-1.elasticbeanstalk.com ;
 set $emails_core_us http://emails-core-prod.us-east-1.elasticbeanstalk.com;
 set $api_core_us http://api-core-ans-prod.garba.ninja;
-set $insurance_core_us http://localhost;
+set $insurance_core_us http://insurance-core-prod.us-east-1.elasticbeanstalk.com;
 set $insurances_ui_us http://insurance-ui-prod.us-east-1.elasticbeanstalk.com;
 set $new_biz_core_us http://newbiz-core-ans-prod.garba.ninja;
 set $listing_core_us http://listing-core-prod.us-east-1.elasticbeanstalk.com;
@@ -27,7 +27,7 @@ set $cac_frontend_us http://cac-frontend-ans-prod.garba.ninja;
 set $cac_core_us http://cac-core-ans-prod.garba.ninja;
 set $pwa_us http://pwa-ui-prod.us-east-1.elasticbeanstalk.com;
 set $coupons_core_us http://coupons-core-prod.us-east-1.elasticbeanstalk.com;
-set $snorlax_core_us http://snorlax-core-prod.us-east-1.elasticbeanstalk.com;
+set $snorlax_core_us http://snorlax-core-prod.rfs7i82gpp.us-east-1.elasticbeanstalk.com;
 
 set $search_us http://search-prod.us-east-1.elasticbeanstalk.com;
 set $croupier_us http://croupier-prod.us-east-1.elasticbeanstalk.com;
@@ -93,7 +93,7 @@ set $clairvoyant_us http://clairvoyant-prod.us-east-1.elasticbeanstalk.com/;
 
 set $blognew_us http://10.211.15.136;
 
-set $gamification_core_us http://gamification-core-ans-prod.garba.ninja;
+set $gamification_core_us http://gamification-core-prod.us-east-1.elasticbeanstalk.com;
 set $techgo_us http://compumundo-techgo.s3-website-us-east-1.amazonaws.com;
 set $fiden_us http://fiden-web-prod.us-east-1.elasticbeanstalk.com;
 set $listing_api_us http://listing-api-ans-prod.garba.ninja;
