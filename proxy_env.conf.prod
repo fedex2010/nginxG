@@ -93,7 +93,7 @@ set $clairvoyant_us http://clairvoyant-prod.us-east-1.elasticbeanstalk.com/;
 
 set $blognew_us http://10.211.15.136;
 
-set $gamification_core_us http://gamification-core-ans-prod.garba.ninja;
+set $gamification_core_us http://gamification-core-prod.us-east-1.elasticbeanstalk.com;
 set $techgo_us http://compumundo-techgo.s3-website-us-east-1.amazonaws.com;
 set $fiden_us http://fiden-web-prod.us-east-1.elasticbeanstalk.com;
 set $listing_api_us http://listing-api-ans-prod.garba.ninja;
