@@ -79,7 +79,7 @@ set $nagiostest_us http://10.211.15.9;
 set $nagiosprod_us http://10.212.15.51;
 
 set $static_sites_us http://static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com;
-set $techgo_us http://techgo2.compumundo.com.ar.s3-website-us-east-1.amazonaws.com;
+set $techgo_us http://techgo-ci.compumundo.com.ar.s3-website-us-east-1.amazonaws.com;
 
 set $repo_us http://nexus.garba.ninja:9200 ;
 
