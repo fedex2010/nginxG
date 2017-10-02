@@ -36,7 +36,7 @@ set $product_core_us http://product-core-prod.us-east-1.elasticbeanstalk.com;
 set $microapps_us http://micro-apps-prod.us-east-1.elasticbeanstalk.com;
 set $product_fe_us http://product-prod.us-east-1.elasticbeanstalk.com;
 set $guides_fe_us http://guides-ui-prod.us-east-1.elasticbeanstalk.com;
-set $amp_fe_us http://amp-ui-prod.us-east-1.elasticbeanstalk.com;
+set $amp_fe_us http://amp-ui-production.us-east-1.elasticbeanstalk.com;
 set $home_fe_us http://home-ui-prod.us-east-1.elasticbeanstalk.com;
 set $landings_fe_us http://landings-prod.us-east-1.elasticbeanstalk.com;
 set $my_account_core_us http://my-account-core-prod.us-east-1.elasticbeanstalk.com;
@@ -87,6 +87,8 @@ set $repo_us http://nexus.garba.ninja:9200;
 set $admin_tek_us https://apidesa.tekgenesis.net:445;
 
 set $checkout_ui_compra_us http://chk-ui-prod-compra.us-east-1.elasticbeanstalk.com;
+set $checkout_ui_compumundo_us http://checkout_ui_compumundo_us:3000;
+set $checkout_core_compumundo_us http://checkout_core_compumundo_us:3000;
 
 set $batches_us http://batches-prod.us-east-1.elasticbeanstalk.com;
 
