@@ -47,6 +47,9 @@ upstream tracker_us { server tracker-prod.us-east-1.elasticbeanstalk.com  max_fa
 upstream checkout_core_us { server chk-core-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream checkout_ui_us { server chk-ui-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream checkout_ui_payments_us { server chk-ui-prod-payments.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
+upstream checkout_ui_compumundo_us { server localhost max_fails=3; keepalive 5;}
+upstream checkout_core_compumundo_us { server localhost max_fails=3; keepalive 5;}
+
 upstream transporter_us {server transporter-prod.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 
 upstream graylog_us { server ip-10-212-15-195.ec2.internal:9000 max_fails=3; keepalive 5;}
