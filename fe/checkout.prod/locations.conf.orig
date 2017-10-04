@@ -50,6 +50,13 @@ include /etc/nginx/includes/https;
     if ($ua_device ~ tablet){
         set $where_to_go $checkout_ui_us;
     }
+<<<<<<< HEAD
+        
+    if ($arg_producto){
+        set $where_to_go $checkout_ui_us;
+    }
+=======
+>>>>>>> master
 
     proxy_pass $where_to_go;
 }

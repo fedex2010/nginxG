@@ -17,7 +17,7 @@ set $insurances_ui_us http://insurance-ui-prod.us-east-1.elasticbeanstalk.com;
 set $new_biz_core_us http://newbiz-core-ans-prod.garba.ninja;
 set $listing_core_us http://listing-core-prod.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-prod.us-east-1.elasticbeanstalk.com;
-set $mapi_core_us http://mapi-core-ans-prod.garba.ninja;
+set $mapi_core_us http://mapi-core-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_notifications_us http://mapi-notifications-ans-prod.garba.ninja;
 set $mapi_checkout_us http://mapi-core-ans-prod.garba.ninja;
 set $mapi_newbiz_us http://mapi-newbiz-ans-prod.garba.ninja;
@@ -28,7 +28,7 @@ set $cac_core_us http://cac-core-ans-prod.garba.ninja;
 set $pwa_us http://pwa-ui-prod.us-east-1.elasticbeanstalk.com;
 set $coupons_core_us http://coupons-core-prod.us-east-1.elasticbeanstalk.com;
 set $snorlax_core_us http://snorlax-core-prod.rfs7i82gpp.us-east-1.elasticbeanstalk.com;
-set $magikarp_core_us http://api-core-ans-prod.garba.ninja;
+set $magikarp_core_us http://magikarp-core-prod.us-east-1.elasticbeanstalk.com;
 
 set $search_us http://search-prod.us-east-1.elasticbeanstalk.com;
 set $croupier_us http://croupier-prod.us-east-1.elasticbeanstalk.com;
