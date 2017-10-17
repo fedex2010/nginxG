@@ -87,7 +87,7 @@ set $repo_us http://nexus.garba.ninja:9200;
 
 set $admin_tek_us https://apidesa.tekgenesis.net:445;
 set $checkout_ui_compra_us http://chk-ui-staging.us-east-1.elasticbeanstalk.com;
-set $checkout_ui_compumundo_us http://checkout_ui_compumundo_us:3000;
+set $checkout_ui_compumundo_us http://chk-ui-staging-compu.3m93vfufm7.us-east-1.elasticbeanstalk.com;
 set $checkout_core_compumundo_us http://checkout_core_compumundo_us:3000;
 
 set $batches_us http://batches-staging.us-east-1.elasticbeanstalk.com;
