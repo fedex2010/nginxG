@@ -18,7 +18,7 @@ set $insurances_ui_us http://insurance-ui-staging.us-east-1.elasticbeanstalk.com
 set $new_biz_core_us http://newbiz-core-ans-staging.garba.ninja;
 set $home_core_us http://home-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
-set $mapi_checkout_us http://mapi-core-ans-staging.garba.ninja;
+set $mapi_checkout_us http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_notifications_us http://mapi-notifications-ans-staging.garba.ninja;
 set $mapi_newbiz_us http://mapi-newbiz-ans-staging.garba.ninja;
 set $listing_core_us http://listing-core-staging.us-east-1.elasticbeanstalk.com;
@@ -51,6 +51,7 @@ set $gifts_core_us http://gifts-core-staging.us-east-1.elasticbeanstalk.com;
 set $gifts_frontend_us http://gifts-frontend-staging.us-east-1.elasticbeanstalk.com;
 set $gifts_dashboard_us http://gifts-dashboard-staging.us-east-1.elasticbeanstalk.com;
 set $gifts_blog_us http://10.211.15.104:4000;
+set $gifts_admin_us http://gifts-admin-staging.us-east-1.elasticbeanstalk.com;
 set $oauth2_server_us http://oauth2-server-staging.us-east-1.elasticbeanstalk.com;
 set $gifts_legacy_us http://200.43.192.230:80;
 set $backoffice_ui_us http://backoffice-ui-staging.us-east-1.elasticbeanstalk.com;
@@ -87,7 +88,7 @@ set $repo_us http://nexus.garba.ninja:9200;
 
 set $admin_tek_us https://apidesa.tekgenesis.net:445;
 set $checkout_ui_compra_us http://chk-ui-staging.us-east-1.elasticbeanstalk.com;
-set $checkout_ui_compumundo_us http://checkout_ui_compumundo_us:3000;
+set $checkout_ui_compumundo_us http://chk-ui-staging-compu.3m93vfufm7.us-east-1.elasticbeanstalk.com;
 set $checkout_core_compumundo_us http://checkout_core_compumundo_us:3000;
 
 set $batches_us http://batches-staging.us-east-1.elasticbeanstalk.com;

@@ -52,6 +52,8 @@ set $gifts_dashboard_us http://gifts-dashboard-prod.us-east-1.elasticbeanstalk.c
 set $gifts_blog_us http://10.212.15.27:4000;
 set $oauth2_server_us http://oauth2-server-prod.us-east-1.elasticbeanstalk.com;
 set $gifts_legacy_us http://200.43.192.230:80;
+set $gifts_admin_us http://gifts-admin-prod.us-east-1.elasticbeanstalk.com;
+
 set $backoffice_ui_us http://backoffice-ui-prod.us-east-1.elasticbeanstalk.com ;
 
 set $aws_sss_us http://s3.amazonaws.com;
@@ -87,7 +89,7 @@ set $repo_us http://nexus.garba.ninja:9200;
 set $admin_tek_us https://apidesa.tekgenesis.net:445;
 
 set $checkout_ui_compra_us http://chk-ui-prod-compra.us-east-1.elasticbeanstalk.com;
-set $checkout_ui_compumundo_us http://checkout_ui_compumundo_us:3000;
+set $checkout_ui_compumundo_us http://chk-ui-prod-compu.us-east-1.elasticbeanstalk.com ;
 set $checkout_core_compumundo_us http://checkout_core_compumundo_us:3000;
 
 set $batches_us http://batches-prod.us-east-1.elasticbeanstalk.com;
