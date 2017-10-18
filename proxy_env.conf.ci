@@ -13,6 +13,7 @@ set $emails_core_us http://emails-core-ci.us-east-1.elasticbeanstalk.com;
 set $api_core_us http://api-core-ans-ci.garba.ninja;
 set $insurance_core_us http://insurance-core-ci.us-east-1.elasticbeanstalk.com;
 set $insurances_ui_us http://insurance-ui-ci.us-east-1.elasticbeanstalk.com;
+set $gifts_admin_us http://gifts-admin-ci.us-east-1.elasticbeanstalk.com;
 
 set $new_biz_core_us http://newbiz-core-ans-ci.garba.ninja;
 set $home_core_us http://home-core-ans-ci.garba.ninja;
