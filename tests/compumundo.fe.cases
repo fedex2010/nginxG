@@ -1,22 +1,27 @@
 # New Compumundo Checkout redirects.
-test.upstream.sh ssl GET ci.compumundo.com.ar /carrito epi_ui_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /carrito checkout_ui_compumundo_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /carrito/compra checkout_ui_compumundo_us
 test.upstream.sh ssl GET ci.compumundo.com.ar /compra checkout_ui_compumundo_us
 test.upstream.sh ssl GET ci.compumundo.com.ar /pagos checkout_ui_compumundo_us
 
 # Redirects for Email Marketing.
 test.header.response.sh ssl GET ci.compumundo.com /carrito/?producto=12345678&cupon=CQA Location https://ci.compumundo.com.ar/carrito/?producto=12345678&cupon=CQA
 
-test.upstream.sh ssl GET staging.compumundo.com.ar /carrito checkout_ui_compumundo_us
+test.upstream.sh ssl GET staging.compumundo.com.ar /carrito epi_ui_us
+test.upstream.sh ssl GET staging.compumundo.com.ar /carrito/compra epi_ui_us
 test.upstream.sh ssl GET staging.compumundo.com.ar /compra checkout_ui_compumundo_us
 test.upstream.sh ssl GET staging.compumundo.com.ar /pagos checkout_ui_compumundo_us
 
 # Redirects for Email Marketing.
 test.header.response.sh ssl GET staging.compumundo.com /carrito/?producto=12345678&cupon=CQA Location https://staging.compumundo.com.ar/carrito/?producto=12345678&cupon=CQA
 
-test.upstream.sh ssl GET www.compumundo.com.ar /carrito/compra epi_ui_us
 test.upstream.sh ssl GET www.compumundo.com.ar /carrito epi_ui_us
-test.upstream.sh ssl GET www.compumundo.com.ar /compra epi_ui_us
-test.upstream.sh ssl GET www.compumundo.com.ar /pagos epi_ui_us
+test.upstream.sh ssl GET www.compumundo.com.ar /carrito/compra epi_ui_us
+test.upstream.sh ssl GET www.compumundo.com.ar /compra checkout_ui_compumundo_us
+test.upstream.sh ssl GET www.compumundo.com.ar /pagos checkout_ui_compumundo_us
+
+# Redirects for Email Marketing.
+test.header.response.sh ssl GET www.compumundo.com /carrito/?producto=12345678&cupon=CQA Location https://www.compumundo.com.ar/carrito/?producto=12345678&cupon=CQA
 
 test.upstream.sh ssl GET ci.compumundo.com.ar /normandia normandia_us
 test.upstream.sh ssl GET ci.compumundo.com.ar /producto/el-mejor-producto/12345678 product_fe_us
