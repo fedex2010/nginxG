@@ -101,3 +101,4 @@ set $gamification_core_us http://gamification-core-staging.us-east-1.elasticbean
 
 set $fiden_us http://fiden-web-staging.us-east-1.elasticbeanstalk.com;
 set $listing_api_us http://listing-api-ans-staging.garba.ninja;
+set $prom_marketing_us http://10.212.35.182;

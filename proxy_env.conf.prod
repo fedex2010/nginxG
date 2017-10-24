@@ -102,3 +102,4 @@ set $blognew_us http://10.211.15.136;
 set $gamification_core_us http://gamification-core-prod.us-east-1.elasticbeanstalk.com;
 set $fiden_us http://fiden-web-prod.us-east-1.elasticbeanstalk.com;
 set $listing_api_us http://listing-api-ans-prod.garba.ninja;
+set $prom_marketing_us http://10.212.35.182;
