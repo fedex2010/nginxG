@@ -4,7 +4,7 @@ test.status.response.sh GET www.garbarino.com /listado/cybermonday-deporte-fitne
 test.status.response.sh GET www.garbarino.com /cybermonday-hogar 302
 
 test.upstream.sh ssl GET ci.garbarino.com /cybermonday/pagina landings_fe_us
-test.upstream.sh ssl GET ci.garbarino.com /cybermonday landings_fe_us
+#test.upstream.sh ssl GET ci.garbarino.com /cybermonday landings_fe_us
 test.upstream.sh ssl GET ci.garbarino.com /cybermondaySuscriptionService landings_fe_us
 
 test.upstream.sh ssl GET www.garbarino.com /cybermonday/pagina landings_fe_us
