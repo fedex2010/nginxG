@@ -1,18 +1,18 @@
 ## Cyber
 
-test.status.response.sh GET www.garbarino.com /listado/cybermonday-deporte-fitness 302
+#test.status.response.sh GET www.garbarino.com /listado/cybermonday-deporte-fitness 302
 #test.status.response.sh GET www.garbarino.com /cybermonday-hogar 302
 
 #test.upstream.sh ssl GET ci.garbarino.com /cybermonday/pagina landings_fe_us
-test.upstream.sh ssl GET ci.garbarino.com /cybermonday landings_fe_us
+#test.upstream.sh ssl GET ci.garbarino.com /cybermonday landings_fe_us
 test.upstream.sh ssl GET ci.garbarino.com /cybermondaySuscriptionService landings_fe_us
 
-test.upstream.sh ssl GET www.garbarino.com /cybermonday/pagina landings_fe_us
-test.upstream.sh ssl GET www.garbarino.com /cybermonday landings_fe_us
+#test.upstream.sh ssl GET www.garbarino.com /cybermonday/pagina landings_fe_us
+#test.upstream.sh ssl GET www.garbarino.com /cybermonday landings_fe_us
 test.upstream.sh ssl GET www.garbarino.com /cybermondaySuscriptionService landings_fe_us
 
 #test.upstream.sh ssl GET ci.compumundo.com.ar /cybermonday/pagina epi_ui_us
-test.upstream.sh ssl GET ci.compumundo.com.ar /cybermonday landings_fe_us
+#test.upstream.sh ssl GET ci.compumundo.com.ar /cybermonday landings_fe_us
 
 # test.upstream.sh ssl GET www.compumundo.com.ar /cybermonday/pagina epi_ui_us
 # test.upstream.sh ssl GET www.compumundo.com.ar /cybermonday epi_ui_us
