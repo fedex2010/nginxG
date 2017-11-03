@@ -21,11 +21,6 @@ test.upstream.sh ssl GET staging.garbarino.com /guias/televisores guides_fe_us
 test.upstream.sh ssl GET www.garbarino.com /guias guides_fe_us
 test.upstream.sh ssl GET www.garbarino.com /guias/televisores guides_fe_us
 
-#test.upstream.sh ssl GET ci.garbarino.com /amp/productos/tv-led-y-video/4272 amp_fe_us
-#test.upstream.sh ssl GET ci.garbarino.com /amp/marcas/samsung amp_fe_us
-#test.upstream.sh ssl GET ci.garbarino.com /amp/listado/samsung-products amp_fe_us
-#test.upstream.sh ssl GET ci.garbarino.com /amp/q/tele/srch?q=tele amp_fe_us
-
 test.upstream.sh ssl GET epi-admin.garbarino.com / epi_api_us
 test.upstream.sh ssl GET epi-admin-ci.garbarino.com / epi_api_us
 test.upstream.sh ssl GET epi-admin-staging.garbarino.com / epi_api_us
