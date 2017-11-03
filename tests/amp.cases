@@ -1,0 +1,14 @@
+test.upstream.sh ssl GET ci.garbarino.com /amp/productos/tv-led-y-video/4272 amp_fe_us
+test.upstream.sh ssl GET ci.garbarino.com /amp/marcas/samsung amp_fe_us
+test.upstream.sh ssl GET ci.garbarino.com /amp/listado/samsung-products amp_fe_us
+test.upstream.sh ssl GET ci.garbarino.com /amp/q/tele/srch?q=tele amp_fe_us
+
+test.upstream.sh ssl GET staging.garbarino.com /amp/productos/tv-led-y-video/4272 amp_fe_us
+test.upstream.sh ssl GET staging.garbarino.com /amp/marcas/samsung amp_fe_us
+test.upstream.sh ssl GET staging.garbarino.com /amp/listado/samsung-products amp_fe_us
+test.upstream.sh ssl GET staging.garbarino.com /amp/q/tele/srch?q=tele amp_fe_us
+
+test.upstream.sh ssl GET www.garbarino.com /amp/productos/tv-led-y-video/4272 amp_fe_us
+test.upstream.sh ssl GET www.garbarino.com /amp/marcas/samsung amp_fe_us
+test.upstream.sh ssl GET www.garbarino.com /amp/listado/samsung-products amp_fe_us
+test.upstream.sh ssl GET www.garbarino.com /amp/q/tele/srch?q=tele amp_fe_us
