@@ -61,8 +61,6 @@ upstream my_account_ui_us { server my-account-ui-ci.us-east-1.elasticbeanstalk.c
 
 upstream mutx_us { server 10.211.15.104:8080 max_fails=3;keepalive 5; }
 
-upstream mutx2_us { server 10.211.15.215:8080 max_fails=3;keepalive 5; }
-
 upstream dia_del_nino_us { server 209.188.82.163 max_fails=3; keepalive 5;}
 
 upstream nagiostest_us { server 10.211.15.9 max_fails=3; keepalive 5;}
