@@ -7,6 +7,8 @@ set $epi_ui_clone_us http://epi-ui-clone.us-east-1.elasticbeanstalk.com;
 set $seo_proxy_us http://seo-proxy-staging.us-east-1.elasticbeanstalk.com;
 set $prerender_us http://ip-10-211-15-224.ec2.internal:3000;
 set $normandia_us http://normandia-ans-staging.garba.ninja;
+set $prelanding_us http://prelandings-ui-ans-staging.garba.ninja;
+
 set $listing_us http://listing-ui-staging.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-staging.us-east-1.elasticbeanstalk.com;
 
@@ -74,6 +76,8 @@ set $meli_us http://ml-integration-staging.us-east-1.elasticbeanstalk.com;
 set $my_account_ui_us http://my-account-ui-staging.us-east-1.elasticbeanstalk.com;
 
 set $mutx_us http://10.211.15.104;
+
+set $mutx2_us http://10.211.15.215;
 
 set $dia_del_nino_us http://200.43.192.61;
 
