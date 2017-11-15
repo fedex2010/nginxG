@@ -1,2 +1,4 @@
 ## BACKOFFICE
 test.upstream.sh ssl GET mutx.garba.ninja / mutx_us
+
+test.upstream.sh ssl GET mutx2.garba.ninja / mutx2_us
