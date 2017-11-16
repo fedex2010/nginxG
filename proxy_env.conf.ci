@@ -75,6 +75,8 @@ set $my_account_ui_us http://my-account-ui-ci.us-east-1.elasticbeanstalk.com;
 
 set $mutx_us http://10.211.15.195:8080;
 
+set $mutx2_us http://10.211.15.215;
+
 set $dia_del_nino_us http://200.43.192.61;
 
 set $nagiostest_us http://10.211.15.9;
