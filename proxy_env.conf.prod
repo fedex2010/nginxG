@@ -8,6 +8,8 @@ set $seo_proxy_us http://seo-proxy-prod.us-east-1.elasticbeanstalk.com;
 set $prerender_us http://prerender-prod.us-east-1.elasticbeanstalk.com;
 #set $normandia_us http://normandia-prod.us-east-1.elasticbeanstalk.com;
 set $normandia_us http://normandia-ans-prod.garba.ninja;
+set $review_core_us http://review-core-ans-prod.garba.ninja;
+set $prelanding_us http://prelandings-ui-ans-prod.garba.ninja;
 set $listing_us http://listing-ui-prod.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-prod.us-east-1.elasticbeanstalk.com ;
 set $emails_core_us http://emails-core-prod.us-east-1.elasticbeanstalk.com;
@@ -74,6 +76,8 @@ set $meli_us http://ml-integration-prod.us-east-1.elasticbeanstalk.com;
 set $my_account_ui_us http://my-account-ui-prod.us-east-1.elasticbeanstalk.com;
 
 set $mutx_us http://10.211.15.104;
+
+set $mutx2_us http://10.211.15.215;
 
 set $dia_del_nino_us http://200.43.192.61;
 
