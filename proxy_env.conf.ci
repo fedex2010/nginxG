@@ -105,4 +105,4 @@ set $fiden_us http://fiden-web-ci.us-east-1.elasticbeanstalk.com;
 set $listing_api_us http://listing-api-ans-ci.garba.ninja;
 set $prom_marketing_us http://10.212.35.182;
 
-set $marketplace_core_us http://marketplace-api-ci.q5wdr5u9pb.us-east-1.elasticbeanstalk.com
+set $marketplace_core_us http://marketplace-api-ci.q5wdr5u9pb.us-east-1.elasticbeanstalk.com;
