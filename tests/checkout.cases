@@ -20,6 +20,7 @@ test.upstream.sh ssl GET ci.garbarino.com /carrito/deleteProductFromCart checkou
 test.upstream.sh ssl GET ci.garbarino.com /carrito/updateItemQuantity checkout_ui_us
 test.upstream.sh ssl GET ci.garbarino.com /carrito/setWarranty checkout_ui_us
 test.upstream.sh ssl GET ci.garbarino.com /carrito/getCartStatus/CART_ID checkout_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /carrito/summary checkout_ui_us
 
 test.upstream.sh ssl GET ci.garbarino.com /compra/entrega checkout_ui_compra_us
 test.upstream.sh ssl GET ci.garbarino.com /compra/financiacion checkout_ui_compra_us
@@ -100,3 +101,5 @@ test.upstream.sh ssl GET www.garbarino.com /pagos checkout_ui_payments_us
 
 test.upstream.sh ssl GET www.garbarino.com /carrito/vendedor checkout_ui_us
 test.upstream.sh ssl GET www.compumundo.com.ar /carrito/vendedor epi_ui_us
+
+test.upstream.sh ssl GET www.garbarino.com /carrito/summary checkout_ui_us
