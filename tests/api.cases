@@ -6,7 +6,7 @@ test.upstream.sh GET api-dev.garbarino.com /home_offers home_core_us
 test.upstream.sh GET api-dev.garbarino.com /lists listing_core_us
 test.upstream.sh GET api-dev.garbarino.com /lists_definition listing_core_us
 
-test.upstream.sh GET api-dev.garbarino.com /categories api_core_us
+test.upstream.sh GET api-dev.garbarino.com /categories magikarp_core_us;
 test.upstream.sh GET api-dev.garbarino.com /cities api_core_us
 test.upstream.sh GET api-dev.garbarino.com /productLists api_core_us
 test.upstream.sh GET api-dev.garbarino.com /autocompleteNew api_core_us
