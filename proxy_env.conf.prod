@@ -8,6 +8,7 @@ set $seo_proxy_us http://seo-proxy-prod.us-east-1.elasticbeanstalk.com;
 set $prerender_us http://prerender-prod.us-east-1.elasticbeanstalk.com;
 #set $normandia_us http://normandia-prod.us-east-1.elasticbeanstalk.com;
 set $normandia_us http://normandia-ans-prod.garba.ninja;
+set $review_core_us http://review-core-ans-prod.garba.ninja;
 set $prelanding_us http://prelandings-ui-ans-prod.garba.ninja;
 set $listing_us http://listing-ui-prod.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-prod.us-east-1.elasticbeanstalk.com ;
@@ -76,7 +77,7 @@ set $my_account_ui_us http://my-account-ui-prod.us-east-1.elasticbeanstalk.com;
 
 set $mutx_us http://10.211.15.104;
 
-set $mutx2_us http://10.211.15.215;
+set $mutx2_us http://10.211.15.51;
 
 set $dia_del_nino_us http://200.43.192.61;
 
@@ -106,3 +107,5 @@ set $gamification_core_us http://gamification-core-prod.us-east-1.elasticbeansta
 set $fiden_us http://fiden-web-prod.us-east-1.elasticbeanstalk.com;
 set $listing_api_us http://listing-api-ans-prod.garba.ninja;
 set $prom_marketing_us http://10.212.35.182;
+
+set $marketplace_core_us http://localhost;

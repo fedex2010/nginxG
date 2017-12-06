@@ -7,6 +7,7 @@ set $epi_ui_clone_us http://epi-ui-clone.us-east-1.elasticbeanstalk.com;
 set $seo_proxy_us http://seo-proxy-staging.us-east-1.elasticbeanstalk.com;
 set $prerender_us http://ip-10-211-15-224.ec2.internal:3000;
 set $normandia_us http://normandia-ans-staging.garba.ninja;
+set $review_core_us http://review-core-ans-staging.garba.ninja;
 set $prelanding_us http://prelandings-ui-ans-staging.garba.ninja;
 
 set $listing_us http://listing-ui-staging.us-east-1.elasticbeanstalk.com;
@@ -77,7 +78,7 @@ set $my_account_ui_us http://my-account-ui-staging.us-east-1.elasticbeanstalk.co
 
 set $mutx_us http://10.211.15.104;
 
-set $mutx2_us http://10.211.15.215;
+set $mutx2_us http://10.211.15.51;
 
 set $dia_del_nino_us http://200.43.192.61;
 
@@ -106,3 +107,5 @@ set $gamification_core_us http://gamification-core-staging.us-east-1.elasticbean
 set $fiden_us http://fiden-web-staging.us-east-1.elasticbeanstalk.com;
 set $listing_api_us http://listing-api-ans-staging.garba.ninja;
 set $prom_marketing_us http://10.212.35.182;
+
+set $marketplace_core_us http://localhost;
