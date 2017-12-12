@@ -2,16 +2,16 @@
 
 test.upstream.sh GET api-dev.garbarino.com /homes/current home_core_us
 test.upstream.sh GET api-dev.garbarino.com /home_offers home_core_us
-test.upstream.sh GET api-dev.garbarino.com /newLandings home_core_us
-test.upstream.sh GET api-ci.garbarino.com /newLandings home_core_us
-test.upstream.sh GET api-staging.garbarino.com /newLandings home_core_us
-test.upstream.sh GET api-prod.garbarino.com /newLandings home_core_us
+test.upstream.sh GET api-dev.garbarino.com /newlandings home_core_us
+test.upstream.sh GET api-ci.garbarino.com /newlandings home_core_us
+test.upstream.sh GET api-staging.garbarino.com /newlandings home_core_us
+test.upstream.sh GET api-prod.garbarino.com /newlandings home_core_us
 test.upstream.sh GET api-dev.compumundo.com /homes/current home_core_us
 test.upstream.sh GET api-dev.compumundo.com /home_offers home_core_us
-test.upstream.sh GET api-dev.compumundo.com /newLandings home_core_us
-test.upstream.sh GET api-ci.compumundo.com /newLandings home_core_us
-test.upstream.sh GET api-staging.compumundo.com /newLandings home_core_us
-test.upstream.sh GET api-prod.compumundo.com /newLandings home_core_us
+test.upstream.sh GET api-dev.compumundo.com /newlandings home_core_us
+test.upstream.sh GET api-ci.compumundo.com /newlandings home_core_us
+test.upstream.sh GET api-staging.compumundo.com /newlandings home_core_us
+test.upstream.sh GET api-prod.compumundo.com /newlandings home_core_us
 
 test.upstream.sh GET api-dev.garbarino.com /lists listing_core_us
 test.upstream.sh GET api-dev.garbarino.com /lists_definition listing_core_us
