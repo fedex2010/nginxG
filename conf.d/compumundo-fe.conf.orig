@@ -161,10 +161,10 @@ server {
         return 301 $scheme://www.techgo.com.ar;
     }
 
-    location /intel-notebooks  {
-        return 301 https://www.compumundo.com.ar/listado/notebooks-intel/btpg$is_args$args;
-    }
+<<<<<<< HEAD
+=======
 
+>>>>>>> master
     location /navidad  {
         return 301 https://www.compumundo.com.ar;
     }
@@ -378,7 +378,6 @@ server {
     listen 80;
     include /etc/nginx/proxy_env.conf;
     server_name www.techgo.com.ar;
-    include /etc/nginx/includes/headers;
 
     location / {
         proxy_set_header Host techgo.compumundo.com.ar.s3-website-us-east-1.amazonaws.com;
