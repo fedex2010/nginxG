@@ -109,3 +109,5 @@ set $listing_api_us http://listing-api-ans-prod.garba.ninja;
 set $prom_marketing_us http://10.212.35.182;
 
 set $marketplace_core_us http://localhost;
+
+set $polcom_core_us http://localhost;
