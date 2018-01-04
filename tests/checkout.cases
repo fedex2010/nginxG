@@ -100,6 +100,6 @@ test.upstream.sh ssl GET www.garbarino.com /pagos checkout_ui_payments_us
 
 
 test.upstream.sh ssl GET www.garbarino.com /carrito/vendedor checkout_ui_us
-test.upstream.sh ssl GET www.compumundo.com.ar /carrito/vendedor checkout_ui_compumundo_us
+test.upstream.sh ssl GET www.compumundo.com.ar /carrito/vendedor checkout_ui_us
 
 # test.upstream.sh ssl GET www.garbarino.com /carrito/summary checkout_ui_us
