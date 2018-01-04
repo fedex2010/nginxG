@@ -15,10 +15,10 @@ test.upstream.sh ssl GET staging.compumundo.com.ar /pagos checkout_ui_us
 # Redirects for Email Marketing.
 test.header.response.sh ssl GET staging.compumundo.com /carrito/?producto=12345678&cupon=CQA Location https://staging.compumundo.com.ar/carrito/?producto=12345678&cupon=CQA
 
-test.upstream.sh ssl GET www.compumundo.com.ar /carrito checkout_ui_us
-test.upstream.sh ssl GET www.compumundo.com.ar /carrito/compra checkout_ui_us
-test.upstream.sh ssl GET www.compumundo.com.ar /compra checkout_ui_us
-test.upstream.sh ssl GET www.compumundo.com.ar /pagos checkout_ui_us
+test.upstream.sh ssl GET www.compumundo.com.ar /carrito checkout_ui_compumundo_us
+test.upstream.sh ssl GET www.compumundo.com.ar /carrito/compra checkout_ui_compumundo_us
+test.upstream.sh ssl GET www.compumundo.com.ar /compra checkout_ui_compumundo_us
+test.upstream.sh ssl GET www.compumundo.com.ar /pagos checkout_ui_compumundo_us
 
 # Redirects for Email Marketing.
 test.header.response.sh ssl GET www.compumundo.com /carrito/?producto=12345678&cupon=CQA Location https://www.compumundo.com.ar/carrito/?producto=12345678&cupon=CQA
