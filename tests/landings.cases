@@ -33,3 +33,7 @@ test.upstream.sh GET micro-sitios-staging.garbarino.com /catalogos/julio2016 sta
 test.host.rewrite.sh GET micro-sitios-staging.garbarino.com /catalogos/julio2016 static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com
 test.upstream.sh GET micro-sitios.garbarino.com /catalogos/julio2016 static_sites_us
 test.host.rewrite.sh GET micro-sitios.garbarino.com /catalogos/julio2016 static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com
+
+#new landings
+test.upstream.sh ssl GET ci.garbarino.com /l/ home_fe_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /l/ home_fe_us
