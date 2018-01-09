@@ -60,7 +60,7 @@ set $backoffice_ui_us http://backoffice-ui-ci.us-east-1.elasticbeanstalk.com;
 set $aws_sss_us http://s3.amazonaws.com;
 
 #set $tracker_us http://tracker-ci.us-east-1.elasticbeanstalk.com;
-set $tracker_us http://internal-swarm-ci-1176851982.us-east-1.elb.amazonaws.com;
+set $tracker_us http://lb-swarm-ci.garba;
 
 set $checkout_core_us http://chk-core-ans-ci.garba.ninja;
 set $checkout_ui_us http://chk-ui-ci.us-east-1.elasticbeanstalk.com;
@@ -95,7 +95,8 @@ set $checkout_ui_compra_us http://chk-ui-ci.us-east-1.elasticbeanstalk.com;
 
 set $batches_us http://batches-ci.us-east-1.elasticbeanstalk.com;
 
-set $clairvoyant_us http://clairvoyant-ci.us-east-1.elasticbeanstalk.com;
+#set $clairvoyant_us http://clairvoyant-ci.us-east-1.elasticbeanstalk.com;
+set $clairvoyant_us http://lb-swarm-ci.garba;
 
 set $blognew_us http://10.211.15.61;
 
