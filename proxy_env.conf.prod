@@ -109,4 +109,4 @@ set $prom_marketing_us http://10.212.35.182;
 set $marketplace_core_us http://localhost;
 
 set $polcom_core_us http://localhost;
-set $pidgey_core_us http://pidgey-core-ci.q34g7j3tdi.us-east-1.elasticbeanstalk.com;
+set $pidgey_core_us http://pidgey-core-prod.us-east-1.elasticbeanstalk.com;
