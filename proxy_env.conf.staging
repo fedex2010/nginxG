@@ -36,7 +36,7 @@ set $magikarp_core_us http://magikarp-core-staging.us-east-1.elasticbeanstalk.co
 
 set $search_us http://search-stg.elasticbeanstalk.com;
 set $croupier_us http://croupier-staging.us-east-1.elasticbeanstalk.com;
-set $product_core_us product-core-staging.us-east-1.elasticbeanstalk.com;
+set $product_core_us http://product-core-staging.us-east-1.elasticbeanstalk.com;
 set $microapps_us http://micro-apps-staging.us-east-1.elasticbeanstalk.com;
 set $product_fe_us http://product-staging.elasticbeanstalk.com;
 set $guides_fe_us http://guides-ui-staging.us-east-1.elasticbeanstalk.com;
