@@ -1,0 +1,10 @@
+test.upstream.sh ssl GET insurance-ci.garbarino.com /seguros/autos insurances_ui_us
+test.upstream.sh ssl GET insurance-ci.garbarino.com /seguros insurances_ui_us
+test.upstream.sh ssl GET insurance-staging.garbarino.com /seguros/autos insurances_ui_us
+test.upstream.sh ssl GET insurance-staging.garbarino.com /seguros insurances_ui_us
+test.upstream.sh ssl GET seguros.garbarino.com /seguros/autos insurances_ui_us
+test.upstream.sh ssl GET seguros.garbarino.com /seguros insurances_ui_us
+
+test.upstream.sh ssl GET insurance-ci.garbarino.com /subscription insurances_ui_us
+test.upstream.sh ssl GET insurance-staging.garbarino.com /subscription insurances_ui_us
+test.upstream.sh ssl GET seguros.garbarino.com /subscription insurances_ui_us
