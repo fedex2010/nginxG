@@ -7,7 +7,7 @@ set $epi_ui_clone_us http://epi-ui-clone.us-east-1.elasticbeanstalk.com;
 set $seo_proxy_us http://seo-proxy-staging.us-east-1.elasticbeanstalk.com;
 set $prerender_us http://ip-10-211-15-224.ec2.internal:3000;
 set $normandia_us http://normandia-ans-staging.garba.ninja;
-set $review_core_us http://review-core-ans-staging.garba.ninja;
+set $review_core_us http://rattata-core-staging.us-east-1.elasticbeanstalk.com;
 set $prelanding_us http://prelandings-ui-ans-staging.garba.ninja;
 
 set $listing_us http://listing-ui-staging.us-east-1.elasticbeanstalk.com;
