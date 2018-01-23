@@ -36,7 +36,7 @@ set $magikarp_core_us http://magikarp-core-staging.us-east-1.elasticbeanstalk.co
 
 set $search_us http://search-stg.elasticbeanstalk.com;
 set $croupier_us http://croupier-staging.us-east-1.elasticbeanstalk.com;
-set $product_core_us http://product-core-staging.elasticbeanstalk.com;
+set $product_core_us http://product-core-staging.us-east-1.elasticbeanstalk.com;
 set $microapps_us http://micro-apps-staging.us-east-1.elasticbeanstalk.com;
 set $product_fe_us http://product-staging.elasticbeanstalk.com;
 set $guides_fe_us http://guides-ui-staging.us-east-1.elasticbeanstalk.com;
@@ -108,5 +108,5 @@ set $listing_api_us http://listing-api-ans-staging.garba.ninja;
 set $prom_marketing_us http://10.212.35.182;
 
 set $marketplace_core_us http://localhost;
-set $polcom_core_us http://localhost;
+set $polcom_core_us http://polcom-core-staging.us-east-1.elasticbeanstalk.com;
 set $pidgey_core_us http://pidgey-core-staging.us-east-1.elasticbeanstalk.com;
