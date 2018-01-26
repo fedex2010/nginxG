@@ -161,6 +161,10 @@ server {
         return 301 $scheme://www.techgo.com.ar;
     }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> master
     location /navidad  {
         return 301 https://www.compumundo.com.ar;
     }
@@ -328,11 +332,6 @@ server {
     location /sucursales {
         include /etc/nginx/env.conf;
         proxy_pass $landings_fe_us;
-    }
-
-    location /service-worker.js {
-        include /etc/nginx/env.conf;
-        proxy_pass $normandia_us;
     }
 }
 
@@ -510,11 +509,6 @@ server {
     location /services/feeds {
         include /etc/nginx/env.conf;
         proxy_pass $product_core_us;
-    }
-
-    location /service-worker.js {
-        include /etc/nginx/env.conf;
-        proxy_pass $normandia_us;
     }
 
 }
