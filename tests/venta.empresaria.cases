@@ -1,0 +1,9 @@
+
+test.status.response.sh GET ci.garbarino.com /html/venta-empresas 301
+test.header.response.sh GET ci.garbarino.com /html/venta-empresas Location http://ci.garbarino.com/venta-empresas/
+
+test.status.response.sh GET staging.garbarino.com /html/venta-empresas 301
+test.header.response.sh GET staging.garbarino.com /html/venta-empresas Location http://staging.garbarino.com/venta-empresas/
+
+test.status.response.sh GET www.garbarino.com /html/venta-empresas 301
+test.header.response.sh GET www.garbarino.com /html/venta-empresas Location http://www.garbarino.com/venta-empresas/
