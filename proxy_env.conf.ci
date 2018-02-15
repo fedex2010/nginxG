@@ -32,7 +32,8 @@ set $coupons_core_us http://coupons-core-ci.us-east-1.elasticbeanstalk.com;
 set $snorlax_core_us http://snorlax-core-ci.rfs7i82gpp.us-east-1.elasticbeanstalk.com ;
 set $magikarp_core_us http://magikarp-core-ci.us-east-1.elasticbeanstalk.com;
 
-set $search_us http://search-ci.elasticbeanstalk.com;
+#set $search_us http://search-ci.elasticbeanstalk.com;
+set $search_us http://internal-swarm-ci-1176851982.us-east-1.elb.amazonaws.com;
 set $croupier_us http://croupier-ci.us-east-1.elasticbeanstalk.com;
 set $product_core_us http://product-core-ci.elasticbeanstalk.com;
 set $listing_core_us http://listing-core-ci.us-east-1.elasticbeanstalk.com;
@@ -70,7 +71,8 @@ set $transporter_us http://transporter-ci.us-east-1.elasticbeanstalk.com;
 set $graylog_us http://ip-10-211-15-62.ec2.internal:9000;
 set $graylog_api_us http://ip-10-211-15-62.ec2.internal:12900;
 
-set $notifications_us http://notifications-ci.us-east-1.elasticbeanstalk.com;
+#set $notifications_us http://notifications-ci.us-east-1.elasticbeanstalk.com;
+set $notifications_us http://internal-swarm-ci-1176851982.us-east-1.elb.amazonaws.com;
 set $meli_us http://ml-integration-ci.us-east-1.elasticbeanstalk.com;
 
 set $my_account_ui_us http://my-account-ui-ci.us-east-1.elasticbeanstalk.com;
