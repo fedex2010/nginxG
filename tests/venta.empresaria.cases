@@ -15,6 +15,11 @@ test.host.rewrite.sh ssl GET empresas-ci.garbarino.com / "salecompanies.garbarin
 test.host.rewrite.sh ssl GET empresas-ci.garbarino.com /not_home "empresas-ci.garbarino.com"
 test.host.rewrite.sh ssl GET ci.garbarino.com /not_home "ci.garbarino.com"
 test.upstream.sh ssl GET empresas-ci.garbarino.com / salecompanies_us
+test.upstream.sh ssl GET empresas-ci.garbarino.com /img/an_image salecompanies_us
+test.upstream.sh ssl GET empresas-ci.garbarino.com /js/a_script salecompanies_us
+test.upstream.sh ssl GET ci.garbarino.com /js/a_script epi_ui_us
+test.upstream.sh ssl GET empresas-ci.garbarino.com /dist/a_style salecompanies_us
+test.upstream.sh ssl GET ci.garbarino.com /dist/a_style home_fe_us
 test.upstream.sh ssl GET empresas-ci.garbarino.com /listado/samsung-products listing_us
 test.upstream.sh ssl GET empresas-ci.garbarino.com /carrito/c_cartid checkout_ui_us
 
@@ -22,6 +27,10 @@ test.host.rewrite.sh ssl GET empresas-staging.garbarino.com / "salecompanies.gar
 test.host.rewrite.sh ssl GET empresas-staging.garbarino.com /not_home "empresas-staging.garbarino.com"
 test.host.rewrite.sh ssl GET staging.garbarino.com /not_home "staging.garbarino.com"
 test.upstream.sh ssl GET empresas-staging.garbarino.com / salecompanies_us
+test.upstream.sh ssl GET empresas-staging.garbarino.com /img/an_image salecompanies_us
+test.upstream.sh ssl GET empresas-staging.garbarino.com /js/a_script salecompanies_us
+test.upstream.sh ssl GET empresas-staging.garbarino.com /dist/a_style salecompanies_us
+test.upstream.sh ssl GET staging.garbarino.com /dist/a_style home_fe_us
 test.upstream.sh ssl GET empresas-staging.garbarino.com /listado/samsung-products listing_us
 test.upstream.sh ssl GET empresas-staging.garbarino.com /carrito/c_cartid checkout_ui_us
 
@@ -29,5 +38,9 @@ test.host.rewrite.sh ssl GET empresas.garbarino.com / "salecompanies.garbarino.c
 test.host.rewrite.sh ssl GET empresas.garbarino.com /not_home "empresas.garbarino.com"
 test.host.rewrite.sh ssl GET www.garbarino.com /not_home "www.garbarino.com"
 test.upstream.sh ssl GET empresas.garbarino.com / salecompanies_us 
+test.upstream.sh ssl GET empresas.garbarino.com /img/an_image salecompanies_us
+test.upstream.sh ssl GET empresas.garbarino.com /js/a_script salecompanies_us
+test.upstream.sh ssl GET empresas.garbarino.com /dist/a_style salecompanies_us
+test.upstream.sh ssl GET www.garbarino.com /dist/a_style home_fe_us
 test.upstream.sh ssl GET empresas.garbarino.com /listado/samsung-products listing_us
 test.upstream.sh ssl GET empresas.garbarino.com /carrito/c_cartid checkout_ui_us
