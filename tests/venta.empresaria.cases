@@ -11,7 +11,7 @@ test.status.response.sh GET www.garbarino.com /html/venta-empresas 301
 test.header.response.sh GET www.garbarino.com /html/venta-empresas Location http://www.garbarino.com/venta-empresas/
 
 ## Reglas principales
-test.host.rewrite.sh ssl GET empresas-ci.garbarino.com / "salecompanies-ci.garbarino.com.s3-website-us-east-1.amazonaws.com"
+# test.host.rewrite.sh ssl GET empresas-ci.garbarino.com / "salecompanies-ci.garbarino.com.s3-website-us-east-1.amazonaws.com"
 test.upstream.sh ssl GET empresas-ci.garbarino.com / salecompanies_us
 test.upstream.sh ssl GET empresas-ci.garbarino.com /listado/samsung-products listing_us
 test.upstream.sh ssl GET empresas-ci.garbarino.com /carrito/c_cartid checkout_ui_us
