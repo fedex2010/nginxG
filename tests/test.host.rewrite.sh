@@ -28,6 +28,6 @@ if [[ "$dest" == "$actual_rewrite_uri" ]]; then
 	echo -n ·
 else
 	echo
-	echo "Fail! Calling ($method) $domain$uri and expecting $dest but get [$actual_rewrite_uri]"
+	echo "Fail! Calling ($method) $domain$uri and expecting host $dest but get [$actual_rewrite_uri]"
 	exit -1
 fi
