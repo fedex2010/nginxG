@@ -1,5 +1,9 @@
-proxy_set_header Host $host;
+set $forced_proxy_host $host;
+if ($forced_host){
+	set $forced_proxy_host $forced_host;
+}
+
+proxy_set_header Host $forced_proxy_host;
 proxy_set_header Web-Store $webstore;
 proxy_set_header X-Brand $webstore;
-proxy_set_header X-Forwarded-Host $host;
-proxy_set_header X-Service $xservice;
+proxy_set_header X-Forwarded-Host $host;proxy_set_header X-Service $xservice;
