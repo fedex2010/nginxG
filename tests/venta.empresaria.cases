@@ -16,6 +16,9 @@ test.uri.rewrite.sh ssl GET empresas-ci.garbarino.com / "/venta-empresas/"
 test.host.rewrite.sh ssl GET empresas-ci.garbarino.com /not_home "empresas-ci.garbarino.com"
 test.host.rewrite.sh ssl GET ci.garbarino.com /not_home "ci.garbarino.com"
 test.upstream.sh ssl GET empresas-ci.garbarino.com / salecompanies_us
+test.upstream.sh ssl GET empresas-ci.garbarino.com /politicas-de-privacidad.html salecompanies_us
+test.upstream.sh ssl GET empresas-ci.garbarino.com /preguntas-frecuentes.html salecompanies_us
+test.upstream.sh ssl GET empresas-ci.garbarino.com /tyc.html salecompanies_us
 ## estaticos
 test.upstream.sh ssl GET empresas-ci.garbarino.com /img/an_image salecompanies_us
 test.upstream.sh ssl GET empresas-ci.garbarino.com /js/a_script salecompanies_us
@@ -35,6 +38,10 @@ test.uri.rewrite.sh ssl GET empresas-staging.garbarino.com / "/venta-empresas/"
 test.host.rewrite.sh ssl GET empresas-staging.garbarino.com /not_home "empresas-staging.garbarino.com"
 test.host.rewrite.sh ssl GET staging.garbarino.com /not_home "staging.garbarino.com"
 test.upstream.sh ssl GET empresas-staging.garbarino.com / salecompanies_us
+test.upstream.sh ssl GET empresas-staging.garbarino.com /politicas-de-privacidad.html salecompanies_us
+test.upstream.sh ssl GET empresas-staging.garbarino.com /preguntas-frecuentes.html salecompanies_us
+test.upstream.sh ssl GET empresas-staging.garbarino.com /tyc.html salecompanies_us
+
 test.upstream.sh ssl GET empresas-staging.garbarino.com /img/an_image salecompanies_us
 test.upstream.sh ssl GET empresas-staging.garbarino.com /js/a_script salecompanies_us
 test.upstream.sh ssl GET empresas-staging.garbarino.com /dist/a_style salecompanies_us
@@ -49,6 +56,10 @@ test.uri.rewrite.sh ssl GET empresas.garbarino.com / "/venta-empresas/"
 test.host.rewrite.sh ssl GET empresas.garbarino.com /not_home "empresas.garbarino.com"
 test.host.rewrite.sh ssl GET www.garbarino.com /not_home "www.garbarino.com"
 test.upstream.sh ssl GET empresas.garbarino.com / salecompanies_us 
+test.upstream.sh ssl GET empresas.garbarino.com /politicas-de-privacidad.html salecompanies_us
+test.upstream.sh ssl GET empresas.garbarino.com /preguntas-frecuentes.html salecompanies_us
+test.upstream.sh ssl GET empresas.garbarino.com /tyc.html salecompanies_us
+
 test.upstream.sh ssl GET empresas.garbarino.com /img/an_image salecompanies_us
 test.upstream.sh ssl GET empresas.garbarino.com /js/a_script salecompanies_us
 test.upstream.sh ssl GET empresas.garbarino.com /dist/a_style salecompanies_us
