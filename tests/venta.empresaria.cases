@@ -11,7 +11,7 @@ test.status.response.sh GET www.garbarino.com /html/venta-empresas 301
 test.header.response.sh GET www.garbarino.com /html/venta-empresas Location http://www.garbarino.com/venta-empresas/
 
 ## Reglas principales
-test.host.rewrite.sh ssl GET empresas-ci.garbarino.com / "salecompanies.garbarino.com.s3-website-us-east-1.amazonaws.com"
+test.host.rewrite.sh ssl GET empresas-ci.garbarino.com / "salecompanies.garbarino.com.s3-website-us-east-1.amazonaws.com/venta-empresas/"
 test.host.rewrite.sh ssl GET empresas-ci.garbarino.com /not_home "empresas-ci.garbarino.com"
 test.host.rewrite.sh ssl GET ci.garbarino.com /not_home "ci.garbarino.com"
 test.upstream.sh ssl GET empresas-ci.garbarino.com / salecompanies_us
@@ -29,7 +29,7 @@ test.host.rewrite.sh ssl POST empresas-ci.garbarino.com /services/contact "u5ffj
 test.upstream.sh ssl GET empresas-ci.garbarino.com /listado/samsung-products listing_us
 test.upstream.sh ssl GET empresas-ci.garbarino.com /carrito/c_cartid checkout_ui_us
 
-test.host.rewrite.sh ssl GET empresas-staging.garbarino.com / "salecompanies.garbarino.com.s3-website-us-east-1.amazonaws.com"
+test.host.rewrite.sh ssl GET empresas-staging.garbarino.com / "salecompanies.garbarino.com.s3-website-us-east-1.amazonaws.com/venta-empresas/"
 test.host.rewrite.sh ssl GET empresas-staging.garbarino.com /not_home "empresas-staging.garbarino.com"
 test.host.rewrite.sh ssl GET staging.garbarino.com /not_home "staging.garbarino.com"
 test.upstream.sh ssl GET empresas-staging.garbarino.com / salecompanies_us
@@ -42,7 +42,7 @@ test.host.rewrite.sh ssl POST empresas-staging.garbarino.com /services/contact "
 test.upstream.sh ssl GET empresas-staging.garbarino.com /listado/samsung-products listing_us
 test.upstream.sh ssl GET empresas-staging.garbarino.com /carrito/c_cartid checkout_ui_us
 
-test.host.rewrite.sh ssl GET empresas.garbarino.com / "salecompanies.garbarino.com.s3-website-us-east-1.amazonaws.com"
+test.host.rewrite.sh ssl GET empresas.garbarino.com / "salecompanies.garbarino.com.s3-website-us-east-1.amazonaws.com/venta-empresas/"
 test.host.rewrite.sh ssl GET empresas.garbarino.com /not_home "empresas.garbarino.com"
 test.host.rewrite.sh ssl GET www.garbarino.com /not_home "www.garbarino.com"
 test.upstream.sh ssl GET empresas.garbarino.com / salecompanies_us 
