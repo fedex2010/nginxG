@@ -8,8 +8,11 @@ set $seo_proxy_us http://seo-proxy-prod.us-east-1.elasticbeanstalk.com;
 set $prerender_us http://prerender-prod.us-east-1.elasticbeanstalk.com;
 #set $normandia_us http://normandia-prod.us-east-1.elasticbeanstalk.com;
 set $normandia_us http://normandia-ans-prod.garba.ninja;
+<<<<<<< Updated upstream
+=======
 set $review_core_us http://rattata-core-prod.uupejpdbys.us-east-1.elasticbeanstalk.com;
 set $prelanding_us http://prelandings-ui-ans-prod.garba.ninja;
+>>>>>>> Stashed changes
 set $listing_us http://listing-ui-prod.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-prod.us-east-1.elasticbeanstalk.com ;
 set $emails_core_us http://emails-core-prod.us-east-1.elasticbeanstalk.com;
@@ -21,7 +24,7 @@ set $listing_core_us http://listing-core-prod.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_notifications_us http://mapi-notifications-ans-prod.garba.ninja;
-set $mapi_checkout_us http://mapi-chk-prod.us-east-1.elasticbeanstalk.com;
+set $mapi_checkout_us http://mapi-core-ans-prod.garba.ninja;
 set $mapi_newbiz_us http://mapi-newbiz-ans-prod.garba.ninja;
 set $mapi_admin_us http://mapi-admin-ans-prod.garba.ninja;
 set $marketplace_us http://marketplace-prd.us-east-1.elasticbeanstalk.com;
@@ -54,8 +57,6 @@ set $gifts_dashboard_us http://gifts-dashboard-prod.us-east-1.elasticbeanstalk.c
 set $gifts_blog_us http://10.212.15.27:4000;
 set $oauth2_server_us http://oauth2-server-prod.us-east-1.elasticbeanstalk.com;
 set $gifts_legacy_us http://200.43.192.230:80;
-set $gifts_admin_us http://gifts-admin-prod.us-east-1.elasticbeanstalk.com;
-
 set $backoffice_ui_us http://backoffice-ui-prod.us-east-1.elasticbeanstalk.com ;
 
 set $aws_sss_us http://s3.amazonaws.com;
@@ -77,8 +78,6 @@ set $my_account_ui_us http://my-account-ui-prod.us-east-1.elasticbeanstalk.com;
 
 set $mutx_us http://10.211.15.104;
 
-set $mutx2_us http://10.211.15.51;
-
 set $dia_del_nino_us http://200.43.192.61;
 
 set $nagiostest_us http://10.211.15.9;
@@ -86,16 +85,15 @@ set $nagiostest_us http://10.211.15.9;
 set $nagiosprod_us http://10.212.15.51;
 
 set $static_sites_us http://static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com;
-set $techgo_us http://techgo.compumundo.com.ar.s3-website-us-east-1.amazonaws.com;
-set $salecompanies_us http://salecompanies.garbarino.com.s3-website-us-east-1.amazonaws.com;
-set $salecompanies_services_us https://u5ffj6kegb.execute-api.us-east-1.amazonaws.com/prod/ventaEmpresasContactForm;
-set $logistica_us http://logistica.garbarino.com.s3-website-us-east-1.amazonaws.com;
+set $techgo_us http://techgo2.compumundo.com.ar.s3-website-us-east-1.amazonaws.com;
 
 set $repo_us http://nexus.garba.ninja:9200;
 
 set $admin_tek_us https://apidesa.tekgenesis.net:445;
 
 set $checkout_ui_compra_us http://chk-ui-prod-compra.us-east-1.elasticbeanstalk.com;
+set $checkout_ui_compumundo_us http://checkout_ui_compumundo_us:3000;
+set $checkout_core_compumundo_us http://checkout_core_compumundo_us:3000;
 
 set $batches_us http://batches-prod.us-east-1.elasticbeanstalk.com;
 
@@ -107,9 +105,3 @@ set $blognew_us http://10.211.15.136;
 set $gamification_core_us http://gamification-core-prod.us-east-1.elasticbeanstalk.com;
 set $fiden_us http://fiden-web-prod.us-east-1.elasticbeanstalk.com;
 set $listing_api_us http://listing-api-ans-prod.garba.ninja;
-set $prom_marketing_us http://10.212.35.182;
-
-set $marketplace_core_us http://localhost;
-
-set $polcom_core_us http://polcom-core-prod.us-east-1.elasticbeanstalk.com;
-set $pidgey_core_us http://pidgey-core-prod.us-east-1.elasticbeanstalk.com;

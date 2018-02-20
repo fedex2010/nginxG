@@ -161,10 +161,6 @@ server {
         return 301 $scheme://www.techgo.com.ar;
     }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> master
     location /navidad  {
         return 301 https://www.compumundo.com.ar;
     }

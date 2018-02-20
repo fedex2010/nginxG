@@ -24,10 +24,7 @@ server {
         }
         ######################### gifts-blog #########################
         location /blog {
-<<<<<<< HEAD
-=======
-	    rewrite ^/blog/?(.*)  /$1 break;
->>>>>>> 9d9fcea779f08cae8f525d0251a54d8f4d1e3591
+    	    rewrite ^/blog/?(.*)  /$1 break;
             proxy_pass $gifts_blog_us;
             client_max_body_size 10M;
         }
