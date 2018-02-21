@@ -2,13 +2,19 @@
 
 ## Redirects 
 test.status.response.sh GET ci.garbarino.com /html/venta-empresas 301
-test.header.response.sh GET ci.garbarino.com /html/venta-empresas Location http://ci.garbarino.com/venta-empresas/
+test.header.response.sh GET ci.garbarino.com /html/venta-empresas Location https://empresas-ci.garbarino.com/
+test.status.response.sh GET ci.garbarino.com /venta-empresas 301
+test.header.response.sh GET ci.garbarino.com /venta-empresas Location https://empresas-ci.garbarino.com/
 
 test.status.response.sh GET staging.garbarino.com /html/venta-empresas 301
-test.header.response.sh GET staging.garbarino.com /html/venta-empresas Location http://staging.garbarino.com/venta-empresas/
+test.header.response.sh GET staging.garbarino.com /html/venta-empresas Location https://empresas-staging.garbarino.com/
+test.status.response.sh GET staging.garbarino.com /venta-empresas 301
+test.header.response.sh GET staging.garbarino.com /venta-empresas Location https://empresas-staging.garbarino.com/
 
 test.status.response.sh GET www.garbarino.com /html/venta-empresas 301
-test.header.response.sh GET www.garbarino.com /html/venta-empresas Location http://www.garbarino.com/venta-empresas/
+test.header.response.sh GET www.garbarino.com /html/venta-empresas Location https://empresas.garbarino.com/
+test.status.response.sh GET www.garbarino.com /venta-empresas 301
+test.header.response.sh GET www.garbarino.com /venta-empresas Location https://empresas.garbarino.com/
 
 ## Reglas principales
 test.host.rewrite.sh ssl GET empresas-ci.garbarino.com / "salecompanies.garbarino.com.s3-website-us-east-1.amazonaws.com"
