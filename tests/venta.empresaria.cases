@@ -2,13 +2,19 @@
 
 ## Redirects 
 test.status.response.sh GET ci.garbarino.com /html/venta-empresas 301
-test.header.response.sh GET ci.garbarino.com /html/venta-empresas Location http://ci.garbarino.com/venta-empresas/
+test.header.response.sh GET ci.garbarino.com /html/venta-empresas Location https://empresas-ci.garbarino.com/
+test.status.response.sh GET ci.garbarino.com /venta-empresas 301
+test.header.response.sh GET ci.garbarino.com /venta-empresas Location https://empresas-ci.garbarino.com/
 
 test.status.response.sh GET staging.garbarino.com /html/venta-empresas 301
-test.header.response.sh GET staging.garbarino.com /html/venta-empresas Location http://staging.garbarino.com/venta-empresas/
+test.header.response.sh GET staging.garbarino.com /html/venta-empresas Location https://empresas-staging.garbarino.com/
+test.status.response.sh GET staging.garbarino.com /venta-empresas 301
+test.header.response.sh GET staging.garbarino.com /venta-empresas Location https://empresas-staging.garbarino.com/
 
 test.status.response.sh GET www.garbarino.com /html/venta-empresas 301
-test.header.response.sh GET www.garbarino.com /html/venta-empresas Location http://www.garbarino.com/venta-empresas/
+test.header.response.sh GET www.garbarino.com /html/venta-empresas Location https://empresas.garbarino.com/
+test.status.response.sh GET www.garbarino.com /venta-empresas 301
+test.header.response.sh GET www.garbarino.com /venta-empresas Location https://empresas.garbarino.com/
 
 ## Reglas principales
 test.host.rewrite.sh ssl GET empresas-ci.garbarino.com / "salecompanies.garbarino.com.s3-website-us-east-1.amazonaws.com"
@@ -26,6 +32,7 @@ test.upstream.sh ssl GET ci.garbarino.com /js/a_script epi_ui_us
 test.upstream.sh ssl GET empresas-ci.garbarino.com /dist/a_style salecompanies_us
 test.upstream.sh ssl GET ci.garbarino.com /dist/a_style home_fe_us
 ## servicios
+test.upstream.sh ssl POST empresas-ci.garbarino.com /venta-empresas/services/contact salecompanies_services_us
 test.upstream.sh ssl POST empresas-ci.garbarino.com /services/contact salecompanies_services_us
 test.host.rewrite.sh ssl POST empresas-ci.garbarino.com /services/contact "u5ffj6kegb.execute-api.us-east-1.amazonaws.com"
 
