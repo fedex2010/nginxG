@@ -3,6 +3,7 @@ if ($forced_host !~ ".+"){
 	set $forced_host $host;
 }
 
+proxy_set_header X-Subdomain "$x_subdomain";
 proxy_set_header Host $forced_host;
 proxy_set_header Web-Store $webstore;
 proxy_set_header X-Brand $webstore;

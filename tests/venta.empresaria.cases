@@ -16,6 +16,12 @@ test.header.response.sh GET www.garbarino.com /html/venta-empresas Location http
 test.status.response.sh GET www.garbarino.com /venta-empresas 301
 test.header.response.sh GET www.garbarino.com /venta-empresas Location https://empresas.garbarino.com/
 
+## Header
+test.header.request.sh ssl GET empresas-ci.garbarino.com / 'x-subdomain' 'empresas'
+test.header.request.sh ssl GET empresas-staging.garbarino.com / 'x-subdomain' 'empresas'
+test.header.request.sh ssl GET empresas.garbarino.com / 'x-subdomain' 'empresas'
+test.header.request.sh ssl GET www.garbarino.com / 'x-subdomain' 'www'
+
 ## Reglas principales
 test.host.rewrite.sh ssl GET empresas-ci.garbarino.com / "salecompanies.garbarino.com.s3-website-us-east-1.amazonaws.com"
 test.uri.rewrite.sh ssl GET empresas-ci.garbarino.com / "/venta-empresas/"
