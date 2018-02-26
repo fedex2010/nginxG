@@ -109,6 +109,6 @@ set $fiden_us http://fiden-web-staging.us-east-1.elasticbeanstalk.com;
 set $listing_api_us http://listing-api-ans-staging.garba.ninja;
 set $prom_marketing_us http://10.212.35.182;
 
-set $marketplace_core_us http://localhost;
+set $marketplace_core_us http://marketplace-api-staging.us-east-1.elasticbeanstalk.com;
 set $polcom_core_us http://polcom-core-staging.us-east-1.elasticbeanstalk.com;
 set $pidgey_core_us http://pidgey-core-staging.us-east-1.elasticbeanstalk.com;
