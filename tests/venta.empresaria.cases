@@ -1,20 +1,23 @@
 ## Venta empresaria
 
 ## Redirects 
-test.status.response.sh GET ci.garbarino.com /html/venta-empresas 301
-test.header.response.sh GET ci.garbarino.com /html/venta-empresas Location https://empresas-ci.garbarino.com/
-test.status.response.sh GET ci.garbarino.com /venta-empresas 301
-test.header.response.sh GET ci.garbarino.com /venta-empresas Location https://empresas-ci.garbarino.com/
+test.status.response.sh ssl GET ci.garbarino.com /html/venta-empresas 301
+test.header.response.sh ssl GET ci.garbarino.com /html/venta-empresas Location https://empresas-ci.garbarino.com/
+test.status.response.sh ssl GET ci.garbarino.com /venta-empresas 301
+test.status.response.sh ssl GET ci.garbarino.com /venta-empresas/ 301 
+test.header.response.sh ssl GET ci.garbarino.com /venta-empresas Location https://empresas-ci.garbarino.com/
 
-test.status.response.sh GET staging.garbarino.com /html/venta-empresas 301
-test.header.response.sh GET staging.garbarino.com /html/venta-empresas Location https://empresas-staging.garbarino.com/
-test.status.response.sh GET staging.garbarino.com /venta-empresas 301
-test.header.response.sh GET staging.garbarino.com /venta-empresas Location https://empresas-staging.garbarino.com/
+test.status.response.sh ssl GET staging.garbarino.com /html/venta-empresas 301
+test.header.response.sh ssl GET staging.garbarino.com /html/venta-empresas Location https://empresas-staging.garbarino.com/
+test.status.response.sh ssl GET staging.garbarino.com /venta-empresas 301
+test.status.response.sh ssl GET staging.garbarino.com /venta-empresas/ 301
+test.header.response.sh ssl GET staging.garbarino.com /venta-empresas Location https://empresas-staging.garbarino.com/
 
-test.status.response.sh GET www.garbarino.com /html/venta-empresas 301
-test.header.response.sh GET www.garbarino.com /html/venta-empresas Location https://empresas.garbarino.com/
-test.status.response.sh GET www.garbarino.com /venta-empresas 301
-test.header.response.sh GET www.garbarino.com /venta-empresas Location https://empresas.garbarino.com/
+test.status.response.sh ssl GET www.garbarino.com /html/venta-empresas 301
+test.header.response.sh ssl GET www.garbarino.com /html/venta-empresas Location https://empresas.garbarino.com/
+test.status.response.sh ssl GET www.garbarino.com /venta-empresas 301
+test.status.response.sh ssl GET www.garbarino.com /venta-empresas/ 301
+test.header.response.sh ssl GET www.garbarino.com /venta-empresas Location https://empresas.garbarino.com/
 
 ## Header
 test.header.request.sh ssl GET empresas-ci.garbarino.com / 'x-subdomain' 'empresas'
