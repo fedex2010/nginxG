@@ -98,3 +98,6 @@ test.status.response.sh ssl GET www.garbarino.com /html/venta-telefonica 301
 test.header.response.sh	ssl GET www.garbarino.com /html/venta-telefonica Location https://www.garbarino.com/venta-telefonica
 
 test.upstream.sh ssl GET extranet-ci.garba.ninja / marketplace_us
+
+test.upstream.sh ssl GET ci.garbarino.com /prelanding/services/tv/banners prelanding_us
+test.upstream.sh ssl GET ci.garbarino.com /tv-led-y-smart-tv prelanding_us
