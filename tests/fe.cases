@@ -101,3 +101,7 @@ test.upstream.sh ssl GET extranet-ci.garba.ninja / marketplace_us
 
 test.upstream.sh ssl GET ci.garbarino.com /prelanding/services/tv/banners prelanding_us
 test.upstream.sh ssl GET ci.garbarino.com /tv-led-y-smart-tv prelanding_us
+test.upstream.sh ssl GET staging.garbarino.com /prelanding/services/tv/banners prelanding_us
+test.upstream.sh ssl GET staging.garbarino.com /tv-led-y-smart-tv prelanding_us
+test.upstream.sh ssl GET www.garbarino.com /prelanding/services/tv/banners prelanding_us
+test.upstream.sh ssl GET www.garbarino.com /tv-led-y-smart-tv prelanding_us
