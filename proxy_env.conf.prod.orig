@@ -65,6 +65,7 @@ set $tracker_us http://tracker-prod.us-east-1.elasticbeanstalk.com ;
 
 set $checkout_core_us http://chk-core-prod.us-east-1.elasticbeanstalk.com;
 set $checkout_ui_us http://chk-ui-prod.us-east-1.elasticbeanstalk.com;
+set $checkout_ui_features_us http://chk-ui-features.us-east-1.elasticbeanstalk.com;
 set $checkout_ui_payments_us http://chk-ui-prod-payments.us-east-1.elasticbeanstalk.com;
 set $transporter_us http://transporter-prod.us-east-1.elasticbeanstalk.com;
 
