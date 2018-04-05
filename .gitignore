@@ -3,3 +3,4 @@ nginx.zip
 *.log
 .idea/*
 .project
+.DS_Store
