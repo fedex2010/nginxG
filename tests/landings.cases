@@ -30,3 +30,7 @@ test.host.rewrite.sh GET micro-sitios.garbarino.com /catalogos/julio2016 static-
 #new landings
 test.upstream.sh ssl GET ci.garbarino.com /l/ home_fe_us
 test.upstream.sh ssl GET ci.compumundo.com.ar /l/ home_fe_us
+test.upstream.sh ssl GET staging.garbarino.com /l/ home_fe_us
+test.upstream.sh ssl GET staging.compumundo.com.ar /l/ home_fe_us
+test.upstream.sh ssl GET www.garbarino.com /l/ home_fe_us
+test.upstream.sh ssl GET www.compumundo.com.ar /l/ home_fe_us
