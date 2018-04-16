@@ -108,3 +108,7 @@ test.upstream.sh ssl GET www.garbarino.com /tv-led-y-smart-tv prelanding_us
 
 test.upstream.sh ssl GET ci.garbarino.com /prelanding/services/notebooks/banners prelanding_us
 test.upstream.sh ssl GET ci.garbarino.com /notebooks prelanding_us
+test.upstream.sh ssl GET staging.garbarino.com /prelanding/services/notebooks/banners prelanding_us
+test.upstream.sh ssl GET staging.garbarino.com /notebooks prelanding_us
+test.upstream.sh ssl GET www.garbarino.com /prelanding/services/notebooks/banners prelanding_us
+test.upstream.sh ssl GET www.garbarino.com /notebooks prelanding_us
