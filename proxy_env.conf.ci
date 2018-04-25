@@ -67,6 +67,7 @@ set $tracker_us http://internal-swarm-ci-1176851982.us-east-1.elb.amazonaws.com;
 set $checkout_core_us http://chk-core-ci.us-east-1.elasticbeanstalk.com;
 set $checkout_ui_us http://chk-ui-ci.us-east-1.elasticbeanstalk.com;
 set $checkout_ui_features_us http://chk-ui-features.us-east-1.elasticbeanstalk.com;
+set $checkout_ui_features2_us http://chk-ui-features2.us-east-1.elasticbeanstalk.com;
 set $checkout_ui_payments_us http://chk-ui-ci.us-east-1.elasticbeanstalk.com;
 set $transporter_us http://transporter-ci.us-east-1.elasticbeanstalk.com;
 
