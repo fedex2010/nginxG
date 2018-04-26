@@ -19,7 +19,7 @@ set $insurances_ui_us http://insurance-ui-prod.us-east-1.elasticbeanstalk.com;
 set $new_biz_core_us http://newbiz-core-ans-prod.garba.ninja;
 set $listing_core_us http://listing-core-prod.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-prod.us-east-1.elasticbeanstalk.com;
-set $mapi_core_us http://mapi-core-prod.us-east-1.elasticbeanstalk.com;
+set $mapi_core_us http://mapi-core-prod1.us-east-1.elasticbeanstalk.com;
 set $mapi_notifications_us http://mapi-notifications-ans-prod.garba.ninja;
 set $mapi_checkout_us http://mapi-chk-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_newbiz_us http://mapi-newbiz-ans-prod.garba.ninja;
