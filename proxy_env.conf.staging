@@ -17,6 +17,7 @@ set $emails_core_us http://emails-core-staging.us-east-1.elasticbeanstalk.com;
 set $api_core_us http://api-core-ans-staging.garba.ninja;
 set $insurance_core_us http://insurance-core-stag.us-east-1.elasticbeanstalk.com;
 set $insurances_ui_us http://insurance-ui-staging.us-east-1.elasticbeanstalk.com;
+set $loans_ui_us http://loans-ui-ci.us-east-1.elasticbeanstalk.com;
 
 set $new_biz_core_us http://newbiz-core-ans-staging.garba.ninja;
 set $home_core_us http://home-core-staging.us-east-1.elasticbeanstalk.com;
