@@ -118,3 +118,5 @@ set $pidgey_core_us http://pidgey-core-prod.us-east-1.elasticbeanstalk.com;
 set $api_compu_penalties http://10.212.35.48:8080;
 
 set $genesis_importer_us http://genesis-importer-prod.us-east-1.elasticbeanstalk.com;
+
+set $promociones_us http://200.43.192.230/couponing/;
