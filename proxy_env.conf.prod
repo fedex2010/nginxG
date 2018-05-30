@@ -119,4 +119,4 @@ set $api_compu_penalties http://10.212.35.48:8080;
 
 set $genesis_importer_us http://genesis-importer-prod.us-east-1.elasticbeanstalk.com;
 
-set $promociones_us http://10.212.35.182/couponing;
+set $promociones_us http://10.212.35.182;
