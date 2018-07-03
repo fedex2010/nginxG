@@ -12,4 +12,7 @@ jobs:
           name: install dependencies
           command: |
             sudo apt-get install awscli
+      - run:
+          name: Make Zip File
+          command: |
             zip -r app.zip Dockerfile nginx.conf conf.d includes proxy_env.conf proxy_env.conf.ci proxy_env.conf.staging proxy_env.conf.prod env.conf env.conf.ci env.conf.staging env.conf.prod upstreams.conf upstreams.conf.ci upstreams.conf.staging upstreams.conf.prod scripts security api resolvers.conf nginx-nr-agent.ini nginx-nr-agent.ini.ci nginx-nr-agent.ini.staging nginx-nr-agent.ini.prod fe mime.types test.upstreams.sh
