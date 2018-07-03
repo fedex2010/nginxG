@@ -1,0 +1,33 @@
+version: 2
+jobs:
+  build:
+    docker:
+      - image: circleci/python:3.6.1
+      
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+      - run:
+          name: install dependencies
+          command: |
+            sudo apt-get install awscli
+      - run:
+          name: Make Zip File
+          command: |
+            zip -r app.zip Dockerfile nginx.conf conf.d includes proxy_env.conf proxy_env.conf.ci proxy_env.conf.staging proxy_env.conf.prod env.conf env.conf.ci env.conf.staging env.conf.prod upstreams.conf upstreams.conf.ci upstreams.conf.staging upstreams.conf.prod scripts security api resolvers.conf nginx-nr-agent.ini nginx-nr-agent.ini.ci nginx-nr-agent.ini.staging nginx-nr-agent.ini.prod fe mime.types test.upstreams.sh
+
+      - run:
+          name: Get ENVIRONMENT_NAME
+          command: |
+            if [ "$CIRCLE_BRANCH" == "master" ]; then
+            echo 'export ENVIRONMENT_NAME=staging' >> $BASH_ENV
+            else
+            echo 'export ENVIRONMENT_NAME=ci' >> $BASH_ENV
+            fi
+            source $BASH_ENV
+
+      - run:
+          name: Deploy 
+          command: |
+            aws lambda invoke  --invocation-type RequestResponse  --function-name trigger_function  --region us-east-1  --log-type Tail --payload '{"ENVIRONMENT":$ENVIRONMENT_NAME,"BRANCH":"develop","APP":"nginx"}' outputfile.txt
