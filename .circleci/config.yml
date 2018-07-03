@@ -30,4 +30,4 @@ jobs:
       - run:
           name: Deploy 
           command: |
-            - aws lambda invoke  --invocation-type RequestResponse  --function-name trigger_function  --region us-east-1  --log-type Tail --payload '{"ENVIRONMENT":$ENVIRONMENT_NAME,"BRANCH":"develop","APP":"nginx"}' outputfile.txt
+            aws lambda invoke  --invocation-type RequestResponse  --function-name trigger_function  --region us-east-1  --log-type Tail --payload '{"ENVIRONMENT":$ENVIRONMENT_NAME,"BRANCH":"develop","APP":"nginx"}' outputfile.txt
