@@ -8,13 +8,12 @@ jobs:
       CIRCLE_ARTIFACTS: /tmp/circleci-artifacts
       CIRCLE_TEST_REPORTS: /tmp/circleci-test-results
     docker:
-    - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
+    - image: circleci/python:3.6.1
       command: /sbin/init
     steps:
     - run:
         working_directory: ~/garbarino-com/nginx
         command: |  
-          if [ "2.7.6" == "system" ] || pyenv versions --bare | grep -x -q '2.7.6'; then pyenv global version;else pyenv install --skip-existing  2.7.6 && pyenv global version && pyenv rehash && pip install virtualenv && pip install nose && pip install pep8 && pyenv rehash;fi
     - run:
         working_directory: ~/garbarino-com/nginx
         command: 'sudo docker info >/dev/null 2>&1 || sudo service docker start; '
