@@ -1,0 +1,55 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/garbarino-com/nginx
+    parallelism: 1
+    shell: /bin/bash --login
+    environment:
+      CIRCLE_ARTIFACTS: /tmp/circleci-artifacts
+      CIRCLE_TEST_REPORTS: /tmp/circleci-test-results
+    docker:
+    - image: circleci/build-image:ubuntu-14.04-XXL-upstart-1189-5614f37
+      command: /sbin/init
+    steps:
+    - run:
+        working_directory: ~/garbarino-com/nginx
+        command: if ["2.7.6" == "system"] || pyenv versions --bare | grep -x -q '2.7.6'; then pyenv global version;else pyenv install --skip-existing  2.7.6 && pyenv global version && pyenv rehash && pip install virtualenv && pip install nose && pip install pep8 && pyenv rehash;fi
+    - run:
+        working_directory: ~/garbarino-com/nginx
+        command: 'sudo docker info >/dev/null 2>&1 || sudo service docker start; '
+    - restore_cache:
+        keys:
+        # This branch if available
+        - v1-dep-{{ .Branch }}-
+        # Default branch if not
+        - v1-dep-develop-
+        # Any branch if there are none on the default branch - this should be unnecessary if you have your default branch configured correctly
+        - v1-dep-
+    - run: pip install awscli
+    - run: if [ -z "${NODE_ENV:-}" ]; then export NODE_ENV=test; fi
+    - run: export PATH="~/garbarino-com/nginx/node_modules/.bin:$PATH"
+    - run: npm install
+    # Save dependency cache
+    - save_cache:
+        key: v1-dep-{{ .Branch }}-{{ epoch }}
+        paths:
+        # This is a broad list of cache paths to include many possible development environments
+        # You can probably delete some of these entries
+        - vendor/bundle
+        - ~/virtualenvs
+        - ~/.m2
+        - ~/.ivy2
+        - ~/.bundle
+        - ~/.go_workspace
+        - ~/.gradle
+        - ~/.cache/bower
+        - ./node_modules
+    - run: npm test
+    # Save test results
+    - store_test_results:
+        path: /tmp/circleci-test-results
+    # Save artifacts
+    - store_artifacts:
+        path: /tmp/circleci-artifacts
+    - store_artifacts:
+        path: /tmp/circleci-test-results
