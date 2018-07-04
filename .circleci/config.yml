@@ -21,7 +21,8 @@ jobs:
         command: |
           python3 -m venv venv
           . venv/bin/activate
-    - run: pip install awscli
+    #- run: pip install awscli
+    - run: sudo apt-get install awscli
     - run: if [ -z "${NODE_ENV:-}" ]; then export NODE_ENV=test; fi
     - run: export PATH="~/garbarino-com/nginx/node_modules/.bin:$PATH"
     - run: npm install
