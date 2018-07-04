@@ -8,12 +8,6 @@ jobs:
     docker:
     - image: circleci/python:3.6.1
     steps:
-    - run:
-        working_directory: ~/garbarino-com/nginx
-        command: |  
-    - run:
-        working_directory: ~/garbarino-com/nginx
-        command: 'sudo docker info >/dev/null 2>&1 || sudo service docker start; '
     - restore_cache:
         keys:
         # This branch if available
@@ -23,10 +17,10 @@ jobs:
         # Any branch if there are none on the default branch - this should be unnecessary if you have your default branch configured correctly
         - v1-dep-
     - run:
-          name: install dependencies
-          command: |
-            python3 -m venv venv
-            . venv/bin/activate
+        name: install dependencies
+        command: |
+          python3 -m venv venv
+          . venv/bin/activate
     - run: pip install awscli
     - run: if [ -z "${NODE_ENV:-}" ]; then export NODE_ENV=test; fi
     - run: export PATH="~/garbarino-com/nginx/node_modules/.bin:$PATH"
