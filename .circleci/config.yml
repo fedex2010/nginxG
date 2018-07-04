@@ -13,8 +13,8 @@ jobs:
     steps:
     - run:
         working_directory: ~/garbarino-com/nginx
-        command: | 
-          if ["2.7.6" == "system"] || pyenv versions --bare | grep -x -q '2.7.6'; then pyenv global version;else pyenv install --skip-existing  2.7.6 && pyenv global version && pyenv rehash && pip install virtualenv && pip install nose && pip install pep8 && pyenv rehash;fi
+        command: |  
+          if [ "2.7.6" == "system" ] || pyenv versions --bare | grep -x -q '2.7.6'; then pyenv global version;else pyenv install --skip-existing  2.7.6 && pyenv global version && pyenv rehash && pip install virtualenv && pip install nose && pip install pep8 && pyenv rehash;fi
     - run:
         working_directory: ~/garbarino-com/nginx
         command: 'sudo docker info >/dev/null 2>&1 || sudo service docker start; '
