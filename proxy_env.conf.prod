@@ -34,7 +34,9 @@ set $snorlax_core_us http://snorlax-core-prod.rfs7i82gpp.us-east-1.elasticbeanst
 set $magikarp_core_us http://magikarp-core-prod.us-east-1.elasticbeanstalk.com;
 set $caterpie_core_us http://magikarp-core-prod.us-east-1.elasticbeanstalk.com;
 
+set $search_evo_us http://search-evolution-prod.us-east-1.elasticbeanstalk.com;
 set $search_us http://search-prod.us-east-1.elasticbeanstalk.com;
+
 set $croupier_us http://croupier-prod.us-east-1.elasticbeanstalk.com;
 set $product_core_us http://product-core-prod.us-east-1.elasticbeanstalk.com;
 set $microapps_us http://micro-apps-prod.us-east-1.elasticbeanstalk.com;

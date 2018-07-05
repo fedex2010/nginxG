@@ -35,6 +35,7 @@ set $magikarp_core_us http://magikarp-core-ci.us-east-1.elasticbeanstalk.com;
 set $caterpie_core_us http://caterpie-core-ci.us-east-1.elasticbeanstalk.com;
 
 #set $search_us http://search-ci.elasticbeanstalk.com;
+set $search_evo_us http://internal-swarm-ci-1176851982.us-east-1.elb.amazonaws.com;
 set $search_us http://internal-swarm-ci-1176851982.us-east-1.elb.amazonaws.com;
 set $croupier_us http://croupier-ci.us-east-1.elasticbeanstalk.com;
 set $product_core_us http://product-core-ci.elasticbeanstalk.com;
