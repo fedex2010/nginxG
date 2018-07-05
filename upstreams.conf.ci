@@ -18,6 +18,7 @@ upstream mapi_notifications_us { server mapi-notifications-ci.us-east-1.elasticb
 upstream mapi_newbiz_us { server mapi-newbiz-ci.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream mapi_admin_us { server mapi-admin-ci.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 
+upstream search_evo_us { server search-ci.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream search_us { server search-ci.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream product_core_us { server product-core-ci.elasticbeanstalk.com max_fails=3;keepalive 5; }
 upstream microapps_us { server localhost max_fails=3; keepalive 5;}
