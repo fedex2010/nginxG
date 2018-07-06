@@ -1,0 +1,74 @@
+version: 2
+jobs:
+  build:
+    machine: true
+      
+    working_directory: ~/garbarino-com/nginx
+
+    steps:
+      - checkout
+      - run:
+          name: install dependencies
+          command: |
+            sudo apt-get update
+            sudo apt-get install awscli
+      - run:
+          name: install npm
+          command: |
+            sudo apt-get install npm
+      - run:
+          name: Tests
+          command: |
+            npm test
+      - run:
+          name: Make Zip File
+          command: |
+            zip -r app.zip Dockerfile nginx.conf conf.d includes proxy_env.conf proxy_env.conf.ci proxy_env.conf.staging proxy_env.conf.prod env.conf env.conf.ci env.conf.staging env.conf.prod upstreams.conf upstreams.conf.ci upstreams.conf.staging upstreams.conf.prod scripts security api resolvers.conf nginx-nr-agent.ini nginx-nr-agent.ini.ci nginx-nr-agent.ini.staging nginx-nr-agent.ini.prod fe mime.types test.upstreams.sh
+
+  deploy_ci:
+    machine: true
+    steps:
+      - run: aws lambda invoke  --invocation-type RequestResponse  --function-name trigger_function  --region us-east-1  --log-type Tail --payload '{"ENVIRONMENT":"ci","BRANCH":"develop","APP":"nginx"}' outputfile.txt
+
+  deploy_staging:
+    machine: true
+    steps:
+      - run: aws lambda invoke  --invocation-type RequestResponse  --function-name trigger_function  --region us-east-1  --log-type Tail --payload '{"ENVIRONMENT":"staging","BRANCH":"master","APP":"nginx"}' outputfile.txt
+
+  deploy_circle2:
+    machine: true
+    steps:
+      - run: aws lambda invoke  --invocation-type RequestResponse  --function-name trigger_function  --region us-east-1  --log-type Tail --payload '{"ENVIRONMENT":"ppp","BRANCH":"nginx-circle2","APP":"ppp"}' outputfile.txt
+
+workflows:
+  version: 2
+  build_and_test:
+    jobs:
+      - build:
+          filters:
+            branches:
+              only:
+                - develop
+                - master
+                - nginx-circle2
+      - deploy_ci:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - develop
+      - deploy_staging:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - master
+      - deploy_circle2:
+          requires:
+            - build
+          filters:
+            branches:
+              only:
+                - nginx-circle2
