@@ -35,11 +35,6 @@ jobs:
     steps:
       - run: aws lambda invoke  --invocation-type RequestResponse  --function-name trigger_function  --region us-east-1  --log-type Tail --payload '{"ENVIRONMENT":"staging","BRANCH":"master","APP":"nginx"}' outputfile.txt
 
-  deploy_circle2:
-    machine: true
-    steps:
-      - run: aws lambda invoke  --invocation-type RequestResponse  --function-name trigger_function  --region us-east-1  --log-type Tail --payload '{"ENVIRONMENT":"ppp","BRANCH":"nginx-circle2","APP":"ppp"}' outputfile.txt
-
 workflows:
   version: 2
   build_and_test:
@@ -50,7 +45,6 @@ workflows:
               only:
                 - develop
                 - master
-                - nginx-circle2
       - deploy_ci:
           requires:
             - build
@@ -65,10 +59,3 @@ workflows:
             branches:
               only:
                 - master
-      - deploy_circle2:
-          requires:
-            - build
-          filters:
-            branches:
-              only:
-                - nginx-circle2
