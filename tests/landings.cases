@@ -21,11 +21,11 @@ test.upstream.sh ssl GET www.garbarino.com /sucursales landings_fe_us
 #test.uri.rewrite.sh GET www.garbarino.com /rse/concursodiadelnino/descargas/file /concurso/descargas/file
 
 test.upstream.sh GET micro-sitios-ci.garbarino.com /catalogos/julio2016 static_sites_us
-test.host.rewrite.sh GET micro-sitios-ci.garbarino.com /catalogos/julio2016 static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com
+#test.host.rewrite.sh GET micro-sitios-ci.garbarino.com /catalogos/julio2016 static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com
 test.upstream.sh GET micro-sitios-staging.garbarino.com /catalogos/julio2016 static_sites_us
-test.host.rewrite.sh GET micro-sitios-staging.garbarino.com /catalogos/julio2016 static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com
+#test.host.rewrite.sh GET micro-sitios-staging.garbarino.com /catalogos/julio2016 static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com
 test.upstream.sh GET micro-sitios.garbarino.com /catalogos/julio2016 static_sites_us
-test.host.rewrite.sh GET micro-sitios.garbarino.com /catalogos/julio2016 static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com
+#test.host.rewrite.sh GET micro-sitios.garbarino.com /catalogos/julio2016 static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com
 
 #new landings
 test.upstream.sh ssl GET ci.garbarino.com /l/ home_fe_us
