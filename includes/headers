@@ -9,3 +9,4 @@ proxy_set_header Web-Store $webstore;
 proxy_set_header X-Brand $webstore;
 proxy_set_header X-Forwarded-Host $host;
 proxy_set_header X-Service $xservice;
+proxy_set_header Access-Control-Allow-Origin *;
