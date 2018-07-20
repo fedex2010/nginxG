@@ -46,7 +46,8 @@ set $guides_fe_us http://guides-ui-ci.us-east-1.elasticbeanstalk.com;
 set $amp_fe_us http://amp-ui-ci.us-east-1.elasticbeanstalk.com;
 set $home_fe_us http://home-ui-ci.us-east-1.elasticbeanstalk.com;
 set $landings_fe_us http://landings-ci.us-east-1.elasticbeanstalk.com;
-set $my_account_core_us http://my-account-core-ans-ci.garba.ninja;
+#set $my_account_core_us http://my-account-core-ans-ci.garba.ninja;
+set $my_account_core_us http://my-account-core-ci.us-east-1.elasticbeanstalk.com;
 
 set $operations_us http://operations-recovers-ci.us-east-1.elasticbeanstalk.com;
 set $operations_kibana_us http://10.211.15.107:5601;
