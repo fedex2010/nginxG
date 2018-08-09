@@ -18,7 +18,7 @@ set $insurances_ui_us http://insurance-ui-ci.us-east-1.elasticbeanstalk.com;
 set $loans_ui_us http://loans-ui-ci.us-east-1.elasticbeanstalk.com;
 set $gifts_admin_us http://gifts-admin-ci.us-east-1.elasticbeanstalk.com;
 
-set $new_biz_core_us http://newbiz-core-ans-ci.garba.ninja;
+set $new_biz_core_us http://new-biz-core-ci.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-ans-ci.garba.ninja;
 set $mapi_core_us http://mapi-core-ci.us-east-1.elasticbeanstalk.com;
 set $mapi_checkout_us http://mapi-core-ci.us-east-1.elasticbeanstalk.com;
