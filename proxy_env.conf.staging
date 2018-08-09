@@ -19,7 +19,7 @@ set $insurance_core_us http://insurance-core-stag.us-east-1.elasticbeanstalk.com
 set $insurances_ui_us http://insurance-ui-staging.us-east-1.elasticbeanstalk.com;
 set $loans_ui_us http://loans-ui-staging.us-east-1.elasticbeanstalk.com;
 
-set $new_biz_core_us http://newbiz-core-ans-staging.garba.ninja;
+set $new_biz_core_us http://new-biz-core-staging.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_checkout_us http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
