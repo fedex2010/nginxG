@@ -47,7 +47,7 @@ test.upstream.sh ssl POST empresas-ci.garbarino.com /services/contact salecompan
 
 ## verifica que no se lleve todo el trafico 
 test.upstream.sh ssl GET empresas-ci.garbarino.com /listado/samsung-products listing_us
-test.upstream.sh ssl GET empresas-ci.garbarino.com /carrito/c_cartid checkout_ui_us
+#test.upstream.sh ssl GET empresas-ci.garbarino.com /carrito/c_cartid checkout_ui_us
 
 #test.host.rewrite.sh ssl GET empresas-staging.garbarino.com / "salecompanies.garbarino.com.s3-website-us-east-1.amazonaws.com"
 #test.uri.rewrite.sh ssl GET empresas-staging.garbarino.com / "/venta-empresas/"
@@ -65,7 +65,7 @@ test.upstream.sh ssl GET staging.garbarino.com /dist/a_style home_fe_us
 #test.upstream.sh ssl POST empresas-staging.garbarino.com /services/contact salecompanies_services_us
 #test.host.rewrite.sh ssl POST empresas-staging.garbarino.com /services/contact "u5ffj6kegb.execute-api.us-east-1.amazonaws.com"
 test.upstream.sh ssl GET empresas-staging.garbarino.com /listado/samsung-products listing_us
-test.upstream.sh ssl GET empresas-staging.garbarino.com /carrito/c_cartid checkout_ui_us
+#test.upstream.sh ssl GET empresas-staging.garbarino.com /carrito/c_cartid checkout_ui_us
 
 #test.host.rewrite.sh ssl GET empresas.garbarino.com / "salecompanies.garbarino.com.s3-website-us-east-1.amazonaws.com"
 #test.uri.rewrite.sh ssl GET empresas.garbarino.com / "/venta-empresas/"
@@ -83,4 +83,4 @@ test.upstream.sh ssl GET www.garbarino.com /dist/a_style home_fe_us
 #test.upstream.sh ssl POST empresas.garbarino.com /services/contact salecompanies_services_us
 #test.host.rewrite.sh ssl POST empresas.garbarino.com /services/contact "u5ffj6kegb.execute-api.us-east-1.amazonaws.com"
 test.upstream.sh ssl GET empresas.garbarino.com /listado/samsung-products listing_us
-test.upstream.sh ssl GET empresas.garbarino.com /carrito/c_cartid checkout_ui_us
+#test.upstream.sh ssl GET empresas.garbarino.com /carrito/c_cartid checkout_ui_us
