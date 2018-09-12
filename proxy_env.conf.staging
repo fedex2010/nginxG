@@ -118,6 +118,7 @@ set $prom_marketing_us http://10.212.35.182;
 set $marketplace_core_us http://marketplace-api-staging.us-east-1.elasticbeanstalk.com;
 set $polcom_core_us http://polcom-core-staging.us-east-1.elasticbeanstalk.com;
 set $pidgey_core_us http://pidgey-core-staging.us-east-1.elasticbeanstalk.com;
+set $image_generator_us http://image-generator-staging.us-east-1.elasticbeanstalk.com;
 
 set $genesis_importer_us http://genesis-importer-staging.us-east-1.elasticbeanstalk.com;
 

@@ -122,6 +122,7 @@ set $marketplace_core_us http://marketplace-api-ci.q5wdr5u9pb.us-east-1.elasticb
 
 set $polcom_core_us http://polcom-core-ci.us-east-1.elasticbeanstalk.com;
 set $pidgey_core_us http://pidgey-core-ci.us-east-1.elasticbeanstalk.com;
+set $image_generator_us http://image-generator-ci.us-east-1.elasticbeanstalk.com;
 
 set $genesis_importer_us http://genesis-importer-ci.us-east-1.elasticbeanstalk.com;
 
