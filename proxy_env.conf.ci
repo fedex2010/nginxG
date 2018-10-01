@@ -12,7 +12,7 @@ set $prelanding_us http://prelandings-ui-ans-ci.garba.ninja;
 set $listing_us http://listing-ui-ci.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-ci.us-east-1.elasticbeanstalk.com;
 set $emails_core_us http://emails-core-ci.us-east-1.elasticbeanstalk.com;
-set $api_core_us http://api-core-ans-ci.garba.ninja;
+set $api_core_us http://alb-ci.garba:8001;
 set $insurance_core_us http://insurance-core-ci.us-east-1.elasticbeanstalk.com;
 set $insurances_ui_us http://insurance-ui-ci.us-east-1.elasticbeanstalk.com;
 set $loans_ui_us http://loans-ui-ci.us-east-1.elasticbeanstalk.com;
@@ -76,9 +76,6 @@ set $checkout_ui_features_us http://chk-ui-features.us-east-1.elasticbeanstalk.c
 set $checkout_ui_features2_us http://chk-ui-features2.us-east-1.elasticbeanstalk.com;
 set $checkout_ui_payments_us http://chk-ui-ci.us-east-1.elasticbeanstalk.com;
 set $transporter_us http://transporter-ci.us-east-1.elasticbeanstalk.com;
-
-set $graylog_us http://ip-10-211-15-62.ec2.internal:9000;
-set $graylog_api_us http://ip-10-211-15-62.ec2.internal:12900;
 
 #set $notifications_us http://notifications-ci.us-east-1.elasticbeanstalk.com;
 set $notifications_us http://internal-swarm-ci-1176851982.us-east-1.elb.amazonaws.com;

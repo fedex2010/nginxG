@@ -14,7 +14,7 @@ set $listing_us http://listing-ui-staging.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-staging.us-east-1.elasticbeanstalk.com;
 
 set $emails_core_us http://emails-core-staging.us-east-1.elasticbeanstalk.com;
-set $api_core_us http://api-core-ans-staging.garba.ninja;
+set $api_core_us http://alb-staging.garba:8001;
 set $insurance_core_us http://insurance-core-stag.us-east-1.elasticbeanstalk.com;
 set $insurances_ui_us http://insurance-ui-staging.us-east-1.elasticbeanstalk.com;
 set $loans_ui_us http://loans-ui-staging.us-east-1.elasticbeanstalk.com;
@@ -74,9 +74,6 @@ set $checkout_ui_features_us http://chk-ui-features.us-east-1.elasticbeanstalk.c
 set $checkout_ui_features2_us http://chk-ui-features2.us-east-1.elasticbeanstalk.com;
 set $checkout_ui_payments_us http://chk-ui-staging.us-east-1.elasticbeanstalk.com;
 set $transporter_us http://transporter-staging.us-east-1.elasticbeanstalk.com;
-
-set $graylog_us http://ip-10-211-15-62.ec2.internal:9000;
-set $graylog_api_us http://ip-10-211-15-62.ec2.internal:12900;
 
 set $notifications_us http://notifications-staging.us-east-1.elasticbeanstalk.com;
 set $meli_us http://ml-integration-staging.us-east-1.elasticbeanstalk.com;
