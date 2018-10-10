@@ -22,7 +22,7 @@ set $loans_ui_us http://loans-ui-staging.us-east-1.elasticbeanstalk.com;
 set $new_biz_core_us http://new-biz-core-staging.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
-set $mapi_home_us http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
+set $mapi_home_us http://alb-staging.garba:8003;
 set $mapi_checkout_us http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_notifications_us http://mapi-notifications-ans-staging.garba.ninja;
 set $mapi_newbiz_us http://mapi-newbiz-ans-staging.garba.ninja;
