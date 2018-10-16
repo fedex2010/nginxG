@@ -30,7 +30,7 @@ set $listing_core_us http://listing-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_admin_us http://mapi-admin-ans-staging.garba.ninja;
 set $marketplace_us http://marketplace-staging.us-east-1.elasticbeanstalk.com;
 set $cac_frontend_us http://cac-frontend-ans-staging.garba.ninja;
-set $cac_core_us http://cac-core-ans-staging.garba.ninja;
+set $cac_core_us http://alb-staging.garba:8005;
 set $pwa_us http://pwa-ui-staging.us-east-1.elasticbeanstalk.com;
 set $coupons_core_us http://coupons-core-staging.us-east-1.elasticbeanstalk.com;
 set $snorlax_core_us http://snorlax-core-staging.us-east-1.elasticbeanstalk.com;
