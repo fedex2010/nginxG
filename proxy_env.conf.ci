@@ -125,3 +125,4 @@ set $genesis_importer_us http://genesis-importer-ci.us-east-1.elasticbeanstalk.c
 
 set $promociones_us http://200.43.192.230/couponing/;
 set $monitor_us http://monitor-ci.us-east-1.elasticbeanstalk.com;
+set $sherlock_us http://alb-ci.garba:7000;
