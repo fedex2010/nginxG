@@ -122,3 +122,4 @@ set $genesis_importer_us http://genesis-importer-prod.us-east-1.elasticbeanstalk
 
 set $promociones_us http://10.212.35.182;
 set $monitor_us http://monitor-production.us-east-1.elasticbeanstalk.com;
+set $sherlock_us http://alb-prod.garba:7000;
