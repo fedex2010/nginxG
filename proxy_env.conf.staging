@@ -15,6 +15,7 @@ set $autocomplete_us http://autocomplete-staging.us-east-1.elasticbeanstalk.com;
 
 set $emails_core_us http://emails-core-staging.us-east-1.elasticbeanstalk.com;
 set $api_core_us http://alb-staging.garba:8001;
+set $tapi_core_us http://alb-staging.garba:8008;
 set $insurance_core_us http://insurance-core-stag.us-east-1.elasticbeanstalk.com;
 set $insurances_ui_us http://insurance-ui-staging.us-east-1.elasticbeanstalk.com;
 set $loans_ui_us http://loans-ui-staging.us-east-1.elasticbeanstalk.com;
