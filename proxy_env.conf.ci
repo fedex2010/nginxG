@@ -77,8 +77,6 @@ set $checkout_ui_features2_us http://chk-ui-features2.us-east-1.elasticbeanstalk
 set $checkout_ui_payments_us http://chk-ui-ci.us-east-1.elasticbeanstalk.com;
 set $transporter_us http://transporter-ci.us-east-1.elasticbeanstalk.com;
 
-#set $notifications_us http://notifications-ci.us-east-1.elasticbeanstalk.com;
-set $notifications_us http://internal-swarm-ci-1176851982.us-east-1.elb.amazonaws.com;
 set $meli_us http://ml-integration-ci.us-east-1.elasticbeanstalk.com;
 
 set $my_account_ui_us http://my-account-ui-ci.us-east-1.elasticbeanstalk.com;
