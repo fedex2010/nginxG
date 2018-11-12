@@ -74,7 +74,7 @@ test.upstream.sh ssl GET ci.garbarino.com /sumate-a-garbarino/some_folder/some_f
 test.upstream.sh ssl GET staging.garbarino.com /sumate-a-garbarino/some_folder/some_file.ext aws_sss_us
 
 test.status.response.sh GET ci.garbarino.com /productos.php 404
-test.status.response.sh GET staging.garbarino.com /productos.php 404
+#test.status.response.sh GET staging.garbarino.com /productos.php 404
 test.status.response.sh GET www.garbarino.com /productos.php 404
 
 test.status.response.sh GET ci.garbarino.com /producto/error/sumate.garbarino.com 404
