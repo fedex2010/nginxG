@@ -75,7 +75,6 @@ set $checkout_ui_features2_us http://chk-ui-features2.us-east-1.elasticbeanstalk
 set $checkout_ui_payments_us http://chk-ui-staging.us-east-1.elasticbeanstalk.com;
 set $transporter_us http://transporter-staging.us-east-1.elasticbeanstalk.com;
 
-set $notifications_us http://notifications-staging.us-east-1.elasticbeanstalk.com;
 set $meli_us http://ml-integration-staging.us-east-1.elasticbeanstalk.com;
 
 set $my_account_ui_us http://my-account-ui-staging.us-east-1.elasticbeanstalk.com;
