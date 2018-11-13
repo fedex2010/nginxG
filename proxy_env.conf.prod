@@ -32,7 +32,7 @@ set $cac_frontend_us http://cac-frontend-ans-prod.garba.ninja;
 set $cac_core_us http://alb-prod.garba:8005;
 set $pwa_us http://pwa-ui-prod.us-east-1.elasticbeanstalk.com;
 set $pwa2_us http://pwa-ui-ci-v2.us-east-1.elasticbeanstalk.com;
-set $coupons_core_us http://coupons-core-prod.us-east-1.elasticbeanstalk.com;
+set $coupons_core_us http://alb-prod.garba:8010;
 set $snorlax_core_us http://snorlax-core-prod.rfs7i82gpp.us-east-1.elasticbeanstalk.com;
 set $magikarp_core_us http://magikarp-core-prod.us-east-1.elasticbeanstalk.com;
 set $caterpie_core_us http://alb-prod.garba:8009;
