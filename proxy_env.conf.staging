@@ -36,7 +36,7 @@ set $pwa_us http://pwa-ui-staging.us-east-1.elasticbeanstalk.com;
 set $coupons_core_us http://coupons-core-staging.us-east-1.elasticbeanstalk.com;
 set $snorlax_core_us http://snorlax-core-staging.us-east-1.elasticbeanstalk.com;
 set $magikarp_core_us http://magikarp-core-staging.us-east-1.elasticbeanstalk.com;
-set $caterpie_core_us http://caterpie-core-staging.us-east-1.elasticbeanstalk.com;
+set $caterpie_core_us http://alb-staging.garba:8009;
 
 set $search_evo_us http://search-evolution-stg.us-east-1.elasticbeanstalk.com;
 set $search_us http://search-stg.elasticbeanstalk.com;

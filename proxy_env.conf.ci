@@ -35,7 +35,7 @@ set $pwa2_us http://pwa-ui-ci-v2.us-east-1.elasticbeanstalk.com;
 set $coupons_core_us http://coupons-core-ci.us-east-1.elasticbeanstalk.com;
 set $snorlax_core_us http://snorlax-core-ci.rfs7i82gpp.us-east-1.elasticbeanstalk.com ;
 set $magikarp_core_us http://magikarp-core-ci.us-east-1.elasticbeanstalk.com;
-set $caterpie_core_us http://caterpie-core-ci.us-east-1.elasticbeanstalk.com;
+set $caterpie_core_us http://alb-ci.garba:8009;
 
 #set $search_us http://search-ci.elasticbeanstalk.com;
 set $search_evo_us http://alb-ci.garba:8007;
