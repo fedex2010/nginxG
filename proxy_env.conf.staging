@@ -7,7 +7,7 @@ set $epi_ui_clone_us http://epi-ui-clone.us-east-1.elasticbeanstalk.com;
 set $seo_proxy_us http://seo-proxy-staging.us-east-1.elasticbeanstalk.com;
 set $prerender_us http://ip-10-211-15-224.ec2.internal:3000;
 set $normandia_us http://normandia-ans-staging.garba.ninja;
-set $review_core_us http://rattata-core-staging.us-east-1.elasticbeanstalk.com;
+set $review_core_us http://alb-staging.garba:8006;
 set $prelanding_us http://prelandings-ui-ans-staging.garba.ninja;
 
 set $listing_us http://listing-ui-staging.us-east-1.elasticbeanstalk.com;
@@ -28,7 +28,7 @@ set $mapi_checkout_us http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_notifications_us http://mapi-notifications-ans-staging.garba.ninja;
 set $mapi_newbiz_us http://mapi-newbiz-ans-staging.garba.ninja;
 set $listing_core_us http://listing-core-staging.us-east-1.elasticbeanstalk.com;
-set $mapi_admin_us http://mapi-admin-ans-staging.garba.ninja;
+set $mapi_admin_us http://alb-staging.garba:8004;
 set $marketplace_us http://marketplace-staging.us-east-1.elasticbeanstalk.com;
 set $cac_frontend_us http://cac-frontend-ans-staging.garba.ninja;
 set $cac_core_us http://alb-staging.garba:8005;
