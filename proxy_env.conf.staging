@@ -37,7 +37,7 @@ set $snorlax_core_us http://snorlax-core-staging.us-east-1.elasticbeanstalk.com;
 set $magikarp_core_us http://magikarp-core-staging.us-east-1.elasticbeanstalk.com;
 set $caterpie_core_us http://caterpie-core-staging.us-east-1.elasticbeanstalk.com;
 
-set $search_evo_us http://search-evolution-stg.us-east-1.elasticbeanstalk.com;
+set $search_evo_us http://alb-staging.garba:8007;
 set $search_us http://search-stg.elasticbeanstalk.com;
 
 set $croupier_us http://croupier-staging.us-east-1.elasticbeanstalk.com;
