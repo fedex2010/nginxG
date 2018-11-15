@@ -11,7 +11,7 @@ set $review_core_us http://alb-ci.garba:8006;
 set $prelanding_us http://prelandings-ui-ans-ci.garba.ninja;
 set $listing_us http://listing-ui-ci.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-ci.us-east-1.elasticbeanstalk.com;
-set $emails_core_us http://emails-core-ci.us-east-1.elasticbeanstalk.com;
+set $emails_core_us http://alb-ci.garba:8013;
 set $api_core_us http://alb-ci.garba:8001;
 set $tapi_core_us http://alb-ci.garba:8008;
 set $insurance_core_us http://insurance-core-ci.us-east-1.elasticbeanstalk.com;
