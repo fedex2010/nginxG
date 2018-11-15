@@ -8,12 +8,13 @@ set $seo_proxy_us http://seo-proxy-prod.us-east-1.elasticbeanstalk.com;
 set $prerender_us http://prerender-prod.us-east-1.elasticbeanstalk.com;
 #set $normandia_us http://normandia-prod.us-east-1.elasticbeanstalk.com;
 set $normandia_us http://normandia-ans-prod.garba.ninja;
-set $review_core_us http://rattata-core-prod.uupejpdbys.us-east-1.elasticbeanstalk.com;
+set $review_core_us http://alb-prod.garba:8006;
 set $prelanding_us http://prelandings-ui-ans-prod.garba.ninja;
 set $listing_us http://listing-ui-prod.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-prod.us-east-1.elasticbeanstalk.com ;
 set $emails_core_us http://emails-core-prod.us-east-1.elasticbeanstalk.com;
 set $api_core_us http://alb-prod.garba:8001;
+set $tapi_core_us http://alb-prod.garba:8008;
 set $insurance_core_us http://insurance-core-prod.us-east-1.elasticbeanstalk.com;
 set $insurances_ui_us http://insurance-ui-prod.us-east-1.elasticbeanstalk.com;
 set $loans_ui_us http://loans-ui-prod.us-east-1.elasticbeanstalk.com;
@@ -25,16 +26,16 @@ set $mapi_home_us http://alb-prod.garba:8003;
 set $mapi_notifications_us http://mapi-notifications-ans-prod.garba.ninja;
 set $mapi_checkout_us http://mapi-chk-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_newbiz_us http://mapi-newbiz-ans-prod.garba.ninja;
-set $mapi_admin_us http://mapi-admin-ans-prod.garba.ninja;
+set $mapi_admin_us http://alb-prod.garba:8004;
 set $marketplace_us http://marketplace-prd.us-east-1.elasticbeanstalk.com;
 set $cac_frontend_us http://cac-frontend-ans-prod.garba.ninja;
 set $cac_core_us http://alb-prod.garba:8005;
 set $pwa_us http://pwa-ui-prod.us-east-1.elasticbeanstalk.com;
 set $pwa2_us http://pwa-ui-ci-v2.us-east-1.elasticbeanstalk.com;
-set $coupons_core_us http://coupons-core-prod.us-east-1.elasticbeanstalk.com;
+set $coupons_core_us http://alb-prod.garba:8010;
 set $snorlax_core_us http://snorlax-core-prod.rfs7i82gpp.us-east-1.elasticbeanstalk.com;
 set $magikarp_core_us http://magikarp-core-prod.us-east-1.elasticbeanstalk.com;
-set $caterpie_core_us http://caterpie-core-prod.us-east-1.elasticbeanstalk.com;
+set $caterpie_core_us http://alb-prod.garba:8009;
 
 set $search_evo_us http://alb-prod.garba:8007;
 set $search_us http://search-prod.us-east-1.elasticbeanstalk.com;
@@ -109,7 +110,7 @@ set $clairvoyant_us http://clairvoyant-prod.us-east-1.elasticbeanstalk.com/;
 
 set $blognew_us http://10.211.15.136;
 
-set $gamification_core_us http://gamification-core-prod.us-east-1.elasticbeanstalk.com;
+set $gamification_core_us http://alb-prod.garba:8011;
 set $fiden_us http://fiden-web-prod.us-east-1.elasticbeanstalk.com;
 set $prom_marketing_us http://10.212.35.100;
 

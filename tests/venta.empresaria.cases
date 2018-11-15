@@ -7,11 +7,11 @@ test.status.response.sh ssl GET ci.garbarino.com /venta-empresas 301
 test.status.response.sh ssl GET ci.garbarino.com /venta-empresas/ 301 
 test.header.response.sh ssl GET ci.garbarino.com /venta-empresas Location https://empresas-ci.garbarino.com/
 
-test.status.response.sh ssl GET staging.garbarino.com /html/venta-empresas 301
-test.header.response.sh ssl GET staging.garbarino.com /html/venta-empresas Location https://empresas-staging.garbarino.com/
-test.status.response.sh ssl GET staging.garbarino.com /venta-empresas 301
-test.status.response.sh ssl GET staging.garbarino.com /venta-empresas/ 301
-test.header.response.sh ssl GET staging.garbarino.com /venta-empresas Location https://empresas-staging.garbarino.com/
+#test.status.response.sh ssl GET staging.garbarino.com /html/venta-empresas 301
+#test.header.response.sh ssl GET staging.garbarino.com /html/venta-empresas Location https://empresas-staging.garbarino.com/
+#test.status.response.sh ssl GET staging.garbarino.com /venta-empresas 301
+#test.status.response.sh ssl GET staging.garbarino.com /venta-empresas/ 301
+#test.header.response.sh ssl GET staging.garbarino.com /venta-empresas Location https://empresas-staging.garbarino.com/
 
 test.status.response.sh ssl GET www.garbarino.com /html/venta-empresas 301
 test.header.response.sh ssl GET www.garbarino.com /html/venta-empresas Location https://empresas.garbarino.com/
@@ -52,7 +52,7 @@ test.upstream.sh ssl GET empresas-ci.garbarino.com /listado/samsung-products lis
 #test.host.rewrite.sh ssl GET empresas-staging.garbarino.com / "salecompanies.garbarino.com.s3-website-us-east-1.amazonaws.com"
 #test.uri.rewrite.sh ssl GET empresas-staging.garbarino.com / "/venta-empresas/"
 #test.host.rewrite.sh ssl GET empresas-staging.garbarino.com /not_home "empresas-staging.garbarino.com"
-#test.host.rewrite.sh ssl GET staging.garbarino.com /not_home "staging.garbarino.com"
+##test.host.rewrite.sh ssl GET staging.garbarino.com /not_home "staging.garbarino.com"
 test.upstream.sh ssl GET empresas-staging.garbarino.com / salecompanies_us
 test.upstream.sh ssl GET empresas-staging.garbarino.com /politicas-de-privacidad.html salecompanies_us
 test.upstream.sh ssl GET empresas-staging.garbarino.com /preguntas-frecuentes.html salecompanies_us
@@ -61,7 +61,7 @@ test.upstream.sh ssl GET empresas-staging.garbarino.com /tyc.html salecompanies_
 test.upstream.sh ssl GET empresas-staging.garbarino.com /img/an_image salecompanies_us
 test.upstream.sh ssl GET empresas-staging.garbarino.com /js/a_script salecompanies_us
 test.upstream.sh ssl GET empresas-staging.garbarino.com /dist/a_style salecompanies_us
-test.upstream.sh ssl GET staging.garbarino.com /dist/a_style home_fe_us
+#test.upstream.sh ssl GET staging.garbarino.com /dist/a_style home_fe_us
 #test.upstream.sh ssl POST empresas-staging.garbarino.com /services/contact salecompanies_services_us
 #test.host.rewrite.sh ssl POST empresas-staging.garbarino.com /services/contact "u5ffj6kegb.execute-api.us-east-1.amazonaws.com"
 test.upstream.sh ssl GET empresas-staging.garbarino.com /listado/samsung-products listing_us
