@@ -3,3 +3,4 @@
 test.upstream.sh GET tapi-ci.garbarino.com /categories tapi_core_us
 test.upstream.sh GET tapi-ci.garbarino.com /category-images tapi_core_us
 test.upstream.sh GET tapi-ci.garbarino.com /products tapi_core_us
+test.upstream.sh GET tapi-ci.garbarino.com /admin tapi_core_us
