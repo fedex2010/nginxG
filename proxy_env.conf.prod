@@ -112,7 +112,7 @@ set $blognew_us http://10.211.15.136;
 
 set $gamification_core_us http://alb-prod.garba:8011;
 set $fiden_us http://fiden-web-prod.us-east-1.elasticbeanstalk.com;
-set $prom_marketing_us http://10.212.35.100;
+set $prom_marketing_us http://promociones.garba;
 
 set $marketplace_core_us http://marketplace-api-prod.q5wdr5u9pb.us-east-1.elasticbeanstalk.com;
 set $polcom_core_us http://polcom-core-prod.us-east-1.elasticbeanstalk.com;
@@ -121,6 +121,6 @@ set $image_generator_us http://alb-prod.garba:8000;
 
 set $genesis_importer_us http://genesis-importer-prod.us-east-1.elasticbeanstalk.com;
 
-set $promociones_us http://10.212.35.100;
+set $promociones_us http://promociones.garba;
 set $monitor_us http://monitor-production.us-east-1.elasticbeanstalk.com;
 set $sherlock_us http://alb-prod.garba:7000;
