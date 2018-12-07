@@ -3,6 +3,9 @@ echo "[$(date)] Environment set to $1" >> /var/log/nginx/env_gen.log
 echo "[$(date)] Environment variables: $(env)" >> /var/log/nginx/env_gen.log
 
 
+cp /etc/nginx/nginx.conf.$1 /etc/nginx/nginx.conf 2>> /var/log/nginx/env_gen.err
+echo "[$(date)] Using /etc/nginx/env.conf.$1" >> /var/log/nginx/env_gen.log
+
 cp /etc/nginx/env.conf.$1 /etc/nginx/env.conf 2>> /var/log/nginx/env_gen.err
 echo "[$(date)] Using /etc/nginx/env.conf.$1" >> /var/log/nginx/env_gen.log
 
