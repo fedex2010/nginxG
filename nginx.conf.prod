@@ -61,8 +61,10 @@ http {
 
     #log_format upstream '$remote_addr [$time_local] "$request" $status ' 'upstream $upstream_response_time request $request_time ' '[$host] via [$proxy_host] (ip:$upstream_addr)';
 	log_format upstream '$remote_addr [$time_local] "$http_x_uow" "$http_user_agent" "$request" $request_length $bytes_sent $status ' 'upstream $upstream_response_time request $request_time ' '[$host] via [$proxy_host] (ip:$upstream_addr)';
-	access_log /var/log/nginx/access.log upstream buffer=3m;
-	error_log /var/log/nginx/error.log;
+	#access_log /var/log/nginx/access.log upstream buffer=3m;
+	#error_log /var/log/nginx/error.log;
+        access_log syslog:server=10.212.15.154:5140;
+        error_log syslog:server=10.212.15.154:5140;
 
 
 	##
