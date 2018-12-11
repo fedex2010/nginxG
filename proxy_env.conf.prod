@@ -26,7 +26,7 @@ set $mapi_home_us http://alb-prod.garba:8003;
 set $mapi_notifications_us http://mapi-notifications-ans-prod.garba.ninja;
 set $mapi_checkout_us http://mapi-chk-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_newbiz_us http://mapi-newbiz-ans-prod.garba.ninja;
-set $mapi_admin_us http://mapi-admin-ans-prod.garba.ninja;
+set $mapi_admin_us http://alb-prod.garba:8004;
 set $marketplace_us http://marketplace-prd.us-east-1.elasticbeanstalk.com;
 set $cac_frontend_us http://cac-frontend-ans-prod.garba.ninja;
 set $cac_core_us http://alb-prod.garba:8005;
