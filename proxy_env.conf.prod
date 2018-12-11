@@ -40,7 +40,6 @@ set $caterpie_core_us http://alb-prod.garba:8009;
 set $search_evo_us http://alb-prod.garba:8007;
 set $search_us http://search-prod.us-east-1.elasticbeanstalk.com;
 
-set $croupier_us http://croupier-prod.us-east-1.elasticbeanstalk.com;
 set $product_core_us http://product-core-prod.us-east-1.elasticbeanstalk.com;
 set $microapps_us http://micro-apps-prod.us-east-1.elasticbeanstalk.com;
 set $product_fe_us http://product-prod.us-east-1.elasticbeanstalk.com;
