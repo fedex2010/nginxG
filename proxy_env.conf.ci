@@ -40,7 +40,6 @@ set $caterpie_core_us http://alb-ci.garba:8009;
 #set $search_us http://search-ci.elasticbeanstalk.com;
 set $search_evo_us http://alb-ci.garba:8007;
 set $search_us http://internal-swarm-ci-1176851982.us-east-1.elb.amazonaws.com;
-set $croupier_us http://croupier-ci.us-east-1.elasticbeanstalk.com;
 set $product_core_us http://product-core-ci.elasticbeanstalk.com;
 set $listing_core_us http://listing-core-ci.us-east-1.elasticbeanstalk.com;
 set $microapps_us http://localhost;
@@ -49,8 +48,8 @@ set $guides_fe_us http://guides-ui-ci.us-east-1.elasticbeanstalk.com;
 set $amp_fe_us http://amp-ui-ci.us-east-1.elasticbeanstalk.com;
 set $home_fe_us http://home-ui-ci.us-east-1.elasticbeanstalk.com;
 set $landings_fe_us http://landings-ci.us-east-1.elasticbeanstalk.com;
-#set $my_account_core_us http://my-account-core-ans-ci.garba.ninja;
-set $my_account_core_us http://my-account-core-ci.us-east-1.elasticbeanstalk.com;
+#set $my_account_core_us http://my-account-core-ci.us-east-1.elasticbeanstalk.com;
+set $my_account_core_us http://alb-ci.garba:8016;;
 
 set $operations_us http://operations-recovers-ci.us-east-1.elasticbeanstalk.com;
 set $operations_kibana_us http://10.211.15.107:5601;
