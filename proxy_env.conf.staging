@@ -13,7 +13,8 @@ set $prelanding_us http://prelandings-ui-ans-staging.garba.ninja;
 set $listing_us http://listing-ui-staging.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-staging.us-east-1.elasticbeanstalk.com;
 
-set $emails_core_us http://alb-staging.garba:8013;
+#set $emails_core_us http://alb-staging.garba:8013;
+set $emails_core_us http://traefik-staging.garba;
 set $api_core_us http://alb-staging.garba:8001;
 set $tapi_core_us http://alb-staging.garba:8008;
 set $insurance_core_us http://insurance-core-stag.us-east-1.elasticbeanstalk.com;
