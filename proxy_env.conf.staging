@@ -103,7 +103,8 @@ set $checkout_ui_compra_us http://chk-ui-staging.us-east-1.elasticbeanstalk.com;
 
 set $batches_us http://batches-staging.us-east-1.elasticbeanstalk.com;
 
-set $clairvoyant_us http://clairvoyant-staging.us-east-1.elasticbeanstalk.com;
+#set $clairvoyant_us http://clairvoyant-staging.us-east-1.elasticbeanstalk.com;
+set $clairvoyant_us http://traefik-staging.garba;
 
 set $blognew_us http://10.211.15.136;
 
