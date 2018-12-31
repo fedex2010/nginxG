@@ -32,12 +32,15 @@ set $listing_core_us http://listing-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_admin_us http://alb-staging.garba:8004;
 set $marketplace_us http://marketplace-staging.us-east-1.elasticbeanstalk.com;
 set $cac_frontend_us http://cac-frontend-ans-staging.garba.ninja;
-set $cac_core_us http://alb-staging.garba:8005;
+#set $cac_core_us http://alb-staging.garba:8005;
+set $cac_core_us http://traefik-staging.garba;
 set $pwa_us http://pwa-ui-staging.us-east-1.elasticbeanstalk.com;
-set $coupons_core_us http://alb-staging.garba:8010;
+#set $coupons_core_us http://alb-staging.garba:8010;
+set $coupons_core_us http://traefik-staging.garba;
 set $snorlax_core_us http://snorlax-core-staging.us-east-1.elasticbeanstalk.com;
 set $magikarp_core_us http://alb-staging.garba:8012;
-set $caterpie_core_us http://alb-staging.garba:8009;
+#set $caterpie_core_us http://alb-staging.garba:8009;
+set $caterpie_core_us http://traefik-staging.garba;
 
 set $search_evo_us http://alb-staging.garba:8007;
 set $search_us http://search-stg.elasticbeanstalk.com;
@@ -108,7 +111,8 @@ set $clairvoyant_us http://traefik-staging.garba;
 
 set $blognew_us http://10.211.15.136;
 
-set $gamification_core_us http://alb-staging.garba:8011;
+#set $gamification_core_us http://alb-staging.garba:8011;
+set $gamification_core_us http://traefik-staging.garba;
 
 set $fiden_us http://fiden-web-staging.us-east-1.elasticbeanstalk.com;
 set $prom_marketing_us http://10.212.35.182;
