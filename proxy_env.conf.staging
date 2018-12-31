@@ -16,7 +16,8 @@ set $autocomplete_us http://autocomplete-staging.us-east-1.elasticbeanstalk.com;
 #set $emails_core_us http://alb-staging.garba:8013;
 set $emails_core_us http://traefik-staging.garba;
 set $api_core_us http://alb-staging.garba:8001;
-set $tapi_core_us http://alb-staging.garba:8008;
+#set $tapi_core_us http://alb-staging.garba:8008;
+set $tapi_core_us http://traefik-staging.garba;
 set $insurance_core_us http://insurance-core-stag.us-east-1.elasticbeanstalk.com;
 set $insurances_ui_us http://insurance-ui-staging.us-east-1.elasticbeanstalk.com;
 set $loans_ui_us http://loans-ui-staging.us-east-1.elasticbeanstalk.com;
@@ -38,7 +39,8 @@ set $pwa_us http://pwa-ui-staging.us-east-1.elasticbeanstalk.com;
 #set $coupons_core_us http://alb-staging.garba:8010;
 set $coupons_core_us http://traefik-staging.garba;
 set $snorlax_core_us http://snorlax-core-staging.us-east-1.elasticbeanstalk.com;
-set $magikarp_core_us http://alb-staging.garba:8012;
+#set $magikarp_core_us http://alb-staging.garba:8012;
+set $magikarp_core_us http://traefik-staging.garba;
 #set $caterpie_core_us http://alb-staging.garba:8009;
 set $caterpie_core_us http://traefik-staging.garba;
 
@@ -120,7 +122,8 @@ set $prom_marketing_us http://10.212.35.182;
 set $marketplace_core_us http://marketplace-api-staging.us-east-1.elasticbeanstalk.com;
 set $polcom_core_us http://polcom-core-staging.us-east-1.elasticbeanstalk.com;
 set $pidgey_core_us http://pidgey-core-staging.us-east-1.elasticbeanstalk.com;
-set $image_generator_us http://alb-staging.garba:8000;
+#set $image_generator_us http://alb-staging.garba:8000;
+set $image_generator_us http://traefik-staging.garba;
 
 set $genesis_importer_us http://genesis-importer-staging.us-east-1.elasticbeanstalk.com;
 
