@@ -130,6 +130,7 @@ set $genesis_importer_us http://genesis-importer-staging.us-east-1.elasticbeanst
 
 set $promociones_us http://200.43.192.230/couponing/;
 set $monitor_us http://monitor-staging.us-east-1.elasticbeanstalk.com;
-set $sherlock_us http://alb-staging.garba:7000;
+#set $sherlock_us http://alb-staging.garba:7000;
+set $sherlock_us http://traefik-staging.garba;
 #set $alarmas_us http://alb-staging.garba:8015;
 set $alarmas_us http://traefik-staging.garba;
