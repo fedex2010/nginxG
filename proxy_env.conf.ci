@@ -47,7 +47,7 @@ set $caterpie_core_us http://traefik-ci.garba:8009;
 #set $search_us http://search-ci.elasticbeanstalk.com;
 set $search_evo_us http://alb-ci.garba:8007;
 #set $search_us http://internal-swarm-ci-1176851982.us-east-1.elb.amazonaws.com;
-set $search_us http://traefik.ci.garba;
+set $search_us http://traefik-ci.garba;
 set $product_core_us http://product-core-ci.elasticbeanstalk.com;
 set $listing_core_us http://listing-core-ci.us-east-1.elasticbeanstalk.com;
 set $microapps_us http://localhost;
