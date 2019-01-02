@@ -15,7 +15,8 @@ set $autocomplete_us http://autocomplete-staging.us-east-1.elasticbeanstalk.com;
 
 #set $emails_core_us http://alb-staging.garba:8013;
 set $emails_core_us http://traefik-staging.garba;
-set $api_core_us http://alb-staging.garba:8001;
+#set $api_core_us http://alb-staging.garba:8001;
+set $api_core_us http://traefik-staging.garba;
 #set $tapi_core_us http://alb-staging.garba:8008;
 set $tapi_core_us http://traefik-staging.garba;
 set $insurance_core_us http://insurance-core-stag.us-east-1.elasticbeanstalk.com;
@@ -130,4 +131,5 @@ set $genesis_importer_us http://genesis-importer-staging.us-east-1.elasticbeanst
 set $promociones_us http://200.43.192.230/couponing/;
 set $monitor_us http://monitor-staging.us-east-1.elasticbeanstalk.com;
 set $sherlock_us http://alb-staging.garba:7000;
-set $alarmas_us http://alb-staging.garba:8015;
+#set $alarmas_us http://alb-staging.garba:8015;
+set $alarmas_us http://traefik-staging.garba;
