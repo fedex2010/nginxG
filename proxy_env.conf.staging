@@ -26,12 +26,14 @@ set $loans_ui_us http://loans-ui-staging.us-east-1.elasticbeanstalk.com;
 set $new_biz_core_us http://new-biz-core-staging.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
-set $mapi_home_us http://alb-staging.garba:8003;
+#set $mapi_home_us http://alb-staging.garba:8003;
+set $mapi_home_us http://treafik-staging.garba;
 set $mapi_checkout_us http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_notifications_us http://mapi-notifications-ans-staging.garba.ninja;
 set $mapi_newbiz_us http://mapi-newbiz-ans-staging.garba.ninja;
 set $listing_core_us http://listing-core-staging.us-east-1.elasticbeanstalk.com;
-set $mapi_admin_us http://alb-staging.garba:8004;
+#set $mapi_admin_us http://alb-staging.garba:8004;
+set $mapi_admin_us http://traefik-staging.garba;
 set $marketplace_us http://marketplace-staging.us-east-1.elasticbeanstalk.com;
 set $cac_frontend_us http://cac-frontend-ans-staging.garba.ninja;
 #set $cac_core_us http://alb-staging.garba:8005;
@@ -45,7 +47,8 @@ set $magikarp_core_us http://traefik-staging.garba;
 #set $caterpie_core_us http://alb-staging.garba:8009;
 set $caterpie_core_us http://traefik-staging.garba;
 
-set $search_evo_us http://alb-staging.garba:8007;
+#set $search_evo_us http://alb-staging.garba:8007;
+set $search_evo_us http://traefik-staging.garba;
 set $search_us http://search-stg.elasticbeanstalk.com;
 
 set $product_core_us http://product-core-staging.us-east-1.elasticbeanstalk.com;
