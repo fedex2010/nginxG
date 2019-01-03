@@ -105,7 +105,8 @@ set $checkout_ui_compra_us http://chk-ui-prod-compra.us-east-1.elasticbeanstalk.
 set $batches_us http://batches-prod.us-east-1.elasticbeanstalk.com;
 
 
-set $clairvoyant_us http://clairvoyant-prod.us-east-1.elasticbeanstalk.com/;
+#set $clairvoyant_us http://clairvoyant-prod.us-east-1.elasticbeanstalk.com/;
+set $clairvoyant_us http://traefik-prod.garba;
 
 set $blognew_us http://10.211.15.136;
 
