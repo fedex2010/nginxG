@@ -43,7 +43,7 @@ set $snorlax_core_us http://snorlax-core-ci.rfs7i82gpp.us-east-1.elasticbeanstal
 #set $magikarp_core_us http://alb-ci.garba:8012;
 set $magikarp_core_us http://traefik-ci.garba;
 #set $caterpie_core_us http://alb-ci.garba:8009;
-set $caterpie_core_us http://traefik-ci.garba:8009;
+set $caterpie_core_us http://traefik-ci.garba;
 
 #set $search_us http://search-ci.elasticbeanstalk.com;
 set $search_evo_us http://alb-ci.garba:8007;
