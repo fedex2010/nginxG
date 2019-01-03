@@ -80,6 +80,7 @@ set $aws_sss_us http://s3.amazonaws.com;
 set $tracker_us http://tracker-staging.us-east-1.elasticbeanstalk.com ;
 
 set $checkout_core_us http://chk-core-staging.us-east-1.elasticbeanstalk.com;
+set $cart_ui_us http://cart-ui-ci.us-east-1.elasticbeanstalk.com;
 set $checkout_ui_us http://chk-ui-staging.us-east-1.elasticbeanstalk.com;
 set $checkout_ui_features_us http://chk-ui-features.us-east-1.elasticbeanstalk.com;
 set $checkout_ui_features2_us http://chk-ui-features2.us-east-1.elasticbeanstalk.com;
