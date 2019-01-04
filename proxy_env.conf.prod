@@ -13,7 +13,8 @@ set $prelanding_us http://prelandings-ui-ans-prod.garba.ninja;
 set $listing_us http://listing-ui-prod.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-prod.us-east-1.elasticbeanstalk.com ;
 set $emails_core_us http://alb-prod.garba:8013;
-set $api_core_us http://alb-prod.garba:8001;
+#set $api_core_us http://alb-prod.garba:8001;
+set $api_core_us http://traefik-prod.garba;
 set $tapi_core_us http://alb-prod.garba:8008;
 set $insurance_core_us http://insurance-core-prod.us-east-1.elasticbeanstalk.com;
 set $insurances_ui_us http://insurance-ui-prod.us-east-1.elasticbeanstalk.com;
@@ -35,9 +36,11 @@ set $pwa2_us http://pwa-ui-ci-v2.us-east-1.elasticbeanstalk.com;
 set $coupons_core_us http://alb-prod.garba:8010;
 set $snorlax_core_us http://snorlax-core-prod.rfs7i82gpp.us-east-1.elasticbeanstalk.com;
 set $magikarp_core_us http://alb-prod.garba:8012;
+#set $magikarp_core_us http://traefik-prod.garba;
 set $caterpie_core_us http://alb-prod.garba:8009;
 
-set $search_evo_us http://alb-prod.garba:8007;
+#set $search_evo_us http://alb-prod.garba:8007;
+set $search_evo_us http://traefik-prod.garba;
 set $search_us http://search-prod.us-east-1.elasticbeanstalk.com;
 
 set $product_core_us http://product-core-prod.us-east-1.elasticbeanstalk.com;
