@@ -12,7 +12,8 @@ set $review_core_us http://alb-prod.garba:8006;
 set $prelanding_us http://prelandings-ui-ans-prod.garba.ninja;
 set $listing_us http://listing-ui-prod.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-prod.us-east-1.elasticbeanstalk.com ;
-set $emails_core_us http://alb-prod.garba:8013;
+#set $emails_core_us http://alb-prod.garba:8013;
+set $emails_core_us http://traefik-prod.garba;
 #set $api_core_us http://alb-prod.garba:8001;
 set $api_core_us http://traefik-prod.garba;
 set $tapi_core_us http://alb-prod.garba:8008;
@@ -23,6 +24,7 @@ set $new_biz_core_us http://new-biz-core-prod.us-east-1.elasticbeanstalk.com;
 set $listing_core_us http://listing-core-prod.us-east-1.elasticbeanstalk.com;
 set $home_core_us http://home-core-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-prod1.us-east-1.elasticbeanstalk.com;
+set $mapi_list_us http://mapi-core-prod1.us-east-1.elasticbeanstalk.com;
 set $mapi_home_us http://alb-prod.garba:8003;
 set $mapi_notifications_us http://mapi-notifications-ans-prod.garba.ninja;
 set $mapi_checkout_us http://mapi-chk-prod.us-east-1.elasticbeanstalk.com;
@@ -34,7 +36,8 @@ set $cac_frontend_us http://cac-frontend-ans-prod.garba.ninja;
 set $cac_core_us http://traefik-prod.garba;
 set $pwa_us http://pwa-ui-prod.us-east-1.elasticbeanstalk.com;
 set $pwa2_us http://pwa-ui-ci-v2.us-east-1.elasticbeanstalk.com;
-set $coupons_core_us http://alb-prod.garba:8010;
+#set $coupons_core_us http://alb-prod.garba:8010;
+set $coupons_core_us http://traefik-prod.garba;
 set $snorlax_core_us http://snorlax-core-prod.rfs7i82gpp.us-east-1.elasticbeanstalk.com;
 set $magikarp_core_us http://alb-prod.garba:8012;
 #set $magikarp_core_us http://traefik-prod.garba;
@@ -116,7 +119,8 @@ set $clairvoyant_us http://traefik-prod.garba;
 
 set $blognew_us http://10.211.15.136;
 
-set $gamification_core_us http://alb-prod.garba:8011;
+#set $gamification_core_us http://alb-prod.garba:8011;
+set $gamification_core_us http://traefik-prod.garba;
 set $fiden_us http://fiden-web-prod.us-east-1.elasticbeanstalk.com;
 set $prom_marketing_us http://10.212.15.216;
 
