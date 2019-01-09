@@ -16,7 +16,8 @@ set $autocomplete_us http://autocomplete-prod.us-east-1.elasticbeanstalk.com ;
 set $emails_core_us http://traefik-prod.garba;
 #set $api_core_us http://alb-prod.garba:8001;
 set $api_core_us http://traefik-prod.garba;
-set $tapi_core_us http://alb-prod.garba:8008;
+#set $tapi_core_us http://alb-prod.garba:8008;
+set $tapi_core_us http://traefik-prod.garba;
 set $insurance_core_us http://insurance-core-prod.us-east-1.elasticbeanstalk.com;
 set $insurances_ui_us http://insurance-ui-prod.us-east-1.elasticbeanstalk.com;
 set $loans_ui_us http://loans-ui-prod.us-east-1.elasticbeanstalk.com;
@@ -29,7 +30,8 @@ set $mapi_home_us http://alb-prod.garba:8003;
 set $mapi_notifications_us http://mapi-notifications-ans-prod.garba.ninja;
 set $mapi_checkout_us http://mapi-chk-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_newbiz_us http://mapi-newbiz-ans-prod.garba.ninja;
-set $mapi_admin_us http://alb-prod.garba:8004;
+#set $mapi_admin_us http://alb-prod.garba:8004;
+set $mapi_admin_us http://traefik-prod.garba;
 set $marketplace_us http://marketplace-prd.us-east-1.elasticbeanstalk.com;
 set $cac_frontend_us http://cac-frontend-ans-prod.garba.ninja;
 #set $cac_core_us http://alb-prod.garba:8005;
@@ -134,6 +136,7 @@ set $genesis_importer_us http://genesis-importer-prod.us-east-1.elasticbeanstalk
 
 set $promociones_us http://10.212.15.216;
 set $monitor_us http://monitor-production.us-east-1.elasticbeanstalk.com;
-set $sherlock_us http://alb-prod.garba:7000;
+#set $sherlock_us http://alb-prod.garba:7000;
+set $sherlock_us http://traefik-prod.garba;
 #set $alarmas_us http://alb-prod.garba:8015;
 set $alarmas_us http://traefik-prod.garba;
