@@ -1,10 +1,10 @@
 ## Venta empresaria
 
-## Redirects 
+## Redirects
 test.status.response.sh ssl GET ci.garbarino.com /html/venta-empresas 301
 test.header.response.sh ssl GET ci.garbarino.com /html/venta-empresas Location https://empresas-ci.garbarino.com/
 test.status.response.sh ssl GET ci.garbarino.com /venta-empresas 301
-test.status.response.sh ssl GET ci.garbarino.com /venta-empresas/ 301 
+test.status.response.sh ssl GET ci.garbarino.com /venta-empresas/ 301
 test.header.response.sh ssl GET ci.garbarino.com /venta-empresas Location https://empresas-ci.garbarino.com/
 
 #test.status.response.sh ssl GET staging.garbarino.com /html/venta-empresas 301
@@ -30,7 +30,7 @@ test.header.response.sh ssl GET www.garbarino.com /venta-empresas Location https
 #test.uri.rewrite.sh ssl GET empresas-ci.garbarino.com / "/venta-empresas/"
 #test.host.rewrite.sh ssl GET empresas-ci.garbarino.com /not_home "empresas-ci.garbarino.com"
 #test.host.rewrite.sh ssl GET ci.garbarino.com /not_home "ci.garbarino.com"
-test.upstream.sh ssl GET empresas-ci.garbarino.com / salecompanies_us
+test.upstream.sh ssl GET empresas-ci.garbarino.com / home_fe_us
 test.upstream.sh ssl GET empresas-ci.garbarino.com /politicas-de-privacidad.html salecompanies_us
 test.upstream.sh ssl GET empresas-ci.garbarino.com /preguntas-frecuentes.html salecompanies_us
 test.upstream.sh ssl GET empresas-ci.garbarino.com /tyc.html salecompanies_us
@@ -45,7 +45,7 @@ test.upstream.sh ssl POST empresas-ci.garbarino.com /venta-empresas/services/con
 test.upstream.sh ssl POST empresas-ci.garbarino.com /services/contact salecompanies_services_us
 #test.host.rewrite.sh ssl POST empresas-ci.garbarino.com /services/contact "u5ffj6kegb.execute-api.us-east-1.amazonaws.com"
 
-## verifica que no se lleve todo el trafico 
+## verifica que no se lleve todo el trafico
 test.upstream.sh ssl GET empresas-ci.garbarino.com /listado/samsung-products listing_us
 #test.upstream.sh ssl GET empresas-ci.garbarino.com /carrito/c_cartid checkout_ui_us
 
@@ -71,7 +71,7 @@ test.upstream.sh ssl GET empresas-staging.garbarino.com /listado/samsung-product
 #test.uri.rewrite.sh ssl GET empresas.garbarino.com / "/venta-empresas/"
 #test.host.rewrite.sh ssl GET empresas.garbarino.com /not_home "empresas.garbarino.com"
 #test.host.rewrite.sh ssl GET www.garbarino.com /not_home "www.garbarino.com"
-test.upstream.sh ssl GET empresas.garbarino.com / salecompanies_us 
+test.upstream.sh ssl GET empresas.garbarino.com / salecompanies_us
 test.upstream.sh ssl GET empresas.garbarino.com /politicas-de-privacidad.html salecompanies_us
 test.upstream.sh ssl GET empresas.garbarino.com /preguntas-frecuentes.html salecompanies_us
 test.upstream.sh ssl GET empresas.garbarino.com /tyc.html salecompanies_us
