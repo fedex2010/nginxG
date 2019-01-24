@@ -1,0 +1,15 @@
+## Block SQL injections
+    set $block_sql_injections 0;
+    if ($query_string ~ "union.*select.*\(") {
+        set $block_sql_injections 1;
+    }
+    #if ($query_string ~ "union.*all.*select.*") {
+    #    set $block_sql_injections 1;
+    #}
+    if ($query_string ~ "concat.*\(") {
+        set $block_sql_injections 1;
+    }
+    if ($block_sql_injections = 1) {
+        return 403;
+    }
+
