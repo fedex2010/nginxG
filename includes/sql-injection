@@ -51,4 +51,5 @@
 
     if ($block_user_agents = 1) {
         return 403;
+    }
 
