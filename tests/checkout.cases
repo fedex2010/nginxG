@@ -13,6 +13,7 @@ test.upstream.sh POST api-staging.garbarino.com /transporter/save/test12345 tran
 #test.upstream.sh ssl GET ci.garbarino.com /carrito/c_cartid/warranty/product_id/terminos-y-condiciones checkout_ui_us
 test.upstream.sh ssl GET ci.garbarino.com /carrito/sendCart checkout_ui_us
 test.upstream.sh ssl GET ci.garbarino.com /carrito/error checkout_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /carrito/reset checkout_ui_us
 #test.upstream.sh ssl GET ci.garbarino.com /nuevo_carrito/c_cartid checkout_ui_us
 #test.uri.rewrite.sh ssl GET ci.garbarino.com /nuevo_carrito/c_cartid /carrito/c_cartid
 #test.upstream.sh ssl GET ci.garbarino.com /nuevo_carrito/deleteProductFromCart checkout_ui_us
@@ -54,6 +55,8 @@ test.upstream.sh ssl GET fe-staging.garbarino.com /carrito/sendCart checkout_ui_
 test.status.response.sh ssl GET fe-staging.garbarino.com /carrito 301
 test.header.response.sh ssl GET fe-staging.garbarino.com /carrito Location https://fe-staging.garbarino.com/carrito/
 test.upstream.sh ssl GET fe-staging.garbarino.com /carrito/ checkout_ui_us
+test.upstream.sh ssl GET fe-staging.garbarino.com /carrito/error checkout_ui_us
+test.upstream.sh ssl GET fe-staging.garbarino.com /carrito/reset checkout_ui_us
 #test.upstream.sh ssl GET fe-staging.garbarino.com /viejo_carrito epi_ui_us
 #test.uri.rewrite.sh ssl GET fe-staging.garbarino.com /viejo_carrito /carrito
 test.upstream.sh ssl GET fe-staging.garbarino.com /carrito/compra epi_ui_us
@@ -78,6 +81,8 @@ test.upstream.sh ssl GET www.garbarino.com /carrito/compra epi_ui_us
 test.status.response.sh ssl GET www.garbarino.com /carrito 301
 test.header.response.sh ssl GET www.garbarino.com /carrito Location https://www.garbarino.com/carrito/
 test.upstream.sh ssl GET www.garbarino.com /carrito/ checkout_ui_us
+test.upstream.sh ssl GET www.garbarino.com /carrito/error checkout_ui_us
+test.upstream.sh ssl GET www.garbarino.com /carrito/reset checkout_ui_us
 #test.upstream.sh ssl GET www.garbarino.com /viejo_carrito epi_ui_us
 #test.uri.rewrite.sh ssl GET www.garbarino.com /viejo_carrito /carrito
 test.upstream.sh ssl GET www.garbarino.com /carrito/compra epi_ui_us
