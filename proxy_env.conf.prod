@@ -23,7 +23,8 @@ set $insurance_core_us http://insurance-core-prod.us-east-1.elasticbeanstalk.com
 set $insurances_ui_us http://insurance-ui-prod.us-east-1.elasticbeanstalk.com;
 set $loans_ui_us http://loans-ui-prod.us-east-1.elasticbeanstalk.com;
 set $new_biz_core_us http://new-biz-core-prod.us-east-1.elasticbeanstalk.com;
-set $listing_core_us http://listing-core-prod.us-east-1.elasticbeanstalk.com;
+#set $listing_core_us http://listing-core-prod.us-east-1.elasticbeanstalk.com;
+set $listing_core_us http://traefik-prod.garba;
 set $home_core_us http://home-core-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-prod1.us-east-1.elasticbeanstalk.com;
 set $mapi_list_us http://traefik-prod.garba;
