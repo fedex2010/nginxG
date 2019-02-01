@@ -53,7 +53,7 @@ test.upstream.sh ssl GET empresas-ci.garbarino.com /listado/samsung-products lis
 #test.uri.rewrite.sh ssl GET empresas-staging.garbarino.com / "/venta-empresas/"
 #test.host.rewrite.sh ssl GET empresas-staging.garbarino.com /not_home "empresas-staging.garbarino.com"
 ##test.host.rewrite.sh ssl GET staging.garbarino.com /not_home "staging.garbarino.com"
-test.upstream.sh ssl GET empresas-staging.garbarino.com / salecompanies_us
+test.upstream.sh ssl GET empresas-staging.garbarino.com / home_fe_us
 test.upstream.sh ssl GET empresas-staging.garbarino.com /politicas-de-privacidad.html salecompanies_us
 test.upstream.sh ssl GET empresas-staging.garbarino.com /preguntas-frecuentes.html salecompanies_us
 test.upstream.sh ssl GET empresas-staging.garbarino.com /tyc.html salecompanies_us
@@ -71,7 +71,7 @@ test.upstream.sh ssl GET empresas-staging.garbarino.com /listado/samsung-product
 #test.uri.rewrite.sh ssl GET empresas.garbarino.com / "/venta-empresas/"
 #test.host.rewrite.sh ssl GET empresas.garbarino.com /not_home "empresas.garbarino.com"
 #test.host.rewrite.sh ssl GET www.garbarino.com /not_home "www.garbarino.com"
-test.upstream.sh ssl GET empresas.garbarino.com / salecompanies_us
+test.upstream.sh ssl GET empresas.garbarino.com / home_fe_us
 test.upstream.sh ssl GET empresas.garbarino.com /politicas-de-privacidad.html salecompanies_us
 test.upstream.sh ssl GET empresas.garbarino.com /preguntas-frecuentes.html salecompanies_us
 test.upstream.sh ssl GET empresas.garbarino.com /tyc.html salecompanies_us
