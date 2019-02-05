@@ -34,7 +34,7 @@ set $mapi_checkout_us http://mapi-core-ci.us-east-1.elasticbeanstalk.com;
 #set $mapi_notifications_us http://mapi-notifications-ans-ci.garba.ninja;
 set $mapi_notifications_us http://traefik-ci.garba;
 #set $mapi_newbiz_us http://mapi-newbiz-ans-ci.garba.ninja;
-set $mapi_newbiz_us http:/traefik-ci.garba;
+set $mapi_newbiz_us http://traefik-ci.garba;
 #set $mapi_admin_us http://alb-ci.garba:8004;
 set $mapi_admin_us http://traefik-ci.garba;
 set $marketplace_us http://marketplace-ans-ci.garba.ninja;
