@@ -81,7 +81,8 @@ set $backoffice_ui_us http://backoffice-ui-prod.us-east-1.elasticbeanstalk.com ;
 
 set $aws_sss_us http://s3.amazonaws.com;
 
-set $tracker_us http://tracker-prod.us-east-1.elasticbeanstalk.com ;
+#set $tracker_us http://tracker-prod.us-east-1.elasticbeanstalk.com ;
+set $tracker_us http://traefik-prod.garba;
 
 set $checkout_core_us http://chk-core-prod.us-east-1.elasticbeanstalk.com;
 set $cart_ui_us http://cart-ui-ci.us-east-1.elasticbeanstalk.com;
