@@ -33,7 +33,8 @@ set $mapi_home_us http://traefik-prod.garba;
 #set $mapi_notifications_us http://mapi-notifications-ans-prod.garba.ninja;
 set $mapi_notifications_us http://traefik-prod.garba;
 set $mapi_checkout_us http://mapi-chk-prod.us-east-1.elasticbeanstalk.com;
-set $mapi_newbiz_us http://mapi-newbiz-ans-prod.garba.ninja;
+#set $mapi_newbiz_us http://mapi-newbiz-ans-prod.garba.ninja;
+set $mapi_newbiz_us http://traefik-prod.garba;
 #set $mapi_admin_us http://alb-prod.garba:8004;
 set $mapi_admin_us http://traefik-prod.garba;
 set $marketplace_us http://marketplace-prd.us-east-1.elasticbeanstalk.com;
@@ -41,7 +42,7 @@ set $cac_frontend_us http://cac-frontend-ans-prod.garba.ninja;
 #set $cac_core_us http://alb-prod.garba:8005;
 set $cac_core_us http://traefik-prod.garba;
 set $pwa_us http://pwa-ui-prod.us-east-1.elasticbeanstalk.com;
-set $pwa2_us http://pwa-ui-ci-v2.us-east-1.elasticbeanstalk.com;
+set $pwa2_us http://pwa-ui-ci-v2.us-east-1.elasticbeanstalk.coma
 #set $coupons_core_us http://alb-prod.garba:8010;
 set $coupons_core_us http://traefik-prod.garba;
 #set $snorlax_core_us http://snorlax-core-prod.rfs7i82gpp.us-east-1.elasticbeanstalk.com;
