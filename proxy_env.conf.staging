@@ -118,6 +118,7 @@ set $batches_us http://batches-staging.us-east-1.elasticbeanstalk.com;
 
 #set $clairvoyant_us http://clairvoyant-staging.us-east-1.elasticbeanstalk.com;
 set $clairvoyant_us http://traefik-staging.garba;
+set $clairvoyant_minion_us http://clairvoyant-minion-staging.us-east-1.elasticbeanstalk.com;
 
 set $blognew_us http://10.211.15.136;
 

@@ -121,6 +121,7 @@ set $batches_us http://batches-ci.us-east-1.elasticbeanstalk.com;
 
 #set $clairvoyant_us http://clairvoyant-ci.us-east-1.elasticbeanstalk.com;
 set $clairvoyant_us http://traefik-ci.garba;
+set $clairvoyant_minion_us http://clairvoyant-minion-ci.us-east-1.elasticbeanstalk.com;
 
 set $blognew_us http://10.211.15.61;
 
