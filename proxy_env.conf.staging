@@ -31,9 +31,12 @@ set $mapi_list_us http://traefik-staging.garba;
 #set $mapi_home_us http://alb-staging.garba:8003;
 set $mapi_home_us http://traefik-staging.garba;
 set $mapi_checkout_us http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
-set $mapi_notifications_us http://mapi-notifications-ans-staging.garba.ninja;
-set $mapi_newbiz_us http://mapi-newbiz-ans-staging.garba.ninja;
-set $listing_core_us http://listing-core-staging.us-east-1.elasticbeanstalk.com;
+#set $mapi_notifications_us http://mapi-notifications-ans-staging.garba.ninja;
+set $mapi_notifications_us http://traefik-staging.garba;
+#set $mapi_newbiz_us http://mapi-newbiz-ans-staging.garba.ninja;
+set $mapi_newbiz_us http://traefik-staging.garba;
+#set $listing_core_us http://listing-core-staging.us-east-1.elasticbeanstalk.com;
+set $listing_core_us http://traefik-staging.garba;
 #set $mapi_admin_us http://alb-staging.garba:8004;
 set $mapi_admin_us http://traefik-staging.garba;
 set $marketplace_us http://marketplace-staging.us-east-1.elasticbeanstalk.com;
@@ -79,7 +82,8 @@ set $backoffice_ui_us http://backoffice-ui-staging.us-east-1.elasticbeanstalk.co
 
 set $aws_sss_us http://s3.amazonaws.com;
 
-set $tracker_us http://tracker-staging.us-east-1.elasticbeanstalk.com ;
+#set $tracker_us http://tracker-staging.us-east-1.elasticbeanstalk.com ;
+set $tracker_us http://traefik-staging.garba;
 
 set $checkout_core_us http://chk-core-staging.us-east-1.elasticbeanstalk.com;
 set $cart_ui_us http://cart-ui-ci.us-east-1.elasticbeanstalk.com;
@@ -142,3 +146,4 @@ set $monitor_us http://monitor-staging.us-east-1.elasticbeanstalk.com;
 set $sherlock_us http://traefik-staging.garba;
 #set $alarmas_us http://alb-staging.garba:8015;
 set $alarmas_us http://traefik-staging.garba;
+set $payment_core_us http://payments-core-staging.us-east-1.elasticbeanstalk.com;

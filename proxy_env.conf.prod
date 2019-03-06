@@ -23,15 +23,18 @@ set $insurance_core_us http://insurance-core-prod.us-east-1.elasticbeanstalk.com
 set $insurances_ui_us http://insurance-ui-prod.us-east-1.elasticbeanstalk.com;
 set $loans_ui_us http://loans-ui-prod.us-east-1.elasticbeanstalk.com;
 set $new_biz_core_us http://new-biz-core-prod.us-east-1.elasticbeanstalk.com;
-set $listing_core_us http://listing-core-prod.us-east-1.elasticbeanstalk.com;
+#set $listing_core_us http://listing-core-prod.us-east-1.elasticbeanstalk.com;
+set $listing_core_us http://traefik-prod.garba;
 set $home_core_us http://home-core-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-prod1.us-east-1.elasticbeanstalk.com;
-set $mapi_list_us http://mapi-core-prod1.us-east-1.elasticbeanstalk.com;
+set $mapi_list_us http://traefik-prod.garba;
 #set $mapi_home_us http://alb-prod.garba:8003;
 set $mapi_home_us http://traefik-prod.garba;
-set $mapi_notifications_us http://mapi-notifications-ans-prod.garba.ninja;
+#set $mapi_notifications_us http://mapi-notifications-ans-prod.garba.ninja;
+set $mapi_notifications_us http://traefik-prod.garba;
 set $mapi_checkout_us http://mapi-chk-prod.us-east-1.elasticbeanstalk.com;
-set $mapi_newbiz_us http://mapi-newbiz-ans-prod.garba.ninja;
+#set $mapi_newbiz_us http://mapi-newbiz-ans-prod.garba.ninja;
+set $mapi_newbiz_us http://traefik-prod.garba;
 #set $mapi_admin_us http://alb-prod.garba:8004;
 set $mapi_admin_us http://traefik-prod.garba;
 set $marketplace_us http://marketplace-prd.us-east-1.elasticbeanstalk.com;
@@ -79,7 +82,8 @@ set $backoffice_ui_us http://backoffice-ui-prod.us-east-1.elasticbeanstalk.com ;
 
 set $aws_sss_us http://s3.amazonaws.com;
 
-set $tracker_us http://tracker-prod.us-east-1.elasticbeanstalk.com ;
+#set $tracker_us http://tracker-prod.us-east-1.elasticbeanstalk.com ;
+set $tracker_us http://traefik-prod.garba;
 
 set $checkout_core_us http://chk-core-prod.us-east-1.elasticbeanstalk.com;
 set $cart_ui_us http://cart-ui-ci.us-east-1.elasticbeanstalk.com;
@@ -144,3 +148,4 @@ set $monitor_us http://monitor-production.us-east-1.elasticbeanstalk.com;
 set $sherlock_us http://traefik-prod.garba;
 #set $alarmas_us http://alb-prod.garba:8015;
 set $alarmas_us http://traefik-prod.garba;
+set $payment_core_us http://payments-core-prod.us-east-1.elasticbeanstalk.com;
