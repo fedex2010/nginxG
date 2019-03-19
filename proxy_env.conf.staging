@@ -149,3 +149,4 @@ set $sherlock_us http://traefik-staging.garba;
 #set $alarmas_us http://alb-staging.garba:8015;
 set $alarmas_us http://traefik-staging.garba;
 set $payment_core_us http://payments-core-staging.us-east-1.elasticbeanstalk.com;
+set $api_support_us http://garba-support-ci.us-east-1.elasticbeanstalk.com;

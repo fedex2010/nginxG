@@ -149,4 +149,5 @@ set $monitor_us http://monitor-ci.us-east-1.elasticbeanstalk.com;
 set $sherlock_us http://alb-ci.garba:7000;
 set $alarmas_us http://alb-ci.garba:8015;
 set $payment_core_us http://payments-core-ci.us-east-1.elasticbeanstalk.com;
+set $api_support_us http://garba-support-ci.us-east-1.elasticbeanstalk.com;
 
