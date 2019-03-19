@@ -151,4 +151,4 @@ set $sherlock_us http://traefik-prod.garba;
 #set $alarmas_us http://alb-prod.garba:8015;
 set $alarmas_us http://traefik-prod.garba;
 set $payment_core_us http://payments-core-prod.us-east-1.elasticbeanstalk.com;
-set $api_support_us http://garba-support-ci.us-east-1.elasticbeanstalk.com;
+set $api_support_us http://garba-support-prod.us-east-1.elasticbeanstalk.com;
