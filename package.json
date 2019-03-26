@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "linked_upstreams=$(cd tests; ./linked.upstreams.sh test-nginx); npm run clean_dockers && docker run -d -e APP_ENV=test -p 80:80 -p 81:81 --name garba-nginx --link test-nginx:test-server $(echo $linked_upstreams) garba-nginx",
-    "build": "docker build -t garba-nginx -f Dockerfile.test .",
+    "build": "docker build --no-cache -t garba-nginx -f Dockerfile.test .",
     "restart": "npm stop && npm test && npm start",
     "clean-dockers-circleci": "docker ps -a | grep garba-nginx | awk '{print $1}' | xargs -r docker rm -f || true",
     "clean-dockers-mac": "docker ps -a | grep garba-nginx | awk '{print $1}' | xargs docker rm -f",
