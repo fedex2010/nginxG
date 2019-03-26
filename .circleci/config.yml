@@ -16,10 +16,10 @@ jobs:
           name: install npm
           command: |
             sudo apt-get install npm
-      - run:
-          name: Tests
-          command: |
-           npm test
+      # - run:
+      #     name: Tests
+      #     command: |
+      #      npm test
       - run:
           name: Make Zip File
           command: |
