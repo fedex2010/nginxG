@@ -1,4 +1,5 @@
-FROM garbarino/nginx-newrelic
+#FROM garbarino/nginx-newrelic
+FROM nginx
 EXPOSE 80 81 82
 
 COPY nginx.conf /etc/nginx/nginx.conf
