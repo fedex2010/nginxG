@@ -1,7 +1,7 @@
 FROM garbarino/nginx-newrelic
 EXPOSE 80 81 82
 
-curl -O https://nginx.org/keys/nginx_signing.key && apt-key add ./nginx_signing.key
+RUN curl -O https://nginx.org/keys/nginx_signing.key && apt-key add ./nginx_signing.key
 RUN apt-get update && apt-get -y install dnsmasq
 RUN echo user=root > /etc/dnsmasq.conf
 
