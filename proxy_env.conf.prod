@@ -28,6 +28,7 @@ set $listing_core_us http://traefik-prod.garba;
 set $home_core_us http://home-core-prod.us-east-1.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-prod1.us-east-1.elasticbeanstalk.com;
 set $mapi_list_us http://traefik-prod.garba;
+set $mapi_detail_us http://traefik-prod.garba;
 #set $mapi_home_us http://alb-prod.garba:8003;
 set $mapi_home_us http://traefik-prod.garba;
 #set $mapi_notifications_us http://mapi-notifications-ans-prod.garba.ninja;

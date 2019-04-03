@@ -18,6 +18,7 @@ set $emails_core_us http://traefik-ci.garba;
 #set $api_core_us http://alb-ci.garba:8001;
 set $api_core_us http://traefik-ci.garba;
 set $mapi_list_us http://traefik-ci.garba;
+set $mapi_detail_us http://traefik-ci.garba;
 #set $tapi_core_us http://alb-ci.garba:8008;
 set $tapi_core_us http://traefik-ci.garba;
 set $insurance_core_us http://insurance-core-ci.us-east-1.elasticbeanstalk.com;
