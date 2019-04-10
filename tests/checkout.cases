@@ -39,8 +39,8 @@ test.upstream.sh ssl GET www.garbarino.com /compra/gracias checkout_ui_compra_us
 test.status.response.sh ssl GET ci.garbarino.com /carrito 301
 test.header.response.sh ssl GET ci.garbarino.com /carrito Location https://ci.garbarino.com/carrito/
 #test.upstream.sh ssl GET ci.garbarino.com /carrito/ checkout_ui_us
-#test.upstream.sh ssl GET ci.garbarino.com /carrito/ static_garba_cart_ui_us
-#test.upstream.sh ssl POST ci.garbarino.com /carrito/ cart_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /carrito/ static_garba_cart_ui_us
+test.upstream.sh ssl POST ci.garbarino.com /carrito/ cart_ui_us
 #test.upstream.sh ssl GET ci.garbarino.com /viejo_carrito epi_ui_us
 #test.uri.rewrite.sh ssl GET ci.garbarino.com /viejo_carrito /carrito
 #test.upstream.sh ssl GET ci.garbarino.com /carrito/compra checkout_ui_us
