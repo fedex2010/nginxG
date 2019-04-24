@@ -87,9 +87,9 @@ set $aws_sss_us http://s3.amazonaws.com;
 set $tracker_us http://traefik-prod.garba;
 
 set $checkout_core_us http://chk-core-prod.us-east-1.elasticbeanstalk.com;
-set $static_garba_cart_ui_us http://cart-ui-ci.garbarino.com.s3-website-us-east-1.amazonaws.com;
-set $static_compu_cart_ui_us http://cart-ui-ci.compumundo.com.ar.s3-website-us-east-1.amazonaws.com;
-set $cart_ui_us http://cart-ui-ci.us-east-1.elasticbeanstalk.com;
+set $static_garba_cart_ui_us http://cart-ui-prod.garbarino.com.s3-website-us-east-1.amazonaws.com;
+set $static_compu_cart_ui_us http://cart-ui-prod.compumundo.com.ar.s3-website-us-east-1.amazonaws.com;
+set $cart_ui_us http://cart-ui-prod.us-east-1.elasticbeanstalk.com;
 set $checkout_ui_us http://chk-ui-prod.us-east-1.elasticbeanstalk.com;
 set $checkout_ui_features_us http://chk-ui-features.us-east-1.elasticbeanstalk.com;
 set $checkout_ui_features2_us http://chk-ui-features2.us-east-1.elasticbeanstalk.com;
