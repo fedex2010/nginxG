@@ -8,21 +8,21 @@ test.upstream.sh GET api-staging.garbarino.com /transporter/sync transporter_us
 test.upstream.sh POST api-staging.garbarino.com /transporter/sync/test12345 transporter_us
 test.upstream.sh POST api-staging.garbarino.com /transporter/save/test12345 transporter_us
 
-#test.upstream.sh ssl GET ci.garbarino.com /carrito/c_cartid checkout_ui_us
-#test.upstream.sh ssl GET ci.garbarino.com /carrito/c_cartid/warranty/product_id checkout_ui_us
-#test.upstream.sh ssl GET ci.garbarino.com /carrito/c_cartid/warranty/product_id/terminos-y-condiciones checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /carrito/sendCart checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /carrito/error checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /carrito/reset checkout_ui_us
-#test.upstream.sh ssl GET ci.garbarino.com /nuevo_carrito/c_cartid checkout_ui_us
+#test.upstream.sh ssl GET ci.garbarino.com /carrito/c_cartid cart_ui_us
+#test.upstream.sh ssl GET ci.garbarino.com /carrito/c_cartid/warranty/product_id cart_ui_us
+#test.upstream.sh ssl GET ci.garbarino.com /carrito/c_cartid/warranty/product_id/terminos-y-condiciones cart_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /carrito/sendCart cart_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /carrito/error cart_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /carrito/reset cart_ui_us
+#test.upstream.sh ssl GET ci.garbarino.com /nuevo_carrito/c_cartid cart_ui_us
 #test.uri.rewrite.sh ssl GET ci.garbarino.com /nuevo_carrito/c_cartid /carrito/c_cartid
-#test.upstream.sh ssl GET ci.garbarino.com /nuevo_carrito/deleteProductFromCart checkout_ui_us
+#test.upstream.sh ssl GET ci.garbarino.com /nuevo_carrito/deleteProductFromCart cart_ui_us
 #test.uri.rewrite.sh ssl GET ci.garbarino.com /nuevo_carrito/deleteProductFromCart /carrito/deleteProductFromCart
-test.upstream.sh ssl GET ci.garbarino.com /carrito/deleteProductFromCart checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /carrito/updateItemQuantity checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /carrito/setWarranty checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /carrito/getCartStatus/CART_ID checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /carrito/summary checkout_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /carrito/deleteProductFromCart cart_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /carrito/updateItemQuantity cart_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /carrito/setWarranty cart_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /carrito/getCartStatus/CART_ID cart_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /carrito/summary cart_ui_us
 
 test.upstream.sh ssl GET ci.garbarino.com /compra/entrega checkout_ui_compra_us
 test.upstream.sh ssl GET ci.garbarino.com /compra/financiacion checkout_ui_compra_us
@@ -38,44 +38,43 @@ test.upstream.sh ssl GET www.garbarino.com /compra/gracias checkout_ui_compra_us
 
 test.status.response.sh ssl GET ci.garbarino.com /carrito 301
 test.header.response.sh ssl GET ci.garbarino.com /carrito Location https://ci.garbarino.com/carrito/
-#test.upstream.sh ssl GET ci.garbarino.com /carrito/ checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /carrito/ static_garba_cart_ui_us
-test.upstream.sh ssl GET features.garbarino.com /carrito/ checkout_ui_features_us
+test.upstream.sh ssl GET ci.garbarino.com /carrito/ cart_ui_us
+#test.upstream.sh ssl GET features.garbarino.com /carrito/ checkout_ui_features_us
 test.upstream.sh ssl POST ci.garbarino.com /carrito/ cart_ui_us
 #test.upstream.sh ssl GET ci.garbarino.com /viejo_carrito epi_ui_us
 #test.uri.rewrite.sh ssl GET ci.garbarino.com /viejo_carrito /carrito
-#test.upstream.sh ssl GET ci.garbarino.com /carrito/compra checkout_ui_us
+#test.upstream.sh ssl GET ci.garbarino.com /carrito/compra cart_ui_us
 
-#test.upstream.sh ssl GET fe-staging.garbarino.com /carrito/c_cartid checkout_ui_us
-#test.upstream.sh ssl GET fe-staging.garbarino.com /carrito/c_cartid/warranty/product_id checkout_ui_us
-#test.upstream.sh ssl GET fe-staging.garbarino.com /carrito/c_cartid/warranty/product_id/terminos-y-condiciones checkout_ui_us
-test.upstream.sh ssl GET fe-staging.garbarino.com /carrito/sendCart checkout_ui_us
-#test.upstream.sh ssl GET fe-staging.garbarino.com /nuevo_carrito/c_cartid checkout_ui_us
-#test.uri.rewrite.sh ssl GET fe-staging.garbarino.com /nuevo_carrito/c_cartid /carrito/c_cartid
-#test.upstream.sh ssl GET fe-staging.garbarino.com /nuevo_carrito/deleteProductFromCart checkout_ui_us
-#test.uri.rewrite.sh ssl GET fe-staging.garbarino.com /nuevo_carrito/deleteProductFromCart /carrito/deleteProductFromCart
+#test.upstream.sh ssl GET staging.garbarino.com /carrito/c_cartid cart_ui_us
+#test.upstream.sh ssl GET staging.garbarino.com /carrito/c_cartid/warranty/product_id cart_ui_us
+#test.upstream.sh ssl GET staging.garbarino.com /carrito/c_cartid/warranty/product_id/terminos-y-condiciones cart_ui_us
+test.upstream.sh ssl GET staging.garbarino.com /carrito/sendCart cart_ui_us
+#test.upstream.sh ssl GET staging.garbarino.com /nuevo_carrito/c_cartid cart_ui_us
+#test.uri.rewrite.sh ssl GET staging.garbarino.com /nuevo_carrito/c_cartid /carrito/c_cartid
+#test.upstream.sh ssl GET staging.garbarino.com /nuevo_carrito/deleteProductFromCart cart_ui_us
+#test.uri.rewrite.sh ssl GET staging.garbarino.com /nuevo_carrito/deleteProductFromCart /carrito/deleteProductFromCart
 
-test.status.response.sh ssl GET fe-staging.garbarino.com /carrito 301
-test.header.response.sh ssl GET fe-staging.garbarino.com /carrito Location https://fe-staging.garbarino.com/carrito/
-test.upstream.sh ssl GET fe-staging.garbarino.com /carrito/ checkout_ui_us
-test.upstream.sh ssl GET fe-staging.garbarino.com /carrito/error checkout_ui_us
-test.upstream.sh ssl GET fe-staging.garbarino.com /carrito/reset checkout_ui_us
-#test.upstream.sh ssl GET fe-staging.garbarino.com /viejo_carrito epi_ui_us
-#test.uri.rewrite.sh ssl GET fe-staging.garbarino.com /viejo_carrito /carrito
-test.upstream.sh ssl GET fe-staging.garbarino.com /carrito/compra epi_ui_us
+test.status.response.sh ssl GET staging.garbarino.com /carrito 301
+test.header.response.sh ssl GET staging.garbarino.com /carrito Location https://staging.garbarino.com/carrito/
+test.upstream.sh ssl GET staging.garbarino.com /carrito/ cart_ui_us
+test.upstream.sh ssl GET staging.garbarino.com /carrito/error cart_ui_us
+test.upstream.sh ssl GET staging.garbarino.com /carrito/reset cart_ui_us
+#test.upstream.sh ssl GET staging.garbarino.com /viejo_carrito epi_ui_us
+#test.uri.rewrite.sh ssl GET staging.garbarino.com /viejo_carrito /carrito
+test.upstream.sh ssl GET staging.garbarino.com /carrito/compra epi_ui_us
 
-#test.upstream.sh ssl GET clone.garbarino.com /carrito/c_cartid checkout_ui_us
-#test.upstream.sh ssl GET clone.garbarino.com /carrito/c_cartid/warranty/product_id checkout_ui_us
-#test.upstream.sh ssl GET clone.garbarino.com /carrito/c_cartid/warranty/product_id/terminos-y-condiciones checkout_ui_us
-test.upstream.sh ssl GET clone.garbarino.com /carrito/sendCart checkout_ui_us
-#test.upstream.sh ssl GET clone.garbarino.com /nuevo_carrito/c_cartid checkout_ui_us
+#test.upstream.sh ssl GET clone.garbarino.com /carrito/c_cartid cart_ui_us
+#test.upstream.sh ssl GET clone.garbarino.com /carrito/c_cartid/warranty/product_id cart_ui_us
+#test.upstream.sh ssl GET clone.garbarino.com /carrito/c_cartid/warranty/product_id/terminos-y-condiciones cart_ui_us
+test.upstream.sh ssl GET clone.garbarino.com /carrito/sendCart cart_ui_us
+#test.upstream.sh ssl GET clone.garbarino.com /nuevo_carrito/c_cartid cart_ui_us
 #test.uri.rewrite.sh ssl GET clone.garbarino.com /nuevo_carrito/c_cartid /carrito/c_cartid
-#test.upstream.sh ssl GET clone.garbarino.com /nuevo_carrito/deleteProductFromCart checkout_ui_us
+#test.upstream.sh ssl GET clone.garbarino.com /nuevo_carrito/deleteProductFromCart cart_ui_us
 #test.uri.rewrite.sh ssl GET clone.garbarino.com /nuevo_carrito/deleteProductFromCart /carrito/deleteProductFromCart
 
 test.status.response.sh ssl GET clone.garbarino.com /carrito 301
 test.header.response.sh ssl GET clone.garbarino.com /carrito Location https://clone.garbarino.com/carrito/
-test.upstream.sh ssl GET clone.garbarino.com /carrito/ checkout_ui_us
+test.upstream.sh ssl GET clone.garbarino.com /carrito/ cart_ui_us
 #test.upstream.sh ssl GET clone.garbarino.com /viejo_carrito epi_ui_us
 #test.uri.rewrite.sh ssl GET clone.garbarino.com /viejo_carrito /carrito
 test.upstream.sh ssl GET clone.garbarino.com /carrito/compra epi_ui_clone_us

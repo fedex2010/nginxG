@@ -46,6 +46,7 @@ upstream aws_sss_us { server s3.amazonaws.com max_fails=3; keepalive 5;}
 
 upstream tracker_us { server tracker-ci.us-east-1.elasticbeanstalk.com max_fails=3;keepalive 5; }
 
+upstream cart_ui_us { server cart-ui-ci.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream checkout_core_us { server  chk-core-ci.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream checkout_ui_us { server  chk-ui-ci.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
 upstream checkout_ui_payments_us { server  chk-ui-ci.us-east-1.elasticbeanstalk.com max_fails=3; keepalive 5;}
