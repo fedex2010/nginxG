@@ -12,7 +12,7 @@ test.upstream.sh POST api-staging.garbarino.com /transporter/save/test12345 tran
 #test.upstream.sh ssl GET ci.garbarino.com /carrito/c_cartid/warranty/product_id cart_ui_us
 #test.upstream.sh ssl GET ci.garbarino.com /carrito/c_cartid/warranty/product_id/terminos-y-condiciones cart_ui_us
 test.upstream.sh ssl GET ci.garbarino.com /carrito/sendCart checkout_ui_us
-test.upstream.sh ssl GET ci.garbarino.com /carrito/error cart_ui_us
+test.upstream.sh ssl GET ci.garbarino.com /carrito/error checkout_ui_us
 test.upstream.sh ssl GET ci.garbarino.com /carrito/reset cart_ui_us
 #test.upstream.sh ssl GET ci.garbarino.com /nuevo_carrito/c_cartid cart_ui_us
 #test.uri.rewrite.sh ssl GET ci.garbarino.com /nuevo_carrito/c_cartid /carrito/c_cartid
