@@ -1,5 +1,6 @@
 # New Compumundo Checkout redirects.
 test.upstream.sh ssl GET ci.compumundo.com.ar /carrito/ cart_ui_us
+test.upstream.sh ssl GET ci.compumundo.com.ar /carrito/api cart_ui_us
 #test.upstream.sh ssl GET ci.compumundo.com.ar /carrito/compra checkout_ui_compra_us
 #test.upstream.sh ssl GET ci.compumundo.com.ar /compra checkout_ui_compra_us
 test.upstream.sh ssl GET ci.compumundo.com.ar /pagos checkout_ui_payments_us
@@ -8,6 +9,7 @@ test.upstream.sh ssl GET ci.compumundo.com.ar /pagos checkout_ui_payments_us
 test.header.response.sh ssl GET ci.compumundo.com /carrito/?producto=12345678&cupon=CQA Location https://ci.compumundo.com.ar/carrito/?producto=12345678&cupon=CQA
 
 test.upstream.sh ssl GET staging.compumundo.com.ar /carrito/ cart_ui_us
+test.upstream.sh ssl GET staging.compumundo.com.ar /carrito/api cart_ui_us
 #test.upstream.sh ssl GET staging.compumundo.com.ar /carrito/compra checkout_ui_us
 test.upstream.sh ssl GET staging.compumundo.com.ar /compra checkout_ui_us
 test.upstream.sh ssl GET staging.compumundo.com.ar /pagos checkout_ui_us
