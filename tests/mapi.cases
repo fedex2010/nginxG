@@ -2,7 +2,7 @@
 
 test.upstream.sh GET mapi.garbarino.com /homes/xxyy mapi_home_us
 test.upstream.sh GET mapi.garbarino.com /products mapi_list_us
-test.upstream.sh GET mapi.garbarino.com /products/xxyy mapi_core_us
+test.upstream.sh GET mapi.garbarino.com /products/xxyy mapi_detail_us
 test.upstream.sh GET mapi.garbarino.com /v2/products mapi_detail_us
 test.upstream.sh GET mapi.garbarino.com /tags mapi_core_us
 
