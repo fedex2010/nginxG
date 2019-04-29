@@ -1,32 +1,29 @@
-location /nuevo_carrito/ {
 
-    include /etc/nginx/includes/https;
-
-    rewrite ^/nuevo_carrito/(.*) /carrito/$1 break;
-
-	proxy_pass $checkout_ui_us;
+location ~ ^/compra {
+	proxy_pass $checkout_ui_compra_us;
 }
 
-location /nuevo_carrito/nuevo_carrito {
-	rewrite ^ https://$host/nuevo_carrito/ permanent;
+location /pagos {
+    proxy_pass $checkout_ui_payments_us;
+}
+
+location /carrito/api {
+    include /etc/nginx/includes/https;
+    proxy_pass $cart_ui_us;
 }
 
 location ~ ^/carrito/c_.* {
     include /etc/nginx/includes/https;
 
+	proxy_pass $cart_ui_us;
+}
+
+# location ~ ^/carrito/(setWarranty|sendCart|deleteProductFromCart|updateItemQuantity|getCartStatus|summary|garex) {
+# 	proxy_pass $cart_ui_us;
+# }
+
+location ~ ^/carrito/(setWarranty|sendCart|deleteProductFromCart|updateItemQuantity|getCartStatus|summary|garex|error|vendedor|reset) {	
 	proxy_pass $checkout_ui_us;
-}
-
-location ~ ^/carrito/(setWarranty|sendCart|deleteProductFromCart|updateItemQuantity|getCartStatus) {
-	proxy_pass $checkout_ui_us;
-}
-
-location /carrito/vendedor {
-    proxy_pass $checkout_ui_us;
-}
-
-location ~ ^/compra/ {
-	proxy_pass $checkout_ui_compra_us;
 }
 
 location ~ ^/carrito$ {
@@ -40,25 +37,22 @@ include /etc/nginx/includes/https;
     set $where_to_go $pwa_us;
 
     if ($http_cookie ~ "gb_pwa_cart=false"){
-        set $where_to_go $checkout_ui_us;
+        set $where_to_go $cart_ui_us;
     }
 
     if ($ua_device ~ desktop){
-        set $where_to_go $checkout_ui_us;
+        set $where_to_go $cart_ui_us;
     }
 
     if ($ua_device ~ tablet){
-        set $where_to_go $checkout_ui_us;
+        set $where_to_go $pwa_us;
     }
+    
     if ($arg_producto){
-        set $where_to_go $checkout_ui_us;
+        set $where_to_go $cart_ui_us;
     }
-
+    
     proxy_pass $where_to_go;
-}
-
-location /pagos {
-    proxy_pass $checkout_ui_payments_us;
 }
 
 location /viejo_carrito {
@@ -69,4 +63,17 @@ location /viejo_carrito {
     include /etc/nginx/includes/garba-rewrites;
 
     proxy_pass $epi_ui_us;
+}
+
+location /nuevo_carrito/ {
+
+    include /etc/nginx/includes/https;
+
+    rewrite ^/nuevo_carrito/(.*) /carrito/$1 break;
+
+	proxy_pass $cart_ui_us;
+}
+
+location /nuevo_carrito/nuevo_carrito {
+	rewrite ^ https://$host/nuevo_carrito/ permanent;
 }
