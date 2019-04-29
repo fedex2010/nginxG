@@ -1,5 +1,5 @@
 
-location ~ ^/compra {
+location ~ ^/compra/ {
 	proxy_pass $checkout_ui_compra_us;
 }
 

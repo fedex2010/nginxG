@@ -2,7 +2,7 @@
 test.upstream.sh ssl GET ci.compumundo.com.ar /carrito/ cart_ui_us
 test.upstream.sh ssl GET ci.compumundo.com.ar /carrito/api cart_ui_us
 #test.upstream.sh ssl GET ci.compumundo.com.ar /carrito/compra checkout_ui_compra_us
-#test.upstream.sh ssl GET ci.compumundo.com.ar /compra checkout_ui_compra_us
+#test.upstream.sh ssl GET ci.compumundo.com.ar /compra/ checkout_ui_compra_us
 test.upstream.sh ssl GET ci.compumundo.com.ar /pagos checkout_ui_payments_us
 
 # Redirects for Email Marketing.
@@ -11,14 +11,14 @@ test.header.response.sh ssl GET ci.compumundo.com /carrito/?producto=12345678&cu
 test.upstream.sh ssl GET staging.compumundo.com.ar /carrito/ cart_ui_us
 test.upstream.sh ssl GET staging.compumundo.com.ar /carrito/api cart_ui_us
 #test.upstream.sh ssl GET staging.compumundo.com.ar /carrito/compra checkout_ui_us
-test.upstream.sh ssl GET staging.compumundo.com.ar /compra checkout_ui_us
-test.upstream.sh ssl GET staging.compumundo.com.ar /pagos checkout_ui_us
+test.upstream.sh ssl GET staging.compumundo.com.ar /compra/ checkout_ui_compra_us
+test.upstream.sh ssl GET staging.compumundo.com.ar /pagos checkout_ui_payments_us
 
 # Redirects for Email Marketing.
 test.header.response.sh ssl GET staging.compumundo.com /carrito/?producto=12345678&cupon=CQA Location https://staging.compumundo.com.ar/carrito/?producto=12345678&cupon=CQA
 
 test.upstream.sh ssl GET www.compumundo.com.ar /carrito/ cart_ui_us
-test.upstream.sh ssl GET www.compumundo.com.ar /compra checkout_ui_compra_us
+test.upstream.sh ssl GET www.compumundo.com.ar /compra/ checkout_ui_compra_us
 test.upstream.sh ssl GET www.compumundo.com.ar /pagos checkout_ui_payments_us
 
 # Redirects for Email Marketing.
