@@ -105,6 +105,8 @@ set $mutx_us http://10.211.15.104;
 
 set $mutx2_us http://mutx-prod.us-east-1.elasticbeanstalk.com;
 
+set $mutx2_staging_us http://mutx-staging.us-east-1.elasticbeanstalk.com;
+
 set $dia_del_nino_us http://200.43.192.61;
 
 set $nagiostest_us http://10.211.15.9;
