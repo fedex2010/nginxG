@@ -54,7 +54,6 @@ set $caterpie_core_us http://traefik-prod.garba;
 
 #set $search_evo_us http://alb-prod.garba:8007;
 set $search_evo_us http://traefik-prod.garba;
-set $search_us http://search-prod.us-east-1.elasticbeanstalk.com;
 
 set $product_core_us http://product-core-prod.us-east-1.elasticbeanstalk.com;
 set $microapps_us http://micro-apps-prod.us-east-1.elasticbeanstalk.com;
