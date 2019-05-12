@@ -7,7 +7,7 @@ set $epi_ui_clone_us http://epi-ui-clone.us-east-1.elasticbeanstalk.com;
 set $seo_proxy_us http://seo-proxy-prod.us-east-1.elasticbeanstalk.com;
 set $prerender_us http://prerender-prod.us-east-1.elasticbeanstalk.com;
 #set $normandia_us http://normandia-prod.us-east-1.elasticbeanstalk.com;
-set $normandia_us http://normandia-ans-prod.garba.ninja;
+set $normandia_us http://normi-prod.us-east-1.elasticbeanstalk.com;
 #set $review_core_us http://alb-prod.garba:8006;
 set $review_core_us http://traefik-prod.garba;
 set $prelanding_us http://prelandings-ui-ans-prod.garba.ninja;

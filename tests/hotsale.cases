@@ -16,7 +16,7 @@ test.upstream.sh ssl GET www.garbarino.com /images/hotsale-thanks/styles.css lan
 #test.upstream.sh ssl GET staging.garbarino.com /hotsale/pagina landings_fe_us
 #test.upstream.sh ssl GET www.garbarino.com /hotsale/pagina landings_fe_us
 
-test.upstream.sh ssl GET ci.garbarino.com /hotsale landings_fe_us
+#test.upstream.sh ssl GET ci.garbarino.com /hotsale landings_fe_us
 
 #Listados
 #test.status.response.sh ssl GET www.garbarino.com /ofertas-hotsale 302
