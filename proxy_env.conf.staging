@@ -14,11 +14,8 @@ set $prelanding_us http://prelandings-ui-ans-staging.garba.ninja;
 set $listing_us http://listing-ui-staging.us-east-1.elasticbeanstalk.com;
 set $autocomplete_us http://autocomplete-staging.us-east-1.elasticbeanstalk.com;
 
-#set $emails_core_us http://alb-staging.garba:8013;
 set $emails_core_us http://traefik-staging.garba;
-#set $api_core_us http://alb-staging.garba:8001;
 set $api_core_us http://traefik-staging.garba;
-#set $tapi_core_us http://alb-staging.garba:8008;
 set $tapi_core_us http://traefik-staging.garba;
 set $insurance_core_us http://insurance-core-stag.us-east-1.elasticbeanstalk.com;
 set $insurances_ui_us http://insurance-ui-staging.us-east-1.elasticbeanstalk.com;
@@ -29,31 +26,20 @@ set $home_core_us http://home-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_core_us http://mapi-core-staging.us-east-1.elasticbeanstalk.com;
 set $mapi_list_us http://traefik-staging.garba;
 set $mapi_detail_us http://traefik-staging.garba;
-#set $mapi_home_us http://alb-staging.garba:8003;
 set $mapi_home_us http://traefik-staging.garba;
-#set $mapi_notifications_us http://mapi-notifications-ans-staging.garba.ninja;
 set $mapi_notifications_us http://traefik-staging.garba;
-#set $mapi_newbiz_us http://mapi-newbiz-ans-staging.garba.ninja;
 set $mapi_newbiz_us http://traefik-staging.garba;
-#set $listing_core_us http://listing-core-staging.us-east-1.elasticbeanstalk.com;
 set $listing_core_us http://traefik-staging.garba;
-#set $mapi_admin_us http://alb-staging.garba:8004;
 set $mapi_admin_us http://traefik-staging.garba;
 set $marketplace_us http://marketplace-staging.us-east-1.elasticbeanstalk.com;
 set $cac_frontend_us http://cac-frontend-ans-staging.garba.ninja;
-#set $cac_core_us http://alb-staging.garba:8005;
 set $cac_core_us http://traefik-staging.garba;
 set $pwa_us http://pwa-ui-staging.us-east-1.elasticbeanstalk.com;
-#set $coupons_core_us http://alb-staging.garba:8010;
 set $coupons_core_us http://traefik-staging.garba;
-#set $snorlax_core_us http://snorlax-core-staging.us-east-1.elasticbeanstalk.com;
 set $snorlax_core_us http://traefik-staging.garba;
-#set $magikarp_core_us http://alb-staging.garba:8012;
 set $magikarp_core_us http://traefik-staging.garba;
-#set $caterpie_core_us http://alb-staging.garba:8009;
 set $caterpie_core_us http://traefik-staging.garba;
 
-#set $search_evo_us http://alb-staging.garba:8007;
 set $search_evo_us http://traefik-staging.garba;
 
 set $product_core_us http://product-core-staging.us-east-1.elasticbeanstalk.com;
@@ -81,7 +67,6 @@ set $backoffice_ui_us http://backoffice-ui-staging.us-east-1.elasticbeanstalk.co
 
 set $aws_sss_us http://s3.amazonaws.com;
 
-#set $tracker_us http://tracker-staging.us-east-1.elasticbeanstalk.com ;
 set $tracker_us http://traefik-staging.garba;
 
 set $checkout_core_us http://chk-core-staging.us-east-1.elasticbeanstalk.com;
@@ -106,10 +91,6 @@ set $mutx2_staging_us http://mutx-staging.us-east-1.elasticbeanstalk.com;
 
 set $dia_del_nino_us http://200.43.192.61;
 
-set $nagiostest_us http://10.211.15.9;
-
-set $nagiosprod_us http://10.212.15.51;
-
 set $static_sites_us http://static-sites.garbarino.com.s3-website-us-east-1.amazonaws.com;
 set $techgo_us http://techgo-staging.compumundo.com.ar.s3-website-us-east-1.amazonaws.com;
 set $salecompanies_us http://salecompanies.garbarino.com.s3-website-us-east-1.amazonaws.com;
@@ -123,13 +104,11 @@ set $checkout_ui_compra_us http://chk-ui-staging.us-east-1.elasticbeanstalk.com;
 
 set $batches_us http://batches-staging.us-east-1.elasticbeanstalk.com;
 
-#set $clairvoyant_us http://clairvoyant-staging.us-east-1.elasticbeanstalk.com;
 set $clairvoyant_us http://traefik-staging.garba;
 set $clairvoyant_minion_us http://clairvoyant-minion-staging.us-east-1.elasticbeanstalk.com;
 
 set $blognew_us http://10.211.15.136;
 
-#set $gamification_core_us http://alb-staging.garba:8011;
 set $gamification_core_us http://traefik-staging.garba;
 
 set $fiden_us http://fiden-web-staging.us-east-1.elasticbeanstalk.com;
@@ -138,16 +117,13 @@ set $prom_marketing_us http://10.212.35.182;
 set $marketplace_core_us http://marketplace-api-staging.us-east-1.elasticbeanstalk.com;
 set $polcom_core_us http://polcom-core-staging.us-east-1.elasticbeanstalk.com;
 set $pidgey_core_us http://pidgey-core-staging.us-east-1.elasticbeanstalk.com;
-#set $image_generator_us http://alb-staging.garba:8000;
 set $image_generator_us http://traefik-staging.garba;
 
 set $genesis_importer_us http://genesis-importer-staging.us-east-1.elasticbeanstalk.com;
 
 set $promociones_us http://200.43.192.230/couponing/;
 set $monitor_us http://monitor-staging.us-east-1.elasticbeanstalk.com;
-#set $sherlock_us http://alb-staging.garba:7000;
 set $sherlock_us http://traefik-staging.garba;
-#set $alarmas_us http://alb-staging.garba:8015;
 set $alarmas_us http://traefik-staging.garba;
 set $payment_core_us http://payments-core-staging.us-east-1.elasticbeanstalk.com;
 set $api_support_us http://garba-support-ci.us-east-1.elasticbeanstalk.com;
